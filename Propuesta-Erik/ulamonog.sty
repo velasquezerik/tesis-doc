@@ -1,0 +1,431 @@
+
+
+
+%%=============================================================================
+%% ulamonog.cls
+%% Copyright 2006 Richard Marquez, Universidad de Los Andes
+%%
+%% This program may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.2
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%   http://www.latex-project.org/lppl.txt
+
+
+
+%%
+%%=============================================================================
+\def\Ulamonog@Version{2006/03/19, v. 0.9}
+\NeedsTeXFormat{LaTeX2e}[1995/12/01]
+\ProvidesPackage{ulamonog}[\Ulamonog@Version]
+\typeout{(c) 2006 Richard Marquez, Universidad de Los Andes}
+\typeout{ }
+
+\newif\ifallPages
+\DeclareOption{total}{\global\allPagestrue}
+\DeclareOption{nototal}{\global\allPagesfalse}
+
+\ExecuteOptions{total}
+\ProcessOptions\relax
+
+\RequirePackage{fancyhdr}
+\RequirePackage{graphicx}
+\RequirePackage{amsmath}
+\RequirePackage{amsfonts}
+\RequirePackage{amsthm}
+\RequirePackage{amssymb}
+
+
+% Define the page heading to be page number only.
+\newcommand{\properpagestyle}{
+       \pagestyle{myheadings}\markboth{}{}\markright{}}
+
+% Las monografías son impresas de un sólo lado, así que no nos interesa \evensidemargin
+\oddsidemargin 10mm
+\evensidemargin 10mm
+\marginparwidth 0mm
+\marginparsep 10pt
+\topmargin -10mm
+\headsep .5in
+\textheight 218mm
+\textwidth 155mm
+
+% Disallow page breaks at hyphens (this will give some underfull vbox's,
+% so an alternative is to use \brokenpenalty=100 and manually search
+% for and fix such page breaks)
+\brokenpenalty=10000
+
+% Use 1.37 times the normal baseline-to-baseline skip
+\renewcommand{\baselinestretch}{1.37}
+
+% Redefine the macro used for footnotes to use single spacing
+\long\def\@footnotetext#1{\insert\footins{\def\baselinestretch{1}\footnotesize
+    \interlinepenalty\interfootnotelinepenalty
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+% \author, \title are defined in book; here are the rest of the
+% front matter defining macros
+\def\logoarriba#1{\gdef\@logoarriba{#1}\logoarriba@logoarribatrue}
+\def\tipomonografia#1{\gdef\@tipomonografia{#1}\tipomonografia@tipomonografiafalse}
+\def\sinlatex#1{\gdef\@sinlatex{#1}\sinlatex@sinlatexfalse}
+\def\cedula#1{\gdef\@cedula{#1}}
+\def\numproy#1{\gdef\@numproy{#1}\numpro@numprotrue}
+\def\tituloautor#1{\gdef\@tituloautor{#1}}
+\def\cota#1{\gdef\@cota{#1}\tiene@cotatrue}
+\def\universidad#1{\gdef\@universidad{#1}}
+\def\direccion#1{\gdef\@direccion{#1}}
+\def\dept#1{\gdef\@dept{#1}}
+\def\facultad#1{\gdef\@facultad{#1}}
+\def\tutor#1{\gdef\@tutor{#1}}
+\def\tutorname#1{\gdef\@tutorname{#1}}
+\def\cotutor#1{\gdef\@cotutor{#1}\cotutela@cotuttrue}
+\def\asesor#1{\gdef\@asesor{#1}\ase@asestrue}
+\def\asesorindustrial#1{\gdef\@asesorindustrial{#1}\aseindu@asesindutrue}
+\def\tutorindustrial#1{\gdef\@tutorindustrial{#1}\tutindu@tutindutrue}
+\def\supervisor#1{\gdef\@tutor{#1}}
+\def\primerjurado#1{\gdef\@primerjurado{#1}}
+\def\segundojurado#1{\gdef\@segundojurado{#1}}
+\def\tercerjurado#1{\gdef\@tercerjurado{#1}\third@readertrue}
+\def\cuartojurado#1{\gdef\@cuartojurado{#1}\fourth@readertrue}
+\def\quintojurado#1{\gdef\@quintojurado{#1}\fifth@readertrue}
+\def\resumen#1{\gdef\@resumen{#1}}
+\def\dedicatoria#1{\gdef\@dedicatoria{#1}\dedic@tiontrue}
+\def\descriptores#1{\gdef\@descriptores{#1}}
+\def\fechaentrega#1{\gdef\@fechaentrega{#1}} % cambiar por fechaentrega
+\def\presentaciondia#1{\gdef\@presentaciondia{#1}\presen@tatrue}
+\def\presentacionlugar#1{\gdef\@presentacionlugar{#1}}
+\def\mencionespecial#1{\gdef\@mencionespecial{#1}\men@tiontrue}
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\grado#1{\gdef\@grado{#1}}
+\def\opcion#1{\gdef\@opcion{#1}}
+\def\gradoinitial#1{\gdef\@gradoinitial{#1}}
+\def\lic{\grado{Ingeniero de Sistemas}\gradoinitial{I.S.}} %% otro \grado{Ingeniero Qu\'{\i}mico}
+\lic % defecto grado
+\def\msc{\grado{Magister Scientiarum}\gradoinitial{M.Sc.}\ms@ctrue}
+\def\phd{\grado{Doctor en Filosof\'{\i}a}\gradoinitial{Ph.D.}\ph@dtrue}
+\def\@title{}
+\def\@author{}
+\def\@cedula{}
+\def\@sinlatex{}
+\def\@presentacionlugar{-- por definir --}
+\def\@numproy{}
+\def\@tituloautor{Br.}
+\def\@resumen{}
+\def\@descriptores{}
+\def\@cota{}
+\def\@universidad{Universidad de Los Andes}
+\def\@direccion{M\'erida, Venezuela}
+\def\@dept{Escuela de Ingenier\'\i a de Sistemas}
+\def\@logoarriba{}
+\def\@tipomonografia{Proyecto de Grado} %\tipomonografia{Tesis de Maestría}
+\def\@opcion{Control y Automatizaci\'on} % \opcion{Ingeniería de Control}
+\def\@facultad{Ingenier\'\i a}
+\def\@tutor{}
+\def\@tutorname{Tutor}
+\def\@primerjurado{}
+\def\@segundojurado{}
+\def\@cotutor{}
+\def\@asesor{}
+\def\@asesorindustrial{}
+\def\@tutorindustrial{}
+\def\@tercerjurado{}
+\def\@cuartojurado{}
+\def\@quintojurado{}
+\def\@examiner{}
+\def\@fechaentrega{\ifcase\the\month\or
+  Enero\or Febrero\or Marzo\or Abril\or Mayo\or Junio\or
+  Julio\or Agosto\or Septiembre\or Octubre\or Noviembre\or Diciembre\fi
+  \space \number\the\year}
+\def\@copyrightyear{\number\the\year}
+
+
+\def\draft{\renewcommand{\properpagestyle}{\pagestyle{myheadings}
+\markright{{\rm Draft Version -- \today}}}\draft@modetrue\properpagestyle}
+\def\nobib{\print@bibfalse}
+\def\nolistoffigures{\figurespagefalse}
+\def\nolistoftables{\tablespagefalse}
+\def\nofront{\front@pagesfalse\permissionfalse\figurespagefalse\tablespagefalse}
+
+% New if constructs:    Default conditions:
+\newif\iftiene@cota     \tiene@cotafalse %\third@readertrue
+\newif\ifpermission     \permissionfalse
+\newif\iffigurespage    \figurespagetrue
+\newif\iftablespage     \tablespagetrue
+\newif\iffront@pages    \front@pagestrue
+\newif\ifthird@reader   \third@readerfalse %\third@readertrue
+\newif\iffourth@reader  \fourth@readerfalse
+\newif\iffifth@reader   \fifth@readerfalse
+\newif\ifph@d           \ph@dfalse
+\newif\iflogoarriba@logoarriba     \logoarriba@logoarribafalse
+\newif\iftipomonografia@tipomonografia     \tipomonografia@tipomonografiatrue
+\newif\ifnumpro@numpro     \numpro@numprofalse
+\newif\ifcotutela@cotut     \cotutela@cotutfalse
+\newif\ifase@ases     \ase@asesfalse
+\newif\ifaseindu@asesindu     \aseindu@asesindufalse
+\newif\iftutindu@tutindu     \tutindu@tutindufalse
+\newif\ifdraft@mode     \draft@modefalse
+\newif\ifprint@bib      \print@bibtrue
+\newif\ifdedic@tion     \dedic@tionfalse
+\newif\ifmen@tion   \men@tionfalse
+\newif\ifpresen@ta   \presen@tafalse
+\newif\ifms@c   \ms@cfalse
+\newif\ifsinlatex@sinlatex   \sinlatex@sinlatextrue
+
+\def\no@breaks#1{{\def\\{ \ignorespaces}#1}}    % disallow explicit line breaks
+
+\expandafter\ifx\csname realpageref\endcsname\relax%
+  \gdef\realpageref#1{\expandafter\real@setref
+    \csname r@#1\endcsname\@secondoffive{#1}}
+\fi
+
+\def\titlep{%
+    \thispagestyle{empty}%
+    \ifdraft@mode
+      \begin{center} \Large DRAFT COPY\\ \large Printed \today \end{center}
+    \fi
+    \ifnumpro@numpro
+        \hskip-0.25in n$^\circ$: \number\the\year--\@numproy
+    \fi
+    \vskip0.5in
+    \iflogoarriba@logoarriba
+    \begin{center}
+    \includegraphics[width=2cm]{ula}
+    \end{center}
+    \logoarriba@logoarribafalse
+    \else
+    \logoarriba@logoarribatrue
+    \fi
+    \begin{center}
+        \textsc{\@tipomonografia}
+    \end{center}
+    \vskip0.5in
+    \iftipomonografia@tipomonografia
+    \begin{center}
+        \ifms@c Presentada \else Presentado \fi ante la ilustre \textsc{\@universidad} como requisito parcial
+        para obtener el T\'{\i}tulo de \textsc{\@grado} \ifms@c en \textsc{\@opcion}\fi
+    \end{center}
+    \else
+    \vskip0.5in
+    \fi
+    \vskip0.5in
+    \begin{center}
+        \hyphenpenalty=10000\Large\expandafter{\textsc{\@title}}
+    \end{center}
+    \vskip0.3in
+    \begin{center}
+    Por
+    \end{center}
+    \vskip0.3in
+    \begin{center}
+        \@tituloautor~\@author\\
+        \ifms@c
+        %
+        \else
+          \vskip0.1in
+          \@tutorname: \@tutor
+          \ifcotutela@cotut \\ Cotutor: \@cotutor
+          \fi
+          \ifase@ases \\ Asesor: \@asesor
+          \fi
+          \ifaseindu@asesindu \\ Asesor Industrial: \@asesorindustrial
+          \fi
+          \iftutindu@tutindu \\ Tutor Industrial: \@tutorindustrial
+          \fi
+        \fi
+    \end{center}
+
+    \vskip0.5in
+    \begin{center}
+        \expandafter{\@fechaentrega} \\
+        \vskip0.75in
+    \iflogoarriba@logoarriba
+        \begin{center}
+        \includegraphics[width=2cm]{ula}
+        \end{center}
+    \fi
+        \copyright\@copyrightyear\ \@universidad\space \expandafter{\@direccion}
+    \end{center}%
+}
+
+\def\signature#1#2{\parbox[b]{1in}{#1} %\smash{#1}\vskip12pt
+\hfill \parbox[t]{5in}{#2}} %\shortstack{\vrule width 3in height 0.4pt\\\small#2}
+\def\signaturepage{%
+    \thispagestyle{empty}%
+    \setcounter{page}{3}
+    \vskip1in plus 0.5in
+    \hyphenpenalty=10000
+    \parindent=36pt
+    \null\vskip1.5in
+    \hbox{%%
+    \begin{picture}(18,0.1)%%
+    \thicklines%%
+    \put(0,0.05){\line(1,0){70}}%%
+    \end{picture}}
+    \begin{footnotesize}
+    \begin{sloppypar}
+    \noindent El Proyecto de Grado titulado
+    ``\textbf{\no@breaks{\@title}}'', realizado por Br.~\mbox{\textbf{\@author}},
+    C.I. N$^\circ$ \@cedula, fue presentado el d\'{\i}a (fecha):\ \@presentaciondia, en (lugar):\ \@presentacionlugar,
+    ante el Jurado evaluador conformado por:
+    \end{sloppypar}
+    \def\sigskip{\vskip0.07in plus 0.1in minus 0.05in}
+    \def\beginskip{\vskip0.193625in plus 0.01in minus 0.05in}
+
+    \ifph@d
+         \beginskip
+         \signature{Examinador Externo:}{\@examiner} \\
+
+%         \iftwo@tutors
+%           \sigskip \signature{Directores de tesis:}{\@tutor} \\
+%           \sigskip \signature{}{\@primerjurado} \\
+%           \sigskip \signature{Jurado:}{\@segundojurado} \\
+%         \else
+           \sigskip \signature{Director de tesis:}{\@tutor} \\
+           \sigskip \signature{Jurado:}{\@primerjurado} \\
+           \sigskip \signature{Jurado:}{\@segundojurado} \\
+%         \fi
+    \else % not Ph.D. grado:
+        \beginskip
+        \ifcotutela@cotut
+          \signature{\@tutorname:}{\@tutor} \\
+          \sigskip \signature{Cotutor:}{\@cotutor} \\
+          \sigskip \signature{Jurado:}{\@primerjurado} \\
+          \sigskip \signature{Jurado:}{\@segundojurado} \\
+        \else
+          \signature{\@tutorname:}{\@tutor} \\
+          \sigskip \signature{Jurado:}{\@primerjurado} \\
+          \sigskip \signature{Jurado:}{\@segundojurado} \\
+        \fi
+    \fi
+    \ifthird@reader
+      \sigskip \signature{Jurado:}{\@tercerjurado} \\
+    \fi
+    \iffourth@reader
+      \sigskip \signature{Jurado:}{\@cuartojurado} \\
+    \fi
+    \iffifth@reader
+      \sigskip \signature{Jurado:}{\@quintojurado} \\
+    \fi
+    \vskip1in
+    \begin{sloppypar}
+    \ifmen@tion
+      \noindent \@mencionespecial
+    \else
+      \noindent Este proyecto no tiene menci\'on especial.
+    \fi
+    \end{sloppypar}
+    \end{footnotesize}
+    \vfill\newpage%\setcounter{page}{3}
+}
+
+\def\paginaresumen{%
+\hyphenpenalty=10000
+\begin{center}
+  {\large\bf \@title \par} \vskip 2em
+  {\large \lineskip .75em \@tituloautor~\@author \par} \vskip 1em
+  {\normalsize \@tipomonografia\ --- \ \@opcion,\space \realpageref{last@page} p\'aginas\par}
+\end{center}\pagebreak[0]\thispagestyle{empty}
+ \vfil {\bf Resumen:}\ \@resumen\par\vskip2mm \noindent{\bf Palabras clave:}\ \@descriptores
+ \iftiene@cota
+   \\ \noindent{\bf Cota:}\ \@cota
+ \fi
+ \par
+ \ifsinlatex@sinlatex
+ {\small Este trabajo fue procesado en \LaTeX.}
+ \fi
+\vfill\newpage }
+
+\def\beforepreface{
+\typeout{Most over/underfulls in first few pages are the fault of this package.}
+\typeout{Ignore all them.  If uncorrectable errors occur, notify staff.}
+    \pagenumbering{roman}
+    \pagestyle{plain}
+    \titlep
+    \iffront@pages\cleardoublepage\pagestyle{empty}\paginaresumen
+    \ifpresen@ta
+      \signaturepage
+    \fi
+    \else\addtocounter{page}{1}\fi
+    \iffront@pages
+    \ifdedic@tion
+        \cleardoublepage\pagestyle{empty}
+        \begin{flushright}%
+        \Large\em\null\vfill%\vskip1in
+        \@dedicatoria
+        \vfill\end{flushright}
+    \fi
+    \fi
+    \iffront@pages\tableofcontents\else\addtocounter{page}{1}\fi
+    \newpage
+    \iftablespage
+        \addcontentsline{toc}{chapter}{Índice de Tablas}\listoftables
+        \newpage
+    \fi
+    \iffigurespage
+        \addcontentsline{toc}{chapter}{Índice de Figuras}\listoffigures
+        \newpage
+    \fi
+}
+
+\def\nonumchapter#1{%
+    \chapter*{#1}
+    \addcontentsline{toc}{chapter}{#1}}
+
+\def\prefacesection#1{%
+    \chapter*{#1}
+    \addcontentsline{toc}{chapter}{#1}}
+
+\def\printdescriptor{%
+    \vskip0.75in
+    \noindent{\bfseries Descriptores:}\ \@descriptor\par
+    \noindent{\bfseries Cota:}\ \@cota}
+
+%\newenvironment{dedication}{\newpage\begin{flushright}\Large\em\null\vskip1in}%
+%{\vfill\end{flushright}}
+
+
+\def\afterpreface{\newpage
+    \pagenumbering{arabic}
+    \typeout{Proyecto ULA preface pages completed.}
+    \properpagestyle}
+
+\newcommand{\lastpage@putlabel}{\addtocounter{page}{-1}%
+   \immediate\write\@auxout{\string
+   \newlabel{last@page}{{}{\thepage}{\relax }{}{}}}%
+   \addtocounter{page}{1}}
+\AtEndDocument{\ifallPages\clearpage\lastpage@putlabel\fi}
+
+% Redefine \thebibliography to go to a new page and put an entry in the
+% table of contents
+%\let\@ldthebibliography\thebibliography
+%\renewcommand{\thebibliography}[1]{%
+%     \newpage
+%     \addcontentsline{toc}{chapter}{Bibliograf\'{\i}a}
+%     \@ldthebibliography{#1}
+% }
+%
+\let\@ldbibliography\bibliography
+\renewcommand{\bibliography}[1]{\newpage\addcontentsline{toc}{chapter}{Bibliograf\'{\i}a}\@ldbibliography{#1}}
+
+% Start out normal
+%\properpagestyle
+
+% nueva pagina
+\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}%
+\cleardoublepage}}
+
+\renewcommand\contentsname{\'Indice}
+\renewcommand\listfigurename{\'Indice de Figuras}
+\renewcommand\listtablename{\'Indice de Tablas}
+\renewcommand\indexname{\'Indice Alfab\'etico}
+\renewcommand\figurename{Figura}
+\renewcommand\tablename{Tabla}
+\renewcommand\partname{Parte}
+\renewcommand\chaptername{Cap\'{\i}tulo}
+\renewcommand\appendixname{Ap\'endice}
+\renewcommand\bibname{Bibliograf\'{\i}a}

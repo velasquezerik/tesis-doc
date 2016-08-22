@@ -1,0 +1,379 @@
+\documentclass[12pt,oneside]{book}
+\usepackage{ulamonog} % formato para la propuesta o proyecto de grado
+\usepackage[ansinew]{inputenc} % escribir acentos
+
+%\usepackage[activeacute,spanish]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[colorlinks]{hyperref}
+\usepackage{float}
+\usepackage{verbatim}
+
+
+% si se va a imprimir,
+% se incluye al final despues de citecolor=blue, el comando draft=true
+% Las siguientes son propiedades del pdf, más no cambian nada dentro del
+% texto de la monografía
+\hypersetup{pdftitle={Diseño e implementación de un Sistema Web para el
+Simulador de Eventos Discretos GALATEA.},
+pdfauthor={Br. Erik Velásquez},
+pdfsubject={Propuesta de Proyecto de Grado}, % se deja igual (se cambia para el proyecto de grado)
+pdfkeywords={Servicios Web, Sistemas Distribuidos, Web Semántica, Arquitectura Orientada a Servicios, Simulación},
+pdfstartview=FitH, bookmarks=true, citecolor=blue,
+draft=true}
+\nolistoffigures
+
+\usepackage{natbib}
+
+\sloppy
+
+\begin{document}
+
+\frontmatter
+
+
+% ***************************************************************** %
+% Portada y resumen
+% ***************************************************************** %
+
+% Si desea que el logo de la ULA aparezca en la parte superior,
+% descomente la siguiente línea. Por defecto aparece en la parte inferior
+\logoarriba{}
+
+% Año en el cual se entrega el proyecto de grado o la propuesta
+\copyrightyear{2016}
+\tipomonografia{Propuesta de Proyecto de
+Grado}
+
+
+% Título de la monografía, el cual saldrá en la portada
+\title{Diseño e implementación de un Sistema Web para el
+Simulador de Eventos Discretos GALATEA.}
+
+
+% Autor de la monografía, el cual saldrá en la portada
+ \author{Erik Velásquez}
+
+% La fechaentrega, presentaciondia, presentacionlugar
+% y mencionespecial, es para aquel caso en el cual se
+% vaya a utilizar la hoja del veredicto en el formato
+% que se presenta aquí. El primerjurado, segundojurado,
+% y cedula, son campos que pueden llenarse, pero sólo
+% aparecerán si se utiliza la página del veredicto
+
+% Cédula del autor de la monografía
+ \cedula{19.435.165}
+
+% Tutor del Proyecto de Grado
+ \tutor{Dr. Jacinto Davila}
+
+% Cualquiera de los instructores que aparecen a continuación
+% pueden comentarse o descomentarse según sea el caso:
+
+%%% Cotutor del Proyecto de Grado
+\cotutor{Prof. Kay Tucci}
+%%% Asesor del Proyecto de Grado
+% \asesor{Dr. Asesor}
+%%% Asesor Industrial del Proyecto de Grado
+% \asesorindustrial{Dr. Asesor Industrial}
+%%% Tutor Industrial del Proyecto de Grado
+% \tutorindustrial{Dr. Tutor Industrial}
+%%% Jurados del Proyecto de Grado
+% \primerjurado{Dr. Primer Profesor}
+ %\segundojurado{Prof. Segundo Profesor}
+
+
+% NO TOCAR si es Ingenieria de Sistemas
+% \grado{Ingeniero Químico} % por defecto Ingeniero de Sistemas
+
+%\signaturepage ----- NO TOCAR
+
+%%%%%OJO%%%%%Arreglen esto según su opción
+% Si es control y automatizacion se comentan las siguientes líneas. Si es de
+% Sistemas Computacionales comenta la tercera. De Investigación de Operaciones
+% comenta la segunda
+ \opcion{Sistemas Computacionales}
+
+% Aquí se escribe el resumen de la monografía
+\begin{comment}
+El objetivo principal de este proyecto consiste en buscar, mediante el uso de un sistema web, una solución al problema actual existente entre los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, que suelen tener muchas dificultades para ejecutar los modelos de simulación en el simulador GALATEA, especialmente al momento de configurar y activar todas sus funcionalidades. Se busca implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. Esto es conocido como Simulación Distribuida, la cual posee una serie de protocolos para su desarrollo e interoperabilidad. Dicha interoperabilidad se consigue mediante la adopción de estándares abiertos, como es el caso de XML, que habrá de fungir como el medio encargado de transportar los mensajes en un formato estandarizado lo cual lo hace accesible a prácticamente cualquier dispositivo. Como su nombre lo propone, en éste caso se hace uso del paradigma de arquitectura orientada a servicios (SOA: Service Oriented Architecture). Lo cual se propone desarrollar mediante un sistema web.
+
+\end{comment}
+
+% Aquí se escriben las palabras claves de la monografía
+\descriptores{Servicios Web, Sistemas Distribuidos, Web Semántica, Arquitectura Orientada a Servicios, Simulación.}
+
+% Esto es para que salga la cota en la hoja del resumen. Actualmente,
+% 11-03-08, en la Escuela de Ingeniería de Sistemas no es necesario
+% buscar la cota previamente, sino que el Proyecto de Grado se entrega
+% en la Escuela sin cota.
+%\cota{IXD A01.1}
+
+% Si desea eliminar la frase "Este trabajo fue procesado en LATEX"
+% del resumen, descomente la siguiente línea
+ \sinlatex{}
+
+% ***************************************************************** %
+% FIN DE
+% Portada y resumen
+% ***************************************************************** %
+
+
+% ***************************************************************** %
+% Si tiene dedicatoria
+% con o sin comentar
+% ***************************************************************** %
+%\dedicatoria{A todos los amados seres\\ cuando son dos líneas o más}
+% ***************************************************************** %
+% FIN DE
+% Si tiene dedicatoria
+% ***************************************************************** %
+
+\beforepreface
+
+% ***************************************************************** %
+% Agradecimientos y capítulos NO numerados
+% ***************************************************************** %
+
+%\prefacesection{Agradecimientos}
+% Aún no hay agradecimientos
+
+%%% Capitulo sin numero, antes de la pagina 1
+
+%\prefacesection{Introducción}
+% Este es un ejemplo de una sección no numerada.
+
+
+% ***************************************************************** %
+% FIN DE
+% Agradecimientos y capítulos NO numerados
+% ***************************************************************** %
+
+\afterpreface
+
+\pagestyle{fancyplain}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{\textsc{\footnotesize\thechapter\ #1}}}
+\renewcommand{\sectionmark}[1]{\markright{\textsc{\footnotesize\thesection\ #1}}}
+\lhead[\fancyplain{}{\textsc{\footnotesize\thepage}}]%
+{\fancyplain{}{\rightmark}}
+\rhead[\fancyplain{}{\leftmark}]%
+{\fancyplain{}{\textsc{\footnotesize\thepage}}} \cfoot{}
+
+\mainmatter
+
+% ***************************************************************** %
+% Cuerpo
+% ***************************************************************** %
+% De aquí en adelante se desarrollan los capítulos numerados de la monografía
+
+% ***************************************************************** %
+% INICIO DE estructura tentativa de la Propuesta
+% ***************************************************************** %
+
+\chapter{Introducción}
+
+El siguiente estrato, introduce una descripción de cómo se ha desarrollado el servicio que prestará una aplicación basada en simulación de eventos discretos, que estará fundamentado en GALATEA (Uzcátegui, 2011), el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. Esta concepción, está enfocada en los nuevos paradigmas de la arquitectura orientada a servicios (SOA), por el que, a partir funciones débilmente acopladas proveerá la capacidad de intercambiar funcionalidades de componentes dando escalabilidad a futuras extensiones. El propósito es que sirva para proveer un servicio de simulación de evento discretos al usuario desde cualquier punto. Así también, se pretende analizar conceptos de seguridad mediante el cual, ante una petición al computador (request), ésta sea procesada sólo si ha sido previamente validada. Dicho mecanismo es denominado SAML (Security Assertion Markup Language) (Fawcett, 2012).
+
+La distribución de los recursos en el ámbito de las instituciones educativas es un tema que juega un papel importante en su funcionamiento y en la calidad de los servicios ofrecidos. En este caso, la calidad de la educación y la formación que reciban los estudiantes dependerá de ciertos factores, entre los cuales resalta la adecuada atención y tutoría que puedan recibir en cada curso impartido. 
+
+Es por esto que el estudio de planeación docente toma relevancia. Ya han sido aplicadas normativas concernientes al caso, como las desarrolladas en la Universidad de Almería, España \citep{Alm}, y en la Universidad de Extremadura \citep{Extrema}, por mencionar algunas.
+\newline
+\newline
+Existen estudios enfocados en disminuir las diferencias existentes entre las cargas manejadas por cada profesor \citep{UNED}. El objetivo que se persigue entra en la categoria de planeación de recursos humanos, en el cual se introduce la necesidad de asignación de la fuerza de trabajo demandada respecto al producto requerido \citep{Mord}.
+\newline
+\newline
+Este documento expone una propuesta de proyecto para abordar el problema de la asignación óptima de lo profesores que se encargarán de las distintas asignaturas ofrecidas en las escuelas de la Facultad de Ingeniería de la Universidad de Los Andes, siguiendo las ideas de optimización de recursos y contribución a la calidad educativa de la institución. Se plantean las condiciones de la Facultad de Ingeniería, el alcance estimado del proyecto, así como también los cronogramas tentativos a seguir para el desarrollo del mismo.
+
+
+\section{Antecedentes}
+
+Como trabajos similares a esta propuesta se puede mencionar los realizado por (Uzcátegui et al, 2011) el cual relata la fase de desarrollo, cómo surge y hacia donde se proyecta GALATEA. Implementada como una plataforma libre de código abierto para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar dichas estrategias en problemas de simulación de sistemas complejos. Por otra parte, otro precedente tomado en cuenta ha sido (Rengifo, 2011), el cual trata de una tesis de pre-grado que expone el desarrollo de un servicio web para la Modeloteca del Sistema Nacional de Simulación. La misma consistió en buscar, mediante el uso de una aplicación web, la solución al problema existente en el Centro de Simulación y Modelado (CESIMO) de la Universidad de Los Andes, en el cual había dificultades para mantener un registro referente a los proyectos que allí se desarrollaban, lo que como resultado provocaba que a menudo se perdiera información referente a los mismos, ó que incluso se llevara a cabo proyectos de forma innecesaria, ya que trabajos parecidos habrían sido realizado antes. Resultados que, debido a la falta de un repositorio institucional compartido, resultan imposibles de reusar o integrar. A partir de estos dos antecedentes lo que se pretende es, tomando como base GALATEA, adaptarlo como un servicio web en el cual el usuario pueda interactuar con el simulador, sin tener las limitaciones tales como las que pueden suelen surgir al usar sistemas operativos o navegadores diferentes, incluso ante arquitecturas distintas. A su vez, de (Rengifo, 2011), se busca obtener la experiencia ganada al desarrollar un Servicio Web en sí. Al igual se toma en cuenta a (Marcano, 2015), se acomete implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. A pesar de que ambas experiencias desarrollaron soluciones, aún no es posible contar con la experiencia de uso remoto de GALATEA como un servicio Web configurado por expertos administradores, pero con todas las facilidades y características del simulador al alcance de cualquier usuario registrado. 
+
+Distintos estudios han sido desarrollados en dirección a la mejora de administración de recursos y calidad en instituciones de educación, tomando en cuentas diversos factores. En nuestro caso, es de importancia conocer tales factores, así como tambien los criterios utilizados generalmente para el tipo de estudio.
+\newline
+\newline
+Entre los objetivos del Documento de la UNED sobre la estimación de la carga docente, se tiene:
+"estimar el tiempo necesario para la atención de la docencia y a partir de ahí estimar el número
+de profesores necesarios para atender un grupo en función del número de estudiantes." \citep{UNED}.
+Esta sentencia se observa como una de las metas más comunes en la problemática de las instituciones educativas.
+\newline
+\newline
+En el 2008 fueron aprobados por el Consejo de Gobierno criterios para la asignación del profesorado
+para la Universidad de Almería . Se establece que cada departamento de la universidad podrá proponer a los docentes que considere convenientes. En otro caso, se plantea una serie de criterios para elegir al profesor que será asignado a la cátedra, tomando en cuenta categorías, niveles de titulación, entre otras características.
+\newline
+\newline
+De forma similar, la Universidad de Extremadura cuenta con una normativa para la asignación de la docencia,
+la cual fué aprobada en 2012 por el Consejo de Gobierno del país \citep{Extrema}. La responsabilidad en la asignación de docentes la tiene cada departamento tomando en cuenta las áreas de conocimiento, basándose en los criterios expuestos en el reglamento desarrollado. Los criterios para la asignación concuerdan en gran parte con los establecidos por la Universidad de Almería.
+\newline
+\newline
+En el trabajo realizado por \cite{Genetico} se analiza el problema de carga académica en una institución educativa. En éste estudio se hace uso de los Algoritmos Genéticos para desarrollar un sistema que resuelva el problema de asignación. Entre los factores tomados en cuenta se encuentra la carga académica, el número de carreras, horarios, perfiles del profesor, alumnos por grupo, características de aulas y espacios, entre otros.
+\newline
+\newline
+\cite{Dibbon}, hace un análisis sobre la oferta y demanda de profesores en Newfoundland y Labrador, Canadá.
+Se estudian las fuerzas que influyen en la oferta y demanda de profesores, y se dan recomendaciones para hacer frente a las dificultades generadas por la escasez o el exceso de docentes disponibles.
+
+
+\section{Planteamiento del Problema}
+
+La preocupación por los sistemas distribuidos y de cómo diferentes máquinas podían comunicarse entre sí surgió en la década de los 90. Hasta ese momento, era suficiente con que las aplicaciones de un mismo ordenador pudieran establecer una comunicación. Los servicios Web son muy prácticos es que pueden aportar gran independencia entre la aplicación que usa el servicio Web y el propio servicio. De esta forma, los cambios a lo largo del tiempo en uno no debe afectar al otro. Esta flexibilidad será cada vez más importante, dado que la tendencia a construir grandes aplicaciones a partir de componentes distribuidos más pequeños es cada día más utilizada. En la medida que se ha avanzado en términos tecnológicos, se percibe un crecimiento proporcional de la información que se genera en todos los ámbitos, sea científico, humanístico, económico etc. Estos fenómenos no suceden como acontecimientos aislados, sino que son posibles gracias al conocimiento adquirido y al esfuerzo de muchos, de ponerlo a disposición de quien desee acceder a ellos. Teniendo en cuenta esta premisa, surge el planteamiento del problema, el cual tiene dos vertientes, la primera, consiste en que no se dispone de una plataforma acondicionada para que, de manera fácil y rápida se pueda hacer uso del simulador GALATEA. Si bien se posee un servidor académico en CESIMO, es necesario desarrollar mecanismos que posibiliten el uso de las herramientas que éste ofrece, por ello la necesidad de servicios web que permitan que las funcionalidades que posee el simulador estén disponibles tanto a nivel local como a nivel externo (Sistema Distribuido). En cuanto al otro aspecto, consiste en verificar que la integridad de la información estén garantizados, en especial cuando el usuario desee enviar algún dato, o realizar alguna consulta, por lo cual el sistema debe validar a dicho usuario previamente.
+
+La capacidad de la planta profesoral de la Facultad de Ingeniería de la Universidad de Los Andes se presenta en muchos casos escasa o mal administrada. Esto puede ser debido a varios factores, como el aumento del número de alumnos ingresados, y la cantidad de alumnos retenidos cada semestre debido al bajo rendimiento académico, además de otros factores como las necesidades que implica cada materia en particular con respecto a equipos, espacios, y áreas de conocimiento específicos que deben ser impartidas por el docente adecuado. Se presenta un desequilibrio en la cantidad de estudiantes atendidos por cada profesor, lo que dificulta el buen desarrollo de la enseñanza, disminuyendo de ésta forma la calidad de la formación. 
+\newline
+En general,  toda institución busca la optimización de sus recursos sin implicar la disminución de la calidad de los servicios que ofrece. Éste es el caso de la Facultad de Ingeniería de la ULA, la cuál presenta la necesidad de una mejor asignación de los cargos profesorales para cada una de sus escuelas adscritas, considerando una serie de criterios que permitan satisfacer las demandas de cada carrera.
+
+
+\section{Objetivos}
+
+
+\subsection{Objetivo General}
+
+Diseñar e implementar un sistema web para los usuarios y usuarias, modelistas y simulistas  del simulador de eventos discretos GALATEA, que les permita realizar todas las tareas habituales de modelado, codificación y análisis en sus computadores y en la forma que prefieran, pero permitiéndoles realizar las tareas automáticas de compilación, gestión de archivos, simulación y gestión de salidas, en el espacio y con los recursos compartidos de un servidor Web. 
+
+
+\subsection{Objetivos Específicos}
+\begin{enumerate}
+\item Desarrollar un sistema web que permita el control de usuarios junto con los roles a ser utilizados en el sistema.
+\item Diseñar e implementar una arquitectura de software que permita la comunicación entre el software de simulación y el sistema web.
+\item Instalar y configurar en un servidor la arquitectura de software para el sistema de simulación.
+\item Incorporar el simulador GALATEA como servicio para el sistema web.
+\item Diseñar y desarrollar un cliente GUI/controlador para un modelo que se pueda gestionar archivos y simular con GALATEA a través del sistema web desarrollado.
+\item Sistematizar la experiencia de uso del sistema web para simulación.
+\item Analizar el sistema web desarrollado y establecer las conclusiones.
+\end{enumerate}
+
+\section{Alcance}
+
+Se desea culminar este proyecto, con el diseño de una arquitectura de software que permita desarrollar un sistema web para el uso de GALATEA. Se desarrollará un prototipo de esa arquitectura, implementando el sistema web para la ejecución de los modelos de simulación. El prototipo debe cubrir todo lo referente al modelado de los eventos discretos, para el funcionamiento adecuado del sistema. Adicionalmente, la arquitectura del mismo debe permitirles adaptarse al contexto del usuario, y reaccionar en base a la interacción del usuario con el sistema.
+
+\section{Justificación}
+
+La principal razón para usar servicios Web es que se pueden utilizar con HTTP sobre TCP (Transmission Control Protocol) en el puerto 80. Dado que las organizaciones protegen sus redes mediante firewalls -que filtran y bloquean gran parte del tráfico de Internet-, cierran casi todos los puertos TCP salvo el 80, que es, precisamente, el que usan los navegadores. Los servicios Web utilizan este puerto, por la simple razón de que no resultan bloqueados. Es importante señalar que los servicios web se pueden utilizar sobre cualquier protocolo, sin embargo, TCP es el más común. La principal motivación para realizar este trabajo, es la de desarrollar un sistema web que sirva como base para la simulación de eventos discretos de sistemas que utilizan la tecnología de agentes con el fin de desplegarlo para redes externas (Sistema Distribuido) todo ello a partir del servidor académico localizado en CESIMO.
+
+
+Siendo uno de los objetivos de la Facultad de Ingeniería de la Universidad de Los Andes, "Impartir y vigilar las actividades que conduzcan a una docencia integral orientada a desarrollar aptitudes tales como: capacidad de análisis, síntesis y creatividad, mediante una enseñanza idónea, asegurando una preparación
+de calidad suficiente para el éxito del egresado." \citep{Modelo}, es necesario entonces una adecuada distribución de la fuerza docente que asegure esa base para una "enseñanza idónea".
+
+La cantidad ideal de estudiantes por cada profesor no está establecida de forma rígida, sino es función de ciertos factores como las necesidades de cada escuela, la variedad de las funciones de los profesores disponibles (administrativas, docente) \citep{Mord}, por lo que es de importancia el estudio de estos y otros factores, para la mejora en la distribución de la planta profesoral que contribuya al cumplimiento de los objetivos de la Facultad de Ingeniería de la ULA.
+
+\section{Metodología}
+Para el desarrollo del proyecto, se pretende utilizar el método SCRUM de desarrollo de software. El mismo “es una metodología  de desarrollo muy simple, que requiere trabajo duro, porque la gestión no se basa en el seguimiento de un plan, sino en la adaptación continua a las circunstancias de la evolución del proyecto”. Entre sus características se encuentra que:
+
+\begin{itemize}
+
+\item Es un método de desarrollo de carácter adaptable.
+\item Es orientado a las personas, antes que a los procesos.
+\item Emplea desarrollo ágil, interactivo e incremental.
+
+\end{itemize}
+
+\section{Cronograma de Actividades}
+
+\begin{itemize}
+\item Actividad 1: Reunión con el Tutor.\
+\item Actividad 2: Revisión bibliográfica.\
+\item Actividad 3: Selección del método a utilizar.\
+\item Actividad 4: Construcción del modelo.\
+\item Actividad 5: Validación del modelo.\
+\item Actividad 6: Aplicación del método al modelo desarrollado.\
+\item Actividad 7: Aplicación de pruebas y generación de resultados.\
+\item Actividad 8: Análisis de los resultados.\
+\item Actividad 9: Establecimiento de conclusiones y recomendaciones.\
+\item Actividad 10: Elaboración del documento final.\
+\end{itemize}
+
+En la tabla \ref{tabla1} se muestran las actividades a realizar en
+este trabajo.
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Semana & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+  \hline
+  Actividad 1 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x &  \\
+  \hline
+  Actividad 2 & x & x & x & x & x & x & x & x & x & x & x & x &  &  &  &  \\
+  \hline
+  Actividad 3 &  &  &  & x & x &  &  &  &  &  &  &  &  &  &  &  \\
+  \hline
+  Actividad 4 &  &  &  &  &  & x & x & x &  &  &  &  &  &  &  &  \\
+  \hline
+  Actividad 5 &  &  &  &  &  &  &  & x & x & x &  &  &  &  &  &  \\
+  \hline
+  Actividad 6 &  &  &  &  &  &  &  &  &  &  & x & x &  &  &  &  \\
+  \hline
+  Actividad 7 &  &  &  &  &  &  &  &  &  &  & x & x & x &  &  &  \\
+  \hline
+  Actividad 8 &  &  &  &  &  &  &  &  &  &  &  &  & x & x &  &  \\
+  \hline
+  Actividad 9 &  &  &  &  &  &  &  &  &  &  &  &  & x & x &  &  \\
+  \hline
+  Actividad 10 &  &  &  &  &  &  &  &  &  &  & x & x & x & x &  &  \\
+  \hline
+\end{tabular}
+\caption{Cronograma de Actividades} \label{tabla1}
+\end{table}
+
+
+\section{Cronograma de Evaluación}
+
+\begin{itemize}
+\item Evaluación 1: Evaluación del tutor.\
+
+\item Evaluación 2: Inscripción de la propuesta de Trabajo de
+Grado.\
+
+\item Evaluación 3: Presentación de avance del Trabajo de Grado.\
+
+\item Evaluación 4: Entrega del documento del Trabajo de Grado al
+tutor.\
+
+\item Evaluación 5: Entrega del documento del Trabajo de Grado al
+jurado.\
+
+\item Evaluación 6: Entrega final del documento del Trabajo de
+Grado.\
+
+\item Evaluación 7: Defensa oral del Trabajo de Grado.\
+\end{itemize}
+
+ El cronograma de evaluación de este proyecto se muestra en la tabla
+\ref{tabla2}
+
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Semana & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 \\
+  \hline
+  Eval 1 & x & x & x & x & x & x & x & x & x & x & x & x & x & x & x &  \\\hline
+  Eval 2 & x & x &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\\hline
+  Eval 3 &  &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  \\\hline
+  Eval 4 &  &  &  &  &  &  &  &  &  &  &  & x &  &  &  &  \\\hline
+  Eval 5 &  &  &  &  &  &  &  &  &  &  &  &  & x &  &  &  \\\hline
+  Eval 6 &  &  &  &  &  &  &  &  &  &  &  &  &  & x &  &  \\\hline
+  Eval 7 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & x \\\hline
+\end{tabular}
+\caption{Cronograma de Evaluaciones} \label{tabla2}
+\end{table}
+
+% Estilo de la bibliografía
+\bibliographystyle{apa}
+
+% ***************************************************************** %
+% Para agregar toda la bibliografia del archivo .bib
+% solo descomente el siguiente comando
+% ***************************************************************** %
+\nocite{*}
+% ***************************************************************** %
+
+% Nombre del archivo con extensión .bib en donde se almacena la bibliografía
+\bibliography{Propuesta}
+% ***************************************************************** %
+% FIN DE
+% Cuerpo
+% ***************************************************************** %
+
+\end{document}
