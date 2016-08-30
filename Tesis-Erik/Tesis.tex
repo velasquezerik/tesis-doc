@@ -27,10 +27,10 @@
 % se incluye al final despues de citecolor=blue, el comando draft=true
 % Las siguientes son propiedades del pdf, más no cambian nada dentro del
 % texto de la monografía
-\hypersetup{pdftitle={Modelo de Asignación de Nuevos Cargos Docentes en la Facultad de Ingeniería de la Universidad de Los Andes},
-pdfauthor={Br. Mariangely Salazar},
+\hypersetup{pdftitle={Diseño e implementación de un Sistema Web para el Simulador de Eventos Discretos GALATEA.},
+pdfauthor={Br. Erik Velásquez},
 pdfsubject={Proyecto de Grado}, % se deja igual (se cambia para el proyecto de grado)
-pdfkeywords={Optimización, Asignación, Cargos docentes, Lógica Difusa},
+pdfkeywords={Servicios Web, Sistemas Distribuidos, Web Semántica, Arquitectura Orientada a Servicios, Simulación.},
 pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 \nolistoffigures
 
@@ -55,16 +55,16 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 \logoarriba{}
 
 % Año en el cual se entrega el proyecto de grado o la propuesta
-\copyrightyear{2015}
+\copyrightyear{2016}
 %\tipomonografia{Proyecto de Grado}
 
 
 % Título de la monografía, el cual saldrá en la portada
-\title{Modelo de Asignación de Nuevos Cargos Docentes en la Facultad de Ingeniería de la Universidad de Los Andes}
+\title{Diseño e implementación de un Sistema Web para el Simulador de Eventos Discretos GALATEA.}
 
 
 % Autor de la monografía, el cual saldrá en la portada
- \author{Mariangely Salazar}
+ \author{Erik Velásquez}
 
 % La fechaentrega, presentaciondia, presentacionlugar
 % y mencionespecial, es para aquel caso en el cual se
@@ -74,16 +74,16 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 % aparecerán si se utiliza la página del veredicto
 
 % Cédula del autor de la monografía
- \cedula{19.527.052}
+ \cedula{19.435.165}
 
 % Tutor del Proyecto de Grado
- \tutor{Prof. Renny Márquez}
+ \tutor{Dr. Jacinto Dávila}
 
 % Cualquiera de los instructores que aparecen a continuación
 % pueden comentarse o descomentarse según sea el caso:
 
 %%% Cotutor del Proyecto de Grado
-\cotutor{Prof. Yohn García}
+\cotutor{Prof. Kay Tucci}
 %%% Asesor del Proyecto de Grado
 % \asesor{Dr. Asesor}
 %%% Asesor Industrial del Proyecto de Grado
@@ -104,20 +104,18 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 % Si es control y automatizacion se comentan las siguientes líneas. Si es de
 % Sistemas Computacionales comenta la tercera. De Investigación de Operaciones
 % comenta la segunda
-% \opcion{Sistemas Computacionales}
- \opcion{Investigación de Operaciones}
+ \opcion{Sistemas Computacionales}
+%\opcion{Investigación de Operaciones}
 
 
 % Aquí se escribe el resumen de la monografía
 \resumen{
-El siguiente documento expone la elaboración de un modelo de asignación de nuevos cargos docentes a escuelas y centros de investigación, como una herramienta que puede utilizarse para mejorar la calidad educativa en la Facultad de Ingeniería de la Universidad de Los Andes, tomando en cuenta distintos factores tales como la demanda estudiantil, docencia, investigación, extensión, mejoramiento y administración, entre otros. El documento abarca el estudio de las condiciones y requerimientos docentes de la Facultad de Ingeniería, el proceso de análisis de la información asociada al problema, la definición de variables y el modelo correspondiente, haciendo uso de la Lógica Difusa como método de tratamiento del problema.
-Se produjo un informe, fruto de análisis realizados sobre la información perteneciente a la Escuela de Sistemas de la Facultad de Ingeniería, específicamente sobre los informes utilizados para la evaluación de las actividades de su personal docente. En él se detallan los inconvenientes que se presentan en la recolección de estos registros y diferencias encontradas entre los formatos de los distintos departamentos de la Escuela. En base a esto se construyeron nuevos formatos con la intención de estandarizar el proceso de evaluación docente y facilitar el registro de los datos, que se espera sean de utilidad en procedimientos futuros.
-El modelo está compuesto por dos fases: una  fase inicial de procesamiento de los datos y una fase final constituida por un Sistema de Inferencia Difuso adecuado al problema, el cual arroja como resultado final una lista ordenada de los departamentos evaluados y los cargos a asignar. El proceso es ejecutado conjuntamente bajo las plataformas del lenguaje de programación estadística \emph{R} y del software de procesamiento matemático, Matlab\textsuperscript{\small{\textregistered}}. Las pruebas aplicadas sobre datos de la Escuela de Sistemas de la Facultad de Ingeniería mostraron un funcionamiento adecuado del modelo producido y la flexibilidad del mismo para extenderse a otras escuelas de la Facultad de Ingeniería.
-Finalmente se indican algunas recomendaciones que se espera sean de utilidad en el manejo de los registros de datos, para el  apoyo de la evaluación docente, y para el mejoramiento de este modelo o similares como herramientas para la toma de decisiones en la Facultad de Ingeniería de la ULA.
+El objetivo principal de este proyecto consiste en buscar, mediante el uso de un sistema web, una solución al problema actual existente entre los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, que suelen tener muchas dificultades para ejecutar los modelos de simulación en el simulador GALATEA, especialmente al momento de configurar y activar todas sus funcionalidades. Se busca implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. 
+Esto es conocido como Simulación Distribuida, la cual posee una serie de protocolos para su desarrollo e interoperabilidad. Dicha interoperabilidad se consigue mediante la adopción de estándares abiertos, como es el caso de XML, que habrá de fungir como el medio encargado de transportar los mensajes en un formato estandarizado lo cual lo hace accesible a prácticamente cualquier dispositivo. Como su nombre lo propone, en éste caso se hace uso del paradigma de arquitectura orientada a servicios (SOA: Service Oriented Architecture). Lo cual se propone desarrollar mediante un sistema web.
 }
 
 % Aquí se escriben las palabras claves de la monografía
-\descriptores{Optimización, Asignación, Cargos docentes, Universidad, Lógica difusa.}
+\descriptores{Servicios Web, Sistemas Distribuidos, Web Semántica, Arquitectura Orientada a Servicios, Simulación.}
 
 % Esto es para que salga la cota en la hoja del resumen. Actualmente,
 % 11-03-08, en la Escuela de Ingeniería de Sistemas no es necesario
@@ -139,9 +137,9 @@ Finalmente se indican algunas recomendaciones que se espera sean de utilidad en 
 % Si tiene dedicatoria
 % con o sin comentar
 % ***************************************************************** %
-\dedicatoria{A mi madre, Yesenia.\\
-Siempre sosteniéndome con su ejemplo de esfuerzo, serenidad y comprensión, generando en mí el impulso para continuar adelante.\\
-Mi apoyo constante en toda lucha.
+\dedicatoria{Nadie.\\
+Nadie.\\
+Nadie.
 }
 
 % ***************************************************************** %
@@ -157,14 +155,14 @@ Mi apoyo constante en toda lucha.
 
 \prefacesection{Agradecimientos}
 
-A Migdalys, por toda la atención y cariño ofrecidos durante tantos años. Gracias por estar allí siempre.\\ \\
-A Mariangel, por acompañarme en las buenas y las malas, por su paciencia durante mis flaquezas, por su reconocimiento y respeto frente a mi entereza. Por intentar siempre aclarar cuando veía todo gris. Gracias!\\ \\
-A mis hermanos y hermanas, por el apoyo y la confianza recibida siempre a través de la distancia.\\ \\
-A Encel, Erik y Juan Carlos, por todos los buenos años compartidos, las conversaciones, la empatía y cachetadas mentales. Gracias por su amistad.\\ \\
-Al profesor Yohn, por animarme durante la realización y finalización de este proyecto.\\ \\
-A la Universidad de Los Andes y su Escuela de Sistemas por brindarme el ambiente propicio para mi crecimiento académico y personal.\\ \\
-Al Consejo de Desarrollo Científico, Humanístico, Tecnológico y de las Artes (CDCHTA), por haber financiado parcialmente este trabajo bajo el proyecto I-1425-15-02-F. \\ \\
-A todos aquellos que de alguna forma estuvieron involucrados en la elaboración de este proyecto y en mis años universitarios, tanto técnica como emocionalmente.
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.\\ \\
+Nadie.
 
 %%% Capitulo sin numero, antes de la pagina 1
 
@@ -200,102 +198,62 @@ A todos aquellos que de alguna forma estuvieron involucrados en la elaboración d
 
 \chapter{Introducción}
 
-La distribución de los recursos en el ámbito de las instituciones educativas es un tema que juega un papel importante en su funcionamiento y en la calidad de los servicios ofrecidos. En este caso, la calidad de la educación y la formación que reciban los estudiantes dependerá de ciertos factores, entre los cuales resalta la adecuada atención y asesoría que puedan recibir en cada curso impartido.
-
-Es por esto que el estudio de planeación docente toma relevancia. Ya han sido aplicadas normativas concernientes al caso, como las desarrolladas en la Universidad de Almería, España \citep{Alm}, y en la Universidad de Extremadura \citep{Extrema}, por mencionar algunas.
-
-Existen estudios enfocados en disminuir las diferencias existentes entre las cargas manejadas por cada profesor \citep{UNED}. El objetivo que se persigue entra en la categoría de planeación de recursos humanos, en el cual se introduce la necesidad de asignación de la fuerza de trabajo demandada respecto al producto requerido \citep{Mord}.
-
-En este documento se describen los resultados de un proyecto que abordó el problema de la asignación óptima de nuevos cargos docentes a las escuelas y centros de investigación de la Facultad de Ingeniería de la Universidad de Los Andes, siguiendo las ideas de optimización de recursos y contribución a la calidad educativa de la institución. %Se plantean las condiciones de la Facultad de Ingeniería, el alcance estimado del proyecto, así como también los cronogramas tentativos a seguir para el desarrollo del mismo.
+El siguiente estrato, introduce una descripción de cómo se ha desarrollado el servicio que prestará una aplicación basada en simulación de eventos discretos, que estará fundamentado en GALATEA (Uzcátegui, 2011), el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. Esta concepción, está enfocada en los nuevos paradigmas de la arquitectura orientada a servicios (SOA), por el que, a partir funciones débilmente acopladas proveerá la capacidad de intercambiar funcionalidades de componentes dando escalabilidad a futuras extensiones. El propósito es que sirva para proveer un servicio de simulación de evento discretos al usuario desde cualquier punto. Así también, se pretende analizar conceptos de seguridad mediante el cual, ante una petición al computador (request), ésta sea procesada sólo si ha sido previamente validada. Dicho mecanismo es denominado SAML (Security Assertion Markup Language) (Fawcett, 2012).
 
 
 \section{Antecedentes}
 
-Distintos estudios han sido desarrollados en dirección a la mejora de administración de recursos y calidad en instituciones
-de educación, tomando en cuentas diversos factores. En este caso, es de importancia conocer tales factores, así como también los criterios utilizados generalmente para este tipo de estudio.
-
-\cite{Genetico} analizan el problema de carga académica en una institución educativa. En este estudio se hace uso de Algoritmos Genéticos para desarrollar un sistema que resuelva el problema de asignación. Entre los factores tomados en cuenta se encuentran la carga académica, el número de carreras, horarios, perfiles del profesor, alumnos por grupo, características de aulas y espacios, entre otros.
-
-\cite{Dibbon} hace un análisis sobre la oferta y demanda de profesores en Newfoundland y Labrador, Canadá. Se estudian los factores que influyen en la oferta y demanda de profesores, y se dan recomendaciones para hacer frente a las dificultades generadas por la escasez o el exceso de docentes.
-
-El Vicerrectorado de Calidad e Innovación Docente de la Universidad Nacional de Educación a Distancia (UNED), en su documento sobre la estimación de la carga docente, tiene como objetivo: ``estimar el tiempo necesario para la atención de la docencia y a partir de ahí estimar el número de profesores necesarios para atender un grupo en función del número de estudiantes" \citep[p. 1]{UNED}. Esta sentencia se observa como una de las metas más comunes en la problemática de las instituciones educativas.
-
-La Universidad de Extremadura cuenta con una normativa para la asignación de la docencia. La responsabilidad en la asignación de docentes la tiene cada departamento tomando en cuenta las áreas de conocimiento, basándose en los criterios expuestos en el reglamento desarrollado \citep{Extrema}.
-
-En el 2008 fueron aprobados criterios para la asignación del profesorado en la Universidad de Almería. Se establece que cada departamento de la universidad podrá proponer a los docentes que considere convenientes. En otro caso, se plantea una serie de criterios para elegir al profesor que será asignado a la cátedra, tomando en cuenta categorías, niveles de titulación, entre otras características \citep{Alm}.
-
-Algunos criterios usados por la UNED, en el proceso de estimación de la carga docente, se rigen por el peso de cada asignatura impartida o actividad que desempeñe el profesor, como docencia de asignaturas de grado y de maestrías, dirección de trabajos de grado, maestrías y doctorados. También por la categoría de los profesores  (ayudante, investigador en formación), y por la contribución en materia de investigación que éste represente a su departamento \citep{UNED_2}.
-
-Otros se han enfocado en las necesidades docentes, en particular en la asignación de recursos financieros entre los departamentos que componen la universidad, con el fin de poder prestar a la sociedad formación e investigación de calidad \citep{caballero}. En este caso el estudio fue aplicado en la Universidad de Valladolid. Entre los primeros objetivos destaca la necesidad de que cada Departamento tenga sus necesidades satisfechas en la mayor medida. Se toma en cuenta la calidad del personal docente y de investigación y el número de alumnos por atender. Se utiliza un enfoque de análisis multiobjetivo para abordar el problema.
-
-\cite{coopers}, con respecto al tema de asignación de recursos docentes y optimización de costes universitarios plantean ``diseñar una política de personal acorde con el perfil de la universidad y ajustar de manera óptima la gestión de los recursos a los objetivos de la institución" (p. 45). El enfoque se basa en hacer análisis tanto de recursos financieros y estructuras presupuestarias como de recursos docentes. Las fases planteadas para aplicar el modelo de análisis de asignación docente implican identificar la estructura del personal docente investigador, identificar la oferta existente, es decir la distribución de la planta profesoral, determinar variables y finalmente elaborar un plan de actuación.
-
-En la Facultad de Arquitectura de la Universidad de Los Andes se desarrolló un baremo como soporte en la toma de decisiones para la solicitud de nuevos cargos docentes \citep{Arqu}. Una adaptación del baremo fue implementado en la Escuela de Ingeniería Eléctrica de La Universidad de Los Andes \citep{Electrica}.
+Como trabajos similares a esta propuesta se puede mencionar los realizado por (Uzcátegui et al, 2011) el cual relata la fase de desarrollo, cómo surge y hacia donde se proyecta GALATEA. Implementada como una plataforma libre de código abierto para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar dichas estrategias en problemas de simulación de sistemas complejos. Por otra parte, otro precedente tomado en cuenta ha sido (Rengifo, 2011), el cual trata de una tesis de pre-grado que expone el desarrollo de un servicio web para la Modeloteca del Sistema Nacional de Simulación. La misma consistió en buscar, mediante el uso de una aplicación web, la solución al problema existente en el Centro de Simulación y Modelado (CESIMO) de la Universidad de Los Andes, en el cual había dificultades para mantener un registro referente a los proyectos que allí se desarrollaban, lo que como resultado provocaba que a menudo se perdiera información referente a los mismos, ó que incluso se llevara a cabo proyectos de forma innecesaria, ya que trabajos parecidos habrían sido realizado antes. Resultados que, debido a la falta de un repositorio institucional compartido, resultan imposibles de reusar o integrar. A partir de estos dos antecedentes lo que se pretende es, tomando como base GALATEA, adaptarlo como un servicio web en el cual el usuario pueda interactuar con el simulador, sin tener las limitaciones tales como las que pueden suelen surgir al usar sistemas operativos o navegadores diferentes, incluso ante arquitecturas distintas. A su vez, de (Rengifo, 2011), se busca obtener la experiencia ganada al desarrollar un Servicio Web en sí. Al igual se toma en cuenta a (Marcano, 2015), se acomete implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. A pesar de que ambas experiencias desarrollaron soluciones, aún no es posible contar con la experiencia de uso remoto de GALATEA como un servicio Web configurado por expertos administradores, pero con todas las facilidades y características del simulador al alcance de cualquier usuario registrado. 
 
 \section{Planteamiento del problema}
 
-La planta profesoral de la Facultad de Ingeniería de la Universidad de Los Andes (ULA) se presenta en muchos casos escasa o con distribución inadecuada. Esto puede ser debido a varios factores, como el aumento del número de alumnos ingresados, y la cantidad de alumnos retenidos cada semestre debido al bajo rendimiento académico, además de otros factores como las necesidades que implica cada materia en particular con respecto a equipos, espacios y áreas de conocimiento específicos que deben ser impartidas por el docente adecuado. Se presenta un desequilibrio en la cantidad de estudiantes atendidos por cada profesor, lo que dificulta el buen desarrollo de la enseñanza, disminuyendo de esta forma la calidad de la formación.
-
-Los cargos disponibles para su repartición entre las distintas escuelas y centros de investigación de la Facultad de Ingeniería son escasos, por lo que se debe lograr un acuerdo que satisfaga las necesidades de la Facultad, respetando la prioridad e importancia de los factores involucrados.
-
-En general, toda institución busca la optimización de sus recursos para impedir la disminución de la calidad de los servicios que ofrece. Como se menciona anteriormente, la Facultad de Ingeniería de la ULA presenta la necesidad de una mejor asignación de los cargos docentes para cada una de sus escuelas y centros de investigación, considerando una serie de criterios que permitan satisfacer las demandas de cada carrera.
+La preocupación por los sistemas distribuidos y de cómo diferentes máquinas podían comunicarse entre sí surgió en la década de los 90. Hasta ese momento, era suficiente con que las aplicaciones de un mismo ordenador pudieran establecer una comunicación. Los servicios Web son muy prácticos es que pueden aportar gran independencia entre la aplicación que usa el servicio Web y el propio servicio. De esta forma, los cambios a lo largo del tiempo en uno no debe afectar al otro. Esta flexibilidad será cada vez más importante, dado que la tendencia a construir grandes aplicaciones a partir de componentes distribuidos más pequeños es cada día más utilizada. En la medida que se ha avanzado en términos tecnológicos, se percibe un crecimiento proporcional de la información que se genera en todos los ámbitos, sea científico, humanístico, económico etc. Estos fenómenos no suceden como acontecimientos aislados, sino que son posibles gracias al conocimiento adquirido y al esfuerzo de muchos, de ponerlo a disposición de quien desee acceder a ellos. Teniendo en cuenta esta premisa, surge el planteamiento del problema, el cual tiene dos vertientes, la primera, consiste en que no se dispone de una plataforma acondicionada para que, de manera fácil y rápida se pueda hacer uso del simulador GALATEA. Si bien se posee un servidor académico en CESIMO, es necesario desarrollar mecanismos que posibiliten el uso de las herramientas que éste ofrece, por ello la necesidad de servicios web que permitan que las funcionalidades que posee el simulador estén disponibles tanto a nivel local como a nivel externo (Sistema Distribuido). En cuanto al otro aspecto, consiste en verificar que la integridad de la información estén garantizados, en especial cuando el usuario desee enviar algún dato, o realizar alguna consulta, por lo cual el sistema debe validar a dicho usuario previamente.
 
 \section{Justificación}
 
-Siendo uno de los objetivos de la Facultad de Ingeniería de la Universidad de Los Andes, según \citet[p. 8]{Modelo}: ``Impartir y vigilar las actividades que conduzcan a una docencia integral orientada a desarrollar aptitudes tales como: capacidad de análisis, síntesis y creatividad, mediante una enseñanza idónea, asegurando una preparación de calidad suficiente para el éxito del egresado", es necesario entonces una adecuada distribución de la fuerza docente que asegure esa base para una ``enseñanza idónea".
+La principal razón para usar servicios Web es que se pueden utilizar con HTTP sobre TCP (Transmission Control Protocol) en el puerto 80. Dado que las organizaciones protegen sus redes mediante firewalls -que filtran y bloquean gran parte del tráfico de Internet-, cierran casi todos los puertos TCP salvo el 80, que es, precisamente, el que usan los navegadores. Los servicios Web utilizan este puerto, por la simple razón de que no resultan bloqueados. Es importante señalar que los servicios web se pueden utilizar sobre cualquier protocolo, sin embargo, TCP es el más común. La principal motivación para realizar este trabajo, es la de desarrollar un sistema web que sirva como base para la simulación de eventos discretos de sistemas que utilizan la tecnología de agentes con el fin de desplegarlo para redes externas (Sistema Distribuido) todo ello a partir del servidor académico localizado en CESIMO.
 
-La cantidad ideal de estudiantes por cada profesor no está establecida de forma rígida, sino que es función de ciertos factores como las necesidades de cada escuela, la variedad de las funciones de los profesores disponibles (administrativas, docentes, de investigación, de extensión) \citep{Mord}, por lo que es de suma importancia el estudio de éstos y otros factores, para la mejora en la distribución de la planta profesoral que contribuya al cumplimiento de los objetivos de la Facultad de Ingeniería de la ULA.
 
-Las decisiones sobre la asignación de nuevos cargos docentes en la Facultad de Ingeniería de la ULA se basan en una serie de discusiones argumentadas y fundamentadas en criterios concernientes a cada escuela y centro de investigación que demande este recurso. Se plantea disminuir la subjetividad implícita en el proceso de asignación.
+\section{Alcance}
+
+Se desea culminar este proyecto, con el diseño de una arquitectura de software que permita desarrollar un sistema web para el uso de GALATEA. Se desarrollará un prototipo de esa arquitectura, implementando el sistema web para la ejecución de los modelos de simulación. El prototipo debe cubrir todo lo referente al modelado de los eventos discretos, para el funcionamiento adecuado del sistema. Adicionalmente, la arquitectura del mismo debe permitirles adaptarse al contexto del usuario, y reaccionar en base a la interacción del usuario con el sistema.
 
 \section{Objetivos}
 
 
 \subsection{Objetivo general}
 
-Elaborar un modelo de asignación de nuevos cargos docentes que pueda ser utilizado en escuelas y centros de investigación de la Facultad de Ingeniería de la Universidad de Los Andes.
+Diseñar e implementar un sistema web para los usuarios y usuarias, modelistas y simulistas  del simulador de eventos discretos GALATEA, que les permita realizar todas las tareas habituales de modelado, codificación y análisis en sus computadores y en la forma que prefieran, pero permitiéndoles realizar las tareas automáticas de compilación, gestión de archivos, simulación y gestión de salidas, en el espacio y con los recursos compartidos de un servidor Web. 
 
 
 \subsection{Objetivos específicos}
 
 \begin{enumerate}
 
-\item Comprender las características de la planta profesoral en la Facultad de Ingeniería de la ULA.
-\item Estudiar la demanda y oferta de profesores en la institución.
-\item Comprender los mecanismos de registro datos sobre las actividades, carga horaria y rendimiento de los profesores de la Facultad de Ingeniería.
-\item Determinar los criterios y métodos para la asignación y distribución de cargos docentes.
-\item Desarrollar un modelo que represente el problema de asignación de cargos docentes en la Facultad de Ingeniería.
-\item Resolver el problema planteado en el modelo haciendo uso de Sistemas de Inferencia Difusos.
-\item Verificar la validez y coherencia de los resultados.
-\item Analizar los resultados obtenidos y establecer las conclusiones.
+\item Desarrollar un sistema web que permita el control de usuarios junto con los roles a ser utilizados en el sistema.
+\item Diseñar e implementar una arquitectura de software que permita la comunicación entre el software de simulación y el sistema web.
+\item Instalar y configurar en un servidor la arquitectura de software para el sistema de simulación.
+\item Incorporar el simulador GALATEA como servicio para el sistema web.
+\item Diseñar y desarrollar un cliente GUI/controlador para un modelo que se pueda gestionar archivos y simular con GALATEA a través del sistema web desarrollado.
+\item Sistematizar la experiencia de uso del sistema web para simulación.
+\item Analizar el sistema web desarrollado y establecer las conclusiones. 
+
 
 \end{enumerate}
 
 
 \section{Metodología}
 
-Para el cumplimiento de los objetivos establecidos, se ejecutaron las siguientes tareas basadas en las fases propuestas por \cite{TAHA}, para un estudio de Investigación de Operaciones.
+Para el desarrollo del proyecto, se pretende utilizar el método SCRUM de desarrollo de software. El mismo “es una metodología  de desarrollo muy simple, que requiere trabajo duro, porque la gestión no se basa en el seguimiento de un plan, sino en la adaptación continua a las circunstancias de la evolución del proyecto”. Entre sus características se encuentra que:
 
 \begin{enumerate}
-\item Descripción del problema:
-\begin{itemize}
-\item Investigación mediante lectura de material bibliogr\'afico, impreso o digital de las características de la planta profesoral de la Facultad de Ingeniería de la ULA.
-\item Investigación, análisis y revisión de los mecanismos de evaluación de actividades docentes de la planta profesoral de la Facultad de Ingeniería de la ULA.
-\item Revisión de los principales reglamentos sobre las actividades de los profesores en la Facultad de Ingeniería de la ULA.
-\end{itemize}
-\item Construcción del modelo:
-\begin{itemize}
-\item Estudio de los métodos potenciales a utilizar para la resolución del problema de asignación de recursos con herramientas pertenecientes al área de Investigación de Operaciones, a través de la literatura especializada y trabajos realizados.
-\item Selección del método a utilizar apoyándose en la revisión de los métodos potenciales, tomando en cuenta su validez, efectividad y capacidad de adaptación para el manejo del problema específico planteado. En este caso se decidió trabajar con Sistemas de Inferencia Difusos.
-\item El modelo que representa el problema fue desarrollado considerando el método escogido, las variables, parámetros y criterios importantes que reflejan los requerimientos de la Facultad de Ingeniería de la ULA.
-\end{itemize}
-\item Solución del modelo, validez e implementación:
-\begin{itemize}
-\item Se construyó un algoritmo de procesamiento de datos para la creación de variables necesarias, por medio del lenguaje de programación estadística ,\emph{R}.
-\item Se implementó el Sistema de Inferencia Difuso haciendo uso del software matemático Matlab\textsuperscript{\small{\textregistered}}.
-\item Se aplicó el Sistema para la resolución del problema, realizando verificaciones correspondientes,
-\item Se ejecutaron distintas pruebas y variaciones de los parámetros involucrados, para asegurar que se obtengan resultados válidos que permitieran análisis claros y recomendaciones de utilidad para la Facultad de Ingeniería de la ULA.
-\end{itemize}
+
+\item Es un método de desarrollo de carácter adaptable.
+
+\item Es orientado a las personas, antes que a los procesos.
+
+\item Emplea desarrollo ágil, interactivo e incremental.
+
 \end{enumerate}
 
 \section{Estructura del documento}

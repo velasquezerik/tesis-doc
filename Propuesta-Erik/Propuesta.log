@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.4.21)  19 JUN 2016 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  30 AUG 2016 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -299,9 +299,9 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 23.
+(hyperref)                setting the option has no effect on input line 21.
 
-Package hyperref Info: Option `draft' set `true' on input line 23.
+Package hyperref Info: Option `draft' set `true' on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip59
@@ -311,20 +311,20 @@ LaTeX Info: Redefining \cite on input line 694.
 ) (./Propuesta.aux)
 \openout1 = `Propuesta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -359,7 +359,7 @@ e
 
 Package hyperref Warning: Draft mode on.
 
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 28.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -368,25 +368,25 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count119
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
 
 Most over/underfulls in first few pages are the fault of this package.
 Ignore all them. If uncorrectable errors occur, notify staff.
 <ula.png, id=1, 100.375pt x 140.525pt>
 File: ula.png Graphic file (type png)
  <use ula.png>
-Package pdftex.def Info: ula.png used on input line 132.
+Package pdftex.def Info: ula.png used on input line 131.
 (pdftex.def)             Requested size: 56.9055pt x 79.66908pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 132.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
  [1
 
 
@@ -419,17 +419,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Proyecto ULA preface pages completed.
 Cap\'{\i }tulo 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--186
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 179--186
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
 
  []
 
 
-Underfull \hbox (badness 1117) in paragraph at lines 179--186
+Underfull \hbox (badness 1117) in paragraph at lines 178--185
 \OT1/cmr/m/n/12 Este doc-u-mento ex-pone una prop-uesta de proyecto para abor-d
 ar el prob-lema
  []
@@ -444,38 +444,38 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 192--214
+Underfull \hbox (badness 10000) in paragraph at lines 191--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--214
+Underfull \hbox (badness 10000) in paragraph at lines 191--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--214
+Underfull \hbox (badness 10000) in paragraph at lines 191--213
 
  []
 
 
-Underfull \hbox (badness 1383) in paragraph at lines 192--214
+Underfull \hbox (badness 1383) in paragraph at lines 191--213
 \OT1/cmr/m/n/12 De forma sim-i-lar, la Uni-ver-si-dad de Ex-tremadura cuenta co
 n una nor-ma-tiva
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--214
+Underfull \hbox (badness 10000) in paragraph at lines 191--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--214
+Underfull \hbox (badness 10000) in paragraph at lines 191--213
 
  []
 
 
-Underfull \hbox (badness 1163) in paragraph at lines 192--214
+Underfull \hbox (badness 1163) in paragraph at lines 191--213
 \OT1/cmr/m/n/12 Dibbon (2001), hace un an^^Salisis so-bre la oferta y de-manda 
 de pro-fe-sores en
  []
@@ -483,17 +483,17 @@ de pro-fe-sores en
 [3] [4] [5] [6] [7] [8] [9] (./Propuesta.bbl [10]) [11
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 379.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 379.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./Propuesta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 379.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 379.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 379.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 378.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
  6842 strings out of 493105
  96668 string characters out of 6137072
- 205382 words of memory out of 5000000
+ 205384 words of memory out of 5000000
  10217 multiletter control sequences out of 15000+600000
  11312 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -502,7 +502,7 @@ Here is how much of TeX's memory you used:
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Propuesta.pdf (15 pages, 88197 bytes).
+Output written on Propuesta.pdf (15 pages, 88195 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
