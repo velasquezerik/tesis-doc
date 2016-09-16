@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  16 SEP 2016 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  16 SEP 2016 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1738,13 +1738,13 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 3687.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3687.
  ) 
 Here is how much of TeX's memory you used:
- 9717 strings out of 493105
- 140656 string characters out of 6137072
- 316904 words of memory out of 5000000
- 12960 multiletter control sequences out of 15000+600000
+ 9726 strings out of 493105
+ 140830 string characters out of 6137072
+ 316990 words of memory out of 5000000
+ 12969 multiletter control sequences out of 15000+600000
  17694 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,21n,45p,2291b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,21n,45p,2299b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy9.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share
@@ -1768,7 +1768,7 @@ msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on Tesis.pdf (114 pages, 8924690 bytes).
+Output written on Tesis.pdf (114 pages, 8925923 bytes).
 PDF statistics:
  571 PDF objects out of 1000 (max. 8388607)
  326 compressed objects within 4 object streams

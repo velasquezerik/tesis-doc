@@ -5,11 +5,28 @@ Cerrada, M. y Rodríguez, W. (2001).
 \newblock {\em Introducción a la técnicas de computación inteligente}, chapter
   Lógica Difusa, pages 53--101.
 
+\bibitem[\protect\astroncite{Fawcett et~al.}{2012}]{xmlBeginning}
+Fawcett, J., Quin, L., y Ayers, D. (2012).
+\newblock {\em Beginning XML}.
+\newblock Wrox, 5 edition.
+
+\bibitem[\protect\astroncite{Marcano}{2015}]{tesisGustavo}
+Marcano, G. (2015).
+\newblock Desarrollo de un servicio web para el simulador de eventos discretos
+  galatea.
+\newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
+
 \bibitem[\protect\astroncite{Quintero et~al.}{2010}]{quintero}
 Quintero, M.~A., Jerez~Rico, M., y Ablan, M. (2010).
 \newblock Metodos heurísticos en la planificación del manejo forestal: Un
   ejemplo de aplicación.
 \newblock {\em Revista Forestal Venezolana}, 54(2):183--194.
+
+\bibitem[\protect\astroncite{Rengifo}{2011}]{tesisBruno}
+Rengifo, B. (2011).
+\newblock Desarrollo de un servicio web para la modeloteca del sistema nacional
+  de simulación.
+\newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
 
 \bibitem[\protect\astroncite{Rodríquez}{2010}]{Arqu}
 Rodríquez, J. (2010).
