@@ -16,6 +16,7 @@
 \usepackage{listings} %para código
 \usepackage{amsmath} %para alinear ecuaciones
 \usepackage{longtable} % para tablas largas
+\usepackage{cite} % para contraer referencias
 %\usepackage[dvips]{graphicx} % PDFLaTeX
 %\DeclareGraphicsExtensions{.png,.pdf,.jpg}
 
@@ -198,7 +199,7 @@ Nadie.
 
 \chapter{Introducción}
 
-El siguiente estrato, introduce una descripción de cómo se ha desarrollado el servicio que prestará una aplicación basada en simulación de eventos discretos, que estará fundamentado en GALATEA (Uzcátegui, 2011), el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. Esta concepción, está enfocada en los nuevos paradigmas de la arquitectura orientada a servicios (SOA), por el que, a partir funciones débilmente acopladas proveerá la capacidad de intercambiar funcionalidades de componentes dando escalabilidad a futuras extensiones. El propósito es que sirva para proveer un servicio de simulación de evento discretos al usuario desde cualquier punto. Así también, se pretende analizar conceptos de seguridad mediante el cual, ante una petición al computador (request), ésta sea procesada sólo si ha sido previamente validada. Dicho mecanismo es denominado SAML (Security Assertion Markup Language) (Fawcett, 2012).
+El siguiente estrato, introduce una descripción de cómo se ha desarrollado el servicio que prestará una aplicación basada en simulación de eventos discretos, que estará fundamentado en GALATEA \citep{Galatea} \citep{Galatea} , el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. Esta concepción, está enfocada en los nuevos paradigmas de la arquitectura orientada a servicios (SOA), por el que, a partir funciones débilmente acopladas proveerá la capacidad de intercambiar funcionalidades de componentes dando escalabilidad a futuras extensiones. El propósito es que sirva para proveer un servicio de simulación de evento discretos al usuario desde cualquier punto. Así también, se pretende analizar conceptos de seguridad mediante el cual, ante una petición al computador (request), ésta sea procesada sólo si ha sido previamente validada. Dicho mecanismo es denominado SAML (Security Assertion Markup Language) (Fawcett, 2012).
 
 
 \section{Antecedentes}
@@ -2645,7 +2646,7 @@ Para el mejoramiento del modelo planteado se sugiere recoger mayor información y
 % ***************************************************************** %
 
 % Nombre del archivo con extensión .bib en donde se almacena la bibliografía
-\bibliography{Tesis}
+\bibliography{bibliografia}
 
 \appendix
 

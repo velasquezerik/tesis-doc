@@ -1,107 +1,9 @@
 \begin{thebibliography}{}
 
-\bibitem[\protect\astroncite{{Acta Convenio}}{}]{ACTA}
-{Acta Convenio}.
-\newblock {Acta Convenio que rige las relaciones entre la Universidad de Los
-  Andes y su personal docente y de investigación}.
-\newblock Disponible en http://www.apulaipp.org.ve/documentos/31.pdf Consultado
-  en marzo de 2014.
-
-\bibitem[\protect\astroncite{Caballero et~al.}{2000}]{caballero}
-Caballero, R., González, M., Molina, L., Castrodeza, C., y Peña, T. (2000).
-\newblock Análisis multiobjetivo de las necesidades docentes de los
-  departamentos universitarios: Una aplicación a la universidad de valladolid.
-\newblock {\em Estudios de Economía Aplicada}, (15):29--45.
-
 \bibitem[\protect\astroncite{Cerrada y Rodríguez}{2001}]{Logica}
 Cerrada, M. y Rodríguez, W. (2001).
 \newblock {\em Introducción a la técnicas de computación inteligente}, chapter
   Lógica Difusa, pages 53--101.
-
-\bibitem[\protect\astroncite{{Consejo Universitario ULA}}{}]{Norma}
-{Consejo Universitario ULA}.
-\newblock Norma para la aplicación del programa de formación y
-  perfeccionamiento académico del personal docente y de investigación ordinario
-  de la universidad de los andes.
-
-\bibitem[\protect\astroncite{Coopers y Lybrand}{1995}]{coopers}
-Coopers y Lybrand (1995).
-\newblock La asignación de recursos docentes en la universidad.
-\newblock {\em Auditoría Pública}, (3):43--50.
-
-\bibitem[\protect\astroncite{Dibbon}{2001}]{Dibbon}
-Dibbon, D. (2001).
-\newblock Teacher supply and demand: An analysis of current developments in
-  newfoundland and labrador.
-\newblock Technical report, Memorial University of Newfoundland, Quebec City.
-\newblock Disponible en
-  http://www.cesc.ca/pceradocs/2001/papers/01Dibbon\_e.pdf Consultado el
-  08/03/2013.
-
-\bibitem[\protect\astroncite{{EPDI}}{}]{EPDI}
-{EPDI}.
-\newblock {Estatuto del personal docente y de investigación}.
-\newblock {Disponible en
-  http://nube.adm.ula.ve/dap/images/InformacionDAP/pdiestatuto.pdf Consultado
-  en marzo de 2014}.
-
-\bibitem[\protect\astroncite{{ICCU}}{2014}]{CONV}
-{ICCU} (2013-2014).
-\newblock I convención colectiva única de trabajadores del sector
-  universitario.
-\newblock Suscrita en el marco de la reunión normativa laboral para los
-  trabajadores universitarios. Disponible en
-  http://www.uc.edu.ve/archivos/ConvencionColectivaUnica.pdf Consultado en
-  febrero de 2014.
-
-\bibitem[\protect\astroncite{Jyh-Shing et~al.}{1997}]{shing}
-Jyh-Shing, R.~J., Chuen-Tsai, S., y Eiji, M. (1997).
-\newblock {\em Neuro-Fuzzy and Soft Computing: A computational Approach to
-  Learning and Machine Intelligence}.
-\newblock Prentice Hall.
-
-\bibitem[\protect\astroncite{Klir y Bo}{1995}]{KLIR}
-Klir, G. y Bo, Y. (1995).
-\newblock {\em Fuzzy sets and fuzzy logic: theory and applications}.
-\newblock Prentice Hall.
-
-\bibitem[\protect\astroncite{López y Johnston}{2007}]{Genetico}
-López, B. y Johnston, J. (2007).
-\newblock {Modelo de Asignación de Carga Académica usando Algoritmos
-  Genéticos}.
-\newblock Technical report, Instituto Tecnológico de Nuevo Laredo, Nuevo
-  Laredo. México.
-\newblock Disponible en
-  http://www.itnuevolaredo.edu.mx/takeyas/Tesis\_Maestria/articulo.PDF
-  Consultado el 28/02/2013.
-
-\bibitem[\protect\astroncite{Mejía}{2008}]{mejia}
-Mejía, J. (2008).
-\newblock Asignación de horarios de clases universitarias mediante algoritmos
-  evolutivos.
-
-\bibitem[\protect\astroncite{Morduchowicz}{2007}]{Mord}
-Morduchowicz, A. (2007).
-\newblock Planificación cuantitativa de la oferta y la demanda docente. una
-  revisión metodológica y conceptual.
-\newblock Technical report, Ministerio de Educación, Ciencia y Tecnología de la
-  Nación, Buenos Aires, Argentina.
-\newblock Disponible en
-  http://www.buenosaires.iipe.unesco.org/sites/default/files/planeamiento\_docente.pdf
-  Consultado el 28/02/2013.
-
-\bibitem[\protect\astroncite{ORIFI}{2015}]{ORIFI}
-ORIFI (2015).
-\newblock Cultura y extensión.
-\newblock Disponible en http://llama.adm.ula.ve/pingenieria/index.php?
-  option=com\_content\&view=article\&id=300\&Itemid=276 Consultado en enero de
-  2015.
-
-\bibitem[\protect\astroncite{Piedra et~al.}{2007}]{piedra}
-Piedra, J.~A., Guindos, F., y Cantón, M. (2007).
-\newblock Interpretación automática de imágenes oceánicas mediante sistemas
-  neurodifusos.
-\newblock {\em Revista de Teledetección}, (Numero Especial):114--118.
 
 \bibitem[\protect\astroncite{Quintero et~al.}{2010}]{quintero}
 Quintero, M.~A., Jerez~Rico, M., y Ablan, M. (2010).
@@ -109,60 +11,20 @@ Quintero, M.~A., Jerez~Rico, M., y Ablan, M. (2010).
   ejemplo de aplicación.
 \newblock {\em Revista Forestal Venezolana}, 54(2):183--194.
 
-\bibitem[\protect\astroncite{{REAPFIULA}}{}]{REGLAMENTO}
-{REAPFIULA}.
-\newblock Reglamento para la evaluación de actividades de los profesores de la
-  facultad de ingeniería de la universidad de los andes.
-
 \bibitem[\protect\astroncite{Rodríquez}{2010}]{Arqu}
 Rodríquez, J. (2010).
 \newblock Cálculo de capacidad de matrícula y demanda de profesores.
 
-\bibitem[\protect\astroncite{Sandia et~al.}{2012}]{Modelo}
-Sandia, B., Calderón, J., Chacón, L., y Dulhoste, J. (2012).
-\newblock {Propuesta de Modelo Educativo para la Facultad de Ingeniería}.
-\newblock Technical report, Universidad de Los Andes, Mérida, Venezuela.
-
-\bibitem[\protect\astroncite{Taha}{2012}]{TAHA}
-Taha, H. (2012).
+\bibitem[\protect\astroncite{Taha}{2014}]{TAHA}
+Taha, H. (2014).
 \newblock {\em Investigación de Operaciones}.
 \newblock Pearson, 9 edition.
 \newblock Edición traducida al español.
 
-\bibitem[\protect\astroncite{{UAL}}{2008}]{Alm}
-{UAL} (2008).
-\newblock Criterios para la asignación del profesorado a las asignaturas
-  adscritas a las Áreas de la universidad de almería.
-\newblock Technical report, Vicerrectorado de Profesorado y Ordenación
-  Académica de la Universidad de Almería, España.
-\newblock Disponible en
-  http://cms.ual.es/idc/groups/public/@vic/@vpoa/documents/documento/vpoacriterios.pdf
-  Consultado el 28/02/2013.
-
-\bibitem[\protect\astroncite{{UEX}}{2012}]{Extrema}
-{UEX} (2012).
-\newblock {Normativa para la Asignación de Docencia de la Universidad de
-  Extremadura}.
-\newblock Technical report, Vicerrectorado de Profesorado de la Universidad de
-  Extremadura, España.
-\newblock Disponible en
-  http://www.unex.es/organizacion/organos-unipersonales/vicerrectorados/vicepro/archivos/ficheros/normativas/Normativa
-  para la asignacion de la carga docente final.pdf. Consultado el 28/02/2013.
-
-\bibitem[\protect\astroncite{{UNED}}{2010}]{UNED_2}
-{UNED} (2010).
-\newblock Propuesta de nuevos criterios de estimación de carga docente.
-
-\bibitem[\protect\astroncite{{UNED}}{sf}]{UNED}
-{UNED} (s.f.).
-\newblock Documento sobre estimación de la carga docente en el espacio europeo
-  de ecuación superior.
-\newblock Technical report, Vicerrectorado de Calidad e Innovación Docente de
-  la Universidad Nacional de Educación a Distancia, España.
-\newblock Disponible en
-  http://portal.uned.es/pls/portal/docs/page/uned\_main/launiversidad/orgrepresentacion/
-  juntapersonaldocente/pdi-funcionario/documento\_estimación\_carga\_docente.doc
-  Consultado el 08/03/2013.
+\bibitem[\protect\astroncite{Uzcátegui et~al.}{2011}]{Galatea}
+Uzcátegui, M., Dávila, J., y Tucci, K. (2011).
+\newblock Galatea: una historia de modelado y simulación.
+\newblock {\em Revista Ciencia e Ingeniería}, (1316-7081):85--94.
 
 \bibitem[\protect\astroncite{Velez y Montoya}{2007}]{velez}
 Velez, M. y Montoya, J. (2007).
@@ -171,7 +33,7 @@ Velez, M. y Montoya, J. (2007).
 \newblock {\em Revista EIA}, (8):99--115.
 
 \bibitem[\protect\astroncite{Viloria}{2015}]{Electrica}
-Viloria, F.~J. ({2013-2015}).
+Viloria, F.~J. (2013-2015).
 \newblock Cálculo de demanda de profesores.
 
 \end{thebibliography}
