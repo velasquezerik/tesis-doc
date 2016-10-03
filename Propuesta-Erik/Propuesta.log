@@ -1,15 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  30 AUG 2016 11:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2015.12.28)  30 SEP 2016 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Propuesta.tex
 (./Propuesta.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: bk12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -40,10 +41,10 @@ Package: ulamonog 2006/03/19, v. 0.9
 \f@ncyO@orf=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -137,7 +138,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2009/07/02 v2.20.1
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks20
 \thm@bodyfont=\toks21
 \thm@headfont=\toks22
@@ -152,20 +153,20 @@ Package: amsthm 2009/07/02 v2.20.1
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ansinew.def
-File: ansinew.def 2014/04/30 v1.2b Input encoding file
+File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -248,7 +249,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen115
@@ -292,7 +293,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read1
@@ -383,14 +384,14 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 131.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 131.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
 
 ] (./Propuesta.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 3.
@@ -491,18 +492,18 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 378.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 378.
  ) 
 Here is how much of TeX's memory you used:
- 6842 strings out of 493105
- 96668 string characters out of 6137072
- 205384 words of memory out of 5000000
- 10217 multiletter control sequences out of 15000+600000
- 11312 words of font info for 42 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 35i,12n,45p,2295b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 6844 strings out of 495063
+ 96664 string characters out of 3182200
+ 199558 words of memory out of 3000000
+ 9937 multiletter control sequences out of 15000+200000
+ 11312 words of font info for 42 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 35i,12n,45p,2295b,385s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Propuesta.pdf (15 pages, 88195 bytes).
+Output written on Propuesta.pdf (15 pages, 88596 bytes).
 PDF statistics:
  71 PDF objects out of 1000 (max. 8388607)
  47 compressed objects within 1 object stream
