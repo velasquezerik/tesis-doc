@@ -1,5 +1,5 @@
-\contentsline {chapter}{�ndice de Tablas}{vii}{chapter*.1}
-\contentsline {chapter}{Agradecimientos}{ix}{chapter*.3}
+\contentsline {chapter}{�ndice de Tablas}{vi}{chapter*.1}
+\contentsline {chapter}{Agradecimientos}{vii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{2}{section.1.2}
@@ -10,70 +10,45 @@
 \contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{3}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Metodolog\IeC {\'\i }a}{4}{section.1.6}
 \contentsline {section}{\numberline {1.7}Estructura del documento}{4}{section.1.7}
-\contentsline {chapter}{\numberline {2}Marco te\'orico}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Optimizaci\'on y asignaci\'on de recursos}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}L\'ogica Difusa}{8}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Conjuntos cl\'asicos}{9}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Conjuntos difusos}{9}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Operaciones sobre conjuntos difusos}{10}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Sistemas de inferencia difusa}{11}{subsection.2.2.4}
-\contentsline {subsubsection}{Reglas Si-Entonces}{12}{section*.4}
-\contentsline {subsubsection}{Implicaci\'on y agregaci\'on}{12}{section*.5}
-\contentsline {subsubsection}{Fusificaci\'on y defusificaci\'on}{13}{section*.6}
-\contentsline {subsubsection}{Inferencia tipo Mamdani}{13}{section*.7}
-\contentsline {subsubsection}{Inferencia tipo Takagi-Sugeno-Kang (TSK)}{14}{section*.8}
-\contentsline {chapter}{\numberline {3}Facultad de Ingenier\IeC {\'\i }a de la ULA}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Planta profesoral}{15}{section.3.1}
-\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{16}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{16}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{19}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{20}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{21}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{22}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{22}{section.3.3}
-\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{23}{section.3.4}
-\contentsline {chapter}{\numberline {4}Modelo de asignaci\'on de cargos}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Criterios y variables}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Estudio preliminar de criterios y variables}{27}{subsection.4.1.1}
+\contentsline {chapter}{\numberline {2}Marco te\'orico}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Optimizaci\'on y asignaci\'on de recursos}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}L\'ogica Difusa}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Conjuntos cl\'asicos}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Conjuntos difusos}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Operaciones sobre conjuntos difusos}{9}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Sistemas de inferencia difusa}{10}{subsection.2.2.4}
+\contentsline {subsubsection}{Reglas Si-Entonces}{11}{section*.4}
+\contentsline {subsubsection}{Implicaci\'on y agregaci\'on}{11}{section*.5}
+\contentsline {subsubsection}{Fusificaci\'on y defusificaci\'on}{12}{section*.6}
+\contentsline {subsubsection}{Inferencia tipo Mamdani}{12}{section*.7}
+\contentsline {subsubsection}{Inferencia tipo Takagi-Sugeno-Kang (TSK)}{13}{section*.8}
+\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planta profesoral}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{18}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{19}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{21}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{26}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pruebas}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Criterios y variables}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{27}{subsection.5.1.1}
 \contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{31}{section*.9}
 \contentsline {subsubsection}{Sobre indicadores}{33}{section*.10}
 \contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{36}{section*.11}
-\contentsline {subsection}{\numberline {4.1.2}Pruebas preliminares}{40}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{40}{subsection.5.1.2}
 \contentsline {subsubsection}{Primera prueba}{40}{section*.12}
 \contentsline {subsubsection}{Segunda prueba}{43}{section*.13}
-\contentsline {section}{\numberline {4.2}Construcci\'on del modelo}{45}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Definici\'on del sistema de inferencia}{45}{subsection.4.2.1}
+\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{45}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{45}{subsection.5.2.1}
 \contentsline {subsubsection}{Datos de entrada}{45}{section*.14}
-\contentsline {subsection}{\numberline {4.2.2}Estructura del sistema difuso}{46}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{46}{subsection.5.2.2}
 \contentsline {subsubsection}{C\'alculo de variables}{47}{section*.15}
 \contentsline {subsubsection}{Indicadores y conjuntos difusos}{50}{section*.16}
 \contentsline {subsubsection}{Reglas del sistema difuso}{54}{section*.17}
-\contentsline {chapter}{\numberline {5}Aplicaci\'on del modelo}{58}{chapter.5}
-\contentsline {section}{\numberline {5.1}Implementaci\'on en R}{58}{section.5.1}
-\contentsline {section}{\numberline {5.2}Implementaci\'on en Matlab\textsuperscript {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8.5\p@ plus3\p@ minus4\p@ \abovedisplayshortskip \z@ plus2\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \parsep 4\p@ plus2\p@ minus\p@ \topsep 8\p@ plus2\p@ minus4\p@ \itemsep 4\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip {\textregistered }}}{62}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Estructura del sistema difuso utilizado}{63}{subsection.5.2.1}
-\contentsline {section}{\numberline {5.3}Ejecuci\'on del proceso. Resultados}{65}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Resultados iniciales}{65}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}An\'alisis de sensibilidad}{66}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {6}Conclusiones}{70}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{71}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{73}{section.6.1}
-\contentsline {chapter}{\numberline {A}Revisi\'on de informes y res\'umenes de actividades}{74}{appendix.A}
-\contentsline {section}{\numberline {A.1}Informes individuales de Actividades Cumplidas}{74}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Formato de Sistemas de Control}{74}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Formato de Computaci\'on}{76}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Formato de Investigaci\'on de Operaciones}{78}{subsection.A.1.3}
-\contentsline {section}{\numberline {A.2}Res\'umenes de Actividades Cumplidas}{80}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}Totales de Sistemas de Control}{81}{subsection.A.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Totales de Investigaci\'on de Operaciones}{81}{subsection.A.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Totales de Computaci\'on}{82}{subsection.A.2.3}
-\contentsline {section}{\numberline {A.3}Resultados de la revisi\'on en res\'umenes e informes individuales}{84}{section.A.3}
-\contentsline {subsection}{\numberline {A.3.1}Revisi\'on de res\'umenes e informes de Investigaci\'on de Operaciones}{84}{subsection.A.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Revisi\'on de res\'umenes e informes de Sistemas de Control}{84}{subsection.A.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Revisi\'on de res\'umenes e informes de Computaci\'on}{84}{subsection.A.3.3}
-\contentsline {section}{\numberline {A.4}Nuevos formatos propuestos para los res\'umenes e informes}{87}{section.A.4}
-\contentsline {subsection}{\numberline {A.4.1}Formato de Informe de Actividades Cumplidas}{89}{subsection.A.4.1}
-\contentsline {chapter}{\numberline {B}Tablas complementarias de valoraci\'on de actividades}{93}{appendix.B}
-\contentsline {chapter}{\numberline {C}Tablas de incidencias del an\'alisis de informes de actividades}{97}{appendix.C}
-\contentsline {chapter}{\numberline {D}Reglas del sistema de inferencia difuso}{99}{appendix.D}
-\contentsline {chapter}{\numberline {E}Enlaces a archivos}{104}{appendix.E}
+\contentsline {chapter}{\numberline {6}Conclusiones}{58}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{59}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{61}{section.6.1}
