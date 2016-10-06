@@ -12,47 +12,48 @@ Warning--I didn't find a database entry for "Norma"
 Warning--I didn't find a database entry for "ORIFI"
 Warning--can't use both author and editor fields in Logica
 Warning--empty publisher in Logica
+Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
 Warning--there's a number but no volume in velez
-You've used 11 entries,
+You've used 16 entries,
             1940 wiz_defined-function locations,
-            557 strings with 5329 characters,
-and the built_in function-call counts, 3672 in all, are:
-= -- 351
-> -- 138
-< -- 9
-+ -- 44
-- -- 44
-* -- 310
-:= -- 668
-add.period$ -- 31
-call.type$ -- 11
-change.case$ -- 79
-chr.to.int$ -- 11
-cite$ -- 15
-duplicate$ -- 146
-empty$ -- 250
-format.name$ -- 59
-if$ -- 704
+            582 strings with 6026 characters,
+and the built_in function-call counts, 5080 in all, are:
+= -- 492
+> -- 179
+< -- 14
++ -- 60
+- -- 56
+* -- 414
+:= -- 940
+add.period$ -- 46
+call.type$ -- 16
+change.case$ -- 114
+chr.to.int$ -- 16
+cite$ -- 21
+duplicate$ -- 204
+empty$ -- 345
+format.name$ -- 78
+if$ -- 966
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 56
-num.names$ -- 33
-pop$ -- 71
+missing$ -- 12
+newline$ -- 81
+num.names$ -- 48
+pop$ -- 93
 preamble$ -- 1
-purify$ -- 77
+purify$ -- 108
 quote$ -- 0
-skip$ -- 108
+skip$ -- 154
 stack$ -- 0
-substring$ -- 188
-swap$ -- 26
+substring$ -- 252
+swap$ -- 32
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 4
-while$ -- 26
+type$ -- 86
+warning$ -- 5
+while$ -- 36
 width$ -- 0
-write$ -- 141
-(There were 11 warnings)
+write$ -- 208
+(There were 12 warnings)

@@ -15,11 +15,39 @@ Fawcett, J., Quin, L., y Ayers, D. (2012).
 \newblock {\em Beginning XML}.
 \newblock Wrox, 5 edition.
 
+\bibitem[\protect\astroncite{Fundation}{2015}]{django}
+Fundation, D.~S. (2015).
+\newblock {\em The web framework for perfectionists with deadlines}.
+\newblock 5 edition.
+
+\bibitem[\protect\astroncite{Krasner y Pope}{1988}]{modeloVistaControlador}
+Krasner, G.~E. y Pope, S.~T. (1988).
+\newblock A description of the model-view-controller user interface paradigm in
+  the smalltalk-80 system.
+\newblock Technical report, ParcPlace Systems, Inc., Mountain View.
+
+\bibitem[\protect\astroncite{Machuca}{2011}]{servicioWeb}
+Machuca, C. A.~M. (2011).
+\newblock Estado del arte: Servicios web.
+\newblock Technical report, Universidad Nacional de Colombia, Bogotá, Colombia.
+
 \bibitem[\protect\astroncite{Marcano}{2015}]{tesisGustavo}
 Marcano, G. (2015).
 \newblock Desarrollo de un servicio web para el simulador de eventos discretos
   galatea.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
+
+\bibitem[\protect\astroncite{Pantoja}{2004}]{modeloVistaControladorBascon}
+Pantoja, E.~B. (2004).
+\newblock El patrón de diseño modelo-vista-controlador (mvc) y su
+  implementación en java swing.
+\newblock Technical report, ParcPlace Systems, Inc.
+
+\bibitem[\protect\astroncite{Quiroga}{2011}]{orientadaServicios}
+Quiroga, M.~G. (2011).
+\newblock Estado del arte: Servicios web.
+\newblock Technical report, Universidad Politecnica de Catalunya, Barcelona,
+  España.
 
 \bibitem[\protect\astroncite{Rengifo}{2011}]{tesisBruno}
 Rengifo, B. (2011).
