@@ -11,44 +11,48 @@
 \contentsline {section}{\numberline {1.6}Metodolog\IeC {\'\i }a}{4}{section.1.6}
 \contentsline {section}{\numberline {1.7}Estructura del documento}{4}{section.1.7}
 \contentsline {chapter}{\numberline {2}Marco te\'orico}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}Optimizaci\'on y asignaci\'on de recursos}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}L\'ogica Difusa}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Conjuntos cl\'asicos}{8}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Conjuntos difusos}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Operaciones sobre conjuntos difusos}{9}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Sistemas de inferencia difusa}{10}{subsection.2.2.4}
-\contentsline {subsubsection}{Reglas Si-Entonces}{11}{section*.4}
-\contentsline {subsubsection}{Implicaci\'on y agregaci\'on}{11}{section*.5}
-\contentsline {subsubsection}{Fusificaci\'on y defusificaci\'on}{12}{section*.6}
-\contentsline {subsubsection}{Inferencia tipo Mamdani}{12}{section*.7}
-\contentsline {subsubsection}{Inferencia tipo Takagi-Sugeno-Kang (TSK)}{13}{section*.8}
-\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Planta profesoral}{14}{section.3.1}
-\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{18}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{19}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{20}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{21}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{22}{section.3.4}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{26}{chapter.4}
-\contentsline {chapter}{\numberline {5}Pruebas}{27}{chapter.5}
-\contentsline {section}{\numberline {5.1}Criterios y variables}{27}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{27}{subsection.5.1.1}
-\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{31}{section*.9}
-\contentsline {subsubsection}{Sobre indicadores}{33}{section*.10}
-\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{36}{section*.11}
-\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{40}{subsection.5.1.2}
-\contentsline {subsubsection}{Primera prueba}{40}{section*.12}
-\contentsline {subsubsection}{Segunda prueba}{43}{section*.13}
-\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{45}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{45}{subsection.5.2.1}
-\contentsline {subsubsection}{Datos de entrada}{45}{section*.14}
-\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{46}{subsection.5.2.2}
-\contentsline {subsubsection}{C\'alculo de variables}{47}{section*.15}
-\contentsline {subsubsection}{Indicadores y conjuntos difusos}{50}{section*.16}
-\contentsline {subsubsection}{Reglas del sistema difuso}{54}{section*.17}
-\contentsline {chapter}{\numberline {6}Conclusiones}{58}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{59}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{61}{section.6.1}
+\contentsline {section}{\numberline {2.1}Simulaci\'on Distribuida}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Simulaci\'on de Eventos Discretos}{7}{section.2.2}
+\contentsline {section}{\numberline {2.3}GALATEA}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}La arquitectura de la plataforma Galatea}{8}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Optimizaci\'on y asignaci\'on de recursos}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}L\'ogica Difusa}{9}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Conjuntos cl\'asicos}{9}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Conjuntos difusos}{10}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Operaciones sobre conjuntos difusos}{11}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.4}Sistemas de inferencia difusa}{12}{subsection.2.5.4}
+\contentsline {subsubsection}{Reglas Si-Entonces}{13}{section*.4}
+\contentsline {subsubsection}{Implicaci\'on y agregaci\'on}{13}{section*.5}
+\contentsline {subsubsection}{Fusificaci\'on y defusificaci\'on}{14}{section*.6}
+\contentsline {subsubsection}{Inferencia tipo Mamdani}{14}{section*.7}
+\contentsline {subsubsection}{Inferencia tipo Takagi-Sugeno-Kang (TSK)}{15}{section*.8}
+\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planta profesoral}{16}{section.3.1}
+\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{17}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{17}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{20}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{22}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{23}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{24}{section.3.4}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{28}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pruebas}{29}{chapter.5}
+\contentsline {section}{\numberline {5.1}Criterios y variables}{29}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{29}{subsection.5.1.1}
+\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{33}{section*.9}
+\contentsline {subsubsection}{Sobre indicadores}{35}{section*.10}
+\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{38}{section*.11}
+\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{42}{subsection.5.1.2}
+\contentsline {subsubsection}{Primera prueba}{42}{section*.12}
+\contentsline {subsubsection}{Segunda prueba}{45}{section*.13}
+\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{47}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{47}{subsection.5.2.1}
+\contentsline {subsubsection}{Datos de entrada}{47}{section*.14}
+\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{48}{subsection.5.2.2}
+\contentsline {subsubsection}{C\'alculo de variables}{49}{section*.15}
+\contentsline {subsubsection}{Indicadores y conjuntos difusos}{52}{section*.16}
+\contentsline {subsubsection}{Reglas del sistema difuso}{56}{section*.17}
+\contentsline {chapter}{\numberline {6}Conclusiones}{60}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{61}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{63}{section.6.1}

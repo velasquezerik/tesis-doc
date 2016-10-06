@@ -1,5 +1,10 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Banks et~al.}{2010}]{discretSimulation}
+Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
+\newblock {\em Discrete-Event System Simulation}.
+\newblock Pearson, 5 edition.
+
 \bibitem[\protect\astroncite{Cerrada y Rodríguez}{2001}]{Logica}
 Cerrada, M. y Rodríguez, W. (2001).
 \newblock {\em Introducción a la técnicas de computación inteligente}, chapter
@@ -16,12 +21,6 @@ Marcano, G. (2015).
   galatea.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
 
-\bibitem[\protect\astroncite{Quintero et~al.}{2010}]{quintero}
-Quintero, M.~A., Jerez~Rico, M., y Ablan, M. (2010).
-\newblock Metodos heurísticos en la planificación del manejo forestal: Un
-  ejemplo de aplicación.
-\newblock {\em Revista Forestal Venezolana}, 54(2):183--194.
-
 \bibitem[\protect\astroncite{Rengifo}{2011}]{tesisBruno}
 Rengifo, B. (2011).
 \newblock Desarrollo de un servicio web para la modeloteca del sistema nacional
@@ -31,6 +30,11 @@ Rengifo, B. (2011).
 \bibitem[\protect\astroncite{Rodríquez}{2010}]{Arqu}
 Rodríquez, J. (2010).
 \newblock Cálculo de capacidad de matrícula y demanda de profesores.
+
+\bibitem[\protect\astroncite{Santana et~al.}{2004}]{simulacionDistribuida}
+Santana, Y.~C., Ángel Mateo~Pla, M., y Terol, J.~P. (2004).
+\newblock Herramienta de simulacion distribuida mediantes agentes moviles jade.
+\newblock Technical report, Conferência IADIS Ibero-Americana.
 
 \bibitem[\protect\astroncite{Taha}{2014}]{TAHA}
 Taha, H. (2014).

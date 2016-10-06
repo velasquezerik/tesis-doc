@@ -3,10 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Tesis.aux
 The style file: apa.bst
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "Genetico"
-Warning--I didn't find a database entry for "mejia"
-Warning--I didn't find a database entry for "shing"
-Warning--I didn't find a database entry for "piedra"
 Warning--I didn't find a database entry for "KLIR"
 Warning--I didn't find a database entry for "EPDI"
 Warning--I didn't find a database entry for "REGLAMENTO"
@@ -18,45 +14,45 @@ Warning--can't use both author and editor fields in Logica
 Warning--empty publisher in Logica
 Warning--there's a number but no volume in Galatea
 Warning--there's a number but no volume in velez
-You've used 10 entries,
+You've used 11 entries,
             1940 wiz_defined-function locations,
-            558 strings with 5196 characters,
-and the built_in function-call counts, 3380 in all, are:
-= -- 325
-> -- 115
+            557 strings with 5329 characters,
+and the built_in function-call counts, 3672 in all, are:
+= -- 351
+> -- 138
 < -- 9
-+ -- 36
-- -- 36
-* -- 289
-:= -- 606
-add.period$ -- 28
-call.type$ -- 10
-change.case$ -- 69
-chr.to.int$ -- 10
-cite$ -- 14
-duplicate$ -- 135
-empty$ -- 239
-format.name$ -- 50
-if$ -- 654
++ -- 44
+- -- 44
+* -- 310
+:= -- 668
+add.period$ -- 31
+call.type$ -- 11
+change.case$ -- 79
+chr.to.int$ -- 11
+cite$ -- 15
+duplicate$ -- 146
+empty$ -- 250
+format.name$ -- 59
+if$ -- 704
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 51
-num.names$ -- 30
-pop$ -- 59
+missing$ -- 10
+newline$ -- 56
+num.names$ -- 33
+pop$ -- 71
 preamble$ -- 1
-purify$ -- 68
+purify$ -- 77
 quote$ -- 0
-skip$ -- 101
+skip$ -- 108
 stack$ -- 0
-substring$ -- 197
-swap$ -- 25
+substring$ -- 188
+swap$ -- 26
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
+type$ -- 58
 warning$ -- 4
-while$ -- 25
+while$ -- 26
 width$ -- 0
-write$ -- 128
-(There were 15 warnings)
+write$ -- 141
+(There were 11 warnings)

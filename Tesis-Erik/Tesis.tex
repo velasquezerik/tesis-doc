@@ -267,7 +267,7 @@ En esa sección se describe brevemente las características del problema abordado 
 
 \item Capítulo II. Marco teórico.
 
-Explicar aquí.
+En ese sección se exponen algunos conceptos relacionados con el problema planteado en el proyecto. Se da una breve introducción sobre los términos y herramientas utilizados para desarrollar el mismo.
 
 \item Capitulo III. Desarrollo del Sistema WEB.
 
@@ -290,11 +290,45 @@ Explicar aquí.
 
 \chapter{Marco teórico}
 
-En esta sección se exponen algunos conceptos relacionados con el problema planteado en el proyecto. Se da una breve introducción sobre los términos de optimización y asignación. %Además, sobre varias técnicas usadas en el área de optimización y administración de recursos, en la investigación de operaciones, las cuales se consideran relevantes para este estudio.
+La simulación por computadora se ha convertido en una parte útil del modelado de muchos sistemas naturales en física, química y biología, y sistemas humanos como la economía y las ciencias sociales (sociología computacional), así como en dirigir para ganar la penetración (profundidad) su comportamiento cambiará cada simulación según el conjunto de parámetros iniciales supuestos por el entorno. En éste capítulo se explican en detalle las herramientas, tecnologías y conceptos usados para la consecución del proyecto que se propone. Definimos la simulación de eventos discretos DEVS (Discrete Event Simulation), así mismo nos introducimos en GALATEA, con el fin de proporcionar una base inicial para la codificación del nuevo sistema. Explicamos las ventajas de un servicio web y las herramientas empleadas para el desarrollo del mismo, como lo serian el Patrón de diseño Modelo Vista Controlador (MVC) y Django.
 
-Técnicas metaheurísticas como algoritmos genéticos y recocido simulado se han aplicado eficientemente para la solución de problemas complejos de asignación de recursos, entre otros \citep{Genetico,mejia,quintero}. Por otro lado, los sistemas neuro-difusos, que combinan las técnicas de inferencia difusa y redes neuronales, también han sido utilizadas para tratar problemas complejos del mundo real, basados en conocimiento experto y en situaciones con incertidumbre \citep{shing,piedra}.
+\section{Simulación Distribuida} 
 
-Entre estas técnicas destaca el enfoque presentado por la lógica difusa, la cual es  ampliamente usada en problemas con conocimiento impreciso o subjetivo. Debido a la naturaleza del problema planteado en este proyecto, el empleo de la lógica difusa se presentó como opción principal para la solución del mismo.
+Los sistemas de simulación distribuidos son herramientas muy útiles en las labores de investigación porque permiten reducir el tiempo necesario para ejecutar experimentos. Las simulaciones distribuidas pueden hacerse de forma que se acelere una simulación o que se acelere la ejecución de un conjunto de simulaciones. Los sistemas de simulación basados en agentes se pueden utilizar con éxito en ambos tipos de simulaciones distribuidas \cite{simulacionDistribuida}.
+
+La Simulación Distribuida, es la que permite conducir modelos de simulación a través de múltiples hosts o computadoras separados por redes, se ocupa de cuestiones que surgen de la distribución de un programa de simulación de eventos discretos en varias computadoras \cite{discretSimulation}. La simulación paralela de eventos discretos se refiere a la ejecución en plataformas multi-procesador que contienen múltiples unidades de procesamiento  central que interaccionan entre sí con frecuencia, por ejemplo, miles de veces por segundo.
+
+\section{Simulación de Eventos Discretos}
+
+La simulación de eventos discretos es la "imitacion" de un proceso de operación o de un sistema del mundo real construido sobre la base del tiempo \cite{discretSimulation}. Esta codifica el comportamiento de sistemas complejos como una secuencia de eventos ordenados y bien definidos. En simulación de eventos discretos (DEVS por sus siglas en ingles),  el funcionamiento de un sistema se representa como una secuencia cronológica de los acontecimientos. Cada evento tiene lugar en un instante de tiempo y marca un cambio de estado en el sistema. Frente a su homóloga, la simulación de tiempo continuo, esta se caracteriza por un control en la variable del tiempo que permite avanzar a éste a intervalos variables, en función de la planificación de ocurrencia de tales eventos a un tiempo futuro. Estos sistemas se caracterizan por mantener un estado interno global del sistema, que puede no obstante estar física o lógicamente distribuido, y que cambia parcialmente debido a la ocurrencia de un evento. La ejecución de un evento puede desencadenar la generación de nuevos eventos futuros. Cada uno está marcado por su tiempo, por lo que el orden de generación puede no coincidir con el orden de ejecución.
+
+\section{GALATEA}
+
+Galatea es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto paterno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \cite{Galatea}.
+
+Podemos explicar de forma  breve y concisa en que consiste la misma, segun \cite{Galatea}:
+
+\begin{quote}
+	Galatea es una plataforma libre de código abierto para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar esas estrategias en problemas de simulación de sistemas complejos. La historia de Galatea comienza mucho antes que se planteara formalmente el proyecto con ese nombre. En 1993, nuestro muy joven Centro de Simulación y Modelos, CeSiMo, propone un proyecto para explorar la re-implementación de la plataforma de simulación Glider sobre una plataforma orientada a objetos dando origen a un prototipo experimental. El problema del cambio estructural, inspirado por investigaciones en economía, se había convertido entonces en uno de los objetivos de investigación fundamentales del CeSiMo y vendría a dictar también la pauta para Galatea. La noción de agente hizo su aparición en algunos reportes internos en los que se enfatizaba su importancia para modelar sistemas complejos como una economía nacional. En 1998 se planteó la posibilidad de integrar Glider con herramientas de inteligencia artificial para modelar agentes. En el 2000, un proyecto vendría a combinar aquel prototipo de 1993, con una teoría de agentes basada en lógica computacional que se planeaba integrar en una nueva teoría de simulación de sistemas multi-agentes. Allí nació Galatea. El logro fundamental para el proyecto, sin embargo, llegaría con las aplicaciones. En 2004, Galatea fue incorporada al banco de pruebas de un proyecto en biocomplejidad.
+\end{quote}
+
+\subsection{La arquitectura de la plataforma Galatea}
+
+La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture). El lenguaje base usado para su desarrollo es el Java, bien especificado en \cite{Galatea}. Usando como lenguaje base Java, se especifico un nuevo lenguaje de simulación al que denominan lenguaje Galatea. La sintaxis del lenguaje Galatea es, de hecho una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog. La compleja semántica de Galatea establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \cite{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
+
+\section{Servicio Web}
+
+Definir
+
+\section{Arquitectura Orientada a Servicios}
+
+Definir
+
+\section{Herramientas usadas para el desarrollo del sistema}
+
+Definir
+
+
 
 \section{Optimización y asignación de recursos}
 
