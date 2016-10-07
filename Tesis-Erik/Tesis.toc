@@ -26,47 +26,36 @@
 \contentsline {subsection}{\numberline {2.6.3}Bases de Datos}{12}{subsection.2.6.3}
 \contentsline {subsubsection}{MySQL}{12}{section*.7}
 \contentsline {subsubsection}{PostgreSQL}{12}{section*.8}
-\contentsline {subsubsection}{Mapeo Objeto-Relacional}{12}{section*.9}
-\contentsline {subsection}{\numberline {2.6.4}JSON}{12}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}AJAX}{12}{subsection.2.6.5}
-\contentsline {section}{\numberline {2.7}Optimizaci\'on y asignaci\'on de recursos}{12}{section.2.7}
-\contentsline {section}{\numberline {2.8}L\'ogica Difusa}{13}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}Conjuntos cl\'asicos}{14}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}Conjuntos difusos}{14}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}Operaciones sobre conjuntos difusos}{16}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}Sistemas de inferencia difusa}{16}{subsection.2.8.4}
-\contentsline {subsubsection}{Reglas Si-Entonces}{17}{section*.10}
-\contentsline {subsubsection}{Implicaci\'on y agregaci\'on}{17}{section*.11}
-\contentsline {subsubsection}{Fusificaci\'on y defusificaci\'on}{18}{section*.12}
-\contentsline {subsubsection}{Inferencia tipo Mamdani}{18}{section*.13}
-\contentsline {subsubsection}{Inferencia tipo Takagi-Sugeno-Kang (TSK)}{19}{section*.14}
-\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}Planta profesoral}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{21}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{21}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{25}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{26}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{27}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{27}{section.3.3}
-\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{28}{section.3.4}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{32}{chapter.4}
-\contentsline {chapter}{\numberline {5}Pruebas}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Criterios y variables}{33}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{33}{subsection.5.1.1}
-\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{37}{section*.15}
-\contentsline {subsubsection}{Sobre indicadores}{39}{section*.16}
-\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{42}{section*.17}
-\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{46}{subsection.5.1.2}
-\contentsline {subsubsection}{Primera prueba}{46}{section*.18}
-\contentsline {subsubsection}{Segunda prueba}{49}{section*.19}
-\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{51}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{51}{subsection.5.2.1}
-\contentsline {subsubsection}{Datos de entrada}{51}{section*.20}
-\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{52}{subsection.5.2.2}
-\contentsline {subsubsection}{C\'alculo de variables}{53}{section*.21}
-\contentsline {subsubsection}{Indicadores y conjuntos difusos}{56}{section*.22}
-\contentsline {subsubsection}{Reglas del sistema difuso}{60}{section*.23}
-\contentsline {chapter}{\numberline {6}Conclusiones}{64}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{65}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{67}{section.6.1}
+\contentsline {subsubsection}{Mapeo Objeto-Relacional}{13}{section*.9}
+\contentsline {subsection}{\numberline {2.6.4}JSON}{13}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}AJAX}{13}{subsection.2.6.5}
+\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{14}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planta profesoral}{14}{section.3.1}
+\contentsline {section}{\numberline {3.2}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Actividades de Docencia}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Actividades de Investigaci\'on}{18}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Actividades Administrativas}{19}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Actividades de Extensi\'on}{20}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Actividades de Mejoramiento}{21}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}Evaluaci\'on de las actividades docentes}{21}{section.3.3}
+\contentsline {section}{\numberline {3.4}Din\'amica de asignaci\'on de nuevos cargos docentes}{22}{section.3.4}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{26}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pruebas}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Criterios y variables}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{27}{subsection.5.1.1}
+\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{31}{section*.10}
+\contentsline {subsubsection}{Sobre indicadores}{33}{section*.11}
+\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{36}{section*.12}
+\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{40}{subsection.5.1.2}
+\contentsline {subsubsection}{Primera prueba}{40}{section*.13}
+\contentsline {subsubsection}{Segunda prueba}{43}{section*.14}
+\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{45}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{45}{subsection.5.2.1}
+\contentsline {subsubsection}{Datos de entrada}{45}{section*.15}
+\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{46}{subsection.5.2.2}
+\contentsline {subsubsection}{C\'alculo de variables}{47}{section*.16}
+\contentsline {subsubsection}{Indicadores y conjuntos difusos}{50}{section*.17}
+\contentsline {subsubsection}{Reglas del sistema difuso}{54}{section*.18}
+\contentsline {chapter}{\numberline {6}Conclusiones}{58}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{59}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{61}{section.6.1}

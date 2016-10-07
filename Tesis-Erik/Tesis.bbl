@@ -15,6 +15,11 @@ Fawcett, J., Quin, L., y Ayers, D. (2012).
 \newblock {\em Beginning XML}.
 \newblock Wrox, 5 edition.
 
+\bibitem[\protect\astroncite{Fuentes}{2009}]{ajaxManual}
+Fuentes, J.~M. (2009).
+\newblock {\em Manual de AJAX}.
+\newblock 2 edition.
+
 \bibitem[\protect\astroncite{Fundation}{2015}]{django}
 Fundation, D.~S. (2015).
 \newblock {\em The web framework for perfectionists with deadlines}.
@@ -37,11 +42,25 @@ Marcano, G. (2015).
   galatea.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
 
+\bibitem[\protect\astroncite{Oracle}{2015}]{baseDato}
+Oracle (2015).
+\newblock Mysql 5.7 :: Reference manual 1.3.1 what is mysql?
+
 \bibitem[\protect\astroncite{Pantoja}{2004}]{modeloVistaControladorBascon}
 Pantoja, E.~B. (2004).
 \newblock El patrón de diseño modelo-vista-controlador (mvc) y su
   implementación en java swing.
 \newblock Technical report, ParcPlace Systems, Inc.
+
+\bibitem[\protect\astroncite{PostgreSQL}{2016}]{baseDatoPostgresql}
+PostgreSQL (2016).
+\newblock Postgresql about.
+
+\bibitem[\protect\astroncite{Pérez}{2016}]{tesisJesus}
+Pérez, J. A.~G. (2016).
+\newblock Diseño e implementación de un sistema de monitoreo de redes orientado
+  a la recolección masiva de datos.
+\newblock Technical report, Universidad de los Andes, Mérida, Venezuela.
 
 \bibitem[\protect\astroncite{Quiroga}{2011}]{orientadaServicios}
 Quiroga, M.~G. (2011).
