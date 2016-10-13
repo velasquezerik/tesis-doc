@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  7 OCT 2016 11:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  13 OCT 2016 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -470,16 +470,16 @@ Ignore all them. If uncorrectable errors occur, notify staff.
 <ula.png, id=1, 100.375pt x 140.525pt>
 File: ula.png Graphic file (type png)
  <use ula.png>
-Package pdftex.def Info: ula.png used on input line 151.
+Package pdftex.def Info: ula.png used on input line 150.
 (pdftex.def)             Requested size: 56.9055pt x 79.66908pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
  [1
 
 
@@ -488,12 +488,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 ] [3
 
 ] (./Tesis.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -511,37 +511,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [6
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--167
+Underfull \hbox (badness 10000) in paragraph at lines 158--166
 
  []
 
@@ -557,195 +557,195 @@ Cap\'{\i }tulo 1.
 Cap\'{\i }tulo 2.
 [6
 
-] [7] [8] [9] <img/RelacionesMVC.png, id=63, 848.16875pt x 537.00626pt>
+] [7] [8] [9] <img/RelacionesMVC.png, id=62, 848.16875pt x 537.00626pt>
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
-Package pdftex.def Info: img/RelacionesMVC.png used on input line 358.
+Package pdftex.def Info: img/RelacionesMVC.png used on input line 357.
 (pdftex.def)             Requested size: 508.90517pt x 322.20624pt.
 
-Overfull \hbox (67.88745pt too wide) in paragraph at lines 358--359
+Overfull \hbox (67.88745pt too wide) in paragraph at lines 357--358
  [][] 
  []
 
 [10] [11 <./img/RelacionesMVC.png>] [12] [13]
 Cap\'{\i }tulo 3.
 
-Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 414.
+Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 413.
 
 
 
-Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 420.
+Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 419.
 
 
 
-Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 423.
+Package natbib Warning: Citation `EPDI' on page 14 undefined on input line 422.
 
 
 [14
 
 ]
 
-Package natbib Warning: Citation `EPDI' on page 15 undefined on input line 438.
+Package natbib Warning: Citation `EPDI' on page 15 undefined on input line 437.
 
 
 
-Package natbib Warning: Citation `EPDI' on page 15 undefined on input line 438.
+Package natbib Warning: Citation `EPDI' on page 15 undefined on input line 437.
 
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 439.
-
-
-Package natbib Warning: Citation `REGLAMENTO' on page 15 undefined on input lin
-e 444.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 438.
 
 
 Package natbib Warning: Citation `REGLAMENTO' on page 15 undefined on input lin
-e 450.
+e 443.
+
+
+Package natbib Warning: Citation `REGLAMENTO' on page 15 undefined on input lin
+e 449.
 
 [15]
 
-LaTeX Warning: Reference `tabla5' on page 16 undefined on input line 456.
+LaTeX Warning: Reference `tabla5' on page 16 undefined on input line 455.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 456--457
+Underfull \hbox (badness 10000) in paragraph at lines 455--456
 
  []
 
 
-Package natbib Warning: Citation `ACTA' on page 16 undefined on input line 476.
+Package natbib Warning: Citation `ACTA' on page 16 undefined on input line 475.
 
 
 
-Package natbib Warning: Citation `CONV' on page 16 undefined on input line 484.
+Package natbib Warning: Citation `CONV' on page 16 undefined on input line 483.
 
 
 [16]
 
-Package natbib Warning: Citation `ACTA' on page 17 undefined on input line 510.
+Package natbib Warning: Citation `ACTA' on page 17 undefined on input line 509.
 
 
 
-Package natbib Warning: Citation `Norma' on page 17 undefined on input line 519
+Package natbib Warning: Citation `Norma' on page 17 undefined on input line 518
 .
 
 [17]
 
-LaTeX Warning: Reference `tabla5' on page 18 undefined on input line 520.
+LaTeX Warning: Reference `tabla5' on page 18 undefined on input line 519.
 
 
-Underfull \hbox (badness 2285) in paragraph at lines 520--521
+Underfull \hbox (badness 2285) in paragraph at lines 519--520
 []\OT1/cmr/m/n/10 Horas del pro-fe-sor ded-i-cadas a otras ac-tivi-dades de do-
 cen-cia (Tu-tor^^S^^Pas, ju-rado,
  []
 
 
 Package natbib Warning: Citation `REGLAMENTO' on page 18 undefined on input lin
-e 528.
+e 527.
 
 
 Package natbib Warning: Citation `REGLAMENTO' on page 18 undefined on input lin
-e 534.
+e 533.
 
 [18]
 
 Package natbib Warning: Citation `REGLAMENTO' on page 19 undefined on input lin
-e 579.
+e 578.
 
 
-Underfull \hbox (badness 3396) in paragraph at lines 581--582
+Underfull \hbox (badness 3396) in paragraph at lines 580--581
 []\OT1/cmr/m/n/10 ``Las ac-tivi-dades ad-min-is-tra-ti-vas se re-fieren a aque-
 l-las de-sar-rol-ladas por: Au-tori-dades
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 581--582
+Underfull \hbox (badness 3088) in paragraph at lines 580--581
 \OT1/cmr/m/n/10 Uni-ver-si-tarias, Di-rec-ciones, Je-fat-uras, Co-or-di-na-cion
 es, Comi-siones, Rep-re-sentaci^^Son Gremial,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--582
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
 
  []
 
 
-Package natbib Warning: Citation `ACTA' on page 19 undefined on input line 583.
+Package natbib Warning: Citation `ACTA' on page 19 undefined on input line 582.
 
 
 
-LaTeX Warning: Reference `tabla7' on page 19 undefined on input line 583.
+LaTeX Warning: Reference `tabla7' on page 19 undefined on input line 582.
 
 
-LaTeX Warning: Reference `tabla8' on page 19 undefined on input line 583.
+LaTeX Warning: Reference `tabla8' on page 19 undefined on input line 582.
 
 [19]
 
 Package natbib Warning: Citation `REGLAMENTO' on page 20 undefined on input lin
-e 602.
+e 601.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--605
+Underfull \hbox (badness 10000) in paragraph at lines 603--604
 
  []
 
 
-Package natbib Warning: Citation `ORIFI' on page 20 undefined on input line 606
+Package natbib Warning: Citation `ORIFI' on page 20 undefined on input line 605
 .
 
 
 Package natbib Warning: Citation `REGLAMENTO' on page 20 undefined on input lin
-e 645.
+e 644.
 
 
 Package natbib Warning: Citation `REGLAMENTO' on page 20 undefined on input lin
-e 647.
+e 646.
 
 [20]
 
 Package natbib Warning: Citation `REGLAMENTO' on page 21 undefined on input lin
-e 651.
+e 650.
 
 
-Underfull \hbox (badness 3547) in paragraph at lines 657--658
+Underfull \hbox (badness 3547) in paragraph at lines 656--657
 []\OT1/cmr/m/n/10 Se recolect^^So in-for-maci^^Son so-bre las ac-tivi-dades de 
 do-cen-cia, in-ves-ti-gaci^^Son, ex-tensi^^Son y
  []
 
 
 LaTeX Warning: Reference `informe-actividades' on page 21 undefined on input li
-ne 661.
+ne 660.
 
 
 LaTeX Warning: Reference `informe-resumenes' on page 21 undefined on input line
- 661.
+ 660.
 
 
-LaTeX Warning: Reference `rev_informes' on page 21 undefined on input line 661.
+LaTeX Warning: Reference `rev_informes' on page 21 undefined on input line 660.
 
 
 
 LaTeX Warning: Reference `informe-nuevos-form' on page 21 undefined on input li
-ne 661.
+ne 660.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 668--669
+Underfull \hbox (badness 10000) in paragraph at lines 667--668
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 686--706
+Underfull \hbox (badness 10000) in paragraph at lines 685--705
 
  []
 
 
-Overfull \hbox (2.05032pt too wide) in paragraph at lines 707--714
+Overfull \hbox (2.05032pt too wide) in paragraph at lines 706--713
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--714
+Underfull \hbox (badness 10000) in paragraph at lines 706--713
 
  []
 
@@ -753,7 +753,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 707--714
 File: img/promedios.png Graphic file (type png)
 
 <use img/promedios.png>
-Package pdftex.def Info: img/promedios.png used on input line 793.
+Package pdftex.def Info: img/promedios.png used on input line 792.
 (pdftex.def)             Requested size: 211.84306pt x 189.25851pt.
  [24 <./img/promedios.png>] [25]
 Cap\'{\i }tulo 4.
@@ -762,62 +762,62 @@ Cap\'{\i }tulo 4.
 ]
 Cap\'{\i }tulo 5.
 
-LaTeX Warning: Reference `rev_informes' on page 27 undefined on input line 871.
+LaTeX Warning: Reference `rev_informes' on page 27 undefined on input line 870.
 
 
 [27
 
 ]
 
-Package natbib Warning: Citation `ACTA' on page 28 undefined on input line 881.
+Package natbib Warning: Citation `ACTA' on page 28 undefined on input line 880.
 
 
 
-Package natbib Warning: Citation `CONV' on page 28 undefined on input line 881.
+Package natbib Warning: Citation `CONV' on page 28 undefined on input line 880.
 
 
 
-Underfull \hbox (badness 1137) in paragraph at lines 885--886
+Underfull \hbox (badness 1137) in paragraph at lines 884--885
 []\OT1/cmr/m/n/10 Cada ma-te-ria puede ser dic-tada por un con-junto de pro-fe-
 sores pertenecientes al ^^Sarea
  []
 
 
-Package natbib Warning: Citation `Norma' on page 28 undefined on input line 890
+Package natbib Warning: Citation `Norma' on page 28 undefined on input line 889
 .
 
 [28]
 
-Package natbib Warning: Citation `EPDI' on page 29 undefined on input line 903.
+Package natbib Warning: Citation `EPDI' on page 29 undefined on input line 902.
 
 
 
-LaTeX Warning: Reference `rev_informes' on page 29 undefined on input line 906.
+LaTeX Warning: Reference `rev_informes' on page 29 undefined on input line 905.
 
 
 [29] [30] <img/influencias.png, id=139, 732.48656pt x 392.96812pt>
 File: img/influencias.png Graphic file (type png)
 
 <use img/influencias.png>
-Package pdftex.def Info: img/influencias.png used on input line 956.
+Package pdftex.def Info: img/influencias.png used on input line 955.
 (pdftex.def)             Requested size: 402.86885pt x 216.13312pt.
  [31 <./img/influencias.png>] [32]
 <img/estructura0.png, id=146, 517.935pt x 562.35094pt>
 File: img/estructura0.png Graphic file (type png)
 
 <use img/estructura0.png>
-Package pdftex.def Info: img/estructura0.png used on input line 1011.
+Package pdftex.def Info: img/estructura0.png used on input line 1010.
 (pdftex.def)             Requested size: 362.55202pt x 393.64297pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1025--1029
+Underfull \hbox (badness 10000) in paragraph at lines 1024--1028
 
  []
 
 
-LaTeX Warning: Characters dropped after `\end{comment}' on input line 1031.
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 1030.
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1073
+Underfull \hbox (badness 10000) in paragraph at lines 1065--1072
 
  []
 
@@ -825,99 +825,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 1066--1073
 <img/conjunto0.png, id=155, 362.3136pt x 217.7736pt>
 File: img/conjunto0.png Graphic file (type png)
  <use img/conjunto0.png>
-Package pdftex.def Info: img/conjunto0.png used on input line 1078.
+Package pdftex.def Info: img/conjunto0.png used on input line 1077.
 (pdftex.def)             Requested size: 181.15636pt x 108.88652pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1083--1084
+Underfull \hbox (badness 10000) in paragraph at lines 1082--1083
 
  []
 
 [35 <./img/conjunto0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1126--1129
+Underfull \hbox (badness 10000) in paragraph at lines 1125--1128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1136--1137
+Underfull \hbox (badness 10000) in paragraph at lines 1135--1136
 
  []
 
 [36]
-Underfull \hbox (badness 10000) in paragraph at lines 1146--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1147
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1149--1150
+Underfull \hbox (badness 10000) in paragraph at lines 1148--1149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1151--1152
+Underfull \hbox (badness 10000) in paragraph at lines 1150--1151
 
  []
 
 [37]
-Underfull \hbox (badness 10000) in paragraph at lines 1179--1180
+Underfull \hbox (badness 10000) in paragraph at lines 1178--1179
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1182
+Underfull \hbox (badness 10000) in paragraph at lines 1180--1181
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1183--1187
+Underfull \hbox (badness 10000) in paragraph at lines 1182--1186
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1188--1189
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1190--1191
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
 
  []
 
 [38]
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1200--1201
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1203--1204
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1206
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1205
 
  []
 
 
-Underfull \hbox (badness 1975) in paragraph at lines 1207--1208
+Underfull \hbox (badness 1975) in paragraph at lines 1206--1207
 []\OT1/cmr/m/n/10 Suponiendo que las sal-i-das del sis-tema di-fuso (pri-or-i-d
 ad) para cada de-par-ta-mento son:
  []
 
 [39]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1224.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1223.
 
  <img/fase1_ejemplo.png, id=174, 518.6878pt x 111.41624pt>
 File: img/fase1_ejemplo.png Graphic file (type png)
 
 <use img/fase1_ejemplo.png>
-Package pdftex.def Info: img/fase1_ejemplo.png used on input line 1242.
+Package pdftex.def Info: img/fase1_ejemplo.png used on input line 1241.
 (pdftex.def)             Requested size: 311.21509pt x 66.85025pt.
 
 <img/fase1_fis.png, id=175, 436.63126pt x 91.09032pt>
 File: img/fase1_fis.png Graphic file (type png)
  <use img/fase1_fis.png>
-Package pdftex.def Info: img/fase1_fis.png used on input line 1265.
+Package pdftex.def Info: img/fase1_fis.png used on input line 1264.
 (pdftex.def)             Requested size: 305.63979pt x 63.76277pt.
 
 [40 <./img/fase1_ejemplo.png>]
@@ -925,21 +925,21 @@ Package pdftex.def Info: img/fase1_fis.png used on input line 1265.
 File: img/membresiaprueba1.png Graphic file (type png)
 
 <use img/membresiaprueba1.png>
-Package pdftex.def Info: img/membresiaprueba1.png used on input line 1276.
+Package pdftex.def Info: img/membresiaprueba1.png used on input line 1275.
 (pdftex.def)             Requested size: 215.30383pt x 92.2193pt.
 
 <img/membresiaprueba1PJ.png, id=181, 438.13687pt x 183.68625pt>
 File: img/membresiaprueba1PJ.png Graphic file (type png)
 
 <use img/membresiaprueba1PJ.png>
-Package pdftex.def Info: img/membresiaprueba1PJ.png used on input line 1283.
+Package pdftex.def Info: img/membresiaprueba1PJ.png used on input line 1282.
 (pdftex.def)             Requested size: 219.06789pt x 91.84288pt.
 
 <img/membresiaprueba1Prior.png, id=182, 430.60875pt x 180.675pt>
 File: img/membresiaprueba1Prior.png Graphic file (type png)
 
 <use img/membresiaprueba1Prior.png>
-Package pdftex.def Info: img/membresiaprueba1Prior.png used on input line 1290.
+Package pdftex.def Info: img/membresiaprueba1Prior.png used on input line 1289.
 
 (pdftex.def)             Requested size: 215.30383pt x 90.33727pt.
  [41 <./img/fase1_fis.png> <./img/membresiaprueba1.png> <./img/membresiaprueba1
@@ -948,10 +948,10 @@ PJ.png> <./img/membresiaprueba1Prior.png>]
 File: img/FISmatlab_prueba1.png Graphic file (type png)
 
 <use img/FISmatlab_prueba1.png>
-Package pdftex.def Info: img/FISmatlab_prueba1.png used on input line 1300.
+Package pdftex.def Info: img/FISmatlab_prueba1.png used on input line 1299.
 (pdftex.def)             Requested size: 232.99489pt x 83.18556pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1307
+Underfull \hbox (badness 10000) in paragraph at lines 1305--1306
 
  []
 
@@ -959,99 +959,99 @@ Underfull \hbox (badness 10000) in paragraph at lines 1306--1307
 File: img/reglasmatlabprueba1.png Graphic file (type png)
 
 <use img/reglasmatlabprueba1.png>
-Package pdftex.def Info: img/reglasmatlabprueba1.png used on input line 1323.
+Package pdftex.def Info: img/reglasmatlabprueba1.png used on input line 1322.
 (pdftex.def)             Requested size: 227.34882pt x 73.77544pt.
 
 <img/resAprueba1.png, id=191, 421.575pt x 280.79906pt>
 File: img/resAprueba1.png Graphic file (type png)
 
 <use img/resAprueba1.png>
-Package pdftex.def Info: img/resAprueba1.png used on input line 1332.
+Package pdftex.def Info: img/resAprueba1.png used on input line 1331.
 (pdftex.def)             Requested size: 210.78697pt x 140.39919pt.
  [42 <./img/FISmatlab_prueba1.png> <./img/reglasmatlabprueba1.png>] <img/resBpr
 ueba1.png, id=198, 415.5525pt x 278.54062pt>
 File: img/resBprueba1.png Graphic file (type png)
 
 <use img/resBprueba1.png>
-Package pdftex.def Info: img/resBprueba1.png used on input line 1339.
+Package pdftex.def Info: img/resBprueba1.png used on input line 1338.
 (pdftex.def)             Requested size: 207.77574pt x 139.26996pt.
  [43 <./img/resAprueba1.png> <./img/resBprueba1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1377--1378
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1377
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1380
+Underfull \hbox (badness 10000) in paragraph at lines 1378--1379
 
  []
 
 [44] [45]
-Underfull \hbox (badness 10000) in paragraph at lines 1442--1443
+Underfull \hbox (badness 10000) in paragraph at lines 1441--1442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1443--1452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1454--1462
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1461
 
  []
 
 [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1488
+Underfull \hbox (badness 10000) in paragraph at lines 1485--1487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1500--1501
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1503--1505
+Underfull \hbox (badness 10000) in paragraph at lines 1502--1504
 
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1511
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1514--1516
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1515
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1521--1522
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1525--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1524--1526
 
  []
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 1532--1533
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1532
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1549--1551
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1550
 
  []
 
 [49]
-Underfull \hbox (badness 10000) in paragraph at lines 1574--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1573--1575
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1577--1585
+Underfull \hbox (badness 10000) in paragraph at lines 1576--1584
 
  []
 
@@ -1059,46 +1059,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 1577--1585
 File: img/I1sigmoidal.png Graphic file (type png)
 
 <use img/I1sigmoidal.png>
-Package pdftex.def Info: img/I1sigmoidal.png used on input line 1606.
+Package pdftex.def Info: img/I1sigmoidal.png used on input line 1605.
 (pdftex.def)             Requested size: 253.39864pt x 189.7102pt.
  [51] [52 <./img/I1sigmoidal.png (PNG copy)>]
 <img/I4sigmoidal.png, id=235, 422.32782pt x 316.18124pt>
 File: img/I4sigmoidal.png Graphic file (type png)
 
 <use img/I4sigmoidal.png>
-Package pdftex.def Info: img/I4sigmoidal.png used on input line 1639.
+Package pdftex.def Info: img/I4sigmoidal.png used on input line 1638.
 (pdftex.def)             Requested size: 253.39864pt x 189.7102pt.
 
 <img/priorsigmoidal.png, id=236, 421.575pt x 316.18124pt>
 File: img/priorsigmoidal.png Graphic file (type png)
 
 <use img/priorsigmoidal.png>
-Package pdftex.def Info: img/priorsigmoidal.png used on input line 1664.
+Package pdftex.def Info: img/priorsigmoidal.png used on input line 1663.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
  [53 <./img/I4sigmoidal.png (PNG copy)>]
 
-LaTeX Warning: Reference `reglasparte1' on page 54 undefined on input line 1671
+LaTeX Warning: Reference `reglasparte1' on page 54 undefined on input line 1670
 .
 
 
-LaTeX Warning: Reference `reglasparte2' on page 54 undefined on input line 1671
+LaTeX Warning: Reference `reglasparte2' on page 54 undefined on input line 1670
 .
 
 
-LaTeX Warning: Reference `reglasparte3' on page 54 undefined on input line 1671
+LaTeX Warning: Reference `reglasparte3' on page 54 undefined on input line 1670
 .
 
 
-LaTeX Warning: Reference `reglasparte4' on page 54 undefined on input line 1671
+LaTeX Warning: Reference `reglasparte4' on page 54 undefined on input line 1670
 .
 
 [54 <./img/priorsigmoidal.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 1699--1700
+Underfull \hbox (badness 10000) in paragraph at lines 1698--1699
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1701--1707
+Underfull \hbox (badness 10000) in paragraph at lines 1700--1706
 
  []
 
@@ -1106,65 +1106,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 1701--1707
 File: img/nuevaestructura.png Graphic file (type png)
 
 <use img/nuevaestructura.png>
-Package pdftex.def Info: img/nuevaestructura.png used on input line 1712.
+Package pdftex.def Info: img/nuevaestructura.png used on input line 1711.
 (pdftex.def)             Requested size: 415.7755pt x 288.7769pt.
  [55]
 <img/influencia1.png, id=248, 726.46407pt x 322.95656pt>
 File: img/influencia1.png Graphic file (type png)
 
 <use img/influencia1.png>
-Package pdftex.def Info: img/influencia1.png used on input line 1721.
+Package pdftex.def Info: img/influencia1.png used on input line 1720.
 (pdftex.def)             Requested size: 435.8818pt x 193.77542pt.
 
 <img/influencia3.png, id=249, 682.80093pt x 310.15875pt>
 File: img/influencia3.png Graphic file (type png)
 
 <use img/influencia3.png>
-Package pdftex.def Info: img/influencia3.png used on input line 1728.
+Package pdftex.def Info: img/influencia3.png used on input line 1727.
 (pdftex.def)             Requested size: 409.68372pt x 186.09668pt.
  [56 <./img/nuevaestructura.png> <./img/influencia1.png>] <img/influencia4.png,
  id=253, 376.40625pt x 316.93407pt>
 File: img/influencia4.png Graphic file (type png)
 
 <use img/influencia4.png>
-Package pdftex.def Info: img/influencia4.png used on input line 1735.
+Package pdftex.def Info: img/influencia4.png used on input line 1734.
 (pdftex.def)             Requested size: 225.84547pt x 190.1619pt.
  [57 <./img/influencia3.png> <./img/influencia4.png>]
 Cap\'{\i }tulo 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1743--1745
+Underfull \hbox (badness 10000) in paragraph at lines 1742--1744
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1746--1748
+Underfull \hbox (badness 10000) in paragraph at lines 1745--1747
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1749--1751
+Underfull \hbox (badness 10000) in paragraph at lines 1748--1750
 
  []
 
 [58
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1756--1758
+Underfull \hbox (badness 10000) in paragraph at lines 1755--1757
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1759--1761
+Underfull \hbox (badness 10000) in paragraph at lines 1758--1760
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1762--1764
+Underfull \hbox (badness 10000) in paragraph at lines 1761--1763
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1768
+Underfull \hbox (badness 10000) in paragraph at lines 1764--1767
 
  []
 
@@ -1181,25 +1181,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1791.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1791.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1790.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1790.
 (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1791.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1791.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1790.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1790.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1791.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1790.
  ) 
 Here is how much of TeX's memory you used:
- 9298 strings out of 495063
- 133264 string characters out of 3182201
- 239000 words of memory out of 3000000
- 12321 multiletter control sequences out of 15000+200000
+ 9287 strings out of 495063
+ 133123 string characters out of 3182201
+ 238896 words of memory out of 3000000
+ 12310 multiletter control sequences out of 15000+200000
  14310 words of font info for 54 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,13n,45p,2299b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,13n,45p,4296b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1217,7 +1217,7 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tesis.pdf (69 pages, 804609 bytes).
+Output written on Tesis.pdf (69 pages, 804757 bytes).
 PDF statistics:
  333 PDF objects out of 1000 (max. 8388607)
  209 compressed objects within 3 object streams

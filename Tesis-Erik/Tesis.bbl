@@ -5,11 +5,6 @@ Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
 \newblock {\em Discrete-Event System Simulation}.
 \newblock Pearson, 5 edition.
 
-\bibitem[\protect\astroncite{Cerrada y Rodríguez}{2001}]{Logica}
-Cerrada, M. y Rodríguez, W. (2001).
-\newblock {\em Introducción a la técnicas de computación inteligente}, chapter
-  Lógica Difusa, pages 53--101.
-
 \bibitem[\protect\astroncite{Fawcett et~al.}{2012}]{xmlBeginning}
 Fawcett, J., Quin, L., y Ayers, D. (2012).
 \newblock {\em Beginning XML}.
@@ -83,22 +78,10 @@ Santana, Y.~C., Ángel Mateo~Pla, M., y Terol, J.~P. (2004).
 \newblock Herramienta de simulacion distribuida mediantes agentes moviles jade.
 \newblock Technical report, Conferência IADIS Ibero-Americana.
 
-\bibitem[\protect\astroncite{Taha}{2014}]{TAHA}
-Taha, H. (2014).
-\newblock {\em Investigación de Operaciones}.
-\newblock Pearson, 9 edition.
-\newblock Edición traducida al español.
-
 \bibitem[\protect\astroncite{Uzcátegui et~al.}{2011}]{Galatea}
 Uzcátegui, M., Dávila, J., y Tucci, K. (2011).
 \newblock Galatea: una historia de modelado y simulación.
 \newblock {\em Revista Ciencia e Ingeniería}, (1316-7081):85--94.
-
-\bibitem[\protect\astroncite{Velez y Montoya}{2007}]{velez}
-Velez, M. y Montoya, J. (2007).
-\newblock Metaheurísticos: Una alternativa para la solución de problemas
-  combinatorios en administración de operaciones.
-\newblock {\em Revista EIA}, (8):99--115.
 
 \bibitem[\protect\astroncite{Viloria}{2015}]{Electrica}
 Viloria, F.~J. (2013-2015).

@@ -3,58 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Tesis.aux
 The style file: apa.bst
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "KLIR"
 Warning--I didn't find a database entry for "EPDI"
 Warning--I didn't find a database entry for "REGLAMENTO"
 Warning--I didn't find a database entry for "ACTA"
 Warning--I didn't find a database entry for "CONV"
 Warning--I didn't find a database entry for "Norma"
 Warning--I didn't find a database entry for "ORIFI"
-Warning--can't use both author and editor fields in Logica
-Warning--empty publisher in Logica
 Warning--empty publisher in ajaxManual
 Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
-Warning--there's a number but no volume in velez
-You've used 20 entries,
+You've used 17 entries,
             1940 wiz_defined-function locations,
-            604 strings with 6454 characters,
-and the built_in function-call counts, 6114 in all, are:
-= -- 594
-> -- 207
-< -- 18
-+ -- 68
-- -- 64
-* -- 490
-:= -- 1139
-add.period$ -- 56
-call.type$ -- 20
-change.case$ -- 139
-chr.to.int$ -- 20
-cite$ -- 26
-duplicate$ -- 249
-empty$ -- 416
-format.name$ -- 90
-if$ -- 1157
+            580 strings with 6043 characters,
+and the built_in function-call counts, 4947 in all, are:
+= -- 483
+> -- 174
+< -- 13
++ -- 58
+- -- 54
+* -- 387
+:= -- 950
+add.period$ -- 47
+call.type$ -- 17
+change.case$ -- 120
+chr.to.int$ -- 17
+cite$ -- 20
+duplicate$ -- 198
+empty$ -- 325
+format.name$ -- 73
+if$ -- 917
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 14
-newline$ -- 99
-num.names$ -- 60
-pop$ -- 112
+missing$ -- 9
+newline$ -- 84
+num.names$ -- 51
+pop$ -- 90
 preamble$ -- 1
-purify$ -- 132
+purify$ -- 112
 quote$ -- 0
-skip$ -- 191
+skip$ -- 154
 stack$ -- 0
-substring$ -- 300
-swap$ -- 37
-text.length$ -- 2
+substring$ -- 223
+swap$ -- 22
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
-warning$ -- 6
-while$ -- 44
+type$ -- 94
+warning$ -- 3
+while$ -- 35
 width$ -- 0
-write$ -- 254
-(There were 13 warnings)
+write$ -- 215
+(There were 9 warnings)

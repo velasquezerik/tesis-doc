@@ -1,15 +1,15 @@
-\contentsline {chapter}{�ndice de Tablas}{vi}{chapter*.1}
+\contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
 \contentsline {chapter}{Agradecimientos}{vii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Justificaci\'on}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Alcance}{3}{section.1.4}
-\contentsline {section}{\numberline {1.5}Objetivos}{3}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Objetivo general}{3}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{3}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.5}Objetivos}{4}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Objetivo general}{4}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{4}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Metodolog\IeC {\'\i }a}{4}{section.1.6}
-\contentsline {section}{\numberline {1.7}Estructura del documento}{4}{section.1.7}
+\contentsline {section}{\numberline {1.7}Estructura del documento}{5}{section.1.7}
 \contentsline {chapter}{\numberline {2}Marco te\'orico}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}Simulaci\'on Distribuida}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Simulaci\'on de Eventos Discretos}{7}{section.2.2}
