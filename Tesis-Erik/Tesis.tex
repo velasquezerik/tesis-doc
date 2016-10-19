@@ -354,7 +354,7 @@ El controlador es un objeto que se encarga de dirigir el flujo del control de la
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{img/RelacionesMVC.png}
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
 	\caption{Relaciones entre los módulos del patrón MVC.}
 	\label{mvc}
 \end{figure}
@@ -403,7 +403,7 @@ El sistema de simulación de eventos discretos mediante la web consiste de tres e
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{img/RelacionesMVC.png}
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
 	\caption{Sistema de Simulación Web GALATEA.}
 	\label{estructuraSistema}
 \end{figure}
@@ -422,7 +422,7 @@ Para el desarrollo de esta aplicación se usó el framework de desarrollo web Djan
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.6]{img/RelacionesMVC.png}
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
 	\caption{Arquitectura de la aplicación web.}
 	\label{arquitecturaAplicacion}
 \end{figure}
@@ -481,15 +481,207 @@ Todos estos archivos son almacenamos en un sistema de almacenamiento secundario,
 
 \subsection{Diseño de la Base de Datos}
 
-Definir
+Puesto que Django hace uso de un ORM para manejar la base de datos, desde le punto de vista de la aplicación web, cada tabla de la base de datos es una clase, por lo que es posible aprovechar todas las características de la programación orientada a objetos como: herencia de clases, clases abstractas, implementación de métodos específicos a un modelo y sobre carga de métodos.
+
+A continuación se describen los modelos que forman parte  de la base de datos:
+
+Cada usuario registrado esta representado por el modelo \textit{user}, el cual contiene la información básica del usuario e información de ingreso al sistema.
+
+El manejo de roles se define en el modelo \textit{group}, en el cual manejamos dos roles principales: el de administrador y el de usuario.
+
+Las relaciones de usuarios se maneja mediante \textit{relation}
+
+Los archivos \textit{file}
+
+Las carpetas \textit{folder}
+
+Los archivos compartidos mediante \textit{sharefile}
+
+Las carpetas compartidas en \textit{sharefolder}
+
+Hay una gran variedad de logs que se manejan los cuales se encuentran en distintas tablas como: \textit{logsfile} para logs de archivos, \textit{logsfolder} para las modificaciones de carpetas, entre otros.
+
+\subsubsection{Diagrama de entidad-relación}
+
+La figura \ref{entidadRelacionPrincipal} muestra las entidades principales y sus relaciones dentro de la base de datos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Entidades principales de la base de datos.}
+	\label{entidadRelacionPrincipal}
+\end{figure}
+
+La figura \ref{entidadRelacionUsuarios} muestra las entidades  relacionadas al control y manejo de usuarios, sus roles y perfiles .
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Entidades manejo de usuarios.}
+	\label{entidadRelacionUsuarios}
+\end{figure}
+
+
+La figura \ref{entidadRelacionArchivosCarpetas} muestra la relación para el control de archivos y carpetas que puede manejar el usuario.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Entidades manejo archivos y carpetas.}
+	\label{entidadRelacionArchivosCarpetas}
+\end{figure}
+
+La figura \ref{entidadRelacionArchivosCarpetasCompartidos} muestra la relación para el control de archivos y carpetas compartidas entre otros usuarios.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Entidades manejo archivos y carpetas compartidos.}
+	\label{entidadRelacionArchivosCarpetasCompartidos}
+\end{figure}
+
+\subsubsection{Entidades}
+
+Las siguientes tablas resumen las entidades y la función de las mismas dentro del sistema web:
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|l|c|}
+			\hline
+			Nombre de la entidad & Función \\\hline
+			\textit{user} & explicar  \\\hline
+			\textit{userimage} & explicar \\\hline
+			\textit{group} &	explicar  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Entidades relacionadas al manejo de usuarios.} \label{tabla-manejo-usuarios}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|l|c|}
+			\hline
+			Nombre de la entidad & Función \\\hline
+			\textit{user} & explicar  \\\hline
+			\textit{userimage} & explicar \\\hline
+			\textit{group} &	explicar  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Entidades relacionadas al manejo de archivos y carpetas.} \label{tabla-manejo-archivos-carpetas}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|l|c|}
+			\hline
+			Nombre de la entidad & Función \\\hline
+			\textit{user} & explicar  \\\hline
+			\textit{userimage} & explicar \\\hline
+			\textit{group} &	explicar  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Entidades relacionadas al manejo de archivos y carpetas compartidos.} \label{tabla-manejo-archivos-carpetas-compartidos}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|l|c|}
+			\hline
+			Nombre de la entidad & Función \\\hline
+			\textit{user} & explicar  \\\hline
+			\textit{userimage} & explicar \\\hline
+			\textit{group} &	explicar  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Entidades relacionadas al manejo de logs.} \label{tabla-manejo-logs}
+\end{table}
+
+\subsubsection{Relaciones}
+
+\begin{itemize}
+	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+\end{itemize}
 
 \subsection{Diseño de Pantallas}
 
-Definir
+Todas las pantallas del sistema fueron creadas bajo el paradigma del diseño web adaptable, es decir, que pueden ajustarse a cualquier resolución de pantalla sin reducir la usabilidad o sacrificar la experiencia del usuario, el servidor no tiene que decidir entre un conjunto de plantillas para distintas resoluciones, sino que envía al cliente sólo documento HTML y este combina las reglas de presentación de archivos CSS y la lógica de archivos JavaScript para desplegar una página web adaptada al dispositivo del usuario.
+
+Ya que una aplicación web está compuesta por decenas de vistas que comparten componentes como: barras de navegación, cabeceras y pie de páginas, Django incluye un micro-lenguaje de plantillas con funcionalidades de herencia e inclusión, estructuras de repetición y decisión, esto hace que sea posible tener una taxonomía de plantillas, de manera que sólo es necesario escribir los elementos comunes a un conjunto de plantillas una vez y crear nuevas pantallas en el tope de otras. Se le llama rendering al proceso de combinar los datos de la base de datos y la petición del usuario, junto con una plantilla predefinida en la aplicación para generar páginas web personalizadas.
+
+Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la pagina, \textbf{(2) Otro bloque} permite explicación, \textbf{(2) Otro bloque} permite explicación.
+
+A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
+
+\begin{itemize}
+	\item \textbf{Pantalla 1}: Explicación.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+		\caption{Pantalla1.}
+		\label{pantalla1}
+	\end{figure}
+	
+	\item \textbf{Pantalla 2}: Explicación.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+		\caption{Pantalla2.}
+		\label{pantalla2}
+	\end{figure}
+	
+	\item \textbf{Pantalla 3}: Explicación.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+		\caption{Pantalla3.}
+		\label{pantalla3}
+	\end{figure}
+\end{itemize}
+
 
 \subsection{Diseño de URLs}
 
-Definir
+Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios, a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
+
+\begin{itemize}
+	\item Operaciones sobre algo:
+	\begin{itemize}
+		\item \textbf{GET /admin/algo/} explicación.
+		\item \textbf{POST /admin/algo/} explicación.
+		\item \textbf{GET /user/algo/} explicación.
+		\item \textbf{POST /user/algo/} explicación.
+	\end{itemize}
+	\item Operaciones sobre algo:
+	\begin{itemize}
+		\item \textbf{GET /admin/algo/} explicación.
+		\item \textbf{POST /admin/algo/} explicación.
+		\item \textbf{GET /user/algo/} explicación.
+		\item \textbf{POST /user/algo/} explicación.
+	\end{itemize}
+	\item Operaciones sobre algo:
+	\begin{itemize}
+		\item \textbf{GET /admin/algo/} explicación.
+		\item \textbf{POST /admin/algo/} explicación.
+		\item \textbf{GET /user/algo/} explicación.
+		\item \textbf{POST /user/algo/} explicación.
+	\end{itemize}
+\end{itemize}
 
 \section{Gestión de Archivos}
 
@@ -511,463 +703,6 @@ Definir
 
 Definir
 
-
-
-Este capítulo se enfoca en describir la organización de la Facultad de Ingeniería de la ULA, de su planta docente, los métodos utilizados para la evaluación de los profesores y la dinámica de asignación de nuevos cargos docentes. De igual manera se tratan los conceptos de docencia, investigación, extensión, mejoramiento y administración, enfocados en el tratamiento que se les da en la institución como información relevante para el desarrollo y comprensión de este proyecto.
-
-\section{Planta profesoral}
-
-La planta profesoral de la Facultad de Ingeniería de la ULA  cuenta con una composición diversa en la que los profesores se categorizan según su antigüedad, nivel de formación, entre otros aspectos.
-
-Al momento del desarrollo de este proyecto, la Facultad de Ingeniería está compuesta por aproximadamente 270
-profesores dedicados a la docencia, investigación, extensión, administración y mejoramiento.
-
-%La Facultad de Ingeniería cuenta con un total de doscientos sesenta y ocho (268) profesores activos, dedicados a la docencia en pregrado y postgrado, a la investigación y a la extensión universitaria. De acuerdo con la Dirección de Asuntos Profesorales (DAP), la planta docente de la Facultad de Ingeniería se distribuye de la siguiente manera:%%
-
-Según el \citet[art. 8]{EPDI}\footnote{Estatuto del Personal Docente y de Investigación.}, el personal docente y de investigación en la ULA está clasificado en condición de: Ordinario, Especial, Honorario y Jubilado.
-
-\begin{itemize}
-\item Miembros Ordinarios: todos los profesores con escalafón de instructor, asistente, agregado, asociado y titular.
-\item Miembros Especiales: los auxiliares docentes y de investigación, investigadores y docentes libres, profesores contratados, profesores invitados y visitantes.
-\item Profesores Honorarios: aquellos que según sus méritos científicos, culturales y profesionales les sea otorgada tal distinción por el Consejo Universitario.
-\item Profesores Jubilados: profesores que han cumplido los requisitos establecidos en el artículo 102 de la Ley de Universidades y en el título III del libro III del \citet{EPDI}, y sean declarados tales por el Consejo Universitario.
-\end{itemize}
-
-Los profesores cumplirán con sus actividades en el tiempo establecido según su dedicación. Las dedicaciones establecidas en la facultad se denominan como: dedicación exclusiva, tiempo completo, medio tiempo y tiempo convencional \citep[art. 109]{EPDI}. Las horas correspondientes a cada tipo de dedicación se muestran en la tabla \ref{tabladedicaciones}.
-
-\begin{table}[H]
-\centering
-\resizebox{12cm}{!}{
-{\fontsize{10pt}{\baselineskip}\selectfont
-\begin{tabular}{|c|c|c|}
- \hline
-
-& & \\ \hline
-\end{tabular}
-}}
-\caption{Horas semanales según dedicación.} \label{tabladedicaciones}
-\end{table}
-
-El escalafón de un profesor se refiere al estado en que se encuentra o al que puede ascender el profesor de acuerdo con sus credenciales, méritos científicos, méritos académicos y años de servicio. Se categoriza como: instructor, asistente, agregado, asociado y titular \citep[art. 161-162]{EPDI}. Los profesores en cualquiera de estos estados son categorizados como miembros ordinarios del personal docente y de investigación \citep[art. 8]{EPDI}.
-\begin{comment}El estado se refiere a la situación en que se encuentra el profesor según los permisos concedidos por la Facultad\end{comment}. Un profesor puede solicitar permisos o ayudas de la facultad para lo siguiente: Beca, sabático, plan de formación, autorización, permiso remunerado, permiso no remunerado.
-
-
-\section{Actividades en la Facultad de Ingeniería de la Universidad de Los Andes}
-
-Según el \citet{REGLAMENTO}\footnote{Reglamento para la evaluación de actividades de los profesores de la Facultad de Ingeniería de la Universidad de Los Andes}, en su artículo 2, las actividades que realizan los docentes de la institución se categorizan en distintas áreas: Actividades de docencia, actividades de investigación, actividades de extensión, actividades administrativas y actividades de mejoramiento.
-
-En lo que sigue se introduce una descripción del tratamiento de cada actividad dentro de la Facultad de Ingeniería, según los reglamentos pertinentes.
-
-\subsection{Actividades de Docencia}
-
-En cuanto a las actividades de docencia, el \citet[art. 3]{REGLAMENTO} especifica:
-
-\begin{quote}
-Las actividades de docencia se subdividen en actividades de enseñanza y otras actividades de docencia. Las de enseñanza se refieren al dictado de clases en pregrado, postgrado y sus respectivas evaluaciones. Las otras actividades de docencia se refieren a: publicaciones  para fines didácticos (apuntes, guías, problemarios, etc.); asesorías o tutorías de tesis, trabajos de grado, pasantías, planes de formación, jurado de: trabajos de ascenso, concurso para cargos docentes, tesis, trabajos de grado, pasantías y preparadurías. Otras actividades aprobadas por la unidad académica correspondiente." (p. 1)
-\end{quote}
-
-La tabla \ref{tabla4} resume la valoración de las actividades de docencia en la Facultad de Ingeniería. Otras actividades de docencia tomadas en cuenta se muestran en los apéndices \ref{tabla5}.\\
-
-\begin{table}[H]
-\centering
-\resizebox{12cm}{!}{
-{\fontsize{10pt}{\baselineskip}\selectfont
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-
-\hline
-\end{tabular}
-}}
-\caption{Ponderación de las actividades docentes de pregrado y postgrado.} \label {tabla4}
-\end{table}
-
-
-De acuerdo a las actividades que se realizan en la facultad en cuanto a docencia,  se listan algunas características a considerar para la creación de posibles criterios e indicadores para el proyecto.
-
-\begin{itemize}
-\item Número de alumnos de cada departamento de la escuela.
-\item Número de alumnos por secciones. Cantidad promedio o esperada de alumnos para las secciones de las asignaturas de los departamentos de la escuela. Según el \citet[art. 32]{ACTA}\footnote{Acta convenio entre APULA y la Universidad de Los Andes}, se sugiere la proporción Profesor-Alumno como sigue:
-    \begin{itemize}
-        \item Laboratorios, seminarios y talleres: no más de veinticuatro (24) alumnos por profesor.
-        \item Idiomas: no más de veinticinco (25) alumnos por curso.
-        \item Clases teóricas: no más de sesenta (60) alumnos por curso.
-        \item Pasantías clínicas: no más de veinte (20) alumnos por profesor.
-    \end{itemize}
-
-La \cite{CONV}\footnote{I Convención colectiva única de trabajadores del sector universitario.}, en su cláusula n° 30, establece las cantidades siguientes:
-    \begin{itemize}
-        \item Clases teóricas: no más de treinta (30) alumnos por aula.
-        \item Clases teórico-prácticas: no más de veinte (20) alumnos por actividad.
-        \item Clases en Laboratorios: no más de dieciséis (16) alumnos por laboratorio.
-        \item Clase de taller: no más de dieciséis (16) alumnos por taller.
-        \item Trabajos de campo: no más de veinte (20) alumnos por actividad.
-        \item Trabajos dirigidos: no más de veinte (20) alumnos por actividad.
-        \item Prácticas deportivas: no más de veinte (20) alumnos por sección.
-        \item Pasantías industriales: no más de ocho (8) alumnos por docente.
-        \item Servicio Comunitario: no más de ocho (8) alumnos por docente.
-    \end{itemize}
-
-Estas cantidades están sujetas a las condiciones físicas y recursos disponibles para el desarrollo de cada actividad.
-
-\item Secciones ofertadas / secciones requeridas. Secciones que deberían ofertarse según la cantidad de alumnos inscritos, la proporción profesor-alumnos acordada en el departamento y profesores disponibles. Secciones requeridas de acuerdo a la demanda de alumnos.
-\item Profesores disponibles / horas disponibles.  Disponibilidad de profesores y horas de docencia de acuerdo la planta profesoral del departamento y dedicación de los mismos.
-\item Profesores requeridos / horas requeridas.  Profesores que se requieren para cubrir la demanda, según las secciones, número de alumnos, etc.
-\item Número promedio de secciones por profesor.
-\item Profesores jubilados en los últimos años, profesores jubilados activos, profesores jubilables.
-\item Secciones atendidas por profesores jubilados y jubilables.
-\item Materias / departamentos. Asignaturas ofrecidas por los departamentos.
-\item Factores de multiplicación para ponderación de horas de clases, prácticas, laboratorios, etc. (Tabla 1).
-\item Dedicación del profesor.
-
-
-\item Según el \citet[art. 11]{ACTA}, sobre la Carga académica, ``los profesores a dedicación exclusiva o a tiempo completo dictarán un máximo de hasta (10) diez horas teóricas semanales distintas, o su equivalente en otras modalidades de la enseñanza, siempre y cuando el resto del tiempo lo justifique con actividades académicas."(p. 7).
-
-La valoración de las horas de clase se establece allí como sigue:
-    \begin{itemize}
-        \item Por una hora teórica distinta: 03 horas.
-        \item Por una hora teórica repetida: 02 horas.
-        \item Por una hora de trabajo de laboratorio, seminario, taller, trabajo de campo o tutorías: 02 horas.
-        \item Por una hora de actividad clínica: 02 horas.
-        \item Condición, escalafón y estado del profesor.
-        \item Número de profesores con estados de Becario, Sabático, Autorizado u otra actividad por la cual se prescinda de su presencia en la Escuela/Facultad. Según la Norma para la Aplicación del Programa de Formación y Perfeccionamiento Académico del Personal Docente y de Investigación Ordinario de la Universidad de Los Andes, ningún departamento podrá mantener simultáneamente a más del 10 \% de sus profesores en beca, 10 \% en año sabático ni más del 10 \% en la condición de autorizado, exceptuando a los departamentos que tengan un número menor de diez (10) profesores. En este caso el departamento debe comprometerse a cubrir la carga de los profesores becarios \citep[art. 11, art. 24]{Norma}.
-        \item Horas del profesor dedicadas a otras actividades de docencia (Tutorías, jurado, publicaciones, referidas a la actividad docente (ver tabla \ref{tabla5})).
-        \item Horas en conjunto de los profesores de cada departamento de la escuela dedicadas a otras actividades de docencia.
-    \end{itemize}
-
-\end{itemize}
-
-\subsection{Actividades de Investigación}
-
-Para las actividades de investigación, el \citet[art. 4]{REGLAMENTO} establece:
-
-\begin{quote}
-Las actividades de investigación se refieren a: publicaciones como resultados de trabajos de investigación (artículos, libros especializados, etc.), capítulos en libros especializados, participación con trabajo o invitado a plenaria en eventos científicos; trabajo de investigación conducente a ascenso; producción tecnológica (patente, producto, etc., que tenga factibilidad y/o posibilidad de implementación para resolver algún otro problema tecnológico)(p. 1).
-\end{quote}
-
-En la tabla \ref{tabla-inv}, se listan algunas actividades de investigación establecidas en el \cite{REGLAMENTO}.
-
-\begin{table}[H]
-\centering
-\resizebox{15cm}{!}{
-{\fontsize{10pt}{\baselineskip}\selectfont
-\begin{tabular}[t]{|l|c|c|c|}
- \hline
-\makebox[10cm][c]{Actividades de Investigación} & Hrs. Semana & Semanas & Hrs. Anuales \\\hline
-Artículo científico en revista indizada & 8 & 42 & 336 \\\hline
-Artículo científico en revista con arbitraje & 5 & 42 & 210 \\\hline
-Libro especializado publicado en Editorial reconocida &	14 & 42 & 588 \\\hline
-Capítulo en libro especializado publicado en editorial reconocida & 5 & 42 & 210 \\\hline
-Conferencia plenaria en congreso internacional & 6 & 42 & 252 \\ \hline
-Conferencia plenaria en congreso nacional & 3 & 42 & 126 \\\hline
-Patente & 12 & 42 & 504 \\\hline
-Ponencia en congreso internacional & 5 & 42 & 210 \\\hline
-Ponencia en congreso nacional & 3 & 42 & 126 \\\hline
-Producto evaluado por organización, financiado o comisión ad-hoc & 6 & 42 & 252 \\\hline
-\end{tabular}
-}}
-
-\caption {Valoración de las actividades de investigación.} \label{tabla-inv}
-\end{table}
-
-De acuerdo a lo anterior se observan algunas características de la investigación que pueden ser consideradas como posibles criterios, indicadores, variables para el proyecto.
-
-La Facultad de Ingeniería cuenta con diversos grupos, laboratorios e institutos dedicados a la investigación, formados por profesores y personal de las distintas escuelas de la facultad. Algunos aspectos a considerar en la construcción de criterios dirigidos al proyecto son:
-
-\begin{itemize}
-%\item Número de profesores de cada departamento de la escuela adscritos a grupos de investigación.
-%\item Número de profesores de cada departamento de la escuela adscritos a centros de investigación.
-%\item Número de profesores de cada departamento de la escuela adscritos a institutos de investigación.
-\item Horas dedicadas por el profesor en actividades de investigación como publicación de libros, artículos, ponencias, congresos (considerando la valoración de la tabla \ref{tabla-inv}).
-\item Horas dedicadas en conjunto por los profesores de cada departamento de la escuela en actividades de investigación.
-\item Promedio de horas dedicadas por los profesores de cada departamento a la investigación.
-\item Cantidad de artículos publicados por profesores del departamento.
-\item Cantidad de conferencias y de ponencias aceptadas a los profesores del departamento  en eventos de investigación y desarrollo.
-\item Productos de investigación (Cantidad, impacto, importancia).
-\item Reputación de cada departamento de la escuela en el área de investigación.
-\item Proporción de profesores de cada departamento que hacen investigación.
-\end{itemize}
-
-\subsection{Actividades Administrativas}
-
-Respecto a las actividades administrativas, el \citet[art. 6]{REGLAMENTO} dice:
-
-``Las actividades administrativas se refieren a aquellas desarrolladas por: Autoridades Universitarias, Direcciones, Jefaturas, Coordinaciones, Comisiones, Representación Gremial, Jurado de Concursos para Cargos Administrativos, Miembros de Cuerpos Colegiados."(p. 2).\\
-
-En el \citet{ACTA}, se especifica la valoración de los distintos cargos administrativos como se muestra en los apéndices \ref{tabla7} y \ref{tabla8}. Las actividades administrativas comprenden una parte fundamental y de importancia para el funcionamiento de la universidad.  Los cargos administrativos ejercidos por los miembros de la planta profesoral están dirigidos al control de las actividades que sostienen a la institución. Las características siguientes se consideran como posibles puntos a tomar en cuenta en el proyecto:
-
-\begin{itemize}
-\item Carga administrativa de profesores de cada departamento de la escuela.
-\item Número de profesores miembros de comisiones.
-\item Número de profesores representantes ante comisiones o consejos.
-\item Número de profesores miembros de juntas o comités.
-\item Número de profesores con cargos de coordinador.
-\item Direcciones de departamentos (Número de departamentos de la escuela).
-\item Jefatura de laboratorios o centros (Número de laboratorios o centros de cada departamento).
-\item Profesores con cargos de Decano, Rector, Vicerrector, etc.
-\item Carga administrativa total de cada departamento.
-\item Total de cargos administrativos cubiertos por cada departamento.
-\item Promedio de horas empleadas en actividades administrativas por profesor.
-\item Proporción de profesores del departamento con cargos administrativos.
-\end{itemize}
-
-\subsection{Actividades de Extensión}
-
-El \citet[art. 5]{REGLAMENTO} señala la naturaleza de las actividades de extensión:
-
-``Las actividades de extensión se refieren a aquellas relacionadas con entes externos. Puede incluir: cursos, charlas, conferencias, asesorías, autorizadas por la unidad académica correspondiente; comisiones y postgrados por convenios previamente autorizados por el Consejo de Facultad donde se especifique las horas de dedicación reconocidas."(p. 1).\\
-
-Según la ORIFI\footnote{Oficina de Relaciones Institucionales de la Facultad de Ingeniería}, como se especifica en su sitio web \citep{ORIFI}, algunas de las actividades de extensión que se realizan en la facultad comprenden las siguientes:
-
-\begin{itemize}
-\item Programación de Pasantías.
-\item Asistencia Técnica a numerosas empresas del Estado Mérida.
-\item Proyectos de Control de Calidad e Ingeniería Económica.
-\item Perfiles Económicos y Estudios de Factibilidad Económica y Tecnológica.
-\item Apoyo ejecutivo a eventos.
-\item Organiza y programa Foros, Seminarios, Talleres y Cursos que se dictan desde el nivel de especialización, Actualización y Perfeccionamiento para profesionales y/o personal de nómina mayor del sector Industrial hasta el nivel de adiestramiento y formación para el personal de nómina menor y/o público en general.
-\item Organiza y programa presentaciones de grupos artísticos (Música Folklórica, Poesía, Teatro, etc.).
-\item Organiza conciertos de la Coral ``Vinicio Adames", grupo artístico de la Facultad de Ingeniería.
-\item Adelanta conjuntamente con las Facultades de Ciencias, Ciencias Forestales y la Dirección General de Cultura y Extensión (DIGECEX) el proyecto ``Circuito de la Universidad de Los Andes para el Manejo Integral de Desechos" (CIULAMIDE).
-\item Organiza en forma periódica (trianual), las Jornadas Científico-Técnicas de la Facultad de Ingeniería.
-\end{itemize}
-
-\begin{comment}
-Según la lista de actividades, algunos puntos considerables para la delimitación de criterios concernientes al proyecto se proponen a continuación:
-
-\begin{itemize}
-\item Participación de profesores en pasantías.
-\item Cantidad de comunidades apoyadas por la escuela.
-\item Cantidad de empresas apoyadas por la escuela.
-\item Cantidad de proyectos de servicio comunitario ofrecidos por la escuela/profesores de la escuela.
-\item Cantidad de profesores tutores activos de servicio comunitario.
-\item Cantidad de alumnos activos en servicio comunitario.
-\item Número de eventos, foros, talleres, seminarios de apoyo al sector industrial y comunidad en general realizados por la escuela.
-\item Profesores de la escuela participantes en los eventos, foro, entre otros.
-\item Número de programas y presentaciones artísticas y culturales organizadas por la escuela/ profesores de la escuela.
-\item Profesores participantes en los programas y presentaciones artísticas y culturales.
-\item Cantidad de alumnos de la escuela involucrados en actividades de extensión y apoyo (por ejemplo, servicio comunitario).
-\item Horas totales de la escuela empleadas en actividades de extensión.
-\item Promedio de horas de extensión por profesor en la escuela.
-\item Proporción de profesores dedicados a la extensión.
-\end{itemize}
-
-\end{comment}
-
-\subsection{Actividades de Mejoramiento}
-
-Según el \citet[art. 58, n° 2]{REGLAMENTO} es obligación del profesor ``Mejorar constantemente su capacidad científica y pedagógica", por lo que los instructores y asistentes deben ``someterse a programas de formación y mejoramiento".
-Los programas de mejoramiento ejecutados en la Facultad de Ingeniería incluyen becas, años sabáticos, planes de formación, y otras actividades que sean consideradas por la unidad académica correspondiente.
-Los profesores adscritos de la Facultad de Ingeniería (dedicación exclusiva y tiempo completo*) deben reportar las actividades cumplidas y propuestas durante el período académico, tomando en cuenta las especificaciones anteriores sobre la valoración de cada actividad. Esto a través de las planillas ``Informe de actividades cumplidas" y ``Plan de Actividades Propuestas", según el \citet{REGLAMENTO}.
-
-\section{Evaluación de las actividades docentes}
-
-El \citet{REGLAMENTO}, indica que los profesores deben presentar informes sobre las actividades cumplidas y propuestas anualmente. Estos informes son recogidos por medio del llenado de las planillas ``Informe de Actividades Cumplidas" y ``Plan de Actividades Propuestas". Los informes de actividades cumplidas recogen el rendimiento de cada profesor en el transcurso de un año, respecto a las cinco áreas de actividades de la facultad; es decir, docencia, investigación, extensión, mejoramiento y administración.
-
-Esta información se considera de utilidad para los fines de este proyecto, dado que pueden ser tomados como variables principales para la medición de la prioridad de cada departamento o unidad académica, en el caso de las asignaciones de nuevos cargos.
-
-Con el fin de comprender y analizar el rendimiento de las unidades académicas de la Facultad de Ingeniería, se propuso como fase preliminar estudiar  el registro de datos sobre las actividades realizadas en la misma.
-
-Se recolectó información sobre las actividades de docencia, investigación, extensión y administración, contenidos en resúmenes e informes correspondientes a los años 2010, 2011, 2012 y 2013, de los tres departamentos miembros de la Escuela de Sistemas: Computación, Sistemas de Control e Investigación de Operaciones.
-
-En el caso de la Escuela de Sistemas, se cuenta con un formato elaborado en \emph{Excel}, para facilitar el registro de las actividades. De igual forma, los departamentos miembros de la Escuela deben presentar un resumen anual de las actividades de acuerdo a los informes individuales de los profesores adscritos.
-
-En los apéndices \ref{informe-actividades}, \ref{informe-resumenes}, \ref{rev_informes} y \ref{informe-nuevos-form}, se anexa el informe sobre los análisis realizados a las planillas de actividades cumplidas  y los resúmenes. El informe incluye también recomendaciones sobre el registro de datos en la Facultad de Ingeniería y recoge la construcción de nuevos formatos que faciliten el manejo de la información.
-
-
-\section{Dinámica de asignación de nuevos cargos docentes}
-
-%\subsection{Aumento de horas de un departamento}
-
-En esta sección se muestran cálculos realizados sobre los porcentajes de actividades recogidos en el resumen de un departamento, para ilustrar los cambios que se dan debido al aumento de horas disponibles del departamento en caso de que se le asigne un nuevo cargo. En la tabla \ref{horas0} se muestra el registro de los totales de un resumen de actividades cumplidas y el promedio para la unidad académica. \\
-
-\begin{table}[htbp]
-  \centering
-  \resizebox{15cm}{!}{
-   \begin{tabular}{ccccccccccccccc}
-    \multicolumn{15}{c}{TOTALES DE LA UNIDAD ACADEMICA} \\\hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    272,2 & -     & 78,5  & -     & 29,5  & -     & 46,8  & -     & 76,1  & -     & 0,0   & -     & 503,2 & 404,0 & - \\
-          &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
-     \multicolumn{15}{c}{PROMEDIOS PARA LA UNIDAD ACADEMICA} \\\hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    22,7  & 71,24 \% & 6,5   & 16,54 \% & 2,5   & 6,14 \% & 3,9   & 15,93 \% & 6,3   & 16,01 \% & 0,0   & 0,00 \% & 41,9  & 33,7  & 125,86 \% \\
-    \end{tabular}%
-    }
-   \caption{Resumen de actividades de un departamento.}\label{horas0}
-\end{table}%
-
-La descripción de cada rótulo se especifica a continuación:\\
-\begin{tabular}{l}
-TAD: Total de actividades de docencia.\\
-TOAD: Total de otras actividades de docencia.\\
-TAI: Total de actividades de investigación.\\
-TAM: Total de actividades de mejoramiento.\\
-TAA: Total de actividades de administración.\\
-TAEX: Total de actividades de extensión.\\
-PDAD: Porcentaje de actividades de docencia.\\
-PDOAD: Porcentaje de otras actividades de docencia.\\
-PDAI: Porcentaje de actividades de investigación.\\
-PDAM: Porcentaje de actividades de mejoramiento.\\
-PDAA: Porcentaje de actividades de administración.\\
-PDAEX: Porcentaje de actividades de extensión.\\
-THSA: Total de horas anuales.\\
-HSC: Total de horas semanales de carga según dedicación de los profesores.\\
-PR: Porcentaje de rendimiento.\\
-\end{tabular}
-\\
-En este resumen, los totales de la unidad académica son calculados como:\\
-
-\begin{tabular}{l}
-$TAD$ = suma de actividades de docencia de todos los profesores. Para las demás actividades se \\
-procede análogamente.\\
-$THSA$ = suma de las $THSA$ individuales. \\
-$HSC$ = suma de todas las $HSC$ individuales.\\
-\end{tabular}
-\\
-
-Los promedios para la unidad académica se calculan como se muestra a continuación, o en el caso de la hoja de cálculo se utiliza la función \emph{PROMEDIO()} de \emph{Excel}.
-
-\begin{itemize}
-\item Promedios de actividades de docencia: $$\frac{\text{TAD}}{NP}$$ donde $NP$ es el número de profesores.
-\item Promedio de porcentajes de actividades: Suma de porcentaje de actividades.
-\item $THSA$ : $$\frac{\text{Suma de todas la THSA individuales}}{NP}$$
-\item $HSC$ : $$ \frac{\text{Suma de todas las HSC individuales}}{NP}$$
-\item Promedio del porcentaje de rendimiento ($PR$) : $$\frac{\text{Suma de los porcentajes de rendimiento}}{NP}$$
-\end{itemize}
-
-Si al registro mostrado en la figura anterior se le anexan 40 horas, equivalente a un (1) cargo de dedicación exclusiva, repartidas entre todos los profesores, sin aumentar las horas de las actividades realizadas, los porcentajes de rendimiento varían como se muestra en la tabla \ref{horas40}:
-
-\begin{table}[htbp]
-\centering
- \resizebox{15cm}{!}{
-  \begin{tabular}{ccccccccccccccc}
-    \multicolumn{15}{c}{TOTALES DE LA UNIDAD ACADEMICA} \\\hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    272,2 & -     & 78,5  & -     & 29,5  & -     & 46,8  & -     & 76,1  & -     & 0,0   & -     & 503,2 & 444,0 & - \\
-          &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
-    \multicolumn{15}{c}{PROMEDIOS PARA LA UNIDAD ACADEMICA}\\ \hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    22,7  & 60,37 \% & 6,5   & 15,25 \% & 2,5   & 5,67 \% & 3,9   & 12,15 \% & 6,3   & 14,77 \% & 0,0   & 0,00 \% & 41,9  & 37,0  & 108,21 \% \\
-    \end{tabular}%
-    }
- \caption{Variación con aumento de 40 horas.}\label{horas40}%
-\end{table}%
-
-Si se le anexan 80 horas equivalente a 2 cargos de dedicación exclusiva, varía según la tabla (\ref{horas80}).
-
-\begin{table}[htbp]
-  \centering
- \resizebox{15cm}{!}{
-   \begin{tabular}{ccccccccccccccc}
-    \multicolumn{15}{c}{TOTALES DE LA UNIDAD ACADEMICA} \\ \hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    272,2 & -     & 78,5  & -     & 29,5  & -     & 46,8  & -     & 76,1  & -     & 0,0   & -     & 503,2 & 484,0 & - \\
-          &       &       &       &       &       &       &       &       &       &       &       &       &       &  \\
-    \multicolumn{15}{c} {PROMEDIOS PARA LA UNIDAD ACADEMICA} \\ \hline
-    TAD   & PDAD  & TOAD  & PDOAD & TAI   & PDAI  & TAM   & PDAM  & TAA   & PDAA  & TAEX  & PDAEX & THSA  & HSC   & PR \\
-    22,7  & 54,01 \% & 6,5   & 14,15 \% & 2,5   & 5,26 \% & 3,9   & 10,39 \% & 6,3   & 13,70 \% & 0,0   & 0,00 \% & 41,9  & 40,3  & 97,52 \% \\
-    \end{tabular}%
-    }
-  \caption{Resumen con un aumento de 80 horas.} \label{horas80}%
-\end{table}%
-
-Como se puede observar, el porcentaje de rendimiento se reduce con cada cargo agregado. Igualmente, el porcentaje de las actividades se ve reducido en los dos casos planteados (usando como base el número de profesores y usando como base el número de horas de dedicación).
-
-A continuación se comparan los porcentajes de actividades y rendimiento al agregar nuevas horas (cargos nuevos) a un departamento. Las entradas al proceso son los totales de cada actividad de cada profesor (estos datos están disponibles en los resúmenes de actividades cumplidas), y la carga horaria de cada profesor según su dedicación ($HSC$).
-
-\begin{table}[htbp]
-  \centering
-  \resizebox{11cm}{!}{
-  {\fontsize{10pt}{\baselineskip}\selectfont
-   \begin{tabular}{cccccccc}
-    TAD & TAOD & TAI & TAM & TAA & TAEX & HSC & THSA \\\hline
-    13,00 & 2,95  & 3,00  & 0,00  & 39,00 & 0,00  & 43,64 & 57,95 \\
-    9,00  & 5,43  & 2,29  & 29,52 & 3,52  & 0,76  & 43,64 & 50,52 \\
-    4,00  & 0,00  & 0,00  & 0,00  & 0,00  & 0,00  & 7,64  & 4,00 \\
-    30,31 & 5,52  & 2,43  & 6,00  & 5,00  & 2,29  & 43,64 & 51,55 \\
-    29,89 & 0,24  & 0,00  & 0,00  & 2,95  & 1,00  & 40,64 & 34,08 \\
-    4,00  & 0,00  & 0,00  & 0,00  & 0,00  & 0,00  & 7,64  & 4,00 \\
-    22,00 & 3,33  & 85,00 & 1,90  & 1,45  & 0,00  & 43,64 & 113,69 \\
-    30,86 & 0,19  & 6,57  & 0,00  & 2,43  & 0,57  & 43,64 & 40,62 \\
-    24,92 & 0,62  & 15,00 & 0,00  & 1,00  & 0,00  & 43,64 & 41,54 \\
-    37,34 & 2,62  & 0,00  & 0,00  & 16,71 & 0,00  & 43,64 & 56,67 \\
-    4,00  & 0,00  & 0,00  & 0,00  & 1,00  & 0,00  & 8,64  & 5,00 \\
-          &       &       &       &       &       &       &  \\\hline
-    209,32 & 20,90 & 114,29 & 37,43 & 73,07 & 4,62  & 370,00 & 459,63 \\
-    \end{tabular}%
-    }}
- \caption{Datos de un departamento.} \label{horasdatos}%
-\end{table}%
-
-A partir de estos datos, se calculan los porcentajes promedios de cada actividad para el departamento. $THSA$ se calcula como la suma de las horas de cada actividad. Los cálculos son realizados como se especificó anteriormente. El diagrama \ref{aumentohoras8} ilustra el proceso que se lleva a cabo con los datos:
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{img/promedios.png}
-\caption{Diagrama del proceso de cálculo.}
-\label{aumentohoras8}
-\end{figure}
-
-En la salida se reflejará el cambio cada vez que se introduzcan nuevas horas a aumentar para $HSC$, para visualizar el resultado con las horas originales. En el caso inicial, con la carga horaria original para el departamento se tiene que el rendimiento $PR$ es de 124,22 \%.
-
-\begin{table}[htbp]
-  \centering
-   \begin{tabular}{cccccccc}
-    PDAD & PDAOD & PDAI & PDAM & PDAA & PDAEX & THSA & PR \\\hline
-    56,57 \% & 5,65 \% & 30,89 \% & 10,12 \% & 19,75 \% & 1,25 \% & 41,78 & \textbf{124,22 \%} \\
-    \end{tabular}%
- \caption{Promedio inicial de los datos.} \label{horasprom}%
-\end{table}%
-
-\begin{comment}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.7]{img/aumentoprom.png}
-\caption{Promedios con carga horaria inicial.}
-\label{aumentoprom}
-\end{figure}
-\end{comment}
-
-Agregándole 40 horas al departamento para simular la asignación de 1 cargo de dedicación exclusiva se tiene un $PR$ de 112,11 \%.
-
-\begin{table}[htbp]
-  \centering
-   \begin{tabular}{cccccccc}
-   PDAD & PDAOD & PDAI & PDAM & PDAA & PDAEX & THSA & PR \\\hline
-    51,05 \% & 5,10 \% & 27,87 \% & 9,13 \% & 17,82 \% & 1,13 \% & 41,78 & \textbf{112,11 \%} \\
-   \end{tabular}%
-  \caption{Promedio de los datos con aumento de 40 horas.}\label{horasprom40}%
-\end{table}%
-
-\begin{comment}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.7]{img/aumentoprom2.png}
-\caption{Promedios con 40 horas adicionales.}
-\label{aumentoprom1}
-\end{figure}
-\end{comment}
-
-Suponiendo que se agregan 2 cargos (80 horas), el $PR$ disminuye a  102,14 \%.
-
-\begin{table}[htbp]
-  \centering
-   \begin{tabular}{cccccccc}
-    PDAD & PDAOD & PDAI & PDAM & PDAA & PDAEX & THSA & PR \\
-    \hline
-    46,52 \% & 4,64 \% & 25,40 \% & 8,32 \% & 16,24 \% & 1,03 \% & 41,78 & \textbf{102,14 \%} \\
-   \end{tabular}%
- \caption{Promedio de los datos con aumento de 80 horas.} \label{horasprom80}%
-\end{table}%
-
-\begin{comment}
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.7]{img/aumentoprom3.png}
-\caption{Promedios con 80 horas adicionales.}
-\label{aumentoprom2}
-\end{figure}
-\end{comment}
 
 \chapter{Integración de GALATEA}
 
