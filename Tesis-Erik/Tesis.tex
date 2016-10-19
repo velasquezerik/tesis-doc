@@ -270,7 +270,7 @@ En ese sección se exponen algunos conceptos relacionados con el problema plantea
 
 \item Capitulo III. Desarrollo del Sistema WEB.
 
-Explicar aquí.
+Contiene el diseño general del sistema de simulación, así como la arquitectura de la aplicación web, sus sub-sistemas, componentes relevantes y casos de uso.
 
 \item Capitulo IV. Integración de GALATEA.
 
@@ -399,31 +399,85 @@ AJAX (Asynchronous JavaScript And XML), es una técnica de desarrollo web para cr
 
 \chapter{Desarrollo del Sistema WEB}
 
-Definir
+El sistema de simulación de eventos discretos mediante la web consiste de tres elementos principales: (1) La aplicación Web que funciona como coordinador del sistema, control de usuarios y roles; (2) Administración de archivos que permite llevar el control de acceso, creación y modificación de los archivos dentro del sistema, y (3) El Sistema Integración con GALATEA, que ofrece las funcionalidades de simulación, conexión y control con el motor de simulación.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/RelacionesMVC.png}
+	\caption{Sistema de Simulación Web GALATEA.}
+	\label{estructuraSistema}
+\end{figure}
+
+En la figura \ref{estructuraSistema} se observa la relación que existe entre los componentes principales que conforman el sistema. El punto de entrada principal del sistema es la aplicación Web, que es la encargada de manejar el acceso de los usuarios a las distintas funcionalidades del sistema, esto lo realiza mediante la implementación de roles de usuarios y manejo de permisologías. La aplicación web controla la visualización, acceso y modificación de los distintos archivos y carpetas, mediante peticiones a el módulo de administración de archivos. Otro aspecto fundamental de la aplicación Web es el control y visualización de las simulación, mediante el acceso al sistema de Integración con GALATEA.
+
+El módulo de Administración de Archivos es una pequeña API que se desarrollo, la cual permite llevar el control de creación, modificación y eliminación de archivos dentro del sistema. Esta API está escrita en python y maneja el control de excepciones u errores que pueden aparecer mediante se realiza ese control, al igual permite verificar el espacio en disco usado por cada usuario. En secciones posteriores se especificara con mas detalles la funcionalidad de este módulo.
+
+El sistema de Integración con GALATEA es una API de interconexión entre nuestra aplicación Web y el simulador GALATEA. Como ambos sistemas están desarrollados en ambientes distintos, con códigos distintos, se busco desarrollar un mecanismo de comunicación. La API Permite crear una instancia del Simulador GALATEA y ejecutarlo, controlar la compilación y los parámetros de ejecución de la simulación. Esto lo desarrollamos en python mediante la implementación de control de procesos y socket. En el capítulo siguiente especificaremos a detalle en funcionamiento de este sistema de integración.
 
 \section{Diseño de la aplicación WEB}
 
-Definir
+Para el desarrollo de esta aplicación se usó el framework de desarrollo web Django que implementa un patrón de diseño MVC.
 
 \subsection{Arquitectura}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.6]{img/RelacionesMVC.png}
+	\caption{Arquitectura de la aplicación web.}
+	\label{arquitecturaAplicacion}
+\end{figure}
+
+La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas, la capa superior o capa de presentación se ejecuta en el navegador del cliente, para ver los resultados obtenidos de la simulación, visualización de archivos, entre otras acciones que pude realizar el usuario; esta capa se comunica con la capa dos o capa de servicio, que es ejecutada por el servidor web y es la responsable de atender las peticiones de los usuarios del sistema; la capa tres es la encargada de las peticiones a los otros módulos que conforman el sistema, comunicación con el módulo de manejo de archivos e integración con el simulador GALATEA; la capa cuatro o capa de datos aloja los datos de la aplicación como usuarios, archivos, carpetas, simulaciones entre otros.
+
+\subsection{Capa 1: Presentación}
+
+La capa de presentación es la interfaz gráfica que permite la interacción del usuario con el sistema de simulación Web. Esta capa consiste en los despliegues de navegadores en cualquier dispositivo conectado a Internet y su propósito es ofrecer la usuario una interfaz gráfica para ingresar el sistema, configurar y manejar simulaciones, observar resultados, entre otros.
+
+La capa de presentación puede ser extendida para la implementación de distintos front-ends como aplicaciones nativas para sistemas operativos móviles o de escritorio a través de APIs programáticas.
+
+\subsection{Capa 2: Servidor Web}
+
+El servidor web es el punto de entrada a la aplicación, éste responde a las peticiones realizadas desde el front-end a través del protocolo HTTP, el enfoque del servidor web es manejar tareas ligeras de la forma mas rápida posible y retornar respuestas para ofrecer al usuario baja latencia en su interacción con el sistema.
+
+\begin{table}[H]
+	\centering
+
+		{\fontsize{10pt}{\baselineskip}\selectfont
+			\begin{tabular}[t]{|l|c|}
+				\hline
+				Ruta & Acción \\\hline
+				/static/ & Servicio de archivo estático  \\\hline
+				/media/ & Servicio de archivo estático \\\hline
+				/ &	re-dirección a la aplicación  \\\hline
+			\end{tabular}
+		}
+		
+		\caption {Tabla de enrutamiento del servidor web.} \label{tabla-enrutamineto}
+\end{table}
+
+El servidor web debe manejar dos tipos de peticiones: aquellas que requieren respuestas dinámicas ajustadas a los datos específicos que pertenecen a cada usuario en particular y peticiones de archivos estáticos como CSS, JavaScript, imágenes o archivos HTML pre-definidos que cambien poco o rara vez. A pesar de que la aplicación web es capaz de manejar ambos tipos de peticiones, cada una de ellas tendrá que pasar por todo el pipeline de Django (middlewares, resolución de URLs, procesamiento de la vista, etc), esta complejidad es innecesaria cuando se trata de archivos estáticos y va a sobrecargar el servidor web en entornos de producción.
+
+Para manejar eficientemente todo tipo de peticiones, debemos implementar un mecanismo que sea capaz de servir los archivos estáticos rápidamente y que sirva como proxy entre el front-end y la aplicación web, hay una gran variedad de servidores como Apache\footnote{Apache https://www.apache.org/}, Nginx\footnote{Nginx https://nginx.org/} o Lighttpd\footnote{Lighttpd https://www.lighttpd.net/} diseñados especialmente con este propósito, éstos tendrán una sencilla tabla de enrutamiento que decidirá cómo manejar las peticiones. La aplicación web podrá correr entonces en un proceso separado y sólo atenderá peticiones dinámicas, así se asegurará la eficiencia en el uso de los recursos computacionales disponibles.
+
+\subsection{Capa 3: Integración de Procesos}
+
 Definir
 
-\subsection{Capa 1:}
+\subsection{Capa 4: Datos}
 
-Definir
+Incluye todos los sistemas encargados de almacenar o alojar los datos en forma persistente ya sea a través de de bases de datos o disco duro.
 
-\subsection{Capa 2:}
+\subsubsection{Bases de datos}
 
-Definir
+La base de datos es el almacén principal de los datos estructurados de la aplicación web, almacena todos tipo de datos de información como datos del usuario, referencias de los archivos, logs de información, entre otras cosas.
 
-\subsection{Capa 3:}
+El diseño de la base de datos es una de los pilares fundamentales del diseño del sistema, el correcto diseño de las tablas de la base de datos tiene repercusiones importantes en la escalabilidad y tiempo de respuesta del sistema.
 
-Definir
+\subsubsection{Archivos de usuario}
 
-\subsection{Capa 4:}
+Los archivos de usuario son de gran importancia a ser manejados en el sistema, estos pueden ser de configuración de perfiles como imágenes, y los de simulaciones que varían desde archivos Java, archivos GALATEA y archivos de texto con información de simulaciones, entre otros.
 
-Definir
+Todos estos archivos son almacenamos en un sistema de almacenamiento secundario, el cual es configurado dentro de la aplicación y controlado para su correcto funcionamiento y acceso. Cada usuario cuenta dentro del sistema con una porción de almacenamiento para su uso.
 
 \subsection{Diseño de la Base de Datos}
 

@@ -30,46 +30,48 @@
 \contentsline {subsection}{\numberline {2.6.4}JSON}{13}{subsection.2.6.4}
 \contentsline {subsection}{\numberline {2.6.5}AJAX}{13}{subsection.2.6.5}
 \contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Dise\~no de la aplicaci\'on WEB}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Arquitectura}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Capa 1:}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Capa 2:}{14}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Capa 3:}{14}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Capa 4:}{14}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{14}{subsection.3.1.6}
-\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{15}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{15}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}Gesti\'on de Archivos}{15}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Configuraci\'on}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Control de Archivos}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Control de Carpetas}{15}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Control de Permisos}{15}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Planta profesoral}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Actividades de Docencia}{17}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Actividades de Investigaci\'on}{19}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Actividades Administrativas}{20}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Actividades de Extensi\'on}{21}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Actividades de Mejoramiento}{22}{subsection.3.4.5}
-\contentsline {section}{\numberline {3.5}Evaluaci\'on de las actividades docentes}{22}{section.3.5}
-\contentsline {section}{\numberline {3.6}Din\'amica de asignaci\'on de nuevos cargos docentes}{23}{section.3.6}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{27}{chapter.4}
-\contentsline {chapter}{\numberline {5}Pruebas}{28}{chapter.5}
-\contentsline {section}{\numberline {5.1}Criterios y variables}{28}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{28}{subsection.5.1.1}
-\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{32}{section*.10}
-\contentsline {subsubsection}{Sobre indicadores}{34}{section*.11}
-\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{37}{section*.12}
-\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{41}{subsection.5.1.2}
-\contentsline {subsubsection}{Primera prueba}{41}{section*.13}
-\contentsline {subsubsection}{Segunda prueba}{44}{section*.14}
-\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{46}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{46}{subsection.5.2.1}
-\contentsline {subsubsection}{Datos de entrada}{46}{section*.15}
-\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{47}{subsection.5.2.2}
-\contentsline {subsubsection}{C\'alculo de variables}{48}{section*.16}
-\contentsline {subsubsection}{Indicadores y conjuntos difusos}{51}{section*.17}
-\contentsline {subsubsection}{Reglas del sistema difuso}{55}{section*.18}
-\contentsline {chapter}{\numberline {6}Conclusiones}{59}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{60}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{62}{section.6.1}
+\contentsline {section}{\numberline {3.1}Dise\~no de la aplicaci\'on WEB}{16}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Arquitectura}{16}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Capa 1: Presentaci\'on}{17}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Capa 2: Servidor Web}{17}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Capa 3: Integraci\'on de Procesos}{18}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Capa 4: Datos}{18}{subsection.3.1.5}
+\contentsline {subsubsection}{Bases de datos}{18}{section*.10}
+\contentsline {subsubsection}{Archivos de usuario}{18}{section*.11}
+\contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{18}{subsection.3.1.6}
+\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{18}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{18}{subsection.3.1.8}
+\contentsline {section}{\numberline {3.2}Gesti\'on de Archivos}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Configuraci\'on}{19}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Control de Archivos}{19}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Control de Carpetas}{19}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Control de Permisos}{19}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Planta profesoral}{19}{section.3.3}
+\contentsline {section}{\numberline {3.4}Actividades en la Facultad de Ingenier\IeC {\'\i }a de la Universidad de Los Andes}{20}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Actividades de Docencia}{20}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Actividades de Investigaci\'on}{23}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Actividades Administrativas}{24}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Actividades de Extensi\'on}{25}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Actividades de Mejoramiento}{26}{subsection.3.4.5}
+\contentsline {section}{\numberline {3.5}Evaluaci\'on de las actividades docentes}{26}{section.3.5}
+\contentsline {section}{\numberline {3.6}Din\'amica de asignaci\'on de nuevos cargos docentes}{27}{section.3.6}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{31}{chapter.4}
+\contentsline {chapter}{\numberline {5}Pruebas}{32}{chapter.5}
+\contentsline {section}{\numberline {5.1}Criterios y variables}{32}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{32}{subsection.5.1.1}
+\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{36}{section*.12}
+\contentsline {subsubsection}{Sobre indicadores}{38}{section*.13}
+\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{41}{section*.14}
+\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{45}{subsection.5.1.2}
+\contentsline {subsubsection}{Primera prueba}{45}{section*.15}
+\contentsline {subsubsection}{Segunda prueba}{48}{section*.16}
+\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{50}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{50}{subsection.5.2.1}
+\contentsline {subsubsection}{Datos de entrada}{50}{section*.17}
+\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{51}{subsection.5.2.2}
+\contentsline {subsubsection}{C\'alculo de variables}{52}{section*.18}
+\contentsline {subsubsection}{Indicadores y conjuntos difusos}{55}{section*.19}
+\contentsline {subsubsection}{Reglas del sistema difuso}{59}{section*.20}
+\contentsline {chapter}{\numberline {6}Conclusiones}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{64}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{66}{section.6.1}
