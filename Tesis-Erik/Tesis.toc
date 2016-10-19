@@ -50,6 +50,9 @@
 \contentsline {subsection}{\numberline {3.2.3}Control de Carpetas}{24}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Control de Permisos}{24}{subsection.3.2.4}
 \contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{25}{chapter.4}
+\contentsline {subsection}{\numberline {4.0.5}Configuraci\'on}{25}{subsection.4.0.5}
+\contentsline {subsection}{\numberline {4.0.6}Estructura GALATEA}{25}{subsection.4.0.6}
+\contentsline {subsection}{\numberline {4.0.7}Control de Simulaci\'on}{25}{subsection.4.0.7}
 \contentsline {chapter}{\numberline {5}Pruebas}{26}{chapter.5}
 \contentsline {section}{\numberline {5.1}Criterios y variables}{26}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{26}{subsection.5.1.1}
