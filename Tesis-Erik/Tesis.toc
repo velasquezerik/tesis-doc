@@ -41,7 +41,7 @@
 \contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{17}{subsection.3.1.6}
 \contentsline {subsubsection}{Diagrama de entidad-relaci\'on}{18}{section*.12}
 \contentsline {subsubsection}{Entidades}{20}{section*.13}
-\contentsline {subsubsection}{Relaciones}{21}{section*.14}
+\contentsline {subsubsection}{Relaciones}{20}{section*.14}
 \contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{21}{subsection.3.1.7}
 \contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{23}{subsection.3.1.8}
 \contentsline {section}{\numberline {3.2}Administrador de Archivos}{24}{section.3.2}

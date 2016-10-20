@@ -485,19 +485,19 @@ Puesto que Django hace uso de un ORM para manejar la base de datos, desde le pun
 
 A continuación se describen los modelos que forman parte  de la base de datos:
 
-Cada usuario registrado esta representado por el modelo \textit{user}, el cual contiene la información básica del usuario e información de ingreso al sistema.
+Cada usuario registrado esta representado por el modelo \textit{user}, el cual contiene la información básica del usuario y su información de ingreso al sistema. Para información de perfil e imagen se maneja el modelo \textit{UserImage}.
 
-El manejo de roles se define en el modelo \textit{group}, en el cual manejamos dos roles principales: el de administrador y el de usuario.
+El manejo de roles se define en el modelo \textit{group}, en el cual manejamos dos roles principales: el de \textit{administrador} y el de \textit{usuario}.
 
-Las relaciones de usuarios se maneja mediante \textit{relation}
+Las relaciones de usuarios se maneja mediante \textit{Relationship}, lo cual nos permite definir la relación de \textit{amistad} entre dos usuarios. Esto nos permitirá compartir archivos entre usuarios.
 
-Los archivos \textit{file}
+Los archivos son manejados por \textit{File}, que permite definir la información básica y permisología de acceso a los mismos.
 
-Las carpetas \textit{folder}
+Las carpetas están definidas mediante  \textit{Folder}, que contiene la información básica y jerárquica de carpetas. Otro modelo muy relacionado es \textit{DiskSpace}, que nos permite llevar el control de espacio en disco usado por el usuario.
 
-Los archivos compartidos mediante \textit{sharefile}
+Para compartir un archivo usamos el modelo \textit{ShareFile}, que contiene la información del archivo y sus permisos compartidos.
 
-Las carpetas compartidas en \textit{sharefolder}
+Las carpetas compartidas en \textit{ShareFolder}, que contienen la información de la carpeta compartida y sus permisos de acceso.
 
 Hay una gran variedad de logs que se manejan los cuales se encuentran en distintas tablas como: \textit{logsfile} para logs de archivos, \textit{logsfolder} para las modificaciones de carpetas, entre otros.
 
@@ -548,12 +548,13 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 	\centering
 	
 	{\fontsize{10pt}{\baselineskip}\selectfont
-		\begin{tabular}[t]{|l|c|}
+		\begin{tabular}[t]{|r|l|}
 			\hline
 			Nombre de la entidad & Función \\\hline
-			\textit{user} & explicar  \\\hline
-			\textit{userimage} & explicar \\\hline
-			\textit{group} &	explicar  \\\hline
+			\textit{User} & Almacena la información básica de usuario y de acceso al sistema  \\\hline
+			\textit{UserImage} & Guarda la imagen del perfil de cada usuario \\\hline
+			\textit{Group} &	Define los roles a ser usados dentro del sistema (Administrador y Usuario)  \\\hline
+			\textit{Relationship} &	Define las relaciones entre usuarios  \\\hline
 		\end{tabular}
 	}
 	
@@ -564,12 +565,12 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 	\centering
 	
 	{\fontsize{10pt}{\baselineskip}\selectfont
-		\begin{tabular}[t]{|l|c|}
+		\begin{tabular}[t]{|r|l|}
 			\hline
 			Nombre de la entidad & Función \\\hline
-			\textit{user} & explicar  \\\hline
-			\textit{userimage} & explicar \\\hline
-			\textit{group} &	explicar  \\\hline
+			\textit{File} & Almacena la información básica de archivo y su permisología de acceso  \\\hline
+			\textit{Folder} & Información básica de una carpeta junto a su permisología de acceso \\\hline
+			\textit{DiskSpace} & Controla el espacio usado en disco por cada usuario \\\hline
 		\end{tabular}
 	}
 	
@@ -583,30 +584,14 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 		\begin{tabular}[t]{|l|c|}
 			\hline
 			Nombre de la entidad & Función \\\hline
-			\textit{user} & explicar  \\\hline
-			\textit{userimage} & explicar \\\hline
-			\textit{group} &	explicar  \\\hline
+			\textit{ShareFolder} & Llevar control de la carpeta compartida  \\\hline
+			\textit{ShareFile} & Almacenar la información del archivo compartido \\\hline
 		\end{tabular}
 	}
 	
 	\caption {Entidades relacionadas al manejo de archivos y carpetas compartidos.} \label{tabla-manejo-archivos-carpetas-compartidos}
 \end{table}
 
-\begin{table}[H]
-	\centering
-	
-	{\fontsize{10pt}{\baselineskip}\selectfont
-		\begin{tabular}[t]{|l|c|}
-			\hline
-			Nombre de la entidad & Función \\\hline
-			\textit{user} & explicar  \\\hline
-			\textit{userimage} & explicar \\\hline
-			\textit{group} &	explicar  \\\hline
-		\end{tabular}
-	}
-	
-	\caption {Entidades relacionadas al manejo de logs.} \label{tabla-manejo-logs}
-\end{table}
 
 \subsubsection{Relaciones}
 
