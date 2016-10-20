@@ -5,11 +5,6 @@ Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
 \newblock {\em Discrete-Event System Simulation}.
 \newblock Pearson, 5 edition.
 
-\bibitem[\protect\astroncite{Fawcett et~al.}{2012}]{xmlBeginning}
-Fawcett, J., Quin, L., y Ayers, D. (2012).
-\newblock {\em Beginning XML}.
-\newblock Wrox, 5 edition.
-
 \bibitem[\protect\astroncite{Fuentes}{2009}]{ajaxManual}
 Fuentes, J.~M. (2009).
 \newblock {\em Manual de AJAX}.
@@ -69,10 +64,6 @@ Rengifo, B. (2011).
   de simulación.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
 
-\bibitem[\protect\astroncite{Rodríquez}{2010}]{Arqu}
-Rodríquez, J. (2010).
-\newblock Cálculo de capacidad de matrícula y demanda de profesores.
-
 \bibitem[\protect\astroncite{Santana et~al.}{2004}]{simulacionDistribuida}
 Santana, Y.~C., Ángel Mateo~Pla, M., y Terol, J.~P. (2004).
 \newblock Herramienta de simulacion distribuida mediantes agentes moviles jade.
@@ -82,9 +73,5 @@ Santana, Y.~C., Ángel Mateo~Pla, M., y Terol, J.~P. (2004).
 Uzcátegui, M., Dávila, J., y Tucci, K. (2011).
 \newblock Galatea: una historia de modelado y simulación.
 \newblock {\em Revista Ciencia e Ingeniería}, (1316-7081):85--94.
-
-\bibitem[\protect\astroncite{Viloria}{2015}]{Electrica}
-Viloria, F.~J. (2013-2015).
-\newblock Cálculo de demanda de profesores.
 
 \end{thebibliography}
