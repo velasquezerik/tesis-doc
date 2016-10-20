@@ -683,9 +683,41 @@ Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseña
 	\end{itemize}
 \end{itemize}
 
-\section{Gestión de Archivos}
+\section{Administrador de Archivos}
 
-Definir
+Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realizan mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite al simulista crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web coomo PHP, Ajax, Perl, ASP u otro lenguaje de servidor. 
+
+Como todo administrador de archivos existente, éste debe trabajar bajo un sistema de archivos el cual dependerá del sistema operativo en el que se encuentre instalado. Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados. Estructuran la información guardada en un dispositivo de almacenamiento de datos o unidad de almacenamiento (normalmente un disco duro de una computadora), que luego será representada ya sea textual o gráficamente utilizando un gestor de archivos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Estructura del Administrador de Archivos y Carpetas.}
+	\label{estructuraAdministradorArchivosCarpetas}
+\end{figure}
+
+Nuestro framework de desarrollo web Django usado para desarrollar este proyecto nos permite tener una interacción directa con los archivos y carpetas, esto debido a el lenguaje principal es que se encuentra escrito (Python), el cual es un lenguaje de programación potente y versátil para desarrollar cualquier tipo de tareas. Por ende nuestro administrador de archivos y carpetas esta escrito en python, haciendo uso de las librerias de control archivos y carpetas que el lenguaje nos proporciona.
+
+En la figura \ref{estructuraAdministradorArchivosCarpetas} podemos observar la estructura y diseño de nuestro administrador de archivos, como capa base tenemos a python y sus librerías de manejo de archivos, el cual interactua con el sistema de archivos de nuestro sistema operativo y ejecuta las operaciones a nivel físico en nuestra maquina o servidor. Como interfaz de usuario tenemos a Django, al ser un framework web nos permite una interacción simple y elegante con el usuario para controlar nuestros archivos y carpetas. En el punto central se encuentra nuestro código en python que sirve como una APIs de interconexión entre nuestra interfaz de usuario y el sistema manejador de archivo.
+
+Una configuración de nuestro sistema es la integración de permisologías a los archivos y carpetas, lo cual nos permite compartirlos entre los distintos usuarios del sistema. Esto lo logramos mediante la definición de un conjunto de permisologías como lo observamos en la tabla \ref{permisoArchivosCarpetas}. Estas configuraciones de permisos están agregados a los modelos en la base de datos, controlados y configurados por el usuario mediante la interfaz de usuario del sistema.
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|l|c|}
+			\hline
+			Permiso & Definición \\\hline
+			\textit{Private (0) } & Solo el dueño puede acceder a él \\\hline
+			\textit{Show (1) } & Otros usuarios pueden acceder al él solo para lectura \\\hline
+			\textit{Edit (2) } & Otros usuarios pueden acceder al él para lectura y escritura  \\\hline
+			\textit{Delete (3) } & Otros usuarios pueden acceder al él y tienen control total  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Permisología de Archivos y Carpetas.} \label{permisoArchivosCarpetas}
+\end{table}
 
 \subsection{Configuración}
 
@@ -708,15 +740,15 @@ Definir
 
 Integración de GALATEA aquí.
 
-\subsection{Configuración}
+\section{Configuración}
 
 Definir
 
-\subsection{Estructura GALATEA}
+\section{Estructura GALATEA}
 
 Definir
 
-\subsection{Control de Simulación}
+\section{Control de Simulación}
 
 Definir
 

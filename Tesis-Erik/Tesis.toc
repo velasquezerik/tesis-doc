@@ -44,31 +44,31 @@
 \contentsline {subsubsection}{Relaciones}{21}{section*.14}
 \contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{21}{subsection.3.1.7}
 \contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{23}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}Gesti\'on de Archivos}{24}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Configuraci\'on}{24}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Control de Archivos}{24}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Control de Carpetas}{24}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Control de Permisos}{24}{subsection.3.2.4}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{25}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.5}Configuraci\'on}{25}{subsection.4.0.5}
-\contentsline {subsection}{\numberline {4.0.6}Estructura GALATEA}{25}{subsection.4.0.6}
-\contentsline {subsection}{\numberline {4.0.7}Control de Simulaci\'on}{25}{subsection.4.0.7}
-\contentsline {chapter}{\numberline {5}Pruebas}{26}{chapter.5}
-\contentsline {section}{\numberline {5.1}Criterios y variables}{26}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{26}{subsection.5.1.1}
-\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{30}{section*.15}
-\contentsline {subsubsection}{Sobre indicadores}{32}{section*.16}
-\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{35}{section*.17}
-\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{39}{subsection.5.1.2}
-\contentsline {subsubsection}{Primera prueba}{39}{section*.18}
-\contentsline {subsubsection}{Segunda prueba}{42}{section*.19}
-\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{44}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{44}{subsection.5.2.1}
-\contentsline {subsubsection}{Datos de entrada}{44}{section*.20}
-\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{45}{subsection.5.2.2}
-\contentsline {subsubsection}{C\'alculo de variables}{46}{section*.21}
-\contentsline {subsubsection}{Indicadores y conjuntos difusos}{49}{section*.22}
-\contentsline {subsubsection}{Reglas del sistema difuso}{53}{section*.23}
-\contentsline {chapter}{\numberline {6}Conclusiones}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{58}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{60}{section.6.1}
+\contentsline {section}{\numberline {3.2}Administrador de Archivos}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Configuraci\'on}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Control de Archivos}{25}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Control de Carpetas}{25}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Control de Permisos}{25}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{26}{chapter.4}
+\contentsline {section}{\numberline {4.1}Configuraci\'on}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}Estructura GALATEA}{26}{section.4.2}
+\contentsline {section}{\numberline {4.3}Control de Simulaci\'on}{26}{section.4.3}
+\contentsline {chapter}{\numberline {5}Pruebas}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Criterios y variables}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Estudio preliminar de criterios y variables}{27}{subsection.5.1.1}
+\contentsline {subsubsection}{An\'alisis de conceptos para la estructura del modelo}{31}{section*.15}
+\contentsline {subsubsection}{Sobre indicadores}{33}{section*.16}
+\contentsline {subsubsection}{Definici\'on y manejo de variables. Otro enfoque}{36}{section*.17}
+\contentsline {subsection}{\numberline {5.1.2}Pruebas preliminares}{40}{subsection.5.1.2}
+\contentsline {subsubsection}{Primera prueba}{40}{section*.18}
+\contentsline {subsubsection}{Segunda prueba}{43}{section*.19}
+\contentsline {section}{\numberline {5.2}Construcci\'on del modelo}{45}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definici\'on del sistema de inferencia}{45}{subsection.5.2.1}
+\contentsline {subsubsection}{Datos de entrada}{45}{section*.20}
+\contentsline {subsection}{\numberline {5.2.2}Estructura del sistema difuso}{46}{subsection.5.2.2}
+\contentsline {subsubsection}{C\'alculo de variables}{47}{section*.21}
+\contentsline {subsubsection}{Indicadores y conjuntos difusos}{50}{section*.22}
+\contentsline {subsubsection}{Reglas del sistema difuso}{54}{section*.23}
+\contentsline {chapter}{\numberline {6}Conclusiones}{58}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{59}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{61}{section.6.1}
