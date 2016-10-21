@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  21 OCT 2016 13:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  21 OCT 2016 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -629,13 +629,13 @@ Package pdftex.def Info: img/RelacionesMVC.png used on input line 656.
  [23] [24]
 File: img/RelacionesMVC.png Graphic file (type png)
  <use img/RelacionesMVC.png>
-Package pdftex.def Info: img/RelacionesMVC.png used on input line 699.
+Package pdftex.def Info: img/RelacionesMVC.png used on input line 690.
 (pdftex.def)             Requested size: 339.26149pt x 214.79869pt.
  [25] [26]
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
-Package pdftex.def Info: img/RelacionesMVC.png used on input line 747.
+Package pdftex.def Info: img/RelacionesMVC.png used on input line 738.
 (pdftex.def)             Requested size: 339.26149pt x 214.79869pt.
  [27] [28]
 Cap\'{\i }tulo 4.
@@ -652,21 +652,21 @@ Cap\'{\i }tulo 6.
 ] (./Tesis.bbl) [32
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 827.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 827.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 818.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 818.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 827.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 827.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 827.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 818.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 818.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 818.
  ) 
 Here is how much of TeX's memory you used:
- 9099 strings out of 495063
- 129885 string characters out of 3182201
+ 9100 strings out of 495063
+ 129903 string characters out of 3182201
  223741 words of memory out of 3000000
- 12146 multiletter control sequences out of 15000+200000
+ 12147 multiletter control sequences out of 15000+200000
  12765 words of font info for 48 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,13n,45p,4296b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,13n,45p,4296b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -678,7 +678,7 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb>
-Output written on Tesis.pdf (39 pages, 253969 bytes).
+Output written on Tesis.pdf (39 pages, 255078 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  123 compressed objects within 2 object streams

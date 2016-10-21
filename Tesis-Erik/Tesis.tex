@@ -665,27 +665,18 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios, a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
 
 \begin{itemize}
-	\item Operaciones sobre algo:
+	\item Operaciones básicas de acceso:
 	\begin{itemize}
-		\item \textbf{GET /admin/algo/} explicación.
-		\item \textbf{POST /admin/algo/} explicación.
-		\item \textbf{GET /user/algo/} explicación.
-		\item \textbf{POST /user/algo/} explicación.
+		\item \textbf{GET /admin/} accedemos al dashboard de un usuario administrador. Todas las rutas para acceso de un usuario administrador se definen con esta ruta inicial.
+		\item \textbf{GET /user/} accedemos al dashboard de un usuario registrado. Todas las rutas para acceso de un usuario registrado se definen con esta ruta inicial.
+		\item \textbf{POST /user/create\_file/} Ruta para la creación de un nuevo archivo.
+		\item \textbf{POST /user/create\_folder/} Ruta para la creación de una nueva carpeta.
+		\item \textbf{GET /user/file/-id-} acceder a la información del archivo cuyo id dentro del sistema es -id-.
+		\item \textbf{GET /user/folder/-id-} acceder a la información de una carpeta cuyo id dentro del sistema es -id-.
+		\item \textbf{GET /user/compile/-id-} compila el archivo cuyo id es -id- y retorna la información de compilación.
+		\item \textbf{GET /user/execute/-id-} ejecuta la simulación definida en el archivo cuyo id es -id- y retorna el resultado de dicha simulación.
 	\end{itemize}
-	\item Operaciones sobre algo:
-	\begin{itemize}
-		\item \textbf{GET /admin/algo/} explicación.
-		\item \textbf{POST /admin/algo/} explicación.
-		\item \textbf{GET /user/algo/} explicación.
-		\item \textbf{POST /user/algo/} explicación.
-	\end{itemize}
-	\item Operaciones sobre algo:
-	\begin{itemize}
-		\item \textbf{GET /admin/algo/} explicación.
-		\item \textbf{POST /admin/algo/} explicación.
-		\item \textbf{GET /user/algo/} explicación.
-		\item \textbf{POST /user/algo/} explicación.
-	\end{itemize}
+
 \end{itemize}
 
 \section{Administrador de Archivos}
