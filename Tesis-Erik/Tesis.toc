@@ -47,7 +47,7 @@
 \contentsline {section}{\numberline {3.2}Administrador de Archivos}{25}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{27}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{27}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{28}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{29}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}Configuraci\'on}{30}{section.4.1}
 \contentsline {section}{\numberline {4.2}Estructura GALATEA}{30}{section.4.2}
