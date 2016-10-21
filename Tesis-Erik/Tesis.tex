@@ -596,11 +596,15 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 \subsubsection{Relaciones}
 
 \begin{itemize}
-	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
-	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
-	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
-	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
-	\item \textbf{modelo1 - modelo2 (1-1)}: Explicación.
+	\item \textbf{User - UserImage (1-1)}: Un usuario posee una imagen e información de perfil.
+	\item \textbf{User - Folder (n-1)}: Un usuario puede poseer una o mas carpetas, pero una carpeta pertenece a un solo usuario.
+	\item \textbf{User - DiskSpace (1-1)}: Un usuario tiene un solo espacio en disco asociado y configurado.
+	\item \textbf{Folder - File (n-1)}: Una carpeta puede tener muchos archivos almacenados, pero un archivo tiene una carpeta asociada.
+	\item \textbf{User - ShareFile (n-1)}: Un usuario puede poseer uno o mas archivos compartidas, pero un archivo pertenece a un solo usuario.
+	\item \textbf{File - ShareFile (n-1)}: Un archivo puede estar compartido con muchos usuarios.
+	\item \textbf{User - ShareFolder (n-1)}: Un usuario puede poseer una o mas carpetas compartidas, pero una carpeta pertenece a un solo usuario.
+	\item \textbf{Folder - ShareFolder (n-1)}: Un carpeta puede estar compartida con muchos usuarios.
+	\item \textbf{User - Relationship (n-1)}: Un usuario puede poseer una o mas relaciones de amistad con otros usuarios, pero la relación se define con un solo usuario.
 \end{itemize}
 
 \subsection{Diseño de Pantallas}
@@ -614,28 +618,44 @@ Todas las plantillas heredan de una plantilla base, ésta incluye la declaración 
 A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
 
 \begin{itemize}
-	\item \textbf{Pantalla 1}: Explicación.
+	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y capetas de nuestra carpeta de usuario raíz.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
-		\caption{Pantalla1.}
+		\caption{Pantalla del Dashboard (Inicio).}
 		\label{pantalla1}
 	\end{figure}
 	
-	\item \textbf{Pantalla 2}: Explicación.
+	\item \textbf{Pantalla Observación de Carpeta}: En ella encontramos todos los archivos y carpetas que se encuentran dentro de nuestra carpeta, al igual observamos todas las opciones que podemos ejecutar dentro de ella.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
-		\caption{Pantalla2.}
+		\caption{Pantalla Observación de Carpeta.}
 		\label{pantalla2}
 	\end{figure}
 	
-	\item \textbf{Pantalla 3}: Explicación.
+	\item \textbf{Pantalla Observación de Archivo}: Observamos la información contenida en el archivo, poseemos un editor web para editarlo, al igual todas las opciones que podemos manejar sobre el mismo.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
-		\caption{Pantalla3.}
+		\caption{Pantalla Observación de Archivo.}
 		\label{pantalla3}
+	\end{figure}
+	
+	\item \textbf{Pantalla Compilación y Ejecución}: Aquí podemos acceder a las opciones de compilación y ejecución de nuestro archivo, junto con los resultados obtenidos de esos procesos.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+		\caption{Pantalla Compilación y Ejecución.}
+		\label{pantalla4}
+	\end{figure}
+	
+	\item \textbf{Pantalla Control de Usuarios}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de usuarios y podemos acceder a las distintas opciones de creación y edición de usuarios.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+		\caption{Pantalla Control de Usuarios.}
+		\label{pantalla5}
 	\end{figure}
 \end{itemize}
 
