@@ -43,7 +43,7 @@
 \contentsline {subsubsection}{Entidades}{20}{section*.13}
 \contentsline {subsubsection}{Relaciones}{21}{section*.14}
 \contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{21}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{25}{subsection.3.1.8}
+\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{24}{subsection.3.1.8}
 \contentsline {section}{\numberline {3.2}Administrador de Archivos}{25}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{27}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{27}{subsection.3.2.2}
