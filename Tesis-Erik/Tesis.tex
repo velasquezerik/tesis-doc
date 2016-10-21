@@ -399,7 +399,7 @@ AJAX (Asynchronous JavaScript And XML), es una técnica de desarrollo web para cr
 
 \chapter{Desarrollo del Sistema WEB}
 
-El sistema de simulación de eventos discretos mediante la web consiste de tres elementos principales: (1) La aplicación Web que funciona como coordinador del sistema, control de usuarios y roles; (2) Administración de archivos que permite llevar el control de acceso, creación y modificación de los archivos dentro del sistema, y (3) El Sistema Integración con GALATEA, que ofrece las funcionalidades de simulación, conexión y control con el motor de simulación.
+El sistema de simulación de eventos discretos mediante la web esta conformado por tres elementos principales: (1) La aplicación Web que funciona como coordinador del sistema, control de usuarios y roles; (2) Administración de archivos que permite llevar el control de acceso, creación y modificación de los archivos y carpetas, (3) El Sistema de Integración con GALATEA, que ofrece las funcionalidades de simulación, conexión y control con el motor de simulación.
 
 \begin{figure}[H]
 	\centering
@@ -408,11 +408,11 @@ El sistema de simulación de eventos discretos mediante la web consiste de tres e
 	\label{estructuraSistema}
 \end{figure}
 
-En la figura \ref{estructuraSistema} se observa la relación que existe entre los componentes principales que conforman el sistema. El punto de entrada principal del sistema es la aplicación Web, que es la encargada de manejar el acceso de los usuarios a las distintas funcionalidades del sistema, esto lo realiza mediante la implementación de roles de usuarios y manejo de permisologías. La aplicación web controla la visualización, acceso y modificación de los distintos archivos y carpetas, mediante peticiones a el módulo de administración de archivos. Otro aspecto fundamental de la aplicación Web es el control y visualización de las simulación, mediante el acceso al sistema de Integración con GALATEA.
+En la figura \ref{estructuraSistema} se observa la relación que existe entre los componentes principales que conforman el sistema. El punto de entrada principal es la aplicación Web, que es la encargada de manejar el acceso de los usuarios a las distintas funcionalidades, esto lo realiza mediante la implementación de roles de usuarios y manejo de permisologías. La aplicación web controla la visualización, acceso y modificación de los distintos archivos y carpetas, mediante peticiones sobre el módulo de administración de archivos. Otro aspecto fundamental de la aplicación web es el control y visualización de las simulación, mediante el acceso al sistema de Integración con GALATEA.
 
-El módulo de Administración de Archivos es una pequeña API que se desarrollo, la cual permite llevar el control de creación, modificación y eliminación de archivos dentro del sistema. Esta API está escrita en python y maneja el control de excepciones u errores que pueden aparecer mediante se realiza ese control, al igual permite verificar el espacio en disco usado por cada usuario. En secciones posteriores se especificara con mas detalles la funcionalidad de este módulo.
+ Para el módulo de Administración de Archivos se desarrolló una pequeña API, la cual permite llevar el control de creación, modificación y eliminación de archivos y carpetas dentro del sistema. Esta API está escrita en python y maneja el control de excepciones u errores que pueden aparecer durante su ejecución, al igual permite verificar el espacio en disco usado por cada usuario. En secciones posteriores se especificará con mas detalles la funcionalidad de este módulo.
 
-El sistema de Integración con GALATEA es una API de interconexión entre nuestra aplicación Web y el simulador GALATEA. Como ambos sistemas están desarrollados en ambientes distintos, con códigos distintos, se busco desarrollar un mecanismo de comunicación. La API Permite crear una instancia del Simulador GALATEA y ejecutarlo, controlar la compilación y los parámetros de ejecución de la simulación. Esto lo desarrollamos en python mediante la implementación de control de procesos y socket. En el capítulo siguiente especificaremos a detalle en funcionamiento de este sistema de integración.
+El sistema de Integración con GALATEA es una API de interconexión entre nuestra aplicación web y el simulador GALATEA. Como ambos sistemas están desarrollados en ambientes distintos, con códigos distintos, se buscó desarrollar un mecanismo de comunicación entre ambos sistemas. La API permite crear una instancia del Simulador GALATEA y ejecutarlo, controlar la compilación y los parámetros de ejecución de la simulación, esto lo desarrollamos en python mediante la implementación de control de procesos y socket. En el capítulo siguiente especificaremos a detalle en funcionamiento de este sistema de integración.
 
 \section{Diseño de la aplicación WEB}
 
@@ -461,7 +461,7 @@ Para manejar eficientemente todo tipo de peticiones, debemos implementar un meca
 
 \subsection{Capa 3: Integración de Procesos}
 
-Definir
+En esta capa integramos los procesos fundamentales para nuestro sistema, como lo son: La integración con el simulador GALATEA y la administración de archivos y carpetas. Se encarga de gestionar todas peticiones realizadas por el usuario ya sea para el manejo de archivos/carpetas o simulaciones, al igual controlar su correcto funcionamiento y resultado. 
 
 \subsection{Capa 4: Datos}
 
@@ -613,7 +613,7 @@ Todas las pantallas del sistema fueron creadas bajo el paradigma del diseño web 
 
 Ya que una aplicación web está compuesta por decenas de vistas que comparten componentes como: barras de navegación, cabeceras y pie de páginas, Django incluye un micro-lenguaje de plantillas con funcionalidades de herencia e inclusión, estructuras de repetición y decisión, esto hace que sea posible tener una taxonomía de plantillas, de manera que sólo es necesario escribir los elementos comunes a un conjunto de plantillas una vez y crear nuevas pantallas en el tope de otras. Se le llama rendering al proceso de combinar los datos de la base de datos y la petición del usuario, junto con una plantilla predefinida en la aplicación para generar páginas web personalizadas.
 
-Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la pagina, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente , \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} bloque para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la pagina.
+Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la página, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente , \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} bloque para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la página.
 
 A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
 
@@ -662,7 +662,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 
 \subsection{Diseño de URLs}
 
-Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios, a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
+Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios; a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
 
 \begin{itemize}
 	\item Operaciones básicas de acceso:
@@ -681,7 +681,7 @@ Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseña
 
 \section{Administrador de Archivos}
 
-Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realizan mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite al simulista crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web coomo PHP, Ajax, Perl, ASP u otro lenguaje de servidor. 
+Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realizan mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite  crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web coomo PHP, Ajax, Perl, ASP u otro lenguaje de servidor. 
 
 Como todo administrador de archivos existente, éste debe trabajar bajo un sistema de archivos el cual dependerá del sistema operativo en el que se encuentre instalado. Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados. Estructuran la información guardada en un dispositivo de almacenamiento de datos o unidad de almacenamiento (normalmente un disco duro de una computadora), que luego será representada ya sea textual o gráficamente utilizando un gestor de archivos.
 
@@ -696,7 +696,7 @@ El framework de desarrollo web Django usado para desarrollar este proyecto nos p
 
 En la figura \ref{estructuraAdministradorArchivosCarpetas} podemos observar la estructura y diseño de nuestro administrador de archivos, como capa base tenemos a python y sus librerías de manejo de archivos, el cual interactua con el sistema de archivos de nuestro sistema operativo y ejecuta las operaciones a nivel físico en nuestra maquina o servidor. Como interfaz de usuario tenemos a Django, al ser un framework web nos permite una interacción simple y elegante con el usuario para controlar nuestros archivos y carpetas. En el punto central se encuentra nuestro código en python que sirve como una APIs de interconexión entre nuestra interfaz de usuario y el sistema manejador de archivo.
 
-Una configuración de nuestro sistema es la integración de permisologías a los archivos y carpetas, lo cual nos permite compartirlos entre los distintos usuarios del sistema. Esto lo logramos mediante la definición de un conjunto de permisologías como lo observamos en la tabla \ref{permisoArchivosCarpetas}. Estas configuraciones de permisos están agregados a los modelos en la base de datos, controlados y configurados por el usuario mediante la interfaz de usuario del sistema.
+Una configuración de nuestro sistema es la integración de permisologías a los archivos y carpetas, lo cual nos permite compartirlos entre los distintos usuarios del sistema. Esto lo logramos mediante la definición de un conjunto de permisologías como lo observamos en la tabla \ref{permisoArchivosCarpetas}. Estas configuraciones de permisos están agregados a los modelos en la base de datos, controlados y configurados por el usuario mediante la interfaz de usuario.
 
 \begin{table}[H]
 	\centering
@@ -717,7 +717,7 @@ Una configuración de nuestro sistema es la integración de permisologías a los ar
 
 \subsection{Control de Archivos}
 
-El administrador de archivos tiene como modelos de datos principales para el manejo de archivos a File, LogsFile y DiskSpace, los cuales fueron explicados en la sección \ref{BaseDatos}. Para el manejo de archivos hacemos creamos cinco métodos principales los cuales son: 
+El administrador de archivos tiene como modelos de datos principales para el manejo de archivos a File, LogsFile y DiskSpace, los cuales fueron explicados en la sección \ref{BaseDatos}. Para el manejo de archivos se han desarrollado cinco métodos principales los cuales son: 
 
 \begin{itemize}
 	\item Create File: el cual nos permite crear un archivo en una carpeta determinada.
@@ -727,7 +727,7 @@ El administrador de archivos tiene como modelos de datos principales para el man
 	\item Delete File: elimina el archivo de nuestro sistema.
 \end{itemize}
 
-Todos los archivos desde su creación tienen su dueño y permisología asociada. El manejo de archivos dentro del sistema tiene las funcionalidades necesarias para su correcto funcionamiento, permitiendo una gran variedad de acciones a realizar.
+Todos los archivos desde su creación tienen su dueño y permisología asociada. El manejo de archivos dentro del sistema tiene las funcionalidades necesarias para permitir una gran variedad de acciones a realizar.
 
 \subsection{Control de Carpetas}
 
@@ -752,16 +752,16 @@ Para el correcto manejo de carpetas se definieron una serie de métodos:
 	\item Delete Folder: elimina toda la información de la carpeta junto con sus archivos y carpetas internos.
 \end{itemize}
 
-Debido a que el espacio en disco físico no es ilimitado, cada usuario tiene una porción de espacio asociado para su manejo de archivos y carpetas. Este espacio es constantemente monitoreado por el administrador de archivos y es una de las restricciones principales para su correcto funcionamiento. Esta porción de espacio en disco es fácilmente administrable por el administrador de nuestro sistema web.
+Debido a que el espacio en disco físico no es ilimitado, cada usuario tiene una porción de espacio asociado para su manejo de archivos y carpetas. Este espacio es constantemente monitoreado por el administrador de archivos y es una de las restricciones principales para su correcto funcionamiento. Esta porción de espacio en disco es fácilmente administrable por el usuario administrador de nuestro sistema web.
 
 \subsection{Control de Permisos}
 
-Mediante el sistema web de simulación GALATEA se busca que los usuarios y usuarias tengan interacción entre ellos y puedan trabajar en conjunto, para así fortalecer y mejorar sus proyectos de simulación. Para ellos se implementó un sistema de permisos de acceso y modificación tanto para los archivos como carpetas dentro del sistema.
+Mediante el sistema web de simulación GALATEA se busca que los usuarios tengan interacción entre ellos y puedan trabajar en conjunto, para así fortalecer y mejorar sus proyectos de simulación. Para ellos se implementó un sistema de permisos de acceso y modificación tanto para los archivos como carpetas dentro del sistema.
 
 Cómo lo muestra la tabla \ref{permisoArchivosCarpetas} existen cuatro permisos bien definidos, pero debemos recalcar que estos permisos se enfocan en dos tipos de usuarios propiamente dichos:
 
 \begin{itemize}
-	\item Usuarios Amigos: estos son como su nombre lo indica \textit{amigos} en el sistema, conocidos. El privilegio principal de tener el \textit{status amigo}, es que permite compartir archivos y carpetas entre ellos.
+	\item Usuarios Amigos: estos son como su nombre lo indica \textit{amigos} en el sistema (conocidos). El privilegio principal de tener el \textit{status amigo}, es que permite compartir archivos y carpetas entre ellos.
 	\item Usuarios NO Amigos: son usuarios que no poseen relación en el sistema.
 \end{itemize}
 
