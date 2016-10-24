@@ -50,9 +50,14 @@
 \contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{29}{subsection.3.2.3}
 \contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{30}{chapter.4}
 \contentsline {section}{\numberline {4.1}Configuraci\'on}{30}{section.4.1}
-\contentsline {section}{\numberline {4.2}Estructura GALATEA}{30}{section.4.2}
-\contentsline {section}{\numberline {4.3}Control de Simulaci\'on}{30}{section.4.3}
+\contentsline {section}{\numberline {4.2}Llamada a Procesos}{30}{section.4.2}
+\contentsline {section}{\numberline {4.3}Sockets}{30}{section.4.3}
+\contentsline {section}{\numberline {4.4}Control de Simulaci\'on}{30}{section.4.4}
 \contentsline {chapter}{\numberline {5}Pruebas}{31}{chapter.5}
-\contentsline {chapter}{\numberline {6}Conclusiones}{32}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{32}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{33}{section.6.1}
+\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de las pruebas}{32}{section.5.1}
+\contentsline {section}{\numberline {5.2}Condiciones de las pruebas}{32}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados obtenidos}{33}{section.5.3}
+\contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{33}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusiones}{34}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{34}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{35}{section.6.1}

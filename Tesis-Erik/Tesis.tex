@@ -775,7 +775,11 @@ Integración de GALATEA aquí.
 
 Definir
 
-\section{Estructura GALATEA}
+\section{Llamada a Procesos}
+
+Definir
+
+\section{Sockets}
 
 Definir
 
@@ -784,6 +788,75 @@ Definir
 Definir
 
 \chapter{Pruebas}
+
+Ya que la aplicación web está pensada en atender a una cantidad arbitraria de usuarios, deseamos conocer el número máximo de usuarios concurrentes a los que se le puede dar servicio con el hardware disponible. Llevamos a cabo pruebas de carga en las cuales se simulará una ráfaga  de peticiones variables para determinar la cantidad de peticiones concurrentes que el servidor puede manejar antes de que ocurra una degradación del servicio o el servidor sea incapaz de responder mas peticiones.
+
+Consideramos que ocurre una degradación del servicio cuando el tiempo de espera del usuario aumenta mas allá de un umbral máximo, según \cite{nielsen}, existen tres umbrales importantes a la hora de evaluar el tiempo de respuesta de una aplicación:
+
+\begin{itemize}
+	\item \textbf{0.1 segundo}: Límite en el cual un usuario siente que está manipulando los objetos desde la interfaz de usuario.
+	\item \textbf{1 segundo}: Límite en el cual un usuario siente que está navegando libremente.
+	\item \textbf{10 segundos}: Límite en el cual se pierde la atención del usuario, es buena idea proveer barras de cargas y medios para cancelar la operación cuando se trata de operaciones de larga duración.
+\end{itemize}
+
+Para las siguientes pruebas consideramos las siguientes métricas de rendimiento de la aplicación web:
+
+\begin{itemize}
+	\item Tiempo de respuesta promedio.
+	\item Tiempo de respuesta mediana.
+	\item Tiempo de respuesta mínimo.
+	\item Tiempo de respuesta máximo.
+	\item Porcentaje de error.
+	\item Rendimiento en términos de peticiones por segundo durante la duración de la prueba.
+	\item Rendimiento en términos de bytes por segundo durante la duración de la prueba.
+\end{itemize}
+
+Consideramos una prueba como exitosa cuando el porcentaje de error sea igual a 0 y el tiempo máximo de espera de una petición no supere los 10,000ms, tomando en cuenta los umbrales definidos por \cite{nielsen}. Se considerará óptima aquella prueba que además de cumplir con ser exitosa, tenga el mayor rendimiento en términos de peticiones por segundo (Req/s) entre todas las pruebas realizadas.
+
+La herramienta elegida para ejecutar las pruebas fue \cite{jMeter}, esta herramienta permite simular casos de uso específicos de una aplicación web como ráfagas de peticiones que pueden ser configuradas para seguir cualquier patrón dado. En nuestro caso, Jmeter se usará para generar una ráfaga de peticiones con un intervalo constante entre cada petición durante un tiempo de un minuto. Jmeter provee un componente llamado \textit{Summary Report} que totaliza y promedia los resultados obtenidos de todas las peticiones enviadas, del que podemos extraer todas las métricas de interés.
+
+\section{Metodología de las pruebas}
+
+Para determinar la carga máxima que la aplicación web es capaz de soportar en términos de las peticiones por minuto, simularemos una ráfaga de peticiones en un intervalo de tiempo de un minuto, variando el numero de peticiones hasta obtener un valor óptimo, la metodología a seguir es la siguiente:
+
+\begin{enumerate}
+	\item Se comenzará ejecutando una primera prueba con un número prudencialmente bajo de peticiones durante 60 segundos, éste número debe preferiblemente ser múltiplo de dos.
+	\item Se varía el número de peticiones enviadas en la ráfaga multiplicando por dos cada vez que una prueba es exitosa, así si la primera prueba se hace con 16 peticiones. la siguiente tendrá 32, 64, 128 y así sucesivamente.
+	\item Tras la primera prueba fallida, se calculará el número de peticiones de la siguiente prueba (\textit{P{\tiny sig}}) como el punto medio entre la cantidad de peticiones de la prueba previa (\textit{P{\tiny prev}}) y la prueba actual (\textit{P{\tiny act}}).
+	\begin{equation}
+		P{\tiny sig} = \begin{cases}P{\tiny prev} + |P{\tiny act} -P{\tiny prev}|/2\\P{\tiny prev} - |P{\tiny act}-P{\tiny prev}|/2\end{cases}
+	\end{equation}
+	
+	\item El paso 3 se repite hasta no se obtenga mayor precisión con pruebas sucesivas.
+\end{enumerate}
+
+\section{Condiciones de las pruebas}
+
+Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectadas en un mismo enrutador: una de ellas ejecuta el servidor web, y la otra ejecuta las pruebas simulando las peticiones y totalizando los resultados observados; la latencia de la red se considera menor a 5ms. Las caracteristicas del servidor web se pueden observar en la tabla \ref{servidorWeb}:
+
+\begin{table}[H]
+	\centering
+	
+	{\fontsize{10pt}{\baselineskip}\selectfont
+		\begin{tabular}[t]{|c|c|c|}
+			\hline
+			Procesador & Memoria & Sistema Operativo \\\hline
+			Intel Pentium 4 CPU @3.10GHz & 1 GB RAM & Debian 8  \\\hline
+		\end{tabular}
+	}
+	
+	\caption {Especificaciones del servidor web.} \label{servidorWeb}
+\end{table}
+
+\section{Resultados obtenidos}
+
+\begin{enumerate}
+	\item \textbf{Archivos estáticos con Apache}: Definir.
+	\item \textbf{Páginas dinámicas con Django sobre Apache}: Definir.	
+	\item \textbf{Páginas dinámicas con Django y archivos estáticos sobre el mismo servidor Apache}: Definir.
+\end{enumerate}
+
+\section{Análisis de los resultados}
 
 Definir
 

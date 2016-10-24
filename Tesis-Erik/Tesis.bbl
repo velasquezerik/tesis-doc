@@ -15,6 +15,10 @@ Fundation, D.~S. (2015).
 \newblock {\em The web framework for perfectionists with deadlines}.
 \newblock 5 edition.
 
+\bibitem[\protect\astroncite{JMeter}{2014}]{jMeter}
+JMeter (2014).
+\newblock Apache jmeter.
+
 \bibitem[\protect\astroncite{Krasner y Pope}{1988}]{modeloVistaControlador}
 Krasner, G.~E. y Pope, S.~T. (1988).
 \newblock A description of the model-view-controller user interface paradigm in
@@ -31,6 +35,11 @@ Marcano, G. (2015).
 \newblock Desarrollo de un servicio web para el simulador de eventos discretos
   galatea.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
+
+\bibitem[\protect\astroncite{Nielsen}{1994}]{nielsen}
+Nielsen, J. (1994).
+\newblock {\em Usability Engineering}.
+\newblock Elsevier, 2 edition.
 
 \bibitem[\protect\astroncite{Oracle}{2015}]{baseDato}
 Oracle (2015).
