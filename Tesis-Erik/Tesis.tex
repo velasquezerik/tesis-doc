@@ -824,7 +824,7 @@ Para determinar la carga máxima que la aplicación web es capaz de soportar en té
 	\item Se varía el número de peticiones enviadas en la ráfaga multiplicando por dos cada vez que una prueba es exitosa, así si la primera prueba se hace con 16 peticiones. la siguiente tendrá 32, 64, 128 y así sucesivamente.
 	\item Tras la primera prueba fallida, se calculará el número de peticiones de la siguiente prueba (\textit{P{\tiny sig}}) como el punto medio entre la cantidad de peticiones de la prueba previa (\textit{P{\tiny prev}}) y la prueba actual (\textit{P{\tiny act}}).
 	\begin{equation}
-		P{\tiny sig} = \begin{cases}P{\tiny prev} + |P{\tiny act} -P{\tiny prev}|/2\\P{\tiny prev} - |P{\tiny act}-P{\tiny prev}|/2\end{cases}
+		P_{sig} = \begin{cases}P_{prev} + |P_{act} - P_{prev}|/2\\P_{prev} - |P_{act} - P_{prev}|/2\end{cases}
 	\end{equation}
 	
 	\item El paso 3 se repite hasta no se obtenga mayor precisión con pruebas sucesivas.
