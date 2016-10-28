@@ -274,11 +274,11 @@ Contiene el diseño general del sistema de simulación, así como la arquitectura d
 
 \item Capitulo IV. Integración de GALATEA.
 
-Explicar aquí.
+Contiene la arquitectura, el diseño y desarrollo de los programas de integración con el motor de simulación GALATEA.
 
 \item Capítulo V. Pruebas.
 
-Explicar aquí.
+En esta sección de exponen las distintas pruebas realizadas a la aplicación web, definición, implementación y el resultado, así mismo hacemos un estudio de los resultados obtenidos.
 
 \item Capítulo VI. Conclusiones.
 
@@ -771,11 +771,28 @@ Esto nos permite definir ambas permisologías para cada tipo de usuario. Para los
 
 La integración de nuestra aplicación web con su núcleo de simulación GALATEA es una de las principales características que posee nuestro sistema. GALATEA es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto paterno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}. El lenguaje base usado para su desarrollo es el Java. Usando como lenguaje base Java, se especifico un nuevo lenguaje de simulación al que denominan lenguaje GALATEA. La sintaxis del lenguaje Galatea es, de hecho una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog. La compleja semántica de GALATEA establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}.
 
-Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes, para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Llamada a Procesos y (2) Sockets. El primero de ellos lo implementamos llamando a una instancia de GALATEA que ejecuta la simulación, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una ejecución de la simulación como si fuera un servidor, el cual atiende las peticiones en un puerto de comunicación especifico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
+Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes, para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subrocesos y (2) Sockets. El primero de ellos lo implementamos llamando a una instancia de GALATEA que ejecuta la simulación, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una ejecución de la simulación como si fuera un servidor, el cual atiende las peticiones en un puerto de comunicación especifico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
 
-\section{Llamada a Procesos} \label{llamadaProcesos}
+\section{Subprocesos} \label{llamadaProcesos}
 
-Definir
+El módulo de subproceso en Python  permite ejecutar nuevos procesos, tomando en cuenta las operaciones de entrada/salida/error y así obtener la información de retorno. Lo utilizan para ejecutar un comando shell o un archivo ejecutable en Python, \cite{subproccess}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/estructuraSubproceso.png}
+	\caption{Ejecución de un Subproceso.}
+	\label{subprocesoWork}
+\end{figure}
+
+El proceso de GALATEA para ejecutar una simulación esta definido en tres pasos:
+
+\begin{itemize}
+	\item Traducir el lenguaje GALATEA: este primer paso consiste en traducir la simulación escrita en lenguaje GALATEA, a lenguaje Java.
+	\item Compilar la Simulación: en este paso compilamos el lenguaje Java de la simulación.
+	\item Ejecutar la simulación: Finalmente ejecutamos la simulación con sus diferentes parámetros de entrada.
+\end{itemize}
+
+Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de las llamadas es obtenido como valor de retorno de la misma y es mostrado al usuario.
 
 \section{Sockets} \label{sockets}
 
@@ -914,6 +931,72 @@ Definir
 \bibliography{bibliografia}
 
 \appendix
+\chapter{Casos de uso de la aplicación web}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{Código} & \textbf{Nombre} \\
+		\hline \hline
+		\textbf{Precondición} & Con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela un velero bergantín... \\
+		\hline
+		\textbf{Descripción} & Con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela un velero bergantín... \\
+		\hline
+		\textbf{Secuencia Normal} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
+		\hline
+		\textbf{Excepciones} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
+		\hline
+		\textbf{Postcondición} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - NOMBRE.}
+	\label{tabla:casouso0}
+\end{table}
+
+Login de Usuario
+
+Logout de Usuario
+
+Control de Contraseña
+
+Manejo de Perfil 
+
+Manejo de Archivos
+
+Manejo de Carpetas
+
+Control de Simulación
+
+Control de Amigos
+
+Control de Archivos Compartidos
+
+\section{Usuario Administrador}
+
+Control de Usuarios
+
+Observación de Logs
+
+Control de Espacios en Disco
+
+
+\chapter{Casos de uso de la integración con GALATEA}
+
+Traducir Archivos
+
+Compilar Archivos
+
+Ejecutar Archivos
+
+Mostrar Simulación
+
+\chapter{Casos de uso de administración de archivos}
+
+Control de Archivos
+
+Control de Carpetas
+
 
 % ***************************************************************** %
 % FIN DE

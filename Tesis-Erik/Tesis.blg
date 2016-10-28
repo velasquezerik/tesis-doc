@@ -6,45 +6,45 @@ Database file #1: bibliografia.bib
 Warning--empty publisher in ajaxManual
 Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
-You've used 18 entries,
+You've used 19 entries,
             1940 wiz_defined-function locations,
-            573 strings with 5865 characters,
-and the built_in function-call counts, 5120 in all, are:
-= -- 502
-> -- 170
-< -- 15
-+ -- 56
-- -- 52
-* -- 394
-:= -- 985
-add.period$ -- 49
-call.type$ -- 18
-change.case$ -- 124
-chr.to.int$ -- 18
-cite$ -- 21
-duplicate$ -- 208
-empty$ -- 340
-format.name$ -- 72
-if$ -- 949
+            578 strings with 5938 characters,
+and the built_in function-call counts, 5359 in all, are:
+= -- 526
+> -- 177
+< -- 16
++ -- 58
+- -- 54
+* -- 411
+:= -- 1032
+add.period$ -- 51
+call.type$ -- 19
+change.case$ -- 130
+chr.to.int$ -- 19
+cite$ -- 22
+duplicate$ -- 218
+empty$ -- 355
+format.name$ -- 75
+if$ -- 992
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 9
-newline$ -- 88
-num.names$ -- 54
-pop$ -- 91
+newline$ -- 92
+num.names$ -- 57
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 116
+purify$ -- 122
 quote$ -- 0
-skip$ -- 164
+skip$ -- 173
 stack$ -- 0
-substring$ -- 235
-swap$ -- 23
+substring$ -- 247
+swap$ -- 24
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 100
+type$ -- 106
 warning$ -- 3
-while$ -- 37
+while$ -- 39
 width$ -- 0
-write$ -- 225
+write$ -- 235
 (There were 3 warnings)

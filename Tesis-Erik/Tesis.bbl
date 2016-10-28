@@ -1,5 +1,9 @@
 \begin{thebibliography}{}
 
+\bibitem[\protect\astroncite{Astrand}{2003}]{subproccess}
+Astrand, P. (2003).
+\newblock subprocess - new process module.
+
 \bibitem[\protect\astroncite{Banks et~al.}{2010}]{discretSimulation}
 Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
 \newblock {\em Discrete-Event System Simulation}.
