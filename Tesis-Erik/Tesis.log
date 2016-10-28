@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  28 OCT 2016 13:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  28 OCT 2016 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,7 +561,7 @@ Cap\'{\i }tulo 2.
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
-Package pdftex.def Info: img/RelacionesMVC.png used on input line 357.
+Package pdftex.def Info: img/RelacionesMVC.png used on input line 358.
 (pdftex.def)             Requested size: 339.26149pt x 214.79869pt.
  [10] [11 <./img/RelacionesMVC.png>] [12] [13]
 Cap\'{\i }tulo 3.
@@ -569,7 +569,7 @@ Cap\'{\i }tulo 3.
 File: img/estructuraSistema.png Graphic file (type png)
 
 <use img/estructuraSistema.png>
-Package pdftex.def Info: img/estructuraSistema.png used on input line 406.
+Package pdftex.def Info: img/estructuraSistema.png used on input line 407.
 (pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
  [14
 
@@ -578,7 +578,7 @@ Package pdftex.def Info: img/estructuraSistema.png used on input line 406.
 File: img/arquitecturaAplicacion.png Graphic file (type png)
 
 <use img/arquitecturaAplicacion.png>
-Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 425.
+Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 426.
 
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [15 <./img/arquitecturaAplicacion.png>]
@@ -586,31 +586,31 @@ Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 425.
 File: img/entidadRelacionDB.png Graphic file (type png)
 
 <use img/entidadRelacionDB.png>
-Package pdftex.def Info: img/entidadRelacionDB.png used on input line 510.
+Package pdftex.def Info: img/entidadRelacionDB.png used on input line 511.
 (pdftex.def)             Requested size: 338.4585pt x 180.6718pt.
  [18]
 <img/usuariosDB.png, id=103, 981.6675pt x 779.91376pt>
 File: img/usuariosDB.png Graphic file (type png)
 
 <use img/usuariosDB.png>
-Package pdftex.def Info: img/usuariosDB.png used on input line 519.
+Package pdftex.def Info: img/usuariosDB.png used on input line 520.
 (pdftex.def)             Requested size: 294.50252pt x 233.97594pt.
 
 <img/archivosDB.png, id=104, 647.41875pt x 655.44875pt>
 File: img/archivosDB.png Graphic file (type png)
 
 <use img/archivosDB.png>
-Package pdftex.def Info: img/archivosDB.png used on input line 529.
+Package pdftex.def Info: img/archivosDB.png used on input line 530.
 (pdftex.def)             Requested size: 194.22711pt x 196.63614pt.
  [19 <./img/entidadRelacionDB.png> <./img/usuariosDB.png>] <img/compartidoDB.pn
 g, id=108, 675.52374pt x 668.4975pt>
 File: img/compartidoDB.png Graphic file (type png)
 
 <use img/compartidoDB.png>
-Package pdftex.def Info: img/compartidoDB.png used on input line 538.
+Package pdftex.def Info: img/compartidoDB.png used on input line 539.
 (pdftex.def)             Requested size: 202.65868pt x 200.5508pt.
 
-Overfull \hbox (3.81635pt too wide) in paragraph at lines 551--560
+Overfull \hbox (3.81635pt too wide) in paragraph at lines 552--561
  [][] 
  []
 
@@ -619,35 +619,35 @@ Overfull \hbox (3.81635pt too wide) in paragraph at lines 551--560
 File: img/pantallaInicio.png Graphic file (type png)
 
 <use img/pantallaInicio.png>
-Package pdftex.def Info: img/pantallaInicio.png used on input line 624.
+Package pdftex.def Info: img/pantallaInicio.png used on input line 625.
 (pdftex.def)             Requested size: 382.82347pt x 190.30762pt.
 
 <img/observacionCarpeta.png, id=116, 1923.185pt x 946.53625pt>
 File: img/observacionCarpeta.png Graphic file (type png)
 
 <use img/observacionCarpeta.png>
-Package pdftex.def Info: img/observacionCarpeta.png used on input line 632.
+Package pdftex.def Info: img/observacionCarpeta.png used on input line 633.
 (pdftex.def)             Requested size: 384.63019pt x 189.3039pt.
  [22 <./img/pantallaInicio.png>]
 <img/observacionArchivo.png, id=121, 1910.13625pt x 806.01125pt>
 File: img/observacionArchivo.png Graphic file (type png)
 
 <use img/observacionArchivo.png>
-Package pdftex.def Info: img/observacionArchivo.png used on input line 640.
+Package pdftex.def Info: img/observacionArchivo.png used on input line 641.
 (pdftex.def)             Requested size: 382.02048pt x 161.19939pt.
 
 <img/compilacionEjecucion.png, id=122, 1671.24374pt x 941.5175pt>
 File: img/compilacionEjecucion.png Graphic file (type png)
 
 <use img/compilacionEjecucion.png>
-Package pdftex.def Info: img/compilacionEjecucion.png used on input line 648.
+Package pdftex.def Info: img/compilacionEjecucion.png used on input line 649.
 (pdftex.def)             Requested size: 334.24283pt x 188.30016pt.
  [23 <./img/observacionCarpeta.png> <./img/observacionArchivo.png>]
 <img/controlUsuarios.png, id=128, 1922.18124pt x 944.52875pt>
 File: img/controlUsuarios.png Graphic file (type png)
 
 <use img/controlUsuarios.png>
-Package pdftex.def Info: img/controlUsuarios.png used on input line 656.
+Package pdftex.def Info: img/controlUsuarios.png used on input line 657.
 (pdftex.def)             Requested size: 384.42944pt x 188.9024pt.
  [24 <./img/compilacionEjecucion.png> <./img/controlUsuarios.png>]
 <img/estructuraArchivosCarpetas.png, id=135, 794.97pt x 614.295pt>
@@ -655,14 +655,14 @@ File: img/estructuraArchivosCarpetas.png Graphic file (type png)
 
 <use img/estructuraArchivosCarpetas.png>
 Package pdftex.def Info: img/estructuraArchivosCarpetas.png used on input line 
-690.
+691.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [25] [26 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, i
 d=143, 794.97pt x 614.295pt>
 File: img/jerarquiaCarpetas.png Graphic file (type png)
 
 <use img/jerarquiaCarpetas.png>
-Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 738.
+Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 739.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [27] [28 <./img/jerarquiaCarpetas.png>]
 [29]
@@ -673,10 +673,10 @@ Cap\'{\i }tulo 4.
 File: img/estructuraSubproceso.png Graphic file (type png)
 
 <use img/estructuraSubproceso.png>
-Package pdftex.def Info: img/estructuraSubproceso.png used on input line 782.
+Package pdftex.def Info: img/estructuraSubproceso.png used on input line 783.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
 
-Underfull \hbox (badness 1072) in paragraph at lines 799--800
+Underfull \hbox (badness 1072) in paragraph at lines 800--801
 \OT1/cmr/m/n/10 Socket des-igna un con-cepto ab-stracto por el cual dos pro-gra
 -mas (posi-ble-mente situ-a-dos en
  []
@@ -684,7 +684,7 @@ Underfull \hbox (badness 1072) in paragraph at lines 799--800
 <img/socketWork.png, id=159, 281.05pt x 355.3275pt>
 File: img/socketWork.png Graphic file (type png)
  <use img/socketWork.png>
-Package pdftex.def Info: img/socketWork.png used on input line 803.
+Package pdftex.def Info: img/socketWork.png used on input line 804.
 (pdftex.def)             Requested size: 112.418pt x 142.12846pt.
 
 [31 <./img/estructuraSubproceso.png>]
@@ -692,7 +692,7 @@ Package pdftex.def Info: img/socketWork.png used on input line 803.
 File: img/estructuraSockets.png Graphic file (type png)
 
 <use img/estructuraSockets.png>
-Package pdftex.def Info: img/estructuraSockets.png used on input line 820.
+Package pdftex.def Info: img/estructuraSockets.png used on input line 821.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [32 <./img/socketWork.png>] [33 <./img/estructuraSockets.png>] [34]
 Cap\'{\i }tulo 5.
@@ -714,33 +714,147 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [40]
 Ap\'endice A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 946--946
+Underfull \hbox (badness 10000) in paragraph at lines 947--947
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 990--990
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 [41
 
-] [42]
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1116
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 1436) in paragraph at lines 1116--1117
+[]\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
+tir.
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 1116--1117
+\OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
+ en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1139--1139
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1160--1160
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[43] [44]
 Ap\'endice B.
-[43
+
+Underfull \hbox (badness 10000) in paragraph at lines 1205--1205
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 1205--1206
+[]\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 1243--1244
+[]\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
+-u-laci^^Son
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[45
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[46]
 Ap\'endice C.
-[44
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1006.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1006.
+Underfull \hbox (badness 10000) in paragraph at lines 1293--1293
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1314
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1335--1335
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[47
+
+] [48]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1353.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1353.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1006.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1006.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1006.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1353.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1353.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1353.
  ) 
 Here is how much of TeX's memory you used:
- 9204 strings out of 495063
- 132461 string characters out of 3182201
- 223221 words of memory out of 3000000
- 12234 multiletter control sequences out of 15000+200000
+ 9222 strings out of 495063
+ 132776 string characters out of 3182201
+ 227292 words of memory out of 3000000
+ 12252 multiletter control sequences out of 15000+200000
  13114 words of font info for 49 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,13n,45p,4296b,450s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -758,10 +872,10 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on Tesis.pdf (51 pages, 1237862 bytes).
+Output written on Tesis.pdf (55 pages, 1247651 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 276 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

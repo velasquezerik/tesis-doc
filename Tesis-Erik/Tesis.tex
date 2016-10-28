@@ -280,10 +280,11 @@ Contiene la arquitectura, el diseño y desarrollo de los programas de integración
 
 En esta sección de exponen las distintas pruebas realizadas a la aplicación web, definición, implementación y el resultado, así mismo hacemos un estudio de los resultados obtenidos.
 
-\item Capítulo VI. Conclusiones.
+\item Capítulo VI. Conclusiones y Recomendaciones.
 
-Explicar aquí.
+Conclusiones y Recomendaciones, contiene las conclusiones obtenidas a partir del diseño e implementación del sistema, así como recomendaciones y posibles mejoras a incluir en trabajos futuros.
 
+\item Finalmente se presentan los apéndices y las referencias bibliográficas.
 
 \end{description}
 
@@ -937,6 +938,352 @@ Definir
 	\centering
 	\begin{tabular}{p{2.5cm} p{10cm}}
 		\hline
+		\textbf{U-01} & \textbf{Login de Usuario} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario no autentificado y usuario registrado \\
+		\hline
+		\textbf{Descripción} & Usuario no autentificado se autentifica en el sistema web. \\
+		\hline
+		\textbf{Secuencia Normal} & Usuario click en login. Ingresa sus credenciales. Dar click en el botón login. Usuario es autentificado por el sistema. \\
+		\hline
+		\textbf{Excepciones} & Usuario o contraseña incorrectos. \\
+		\hline
+		\textbf{Postcondición} & Inicia en su pantalla de inicio. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Login Usuario.}
+	\label{tabla:casouso01}
+\end{table}
+
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-02} & \textbf{Logout de Usuario} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado \\
+		\hline
+		\textbf{Descripción} & Usuario deja de estar autentificado en el sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en el botón logout. Sistema olvida la sesión del usuario. \\
+		\hline
+		\textbf{Excepciones} & Error en el control de sesiones. \\
+		\hline
+		\textbf{Postcondición} & Usuario no autentificado e inicio en pantalla de Login. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Logout de Usuario.}
+	\label{tabla:casouso02}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-03} & \textbf{Control de Contraseña} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autenticado en el sistema. \\
+		\hline
+		\textbf{Descripción} & Usuario puede cambiar su contraseña. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en cambiar contraseña. Ingresa la nueva contraseña y la repite. Click en botón actualizar. Sistema actualiza contraseña. \\
+		\hline
+		\textbf{Excepciones} & Contraseñas no coinciden. Campos vacíos. \\
+		\hline
+		\textbf{Postcondición} & Contraseña actualizada. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Contraseña.}
+	\label{tabla:casouso03}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-04} & \textbf{Manejo de Perfil} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autenticado. \\
+		\hline
+		\textbf{Descripción} & Cambiar la información básica del perfil de usuario. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en perfil. Ingresar nuevos datos del perfil. Click en botón actualizar datos. Notificación de datos actualizados. \\
+		\hline
+		\textbf{Excepciones} & Campos vacíos. \\
+		\hline
+		\textbf{Postcondición} & Datos de perfil actualizados en el sistema. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Manejo de Perfil.}
+	\label{tabla:casouso04}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-05} & \textbf{Manejo de Archivos} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado. Espacio en disco libre. \\
+		\hline
+		\textbf{Descripción} & Se puede crear, editar, mover y eliminar archivos en el sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en crear Archivo. Se ingresa el nombre. Click Aceptar;Click en eliminar Archivo. Se acepta la notificación. Click Aceptar; Click en mover Archivo. Se ingresa el nombre de la carpeta destino. Click Aceptar; \\
+		\hline
+		\textbf{Excepciones} & Espacio en disco insuficiente. Nombres no válidos. \\
+		\hline
+		\textbf{Postcondición} & Archivo creado, editado, eliminado y movido con éxito. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Manejo de Archivos.}
+	\label{tabla:casouso05}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-06} & \textbf{Manejo de Carpetas} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado. Espacio en disco libre. \\
+		\hline
+		\textbf{Descripción} & Se puede crear, editar, mover y eliminar carpetas en el sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en crear Carpeta. Se ingresa el nombre. Click Aceptar;Click en eliminar Carpeta. Se acepta la notificación. Click Aceptar; Click en mover Archivo. Se ingresa el nombre de la carpeta destino. Click Aceptar; \\
+		\hline
+		\textbf{Excepciones} & Espacio en disco insuficiente. Nombres no válidos. \\
+		\hline
+		\textbf{Postcondición} & Carpeta creada, editada, eliminada y movida con éxito. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Manejo de Carpetas.}
+	\label{tabla:casouso06}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-07} & \textbf{Control de Simulación} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado. Archivo de simulación válido. \\
+		\hline
+		\textbf{Descripción} & Se compila y ejecuta un archivo de simulación. La información resultante se observa en el sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Se visualiza un archivo de simulación válido. Click en compilar. Archivo compilado. Se muestra resultado; Se visualiza un archivo de simulación válido. Click en ejecutar. Archivo compilado y ejecutado. Se muestra resultado de la simulación. \\
+		\hline
+		\textbf{Excepciones} & Archivo no válido. Error en compilación. Error en Archivo. \\
+		\hline
+		\textbf{Postcondición} & Resultado de la compilación y ejecución por pantalla. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Simulación.}
+	\label{tabla:casouso07}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-08} & \textbf{Control de Amigos} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado. \\
+		\hline
+		\textbf{Descripción} & El usuario puede enviar solicitudes de amistad a otros usuario, al igual puede recibir notificaciones, aceptarlas o rechazarlas. \\
+		\hline
+		\textbf{Secuencia Normal} & Click obtener amigos. Selecciona un usuario de la lista. Enviar solicitud. Solicitud enviada; Click en notificaciones de amigos. Aceptar/Negar/Bloquear solicitud. \\
+		\hline
+		\textbf{Excepciones} & Solicitud ya enviada. Usuario bloqueado. \\
+		\hline
+		\textbf{Postcondición} & Estatus de amigo actualizado. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Amigos.}
+	\label{tabla:casouso08}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-09} & \textbf{Control de Archivos Compartidos} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autenticado. Al menos un amigo en el sistema. \\
+		\hline
+		\textbf{Descripción} & El usuario puede compartir archivos entre sus amigos. \\
+		\hline
+		\textbf{Secuencia Normal} & Pantalla de visualización de archivo. Click en compartir. Selecciona un amigo. Se enviá la notificación; Click en notificaciones de archivos. Click en aceptar/negar solicitud de archivo.  \\
+		\hline
+		\textbf{Excepciones} & No amigos asociados. \\
+		\hline
+		\textbf{Postcondición} & Estatus de archivo actualizado. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Archivos Compartidos.}
+	\label{tabla:casouso09}
+\end{table}
+
+\section{Usuario Administrador}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{A-01} & \textbf{Control de Usuarios} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario Administrador autenticado. \\
+		\hline
+		\textbf{Descripción} & Permite registrar nuevos usuarios al sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en usuarios. Click registrar nuevo usuario o administrador. Ingresar datos del nuevo usuario. Click en guardar. \\
+		\hline
+		\textbf{Excepciones} & Datos repetidos en el sistema.  \\
+		\hline
+		\textbf{Postcondición} & Usuario registrado en el sistema. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Usuarios.}
+	\label{tabla:casouso010}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{A-02} & \textbf{Observación de Logs} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario Administrador autenticado \\
+		\hline
+		\textbf{Descripción} & Observación de los logs de carpetas, archivos y usuarios del sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Click en logs. Muestra listado de logs del sistema. \\
+		\hline
+		\textbf{Excepciones} & No logs en el sistema \\
+		\hline
+		\textbf{Postcondición} & Lista de logs con descripción. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Observación de Logs.}
+	\label{tabla:casouso011}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{A-03} & \textbf{Control de Espacios en Disco} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario Administrador autenticado \\
+		\hline
+		\textbf{Descripción} & Permite editar el espacio en disco asociado al usuario. \\
+		\hline
+		\textbf{Secuencia Normal} & Pantalla de listado de usuarios. Click editar espacio. Modificar espacio. Click actualizar. \\
+		\hline
+		\textbf{Excepciones} & Espacio en disco insuficiente. \\
+		\hline
+		\textbf{Postcondición} & Modificación de la cantidad de espacio en disco asociado. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Espacios en Disco.}
+	\label{tabla:casouso012}
+\end{table}
+
+
+\chapter{Casos de uso de la integración con GALATEA}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{G-01} & \textbf{Traducir Archivos} \\
+		\hline \hline
+		\textbf{Precondición} & Archivo de simulación válido. \\
+		\hline
+		\textbf{Descripción} & Traduce un archivo de simulación en las distintas clases Java necesarias para su compilación y ejecución. \\
+		\hline
+		\textbf{Secuencia Normal} & Buscar el archivo de simulación. Ejecuta el comando de traducción. \\
+		\hline
+		\textbf{Excepciones} & Archivo de simulación no válido. Errores en la traducción. \\
+		\hline
+		\textbf{Postcondición} & Archivos Java necesarios creados. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Traducir Archivos.}
+	\label{tabla:casouso013}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{G-02} & \textbf{Compilar Archivos} \\
+		\hline \hline
+		\textbf{Precondición} & Archivo de simulación válido. Traducción de simulación realizada. \\
+		\hline
+		\textbf{Descripción} & Compila las diferentes clases Java necesarias para crear sus .Class \\
+		\hline
+		\textbf{Secuencia Normal} & Buscar los archivos Java. Crea los .Class de cada archivo Java a ser ejecutado. \\
+		\hline
+		\textbf{Excepciones} & Errores en los archivos Java.  \\
+		\hline
+		\textbf{Postcondición} & Archivos .Class creados. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Compilar Archivos.}
+	\label{tabla:casouso014}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{G-03} & \textbf{Ejecutar Archivos} \\
+		\hline \hline
+		\textbf{Precondición} & Archivo de simulación válido. Compilación de simulación realizada. \\
+		\hline
+		\textbf{Descripción} & Ejecuta el archivo de simulación en el ambiente de GALATEA y muestra su resultado. \\
+		\hline
+		\textbf{Secuencia Normal} & Busca el archivo .Class principal lo enlaza a GALATEA. Ejecuta el programa de simulación. \\
+		\hline
+		\textbf{Excepciones} & Errores de lógica de simulación \\
+		\hline
+		\textbf{Postcondición} & Simulación realizada. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Ejecutar Archivos.}
+	\label{tabla:casouso015}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{Código} & \textbf{Mostrar Simulación} \\
+		\hline \hline
+		\textbf{Precondición} & Archivo de simulación válido. Ejecución de simulación realizada. \\
+		\hline
+		\textbf{Descripción} & Muestra por pantalla el resultado de la ejecución de la simulación. \\
+		\hline
+		\textbf{Secuencia Normal} & Ejecuta la simulación. Guarda resultados. Enviá resultados al sistema de visualización. \\
+		\hline
+		\textbf{Excepciones} & Errores en la simulación. \\
+		\hline
+		\textbf{Postcondición} & Resultados de la simulación visualizados. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Mostrar Simulación.}
+	\label{tabla:casouso016}
+\end{table}
+
+
+
+\chapter{Casos de uso de administración de archivos}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
 		\textbf{Código} & \textbf{Nombre} \\
 		\hline \hline
 		\textbf{Precondición} & Con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela un velero bergantín... \\
@@ -954,48 +1301,48 @@ Definir
 	\label{tabla:casouso0}
 \end{table}
 
-Login de Usuario
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{C-01} & \textbf{Control de Archivos} \\
+		\hline \hline
+		\textbf{Precondición} & Espacio en disco suficiente. Permisología de escritura en disco. \\
+		\hline
+		\textbf{Descripción} & Permite crear, mover, eliminar y editar archivos en el disco. \\
+		\hline
+		\textbf{Secuencia Normal} & Verificar Archivo. Crear/Editar/Mover/Eliminar archivo en el disco. Respuesta de la operación. \\
+		\hline
+		\textbf{Excepciones} & Errores en el disco. \\
+		\hline
+		\textbf{Postcondición} & Archivo Creado/Editado/Eliminado. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Archivos.}
+	\label{tabla:casouso017}
+\end{table}
 
-Logout de Usuario
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{C-02} & \textbf{Control de Carpetas} \\
+		\hline \hline
+		\textbf{Precondición} & Espacio en disco suficiente. Permisología de escritura en disco. \\
+		\hline
+		\textbf{Descripción} & Permite crear, mover, eliminar y editar carpetas en el disco. \\
+		\hline
+		\textbf{Secuencia Normal} & Verificar Carpeta. Crear/Editar/Mover/Eliminar carpeta en el disco. Respuesta de la operación. \\
+		\hline
+		\textbf{Excepciones} & Errores en el disco. \\
+		\hline
+		\textbf{Postcondición} & Carpeta Creado/Editado/Eliminado. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Carpetas.}
+	\label{tabla:casouso018}
+\end{table}
 
-Control de Contraseña
-
-Manejo de Perfil 
-
-Manejo de Archivos
-
-Manejo de Carpetas
-
-Control de Simulación
-
-Control de Amigos
-
-Control de Archivos Compartidos
-
-\section{Usuario Administrador}
-
-Control de Usuarios
-
-Observación de Logs
-
-Control de Espacios en Disco
-
-
-\chapter{Casos de uso de la integración con GALATEA}
-
-Traducir Archivos
-
-Compilar Archivos
-
-Ejecutar Archivos
-
-Mostrar Simulación
-
-\chapter{Casos de uso de administración de archivos}
-
-Control de Archivos
-
-Control de Carpetas
 
 
 % ***************************************************************** %
