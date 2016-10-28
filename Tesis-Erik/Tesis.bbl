@@ -15,6 +15,10 @@ Fundation, D.~S. (2015).
 \newblock {\em The web framework for perfectionists with deadlines}.
 \newblock 5 edition.
 
+\bibitem[\protect\astroncite{IBM}{2015}]{ibmSockets}
+IBM (2015).
+\newblock Socket programming.
+
 \bibitem[\protect\astroncite{JMeter}{2014}]{jMeter}
 JMeter (2014).
 \newblock Apache jmeter.
@@ -82,5 +86,9 @@ Santana, Y.~C., Ángel Mateo~Pla, M., y Terol, J.~P. (2004).
 Uzcátegui, M., Dávila, J., y Tucci, K. (2011).
 \newblock Galatea: una historia de modelado y simulación.
 \newblock {\em Revista Ciencia e Ingeniería}, (1316-7081):85--94.
+
+\bibitem[\protect\astroncite{Yadav}{2007}]{sockets}
+Yadav, R. (2007).
+\newblock Client / server programming with tcp/ip sockets.
 
 \end{thebibliography}
