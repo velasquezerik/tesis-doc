@@ -60,9 +60,9 @@
 \contentsline {section}{\numberline {5.3}Resultados obtenidos}{37}{section.5.3}
 \contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{37}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusiones}{38}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{38}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{39}{section.6.1}
-\contentsline {chapter}{\numberline {A}Casos de uso de la aplicaci\'on web}{41}{appendix.A}
-\contentsline {section}{\numberline {A.1}Usuario Administrador}{43}{section.A.1}
-\contentsline {chapter}{\numberline {B}Casos de uso de la integraci\'on con GALATEA}{45}{appendix.B}
-\contentsline {chapter}{\numberline {C}Casos de uso de administraci\'on de archivos}{47}{appendix.C}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{39}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{40}{section.6.1}
+\contentsline {chapter}{\numberline {A}Casos de uso de la aplicaci\'on web}{42}{appendix.A}
+\contentsline {section}{\numberline {A.1}Usuario Administrador}{44}{section.A.1}
+\contentsline {chapter}{\numberline {B}Casos de uso de la integraci\'on con GALATEA}{46}{appendix.B}
+\contentsline {chapter}{\numberline {C}Casos de uso de administraci\'on de archivos}{48}{appendix.C}

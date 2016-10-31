@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  28 OCT 2016 15:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  31 OCT 2016 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,7 +702,7 @@ Cap\'{\i }tulo 5.
 Cap\'{\i }tulo 6.
 [38
 
-] (./Tesis.bbl [39
+] [39] (./Tesis.bbl [40
 
 ])
 
@@ -711,144 +711,144 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[40]
+[41]
 Ap\'endice A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 947--947
+Underfull \hbox (badness 10000) in paragraph at lines 970--970
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 969--969
+Underfull \hbox (badness 10000) in paragraph at lines 992--992
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 990--990
+Underfull \hbox (badness 10000) in paragraph at lines 1013--1013
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1011--1011
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1034
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[41
+[42
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1032
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1076
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+Underfull \hbox (badness 10000) in paragraph at lines 1097--1097
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1095--1095
+Underfull \hbox (badness 10000) in paragraph at lines 1118--1118
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 1116--1116
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 1116--1117
-[]\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
-tir.
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 1116--1117
-\OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
- en
- []
-
-
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 1139--1139
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1160--1160
+Underfull \hbox (badness 1436) in paragraph at lines 1139--1140
+[]\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
+tir.
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 1139--1140
+\OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
+ en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1162--1162
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
+Underfull \hbox (badness 10000) in paragraph at lines 1183--1183
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[43] [44]
+
+Underfull \hbox (badness 10000) in paragraph at lines 1204--1204
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[44] [45]
 Ap\'endice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1205--1205
+Underfull \hbox (badness 10000) in paragraph at lines 1228--1228
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1205--1206
+Underfull \hbox (badness 1400) in paragraph at lines 1228--1229
 []\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1226--1226
+Underfull \hbox (badness 10000) in paragraph at lines 1249--1249
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 1243--1244
+Underfull \hbox (badness 1668) in paragraph at lines 1266--1267
 []\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
 -u-laci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1247--1247
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[45
+[46
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1268--1268
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1291
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[46]
+[47]
 Ap\'endice C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1293--1293
+Underfull \hbox (badness 10000) in paragraph at lines 1316--1316
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1314--1314
+Underfull \hbox (badness 10000) in paragraph at lines 1337--1337
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1335--1335
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1358
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[47
+[48
 
-] [48]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1353.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1353.
+] [49]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1376.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1376.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1353.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1353.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1353.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1376.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1376.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1376.
  ) 
 Here is how much of TeX's memory you used:
  9222 strings out of 495063
@@ -872,10 +872,10 @@ r8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb>
-Output written on Tesis.pdf (55 pages, 1247651 bytes).
+Output written on Tesis.pdf (56 pages, 1251294 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 170 compressed objects within 2 object streams
+ 279 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  91 words of extra memory for PDF output out of 10000 (max. 10000000)
 

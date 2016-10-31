@@ -912,11 +912,34 @@ Definir
 
 \chapter{Conclusiones}
 
-Definir
+Durante el desarrollo de este trabajo, se construyó un sistema web de simulación cuya base principal es GALATEA. Al igual se implementó un sistema de administración de archivos y carpetas, el cual facilita al usuario el manejo de las simulaciones. La interacción de usuarios dentro del sistema es un elemento importante, por lo que se permitió a los usuarios compartir proyectos de simulación (archivos y carpetas), lo cual permite a varios usuarios colaborar entre sí para desarrollar mejores simulaciones  y validar simulaciones ya realizadas. Se integraron las nuevas tecnologías y herramientas de software como lo son: nuevos lenguajes de programación adaptados a la web usando Python mediante su framework web Django; herramientas para el control de tareas como Trello; repositorios para almacenar los proyectos como Github y manejadores de control de versiones como Git que junto con su integración con Github se convierte en una herramienta de desarrollo muy poderosa para cualquier proyecto de software; al igual el manejo y control de servidores web como Nginx y Apache, siempre sin olvidar el manejo de Base de datos MySql y Postgresql.
+
+El objetivo principal de este proyecto era desarrollar una integración entre GALATEA como software de simulación y el sistema web. Se desarrollaron y presentaron dos enfoques de integración que permitieron al sistema web comunicarse con el motor de simulación GALATEA, simular y mostrar los resultados al usuario. Se planteo el desarrollo de una plataforma web para que, los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) pudieran ejecutar los modelos de simulación en el simulador GALATEA de manera fácil y rápida, sin tener que pasar dificultades al momento de configurar y activar todas sus funcionalidades de simulador y así enfocarse unicamente en sus modelos de simulación y en los resultados obtenidos de los mismos. 
+
+Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca, ya no solo a personas con conocimientos avanzados en el tema de simulación, conocimientos de programación y de sistemas operativos, sino a la comunidad en general. Permitiendole a estudiantes de cursos iniciales, y estudiantes de otras universidades, al igual cualquier persona que quiera colaborar el los procesos y modelos de simulación, trabajar, analizar y compartir los resultados obtenidos desde cualquier parte del mundo.
+
+Los logros mas importantes desde el punto de vista computacional se nombran a continuación:
+
+\begin{itemize}
+	\item Se desarrolló una aplicación web que permite el control de usuarios y usuarias, que pueden desde cualquier parte del mundo con una conexión a internet, loguearse en el sistema y desarrollar sus modelos de simulación.
+	\item Se creó un sistema administrador de archivos y carpetas, al igual la correcta administración de espacio en disco que puede utilizar cada usuario y usuaria.
+	\item Se implementó un sistema de permisos para cada archivo y carpeta, lo que permite a los usuarios colaborar entre ellos en diferente proyectos y modelos de simulación.
+	\item Se integró el simulador de eventos discretos GALATEA a la aplicación web, lo cual se hizo mediante dos enfoques: Subprocesos y Sockets.
+\end{itemize}
+
+Además del diseño y desarrollo del sistema, también se ejecutaron pruebas para determinar el rendimiento, estabilidad y escalabilidad tanto de la aplicacón web como de los modelos básicos de simulación existentes en GALATEA.
+
 
 \section{Recomendaciones}
 
-Definir
+El presente proyecto permite un universo de opciones que se pueden continuar desarrollando, pero a continuación presentaré los trabajos más importantes a mi parecer que pueden desarrollarse como una continuación a este trabajo:
+
+\begin{itemize}
+	\item Integrar un sistema de educación a distancia para simulación.
+	\item Desarrollar nuevas mejoras en la api de integración de GALATEA para no solo garantizar una comunicación con el sistema web, sino con otros sistemas.
+	\item Mejorar el sistema de comunicación de usuarios dentro del sistema para de alguna manera desarrollar una red social de simulación.
+	\item Definir e implementar un sistema de control de eventos en tiempo real para GALATEA, lo cual permita al usuario interactuar y obtener los resultados en tiempo real con el proceso de simulación.
+\end{itemize}
 
 % Estilo de la bibliografía
 \bibliographystyle{apa}
