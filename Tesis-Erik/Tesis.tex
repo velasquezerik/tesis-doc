@@ -663,7 +663,7 @@ Para el desarrollo de esta aplicación se usó el framework de desarrollo web Djan
 	\label{arquitecturaAplicacion}
 \end{figure}
 
-La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas, la capa superior o capa de presentación se ejecuta en el navegador del cliente, para ver los resultados obtenidos de la simulación, visualización de archivos, entre otras acciones que pude realizar el usuario; esta capa se comunica con la capa dos o capa de servicio, que es ejecutada por el servidor web y es la responsable de atender las peticiones de los usuarios del sistema; la capa tres es la encargada de las peticiones a los otros módulos que conforman el sistema, comunicación con el módulo de manejo de archivos e integración con el simulador GALATEA; la capa cuatro o capa de datos aloja los datos de la aplicación como usuarios, archivos, carpetas, simulaciones entre otros.
+La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas, la capa superior o capa de presentación se ejecuta en el navegador del cliente, para ver los resultados obtenidos de la simulación, visualización de archivos, entre otras acciones que pude realizar el usuario; esta capa se comunica con la capa dos o capa de servicio, que es ejecutada por el servidor web y es la responsable de atender las peticiones de los usuarios del sistema; la capa tres es la encargada de las peticiones a los otros módulos que conforman el sistema, comunicación con el módulo de manejo de archivos e integración con el simulador GALATEA; la capa cuatro o capa de datos aloja los datos de la aplicación como usuarios, archivos, carpetas, modelos, trazas y datos de simulaciones, entre otros.
 
 \subsection{Capa 1: Presentación}
 
@@ -691,9 +691,9 @@ El servidor web es el punto de entrada a la aplicación, éste responde a las peti
 		\caption {Tabla de enrutamiento del servidor web.} \label{tabla-enrutamineto}
 \end{table}
 
-El servidor web debe manejar dos tipos de peticiones: aquellas que requieren respuestas dinámicas ajustadas a los datos específicos que pertenecen a cada usuario en particular y peticiones de archivos estáticos como CSS, JavaScript, imágenes o archivos HTML pre-definidos que cambien poco o rara vez. A pesar de que la aplicación web es capaz de manejar ambos tipos de peticiones, cada una de ellas tendrá que pasar por todo el pipeline de Django (middlewares, resolución de URLs, procesamiento de la vista, etc), esta complejidad es innecesaria cuando se trata de archivos estáticos y va a sobrecargar el servidor web en entornos de producción.
+El servidor web debe manejar dos tipos de peticiones: aquellas que requieren respuestas dinámicas ajustadas a los datos específicos que pertenecen a cada usuario en particular y peticiones de archivos estáticos como CSS, JavaScript, imágenes o archivos HTML pre-definidos que cambien poco o rara vez. A pesar de que la aplicación web es capaz de manejar ambos tipos de peticiones, cada una de ellas tendrá que pasar por todo el pipeline de Django (middlewares, resolución de URLs, procesamiento de la vista, etc). Esta complejidad es innecesaria cuando se trata de archivos estáticos y va a sobrecargar el servidor web en entornos de producción.
 
-Para manejar eficientemente todo tipo de peticiones, debemos implementar un mecanismo que sea capaz de servir los archivos estáticos rápidamente y que sirva como proxy entre el front-end y la aplicación web, hay una gran variedad de servidores como Apache\footnote{Apache https://www.apache.org/}, Nginx\footnote{Nginx https://nginx.org/} o Lighttpd\footnote{Lighttpd https://www.lighttpd.net/} diseñados especialmente con este propósito, éstos tendrán una sencilla tabla de enrutamiento que decidirá cómo manejar las peticiones. La aplicación web podrá correr entonces en un proceso separado y sólo atenderá peticiones dinámicas, así se asegurará la eficiencia en el uso de los recursos computacionales disponibles.
+Para manejar eficientemente todo tipo de peticiones, debemos implementar un mecanismo que sea capaz de servir los archivos estáticos rápidamente y que sirva como proxy entre el front-end y la aplicación web. Hay una gran variedad de servidores como Apache\footnote{Apache https://www.apache.org/}, Nginx\footnote{Nginx https://nginx.org/} o Lighttpd\footnote{Lighttpd https://www.lighttpd.net/} diseñados especialmente con este propósito, éstos tendrán una sencilla tabla de enrutamiento que decidirá cómo manejar las peticiones. La aplicación web podrá correr entonces en un proceso separado y sólo atenderá peticiones dinámicas, así se asegurará la eficiencia en el uso de los recursos computacionales disponibles.
 
 \subsection{Capa 3: Integración de Procesos}
 
@@ -701,7 +701,7 @@ En esta capa integramos los procesos fundamentales para nuestro sistema, como lo
 
 \subsection{Capa 4: Datos}
 
-Incluye todos los sistemas encargados de almacenar o alojar los datos en forma persistente ya sea a través de de bases de datos o disco duro.
+Incluye todos los sistemas encargados de almacenar o alojar los datos en forma persistente ya sea a través de de bases de datos o sistemas de archivos.
 
 \subsubsection{Bases de datos}
 
@@ -711,7 +711,7 @@ El diseño de la base de datos es una de los pilares fundamentales del diseño del
 
 \subsubsection{Archivos de usuario}
 
-Los archivos de usuario son de gran importancia a ser manejados en el sistema, estos pueden ser de configuración de perfiles como imágenes, y los de simulaciones que varían desde archivos Java, archivos GALATEA y archivos de texto con información de simulaciones, entre otros.
+Los archivos de usuario son de gran importancia a ser manejados en el sistema, estos pueden ser de configuración de perfiles como imágenes, y los archivos de los modelos de simulación que varían desde archivos Java, archivos GALATEA y archivos de texto con información de trazas y ayudas del modelo, entre otros.
 
 Todos estos archivos son almacenamos en un sistema de almacenamiento secundario, el cual es configurado dentro de la aplicación y controlado para su correcto funcionamiento y acceso. Cada usuario cuenta dentro del sistema con una porción de almacenamiento para su uso.
 
@@ -743,7 +743,7 @@ La figura \ref{entidadRelacionPrincipal} muestra las entidades principales y sus
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.2]{img/entidadRelacionDB.png}
+	\includegraphics[scale=0.38]{img/entidadRelacionDB.png}
 	\caption{Entidades principales de la base de datos.}
 	\label{entidadRelacionPrincipal}
 \end{figure}
@@ -752,7 +752,7 @@ La figura \ref{entidadRelacionUsuarios} muestra las entidades  relacionadas al c
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{img/usuariosDB.png}
+	\includegraphics[scale=0.45]{img/usuariosDB.png}
 	\caption{Entidades manejo de usuarios.}
 	\label{entidadRelacionUsuarios}
 \end{figure}
@@ -762,7 +762,7 @@ La figura \ref{entidadRelacionArchivosCarpetas} muestra la relación para el cont
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{img/archivosDB.png}
+	\includegraphics[scale=0.55]{img/archivosDB.png}
 	\caption{Entidades manejo archivos y carpetas.}
 	\label{entidadRelacionArchivosCarpetas}
 \end{figure}
@@ -771,7 +771,7 @@ La figura \ref{entidadRelacionArchivosCarpetasCompartidos} muestra la relación p
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.3]{img/compartidoDB.png}
+	\includegraphics[scale=0.55]{img/compartidoDB.png}
 	\caption{Entidades manejo archivos y carpetas compartidos.}
 	\label{entidadRelacionArchivosCarpetasCompartidos}
 \end{figure}
@@ -847,14 +847,14 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 
 Todas las pantallas del sistema fueron creadas bajo el paradigma del diseño web adaptable, es decir, que pueden ajustarse a cualquier resolución de pantalla sin reducir la usabilidad o sacrificar la experiencia del usuario, el servidor no tiene que decidir entre un conjunto de plantillas para distintas resoluciones, sino que envía al cliente sólo documento HTML y este combina las reglas de presentación de archivos CSS y la lógica de archivos JavaScript para desplegar una página web adaptada al dispositivo del usuario.
 
-Ya que una aplicación web está compuesta por decenas de vistas que comparten componentes como: barras de navegación, cabeceras y pie de páginas, Django incluye un micro-lenguaje de plantillas con funcionalidades de herencia e inclusión, estructuras de repetición y decisión, esto hace que sea posible tener una taxonomía de plantillas, de manera que sólo es necesario escribir los elementos comunes a un conjunto de plantillas una vez y crear nuevas pantallas en el tope de otras. Se le llama rendering al proceso de combinar los datos de la base de datos y la petición del usuario, junto con una plantilla predefinida en la aplicación para generar páginas web personalizadas.
+Ya que una aplicación web está compuesta por decenas de vistas que comparten componentes como: barras de navegación, cabeceras y pie de páginas, Django incluye un micro-lenguaje de plantillas con funcionalidades de herencia e inclusión, estructuras de repetición y decisión. Esto hace que sea posible tener una taxonomía de plantillas, de manera que sólo es necesario escribir los elementos comunes a un conjunto de plantillas una vez y crear nuevas pantallas en sobre otras. Se le llama rendering al proceso de combinar los datos de la base de datos y la petición del usuario, junto con una plantilla predefinida en la aplicación para generar páginas web personalizadas.
 
-Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la página, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente , \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} bloque para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la página.
+Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la página, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente, \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} bloque para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la página.
 
 A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
 
 \begin{itemize}
-	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y capetas de nuestra carpeta de usuario raíz.
+	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y capetas de nuestro sistema raíz.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/pantallaInicio.png}
@@ -898,7 +898,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 
 \subsection{Diseño de URLs}
 
-Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios; a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
+Ya que la aplicación web consiste en un conjunto grande de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios anteceden a la operación real que se esta llamando; a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
 
 \begin{itemize}
 	\item Operaciones básicas de acceso:
@@ -917,7 +917,7 @@ Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseña
 
 \section{Administrador de Archivos} \label{administracionArchivos}
 
-Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realizan mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite  crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web coomo PHP, Ajax, Perl, ASP u otro lenguaje de servidor. 
+Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realiza mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite  crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web como PHP, Ajax, Perl, JSP u otro lenguaje de servidor. 
 
 Como todo administrador de archivos existente, éste debe trabajar bajo un sistema de archivos el cual dependerá del sistema operativo en el que se encuentre instalado. Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados. Estructuran la información guardada en un dispositivo de almacenamiento de datos o unidad de almacenamiento (normalmente un disco duro de una computadora), que luego será representada ya sea textual o gráficamente utilizando un gestor de archivos.
 
@@ -928,7 +928,7 @@ Como todo administrador de archivos existente, éste debe trabajar bajo un sistem
 	\label{estructuraAdministradorArchivosCarpetas}
 \end{figure}
 
-El framework de desarrollo web Django usado para desarrollar este proyecto nos permite tener una interacción directa con los archivos y carpetas, esto debido a el lenguaje principal es que se encuentra escrito (Python), el cual es un lenguaje de programación potente y versátil para desarrollar cualquier tipo de tareas. Por ende nuestro administrador de archivos y carpetas esta escrito en python, haciendo uso de las librerías de control archivos y carpetas que el lenguaje nos proporciona.
+El framework de desarrollo web Django usado para desarrollar este proyecto nos permite tener una interacción directa con los archivos y carpetas. Esto debido a el lenguaje principal es que se encuentra escrito (Python), el cual es un lenguaje de programación potente y versátil para desarrollar cualquier tipo de tareas. Por ende, nuestro administrador de archivos y carpetas esta escrito en python, haciendo uso de las librerías de control archivos y carpetas que el lenguaje nos proporciona.
 
 En la figura \ref{estructuraAdministradorArchivosCarpetas} podemos observar la estructura y diseño de nuestro administrador de archivos, como capa base tenemos a python y sus librerías de manejo de archivos, el cual interactua con el sistema de archivos de nuestro sistema operativo y ejecuta las operaciones a nivel físico en nuestra maquina o servidor. Como interfaz de usuario tenemos a Django, al ser un framework web nos permite una interacción simple y elegante con el usuario para controlar nuestros archivos y carpetas. En el punto central se encuentra nuestro código en python que sirve como una APIs de interconexión entre nuestra interfaz de usuario y el sistema manejador de archivo.
 
@@ -944,7 +944,7 @@ Una configuración de nuestro sistema es la integración de permisologías a los ar
 			\textit{Private (0) } & Solo el dueño puede acceder a él \\\hline
 			\textit{Show (1) } & Otros usuarios pueden acceder al él solo para lectura \\\hline
 			\textit{Edit (2) } & Otros usuarios pueden acceder al él para lectura y escritura  \\\hline
-			\textit{Delete (3) } & Otros usuarios pueden acceder al él y tienen control total  \\\hline
+			\textit{Public (3) } & Otros usuarios pueden acceder al él y tienen control total  \\\hline
 		\end{tabular}
 	}
 	
@@ -967,7 +967,7 @@ Todos los archivos desde su creación tienen su dueño y permisología asociada. El
 
 \subsection{Control de Carpetas}
 
-El control de carpetas es una de puntos mas importantes dentro de nuestro administrador de archivos, debido a que todos los archivos están relacionados con una carpeta y las carpetas en si tienen una relación jerárquica entre ellas. En la figura \ref{jerarquiaCarpetas} observamos esa relación jerárquica en nuestro manejo de carpetas. 
+El control de carpetas es uno de los puntos mas importantes dentro de nuestro administrador de archivos, debido a que todos los archivos están relacionados con una carpeta y las carpetas en sí tienen una relación jerárquica entre ellas. En la figura \ref{jerarquiaCarpetas} observamos esa relación jerárquica en nuestro manejo de carpetas. 
 
 \begin{figure}[H]
 	\centering
@@ -976,7 +976,7 @@ El control de carpetas es una de puntos mas importantes dentro de nuestro admini
 	\label{jerarquiaCarpetas}
 \end{figure}
 
-Cómo raíz de nuestro sistema de carpetas tenemos a la carpeta \textit{media}, la cual es el punto de partida para todo nuestro manejo de archivos y carpetas. En el segundo nivel de jerarquía tenemos las carpetas de \textit{usuarios}, las cuales funcionan como punto de raíz para su sistema interno de archivos y carpetas.
+Cómo raíz de nuestro sistema de carpetas tenemos a la carpeta \textit{media}, la cual es el punto de partida para todo nuestro manejo de archivos y carpetas. En el segundo nivel de jerarquía tenemos las carpetas de \textit{usuari@s}, las cuales funcionan como punto de raíz para su sistema interno de archivos y carpetas. El nombre que identifica a cada carpeta de \textit{usuari@s} es propiamente dicho el "username" que identifica como único a cada usuario dentro del sistema.
 
 Para el correcto manejo de carpetas se definieron una serie de métodos:
 
@@ -988,7 +988,7 @@ Para el correcto manejo de carpetas se definieron una serie de métodos:
 	\item Delete Folder: elimina toda la información de la carpeta junto con sus archivos y carpetas internos.
 \end{itemize}
 
-Debido a que el espacio en disco físico no es ilimitado, cada usuario tiene una porción de espacio asociado para su manejo de archivos y carpetas. Este espacio es constantemente monitoreado por el administrador de archivos y es una de las restricciones principales para su correcto funcionamiento. Esta porción de espacio en disco es fácilmente administrable por el usuario administrador de nuestro sistema web.
+Debido a que el espacio en disco físico es lilimitado, cada usuario tiene una porción de espacio asociado para su manejo de archivos y carpetas. Este espacio es constantemente monitoreado por el administrador de archivos y es una de las restricciones principales para el correcto funcionamiento del servicio. Esta porción de espacio en disco es fácilmente administrable por el usuario administrador de nuestro sistema web.
 
 \subsection{Control de Permisos}
 
@@ -1003,13 +1003,18 @@ Cómo lo muestra la tabla \ref{permisoArchivosCarpetas} existen cuatro permisos b
 
 Esto nos permite definir ambas permisologías para cada tipo de usuario. Para los usuarios \textit{NO Amigos}, mantenemos el mismo tipo de permisos y depende del usuario dueño cambiar o no los permisos de sus archivos para darle acceso a este tipo de usuarios. Un \textit{usuario amigo} tiene una relación directa con el usuario dueño, lo cual nos permite compartir nuestros archivos con ellos; este compartir se define en el modelo de datos \textit{ShareFile}, el cual contiene la permisología con la que definimos el acceso que el \textit{usuario amigo} puede tener sobre el archivo. El sistema permite que el usuario dueño en cualquier momento pueda cambiar la permisología que poseen cada uno de sus archivos y carpetas tanto para los \textit{usuarios amigos}, como los \textit{usuarios no amigos}.
 
-\chapter{Integración de GALATEA}
+\
+\
 
-La integración de nuestra aplicación web con su núcleo de simulación GALATEA es una de las principales características que posee nuestro sistema. GALATEA es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto paterno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}. El lenguaje base usado para su desarrollo es el Java. 
+El sistema de simulación web cuenta con una gama de funcionalidades para el control de usuarios, como: Registro de usuarios, Activación y desactivación de usuarios, Edición y eliminación de usuarios, Control de espacio en disco asignado para cada usuario, así mismo los usuarios pueden ingresar al sistema libremente y realizar las funciones que su rol dentro del sistema les permite. El control del modelo de simulación esta fuertemente relacionado con el manejo de archivos y carpetas dentro del sistema, debido a que se le permite al usuario agregar, modificar y eliminar modelos de simulación. Para ello es necesario un sistema administrador de archivos y carpetas, que junto a las permisologías asociadas, permita un optimo manejo. Al igual se cuenta con una interfaz de usuario amigable y portable para ejecutar esa tareas de administración. Siendo los elementos explicados en este capítulo la aplicación Web que funciona como coordinador del sistema, control de usuarios y roles y la Administración de archivos que permite llevar el control de acceso, creación y modificación de los archivos y carpetas. En el capítulo \ref{integracionGALATEA} se definirá a detalle la integración con GALATEA.
 
-Usando como lenguaje base Java, se especifico un nuevo lenguaje de simulación al que denominan lenguaje GALATEA. La sintaxis del lenguaje Galatea es, de hecho una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog. La compleja semántica de GALATEA establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}.
 
-Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes, para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subrocesos y (2) Sockets. El primero de ellos lo implementamos llamando a una instancia de GALATEA que ejecuta la simulación, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una ejecución de la simulación como si fuera un servidor, el cual atiende las peticiones en un puerto de comunicación especifico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
+
+
+\chapter{Integración de GALATEA} \label{integracionGALATEA}
+
+Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes. Para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subrocesos y (2) Sockets. El primero de ellos lo implementamos realizando invocación a un subproceso
+o proceso externo, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una comunicación entre procesos vía sockets, el cual atiende las peticiones en un puerto de comunicación especifico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
 
 \section{Subprocesos} \label{llamadaProcesos}
 
@@ -1022,23 +1027,23 @@ El módulo de subproceso en Python  permite ejecutar nuevos procesos, tomando en 
 	\label{subprocesoWork}
 \end{figure}
 
-El proceso de GALATEA para ejecutar una simulación esta definido en tres pasos:
+El proceso de GALATEA para ejecutar simular definido en tres pasos:
 
 \begin{itemize}
-	\item Traducir el lenguaje GALATEA: este primer paso consiste en traducir la simulación escrita en lenguaje GALATEA, a lenguaje Java.
-	\item Compilar la Simulación: en este paso compilamos el lenguaje Java de la simulación.
-	\item Ejecutar la simulación: Finalmente ejecutamos la simulación con sus diferentes parámetros de entrada.
+	\item Traducir el lenguaje GALATEA: este primer paso consiste en traducir el modelo escrito en lenguaje GALATEA, a lenguaje Java y Prolog.
+	\item Compilar el modelo: en este paso compilamos el código Java de la simulación (Java a bytecode).
+	\item Ejecutar la simulación: Finalmente ejecutamos la simulación con sus diferentes parámetros de entrada. Es decir, activamos el modelo de simulación con ciertos parámetros.
 \end{itemize}
 
-Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de las llamadas es obtenido como valor de retorno de la misma y es mostrado al usuario.
+Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de los pasos es obtenido como valor de retorno de la misma y es mostrado al usuario.
 
 \section{Sockets} \label{sockets}
 
-Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada \citep{ibmSockets}.
+Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada \citep{ibmSockets}. Los sockets de Internet constituyen el mecanismo para la entrega de paquetes de datos provenientes de la tarjeta de red a los procesos o hilos apropiados. Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y un par de números de puerto local y remoto \citep{sockets}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{img/socketWork.png}
+	\includegraphics[scale=0.8]{img/socketWork.png}
 	\caption{Típico flujo usando sockets.}
 	\label{socketWork}
 \end{figure}
@@ -1048,8 +1053,8 @@ Para que dos programas puedan comunicarse entre sí es necesario que se cumplan c
 La implementación de la integración con GALATEA mediante sockets como se observa en la figura \ref{estructuraSokets}, consiste en lo siguiente:
 
 \begin{itemize}
-	\item \textbf{El programa cliente}: es un programa generado y ejecutado por nuestro sistema web, este programa esta escrito en Python.
-	\item \textbf{El programa servidor}: este programa esta escrito en Java para su complete integración con GALATEA, es iniciado desde nuestro sistema web y se crea una comunicación con nuestro programa cliente.
+	\item \textbf{El programa cliente}: es un programa generado y ejecutado por nuestro sistema web, este programa está escrito en Python.
+	\item \textbf{El programa servidor}: este programa está escrito en Java para su completa integración con GALATEA, es iniciado desde nuestro sistema web y se crea una comunicación con nuestro programa cliente.
 	\item \textbf{Protocolo de comunicación}: este es el corazón de nuestra integración mediante este método. Es importante poder definir un protocolo de comunicación entre nuestro programa cliente y servidor, debido que GALATEA permite diferentes opciones de simulación y controles. Este protocolo de comunicación debe definir todas las posibles a acciones a realizar para la simulación como: Iniciar, pausar, terminar, datos de entrada, datos de salida, entre muchos otros.
 \end{itemize}
 
@@ -1064,15 +1069,31 @@ Toda nuestra implementación de sockets se hizo utilizando el protocolo de comuni
 
 \subsection{Programa Cliente}
 
-El programa cliente esta escrito en Python y es llamado por nuestra aplicación web. Su principal función es servir de mecanismo de comunicación entre el proceso de simulación y el usuario. Este programa permite recibir las distintas peticiones del usuario, identificarlas y comunicárselas al proceso de simulación, al igual recibir la comunicación del programa servidor (la simulación) y comunicárselas al usuario.
+El programa cliente está escrito en Python y es llamado por nuestra aplicación web. Su principal función es servir de mecanismo de comunicación entre el proceso de simulación y el usuario. Este programa permite recibir las distintas peticiones del usuario, identificarlas y comunicárselas al proceso de simulación, al igual recibir la comunicación del programa servidor (la simulación) y comunicárselas al usuario. Hay que notar que pueden desarrollarse muchas variantes del programa cliente, pero para uso de este trabajo se desarrolló un cliente que mantuviera una comunicación simple con el programa servidor.
 
 \subsection{Programa Servidor}
 
-El programa servidor esta escrito en Java y es ejecutado por nuestra aplicación web. Justo con su ejecución el programa define un puerto de comunicación especifico, que a su vez permite al programa cliente la comunicación. Su función principal es recibir las distintas peticiones del programa cliente, transmitirlas al proceso de simulación y devolver los resultados al programa cliente. Este proceso debe llevar control integral de la simulación, así como atender las posibles eventualidades que puedan ocurrir durante la simulación. Este programa mantiene comunicación continua con GALATEA, ya que encapsula en su interior a GALATEA y toda la simulación a ser ejecutada.
+El programa servidor está escrito en Java y es ejecutado por nuestra aplicación web. Justo con su ejecución el programa define un puerto de comunicación especifico, que a su vez permite al programa cliente la comunicación. Su función principal es recibir las distintas peticiones del programa cliente, transmitirlas al proceso de simulación y devolver los resultados al programa cliente. Este proceso debe llevar control integral de la simulación, así como atender las posibles eventualidades que puedan ocurrir durante la simulación. Este programa mantiene comunicación continua con GALATEA, ya que encapsula en su interior a GALATEA y al modelo que está siendo ejecutado.
 
 \subsection{Protocolo de Comunicación}
 
 La comunicación es la herramienta mas importante de esta implementación, por ende definir un buen protocolo que permita controlar las distintas opciones y acciones a ser ejecutadas en nuestra simulación nos garantiza una buena integración.
+
+Como primera aproximación funcional, hemos definido un protocolo de control del simulador a partir de las funcionalidades que ofrece la plataforma Java para el control de subprocesos (o hebras, como son llamadas en esa plataforma). Esto permitirá que, sin importar cuál sea la solución, subproceso o sockets, del lado del simulador se tenga acceso a toda la funcionalidad de la plataforma base del simulador (máquina virtual Java, JVM, en este caso y, eventualmente la máquina Prolog, que actualmente es controlada desde la JVM).
+
+A estas funcionalidades de control de hebras se agregarían, en casos particulares, otras funcionalidades especificas, como las que son necesarias para el control interactivo de una animación a partir de una simulación. Otros clientes seran necesarios en esos casos, desde luego.
+
+El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un conjunto de métodos para el control de hebras que han venido evolucionando a lo largo de los años y que se combina con los métodos de sincronización y comunicación entre procesos Java. Métodos como stop(), suspend() y resume() han sido retirados \citep{javaDeprecation} al ser considerados inherentemente inseguros a bajo nivel. Basándonos en esa experiencia y que este protocolo opera a un nivel superior con menor riesgo de seguridad, hemos propuesto los siguientes comandos de control de la simulación:
+
+\begin{itemize}
+	\item start: inicia la simulación(el simulador debe estar en estado de espera).
+	\item sleep(ms): suspende la simulación (por una cantidad de ms).
+	\item stop: detiene definitivamente la simulación (si el simulador esta programado para detección temprana dela orden esto puede ocurrir en cualquier momento).
+	\item yield: le indica al procesador que debe bajar su prioridad de uso de procesador (corresponde al yield() en Java).
+	\item pause: suspende la ejecución del simulador temporalmente. El simulador queda a la espera de otras órdenes que no impliquen terminar la simulación.
+	\item set var = value: es un comando para cambiar el valor de parámetro de simulación llamado \textit{var} asignándole el valor \textit{value} que será usado cuando la simulación se reinicie.
+	\item get var: es un comando para recuperar el valor del parámetro \textit{var} que será impreso por la misma vía de comunicación y leído por el cliente como una línea de texto.
+\end{itemize}
 
 \chapter{Pruebas}
 
@@ -1149,22 +1170,24 @@ Definir
 
 \chapter{Conclusiones}
 
-Durante el desarrollo de este trabajo, se construyó un sistema web de simulación cuya base principal es GALATEA. Al igual se implementó un sistema de administración de archivos y carpetas, el cual facilita al usuario el manejo de las simulaciones. La interacción de usuarios dentro del sistema es un elemento importante, por lo que se permitió a los usuarios compartir proyectos de simulación (archivos y carpetas), lo cual permite a varios usuarios colaborar entre sí para desarrollar mejores simulaciones  y validar simulaciones ya realizadas. Se integraron las nuevas tecnologías y herramientas de software como lo son: nuevos lenguajes de programación adaptados a la web usando Python mediante su framework web Django; herramientas para el control de tareas como Trello; repositorios para almacenar los proyectos como Github y manejadores de control de versiones como Git que junto con su integración con Github se convierte en una herramienta de desarrollo muy poderosa para cualquier proyecto de software; al igual el manejo y control de servidores web como Nginx y Apache, siempre sin olvidar el manejo de Base de datos MySql y Postgresql.
+Durante el desarrollo de este trabajo, se construyó un sistema web de simulación cuya base principal es GALATEA. Al igual se implementó un sistema de administración de archivos y carpetas, el cual facilita al usuario el manejo de las simulaciones. La interacción de usuarios dentro del sistema es un elemento importante, por lo que se permitió a los usuarios compartir proyectos de simulación (archivos y carpetas), lo cual permite a varios usuarios colaborar entre sí para desarrollar mejores simulaciones  y validar simulaciones ya realizadas. Se integraron las nuevas tecnologías y herramientas de software como lo son: nuevos lenguajes de programación adaptados a la web usando Python mediante su framework web Django; herramientas para el control de tareas como Trello\footnote{Trello https://trello.com/}; repositorios para almacenar los proyectos como Github\footnote{Github https://github.com/} y manejadores de control de versiones como Git\footnote{Git https://git-scm.com/} que junto con su integración con Github se convierte en una herramienta de desarrollo muy poderosa para cualquier proyecto de software; al igual el manejo y control de servidores web como Nginx\footnote{Nginx https://www.nginx.com/} y Apache\footnote{Apache https://www.apache.org/}, siempre sin olvidar el manejo de Base de datos MySql\footnote{MySQL https://www.mysql.com/} y Postgresql\footnote{Postgresql https://www.postgresql.org/}.
 
-El objetivo principal de este proyecto era desarrollar una integración entre GALATEA como software de simulación y el sistema web. Se desarrollaron y presentaron dos enfoques de integración que permitieron al sistema web comunicarse con el motor de simulación GALATEA, simular y mostrar los resultados al usuario. Se planteo el desarrollo de una plataforma web para que, los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) pudieran ejecutar los modelos de simulación en el simulador GALATEA de manera fácil y rápida, sin tener que pasar dificultades al momento de configurar y activar todas sus funcionalidades de simulador y así enfocarse unicamente en sus modelos de simulación y en los resultados obtenidos de los mismos. 
+El objetivo principal de este proyecto era desarrollar una integración entre GALATEA como software de simulación y el sistema web. Se desarrollaron y presentaron dos enfoques de integración que permitieron al sistema web comunicarse con el motor de simulación GALATEA, simular y mostrar los resultados al usuario. Se planteó el desarrollo de una plataforma web para que, los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) pudieran ejecutar los modelos de simulación en el simulador GALATEA de manera fácil y rápida, sin tener que pasar dificultades al momento de configurar y activar todas sus funcionalidades de simulador y así enfocarse únicamente en sus modelos de simulación y en los resultados obtenidos de los mismos.
 
-Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca, ya no solo a personas con conocimientos avanzados en el tema de simulación, conocimientos de programación y de sistemas operativos, sino a la comunidad en general. Permitiendole a estudiantes de cursos iniciales, y estudiantes de otras universidades, al igual cualquier persona que quiera colaborar el los procesos y modelos de simulación, trabajar, analizar y compartir los resultados obtenidos desde cualquier parte del mundo.
+El código completo de sistema web de simulación se encuentra en el siguiente repositorio publico de Github https://github.com/velasquezerik/django-roles-test. Al igual se utilizó este repositorio https://github.com/velasquezerik/tesis-doc, para almacenar todo éste documento. 
+
+Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca, ya no solo a personas con conocimientos avanzados en el tema de simulación, conocimientos de programación y de sistemas operativos, sino a la comunidad en general. Permitiéndole a estudiantes de cursos iniciales, y estudiantes de otras universidades, al igual cualquier persona que quiera colaborar el los procesos y modelos de simulación, trabajar, analizar y compartir los resultados obtenidos desde cualquier parte del mundo.
 
 Los logros mas importantes desde el punto de vista computacional se nombran a continuación:
 
 \begin{itemize}
-	\item Se desarrolló una aplicación web que permite el control de usuarios y usuarias, que pueden desde cualquier parte del mundo con una conexión a internet, loguearse en el sistema y desarrollar sus modelos de simulación.
+	\item Se desarrolló una aplicación web que permite el control de usuarios y usuarias, que pueden desde cualquier parte del mundo con una conexión a internet, ingresar en el sistema y desarrollar sus modelos de simulación.
 	\item Se creó un sistema administrador de archivos y carpetas, al igual la correcta administración de espacio en disco que puede utilizar cada usuario y usuaria.
 	\item Se implementó un sistema de permisos para cada archivo y carpeta, lo que permite a los usuarios colaborar entre ellos en diferente proyectos y modelos de simulación.
-	\item Se integró el simulador de eventos discretos GALATEA a la aplicación web, lo cual se hizo mediante dos enfoques: Subprocesos y Sockets.
+	\item Se integró el simulador de eventos discretos GALATEA a la aplicación web, lo cual se hizo mediante dos enfoques: Subprocesos y Sockets, dejando abierta la posibilidad a otros desarrollos específicos en el futuro.
 \end{itemize}
 
-Además del diseño y desarrollo del sistema, también se ejecutaron pruebas para determinar el rendimiento, estabilidad y escalabilidad tanto de la aplicacón web como de los modelos básicos de simulación existentes en GALATEA.
+Además del diseño y desarrollo del sistema, también se ejecutaron pruebas para determinar el rendimiento, estabilidad y escalabilidad de la aplicación web así como las funcionalidades básicas de los modelos de simulación existentes en GALATEA.
 
 
 \section{Recomendaciones}
@@ -1177,6 +1200,8 @@ El presente proyecto permite un universo de opciones que se pueden continuar des
 	\item Mejorar el sistema de comunicación de usuarios dentro del sistema para de alguna manera desarrollar una red social de simulación.
 	\item Definir e implementar un sistema de control de eventos en tiempo real para GALATEA, lo cual permita al usuario interactuar y obtener los resultados en tiempo real con el proceso de simulación.
 \end{itemize}
+
+La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y mejorar el software, por lo que se invita a la comunidad ULA a continuar el desarrollo de éste proyecto. Es un proyecto libre que puede ayudar no solo a la comunidad universitaria en general, sino a la comunidad educativa, científica y social de nuestro territorio.
 
 % Estilo de la bibliografía
 \bibliographystyle{apa}
@@ -1192,6 +1217,26 @@ El presente proyecto permite un universo de opciones que se pueden continuar des
 \bibliography{bibliografia}
 
 \appendix
+
+\chapter{Historias de usuario de la aplicación web}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{Historia} & Nombre de la Historia \\
+		\hline \hline
+		\textbf{Id} & Id \\
+		\hline
+		\textbf{Descripción} & Descripción. \\
+		\hline
+		\textbf{Cómo probarlo} & Explicación \\
+		\hline
+	\end{tabular}
+	\caption{Historia de Usuario - Nombre.}
+	\label{husuario:000}
+\end{table}
+
 \chapter{Casos de uso de la aplicación web}
 
 \begin{table}[H]

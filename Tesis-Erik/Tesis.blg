@@ -8,45 +8,45 @@ Warning--there's a number but no volume in actilog
 Warning--empty publisher in ajaxManual
 Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
-You've used 25 entries,
+You've used 26 entries,
             1940 wiz_defined-function locations,
-            609 strings with 6645 characters,
-and the built_in function-call counts, 7174 in all, are:
-= -- 702
-> -- 225
-< -- 22
-+ -- 76
-- -- 68
-* -- 559
-:= -- 1358
-add.period$ -- 67
-call.type$ -- 25
-change.case$ -- 167
+            613 strings with 6821 characters,
+and the built_in function-call counts, 7401 in all, are:
+= -- 726
+> -- 232
+< -- 23
++ -- 79
+- -- 70
+* -- 574
+:= -- 1402
+add.period$ -- 70
+call.type$ -- 26
+change.case$ -- 172
 chr.to.int$ -- 25
-cite$ -- 30
-duplicate$ -- 294
-empty$ -- 491
-format.name$ -- 97
-if$ -- 1340
-int.to.chr$ -- 1
+cite$ -- 31
+duplicate$ -- 303
+empty$ -- 503
+format.name$ -- 100
+if$ -- 1380
+int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 15
-newline$ -- 120
-num.names$ -- 75
-pop$ -- 126
+newline$ -- 125
+num.names$ -- 78
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 159
+purify$ -- 165
 quote$ -- 0
-skip$ -- 229
+skip$ -- 237
 stack$ -- 0
-substring$ -- 365
-swap$ -- 34
+substring$ -- 377
+swap$ -- 35
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 138
+type$ -- 144
 warning$ -- 5
-while$ -- 53
+while$ -- 55
 width$ -- 0
-write$ -- 307
+write$ -- 317
 (There were 5 warnings)

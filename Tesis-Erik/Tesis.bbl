@@ -83,6 +83,17 @@ Nielsen, J. (1994).
 Oracle (2015).
 \newblock Mysql 5.7 :: Reference manual 1.3.1 what is mysql?
 
+\bibitem[\protect\astroncite{Oracle}{2016a}]{javaThreads}
+Oracle (2016a).
+\newblock Class thread.
+\newblock https://docs.oracle.com/javase/7/docs/api/java/lang/Thread.html.
+
+\bibitem[\protect\astroncite{Oracle}{2016b}]{javaDeprecation}
+Oracle (2016b).
+\newblock Java thread primitive deprecation.
+\newblock
+  https://docs.oracle.com/javase/7/docs/technotes/guides/concurrency/threadPrimitiveDeprecation.html.
+
 \bibitem[\protect\astroncite{Pantoja}{2004}]{modeloVistaControladorBascon}
 Pantoja, E.~B. (2004).
 \newblock El patrón de diseño modelo-vista-controlador (mvc) y su
@@ -98,12 +109,6 @@ Pérez, J. A.~G. (2016).
 \newblock Diseño e implementación de un sistema de monitoreo de redes orientado
   a la recolección masiva de datos.
 \newblock Technical report, Universidad de los Andes, Mérida, Venezuela.
-
-\bibitem[\protect\astroncite{Quiroga}{2011}]{orientadaServicios}
-Quiroga, M.~G. (2011).
-\newblock Estado del arte: Servicios web.
-\newblock Technical report, Universidad Politecnica de Catalunya, Barcelona,
-  España.
 
 \bibitem[\protect\astroncite{Rengifo}{2011}]{tesisBruno}
 Rengifo, B. (2011).

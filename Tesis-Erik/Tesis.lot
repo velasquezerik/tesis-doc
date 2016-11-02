@@ -2,33 +2,35 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Tabla de enrutamiento del servidor web.}}{22}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Entidades relacionadas al manejo de usuarios.}}{27}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Entidades relacionadas al manejo de archivos y carpetas.}}{27}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Entidades relacionadas al manejo de archivos y carpetas compartidos.}}{27}{table.3.4}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Permisolog\IeC {\'\i }a de Archivos y Carpetas.}}{33}{table.3.5}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Entidades relacionadas al manejo de usuarios.}}{28}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Entidades relacionadas al manejo de archivos y carpetas.}}{29}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Entidades relacionadas al manejo de archivos y carpetas compartidos.}}{29}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Permisolog\IeC {\'\i }a de Archivos y Carpetas.}}{35}{table.3.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Especificaciones del servidor web.}}{43}{table.5.1}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Especificaciones del servidor web.}}{46}{table.5.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Caso de uso - Login Usuario.}}{48}{table.A.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Caso de uso - Logout de Usuario.}}{48}{table.A.2}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Caso de uso - Control de Contrase\~na.}}{48}{table.A.3}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Caso de uso - Manejo de Perfil.}}{49}{table.A.4}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Caso de uso - Manejo de Archivos.}}{49}{table.A.5}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Caso de uso - Manejo de Carpetas.}}{49}{table.A.6}
-\contentsline {table}{\numberline {A.7}{\ignorespaces Caso de uso - Control de Simulaci\'on.}}{49}{table.A.7}
-\contentsline {table}{\numberline {A.8}{\ignorespaces Caso de uso - Control de Amigos.}}{50}{table.A.8}
-\contentsline {table}{\numberline {A.9}{\ignorespaces Caso de uso - Control de Archivos Compartidos.}}{50}{table.A.9}
-\contentsline {table}{\numberline {A.10}{\ignorespaces Caso de uso - Control de Usuarios.}}{50}{table.A.10}
-\contentsline {table}{\numberline {A.11}{\ignorespaces Caso de uso - Observaci\'on de Logs.}}{50}{table.A.11}
-\contentsline {table}{\numberline {A.12}{\ignorespaces Caso de uso - Control de Espacios en Disco.}}{51}{table.A.12}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Historia de Usuario - Nombre.}}{52}{table.A.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Caso de uso - Traducir Archivos.}}{52}{table.B.1}
-\contentsline {table}{\numberline {B.2}{\ignorespaces Caso de uso - Compilar Archivos.}}{52}{table.B.2}
-\contentsline {table}{\numberline {B.3}{\ignorespaces Caso de uso - Ejecutar Archivos.}}{53}{table.B.3}
-\contentsline {table}{\numberline {B.4}{\ignorespaces Caso de uso - Mostrar Simulaci\'on.}}{53}{table.B.4}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Caso de uso - Login Usuario.}}{53}{table.B.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Caso de uso - Logout de Usuario.}}{53}{table.B.2}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Caso de uso - Control de Contrase\~na.}}{53}{table.B.3}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Caso de uso - Manejo de Perfil.}}{54}{table.B.4}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Caso de uso - Manejo de Archivos.}}{54}{table.B.5}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Caso de uso - Manejo de Carpetas.}}{54}{table.B.6}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Caso de uso - Control de Simulaci\'on.}}{54}{table.B.7}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Caso de uso - Control de Amigos.}}{55}{table.B.8}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Caso de uso - Control de Archivos Compartidos.}}{55}{table.B.9}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Caso de uso - Control de Usuarios.}}{55}{table.B.10}
+\contentsline {table}{\numberline {B.11}{\ignorespaces Caso de uso - Observaci\'on de Logs.}}{55}{table.B.11}
+\contentsline {table}{\numberline {B.12}{\ignorespaces Caso de uso - Control de Espacios en Disco.}}{56}{table.B.12}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces Caso de uso - NOMBRE.}}{54}{table.C.1}
-\contentsline {table}{\numberline {C.2}{\ignorespaces Caso de uso - Control de Archivos.}}{54}{table.C.2}
-\contentsline {table}{\numberline {C.3}{\ignorespaces Caso de uso - Control de Carpetas.}}{55}{table.C.3}
+\contentsline {table}{\numberline {C.1}{\ignorespaces Caso de uso - Traducir Archivos.}}{57}{table.C.1}
+\contentsline {table}{\numberline {C.2}{\ignorespaces Caso de uso - Compilar Archivos.}}{57}{table.C.2}
+\contentsline {table}{\numberline {C.3}{\ignorespaces Caso de uso - Ejecutar Archivos.}}{58}{table.C.3}
+\contentsline {table}{\numberline {C.4}{\ignorespaces Caso de uso - Mostrar Simulaci\'on.}}{58}{table.C.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {D.1}{\ignorespaces Caso de uso - NOMBRE.}}{59}{table.D.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Caso de uso - Control de Archivos.}}{59}{table.D.2}
+\contentsline {table}{\numberline {D.3}{\ignorespaces Caso de uso - Control de Carpetas.}}{60}{table.D.3}

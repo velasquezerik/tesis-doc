@@ -40,29 +40,30 @@
 \contentsline {subsubsection}{Archivos de usuario}{23}{section*.12}
 \contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{24}{subsection.3.1.6}
 \contentsline {subsubsection}{Diagrama de entidad-relaci\'on}{24}{section*.13}
-\contentsline {subsubsection}{Entidades}{26}{section*.14}
-\contentsline {subsubsection}{Relaciones}{27}{section*.15}
-\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{27}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{30}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}Administrador de Archivos}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{33}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{33}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{35}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{36}{chapter.4}
-\contentsline {section}{\numberline {4.1}Subprocesos}{37}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sockets}{37}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Programa Cliente}{39}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{39}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Protocolo de Comunicaci\'on}{40}{subsection.4.2.3}
-\contentsline {chapter}{\numberline {5}Pruebas}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de las pruebas}{42}{section.5.1}
-\contentsline {section}{\numberline {5.2}Condiciones de las pruebas}{42}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados obtenidos}{43}{section.5.3}
-\contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{43}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusiones}{44}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{45}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{46}{section.6.1}
-\contentsline {chapter}{\numberline {A}Casos de uso de la aplicaci\'on web}{48}{appendix.A}
-\contentsline {section}{\numberline {A.1}Usuario Administrador}{50}{section.A.1}
-\contentsline {chapter}{\numberline {B}Casos de uso de la integraci\'on con GALATEA}{52}{appendix.B}
-\contentsline {chapter}{\numberline {C}Casos de uso de administraci\'on de archivos}{54}{appendix.C}
+\contentsline {subsubsection}{Entidades}{28}{section*.14}
+\contentsline {subsubsection}{Relaciones}{29}{section*.15}
+\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{29}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{32}{subsection.3.1.8}
+\contentsline {section}{\numberline {3.2}Administrador de Archivos}{33}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{35}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{35}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{37}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{38}{chapter.4}
+\contentsline {section}{\numberline {4.1}Subprocesos}{38}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sockets}{39}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Programa Cliente}{41}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{42}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Protocolo de Comunicaci\'on}{42}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}Pruebas}{44}{chapter.5}
+\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de las pruebas}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Condiciones de las pruebas}{45}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados obtenidos}{46}{section.5.3}
+\contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{46}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusiones}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{48}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{50}{section.6.1}
+\contentsline {chapter}{\numberline {A}Historias de usuario de la aplicaci\'on web}{52}{appendix.A}
+\contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{53}{appendix.B}
+\contentsline {section}{\numberline {B.1}Usuario Administrador}{55}{section.B.1}
+\contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{57}{appendix.C}
+\contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{59}{appendix.D}
