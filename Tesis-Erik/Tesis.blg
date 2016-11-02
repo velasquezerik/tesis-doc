@@ -3,48 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Tesis.aux
 The style file: apa.bst
 Database file #1: bibliografia.bib
+Warning--there's a number but no volume in openlog
+Warning--there's a number but no volume in actilog
 Warning--empty publisher in ajaxManual
 Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
-You've used 20 entries,
+You've used 25 entries,
             1940 wiz_defined-function locations,
-            583 strings with 6057 characters,
-and the built_in function-call counts, 5602 in all, are:
-= -- 550
-> -- 184
-< -- 17
-+ -- 62
-- -- 56
-* -- 428
-:= -- 1079
-add.period$ -- 53
-call.type$ -- 20
-change.case$ -- 136
-chr.to.int$ -- 20
-cite$ -- 23
-duplicate$ -- 228
-empty$ -- 370
-format.name$ -- 78
-if$ -- 1035
+            609 strings with 6645 characters,
+and the built_in function-call counts, 7174 in all, are:
+= -- 702
+> -- 225
+< -- 22
++ -- 76
+- -- 68
+* -- 559
+:= -- 1358
+add.period$ -- 67
+call.type$ -- 25
+change.case$ -- 167
+chr.to.int$ -- 25
+cite$ -- 30
+duplicate$ -- 294
+empty$ -- 491
+format.name$ -- 97
+if$ -- 1340
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 96
-num.names$ -- 60
-pop$ -- 99
+missing$ -- 15
+newline$ -- 120
+num.names$ -- 75
+pop$ -- 126
 preamble$ -- 1
-purify$ -- 128
+purify$ -- 159
 quote$ -- 0
-skip$ -- 182
+skip$ -- 229
 stack$ -- 0
-substring$ -- 261
-swap$ -- 25
+substring$ -- 365
+swap$ -- 34
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 112
-warning$ -- 3
-while$ -- 41
+type$ -- 138
+warning$ -- 5
+while$ -- 53
 width$ -- 0
-write$ -- 245
-(There were 3 warnings)
+write$ -- 307
+(There were 5 warnings)

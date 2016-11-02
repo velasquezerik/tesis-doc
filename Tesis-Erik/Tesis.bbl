@@ -13,15 +13,41 @@ Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
 Boehm, B.~W. (1988).
 \newblock A spiral model of software development and enhancement.
 
+\bibitem[\protect\astroncite{Dávila}{1999}]{openlog}
+Dávila, J. (1999).
+\newblock Openlog: A logic programming language based on abduction, en ppdp'99.
+\newblock {\em Principles and Practice of Declarative Programming, Lecture
+  Notes in Computer Science}, (1702/1999):278--293.
+
+\bibitem[\protect\astroncite{Dávila}{2003}]{actilog}
+Dávila, J. (2003).
+\newblock Actilog: An agent activation language.
+\newblock {\em Lecture Notes in Computer Science}, (2562/2003):194--207.
+
+\bibitem[\protect\astroncite{Dávila}{2010}]{jacintoLibro}
+Dávila, J. (2010).
+\newblock {\em Libro Jacinto}.
+\newblock Pearson, 5 edition.
+
 \bibitem[\protect\astroncite{Fuentes}{2009}]{ajaxManual}
 Fuentes, J.~M. (2009).
 \newblock {\em Manual de AJAX}.
 \newblock 2 edition.
 
+\bibitem[\protect\astroncite{Fujimoto}{2015}]{highLevelArchitecture}
+Fujimoto, R.~M. (2015).
+\newblock The high level architecture.
+
 \bibitem[\protect\astroncite{Fundation}{2015}]{django}
 Fundation, D.~S. (2015).
 \newblock {\em The web framework for perfectionists with deadlines}.
 \newblock 5 edition.
+
+\bibitem[\protect\astroncite{Gilbert y
+  Troitzsch}{2005}]{sociologiaComputacional}
+Gilbert, N. y Troitzsch, K.~G. (2005).
+\newblock {\em SIMULATION FOR THE SOCIAL SCIENTIST}.
+\newblock McGraw - Hill Education, 2 edition.
 
 \bibitem[\protect\astroncite{IBM}{2015}]{ibmSockets}
 IBM (2015).

@@ -10,59 +10,59 @@
 \contentsline {subsection}{\numberline {1.5.2}Objetivos espec\IeC {\'\i }ficos}{5}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}Metodolog\IeC {\'\i }a}{5}{section.1.6}
 \contentsline {section}{\numberline {1.7}Estructura del documento}{6}{section.1.7}
-\contentsline {chapter}{\numberline {2}Marco te\'orico}{7}{chapter.2}
+\contentsline {chapter}{\numberline {2}Marco te\'orico-funcional}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Simulaci\'on Distribuida}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Simulaci\'on de Eventos Discretos}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}GALATEA}{8}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}La arquitectura de la plataforma Galatea}{9}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Servicio Web}{9}{section.2.4}
-\contentsline {section}{\numberline {2.5}Arquitectura Orientada a Servicios}{10}{section.2.5}
-\contentsline {section}{\numberline {2.6}Herramientas usadas para el desarrollo del sistema}{10}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Modelo Vista Controlador (MVC)}{10}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.4}Servicio Web}{10}{section.2.4}
+\contentsline {section}{\numberline {2.5}Herramientas usadas para el desarrollo del sistema}{11}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Modelo Vista Controlador (MVC)}{11}{subsection.2.5.1}
 \contentsline {subsubsection}{Modelo}{11}{section*.4}
-\contentsline {subsubsection}{Vista}{11}{section*.5}
-\contentsline {subsubsection}{Controlador}{11}{section*.6}
-\contentsline {subsection}{\numberline {2.6.2}Django}{12}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Bases de Datos}{13}{subsection.2.6.3}
-\contentsline {subsubsection}{MySQL}{13}{section*.7}
-\contentsline {subsubsection}{PostgreSQL}{13}{section*.8}
-\contentsline {subsubsection}{Mapeo Objeto-Relacional}{14}{section*.9}
-\contentsline {subsection}{\numberline {2.6.4}JSON}{14}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}AJAX}{14}{subsection.2.6.5}
-\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{15}{chapter.3}
-\contentsline {section}{\numberline {3.1}Dise\~no de la aplicaci\'on WEB}{16}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Arquitectura}{16}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Capa 1: Presentaci\'on}{17}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Capa 2: Servidor Web}{17}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Capa 3: Integraci\'on de Procesos}{18}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Capa 4: Datos}{18}{subsection.3.1.5}
-\contentsline {subsubsection}{Bases de datos}{18}{section*.10}
-\contentsline {subsubsection}{Archivos de usuario}{18}{section*.11}
-\contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{19}{subsection.3.1.6}
-\contentsline {subsubsection}{Diagrama de entidad-relaci\'on}{19}{section*.12}
-\contentsline {subsubsection}{Entidades}{21}{section*.13}
-\contentsline {subsubsection}{Relaciones}{22}{section*.14}
-\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{22}{subsection.3.1.7}
-\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{25}{subsection.3.1.8}
-\contentsline {section}{\numberline {3.2}Administrador de Archivos}{26}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{28}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{28}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{30}{subsection.3.2.3}
-\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Subprocesos}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sockets}{32}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Programa Cliente}{34}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{34}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Protocolo de Comunicaci\'on}{35}{subsection.4.2.3}
-\contentsline {chapter}{\numberline {5}Pruebas}{36}{chapter.5}
-\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de las pruebas}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Condiciones de las pruebas}{37}{section.5.2}
-\contentsline {section}{\numberline {5.3}Resultados obtenidos}{38}{section.5.3}
-\contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{38}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusiones}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{40}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{41}{section.6.1}
-\contentsline {chapter}{\numberline {A}Casos de uso de la aplicaci\'on web}{43}{appendix.A}
-\contentsline {section}{\numberline {A.1}Usuario Administrador}{45}{section.A.1}
-\contentsline {chapter}{\numberline {B}Casos de uso de la integraci\'on con GALATEA}{47}{appendix.B}
-\contentsline {chapter}{\numberline {C}Casos de uso de administraci\'on de archivos}{49}{appendix.C}
+\contentsline {subsubsection}{Vista}{12}{section*.5}
+\contentsline {subsubsection}{Controlador}{14}{section*.6}
+\contentsline {subsection}{\numberline {2.5.2}Django}{15}{subsection.2.5.2}
+\contentsline {subsubsection}{Funcionamiento de Django}{15}{section*.7}
+\contentsline {subsection}{\numberline {2.5.3}Bases de Datos}{16}{subsection.2.5.3}
+\contentsline {subsubsection}{MySQL}{16}{section*.8}
+\contentsline {subsubsection}{PostgreSQL}{16}{section*.9}
+\contentsline {subsubsection}{Mapeo Objeto-Relacional}{17}{section*.10}
+\contentsline {subsection}{\numberline {2.5.4}JSON}{17}{subsection.2.5.4}
+\contentsline {subsection}{\numberline {2.5.5}AJAX}{18}{subsection.2.5.5}
+\contentsline {chapter}{\numberline {3}Desarrollo del Sistema WEB}{20}{chapter.3}
+\contentsline {section}{\numberline {3.1}Dise\~no de la aplicaci\'on WEB}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Arquitectura}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Capa 1: Presentaci\'on}{22}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Capa 2: Servidor Web}{22}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Capa 3: Integraci\'on de Procesos}{23}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Capa 4: Datos}{23}{subsection.3.1.5}
+\contentsline {subsubsection}{Bases de datos}{23}{section*.11}
+\contentsline {subsubsection}{Archivos de usuario}{23}{section*.12}
+\contentsline {subsection}{\numberline {3.1.6}Dise\~no de la Base de Datos}{24}{subsection.3.1.6}
+\contentsline {subsubsection}{Diagrama de entidad-relaci\'on}{24}{section*.13}
+\contentsline {subsubsection}{Entidades}{26}{section*.14}
+\contentsline {subsubsection}{Relaciones}{27}{section*.15}
+\contentsline {subsection}{\numberline {3.1.7}Dise\~no de Pantallas}{27}{subsection.3.1.7}
+\contentsline {subsection}{\numberline {3.1.8}Dise\~no de URLs}{30}{subsection.3.1.8}
+\contentsline {section}{\numberline {3.2}Administrador de Archivos}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Control de Archivos}{33}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Control de Carpetas}{33}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Control de Permisos}{35}{subsection.3.2.3}
+\contentsline {chapter}{\numberline {4}Integraci\'on de GALATEA}{36}{chapter.4}
+\contentsline {section}{\numberline {4.1}Subprocesos}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Sockets}{37}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Programa Cliente}{39}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{39}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Protocolo de Comunicaci\'on}{40}{subsection.4.2.3}
+\contentsline {chapter}{\numberline {5}Pruebas}{41}{chapter.5}
+\contentsline {section}{\numberline {5.1}Metodolog\IeC {\'\i }a de las pruebas}{42}{section.5.1}
+\contentsline {section}{\numberline {5.2}Condiciones de las pruebas}{42}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados obtenidos}{43}{section.5.3}
+\contentsline {section}{\numberline {5.4}An\'alisis de los resultados}{43}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusiones}{44}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{45}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{46}{section.6.1}
+\contentsline {chapter}{\numberline {A}Casos de uso de la aplicaci\'on web}{48}{appendix.A}
+\contentsline {section}{\numberline {A.1}Usuario Administrador}{50}{section.A.1}
+\contentsline {chapter}{\numberline {B}Casos de uso de la integraci\'on con GALATEA}{52}{appendix.B}
+\contentsline {chapter}{\numberline {C}Casos de uso de administraci\'on de archivos}{54}{appendix.C}

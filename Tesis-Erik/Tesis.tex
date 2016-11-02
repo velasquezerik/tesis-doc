@@ -10,7 +10,7 @@
 \usepackage[colorlinks,pdftex]{hyperref}
 
 \usepackage{setspace}
-
+\usepackage{listings}             % Include the listings-package  
 
 \usepackage{setspace}
 \usepackage{listings} %para código
@@ -44,6 +44,18 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 
 \begin{document}
 
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=left,
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
 \frontmatter
 
 
@@ -308,7 +320,7 @@ Contiene el diseño general del sistema de simulación, así como la arquitectura d
 
 \item Capitulo IV. Integración de GALATEA.
 
-Contiene la arquitectura, el diseño y desarrollo de los programas de integración con el motor de simulación GALATEA.
+Contiene la arquitectura, el diseño y desarrollo de los programas de integración con el motor de simulación GALATEA que será ejecutado como una aplicación en un servidor.
 
 \item Capítulo V. Pruebas.
 
@@ -322,15 +334,15 @@ Conclusiones y Recomendaciones, contiene las conclusiones obtenidas a partir del
 
 \end{description}
 
-\chapter{Marco teórico}
+\chapter{Marco teórico-funcional}
 
-La simulación por computadora se ha convertido en una parte útil del modelado de muchos sistemas naturales en física, química y biología, y sistemas humanos como la economía y las ciencias sociales (sociología computacional), así como en dirigir para ganar la penetración (profundidad) su comportamiento cambiará cada simulación según el conjunto de parámetros iniciales supuestos por el entorno. En éste capítulo se explican en detalle las herramientas, tecnologías y conceptos usados para la consecución del proyecto que se propone. Definimos la simulación de eventos discretos DEVS (Discrete Event Simulation), así mismo nos introducimos en GALATEA, con el fin de proporcionar una base inicial para la codificación del nuevo sistema. Explicamos las ventajas de un servicio web y las herramientas empleadas para el desarrollo del mismo, como lo serian el Patrón de diseño Modelo Vista Controlador (MVC) y Django.
+La simulación por computadora se ha convertido en una parte útil del modelado de muchos sistemas naturales en física, química y biología, y sistemas humanos como la economía y las ciencias sociales (sociología computacional) \citep{sociologiaComputacional}, su comportamiento cambiará cada simulación según el conjunto de parámetros iniciales supuestos por el entorno. En éste capítulo se explican en detalle las herramientas, tecnologías y conceptos usados para la consecución del proyecto que se propone. Definimos la simulación de eventos discretos DEVS (Discrete Event Simulation) \citep{discretSimulation}, así mismo nos introducimos en GALATEA, con el fin de proporcionar una base inicial para la codificación del nuevo sistema. Explicamos las ventajas de un servicio web y las herramientas empleadas para el desarrollo del mismo, como lo serian el Patrón de diseño Modelo Vista Controlador (MVC) \citep{modeloVistaControlador} y Django \citep{django}.
 
 \section{Simulación Distribuida} 
 
-Los sistemas de simulación distribuidos son herramientas muy útiles en las labores de investigación porque permiten reducir el tiempo necesario para ejecutar experimentos. Las simulaciones distribuidas pueden hacerse de forma que se acelere una simulación o que se acelere la ejecución de un conjunto de simulaciones. Los sistemas de simulación basados en agentes se pueden utilizar con éxito en ambos tipos de simulaciones distribuidas \citep{simulacionDistribuida}.
+Las simulaciones distribuidas pueden hacerse de forma que se acelere una simulación o que se acelere la ejecución de un conjunto de simulaciones. Los sistemas de simulación basados en agentes se pueden utilizar con éxito en ambos tipos de simulaciones distribuidas \citep{simulacionDistribuida}.
 
-La Simulación Distribuida, es la que permite conducir modelos de simulación a través de múltiples hosts o computadoras separados por redes, se ocupa de cuestiones que surgen de la distribución de un programa de simulación de eventos discretos en varias computadoras \citep{discretSimulation}. La simulación paralela de eventos discretos se refiere a la ejecución en plataformas multi-procesador que contienen múltiples unidades de procesamiento  central que interaccionan entre sí con frecuencia, por ejemplo, miles de veces por segundo.
+La Simulación Distribuida permite conducir modelos de simulación a través de múltiples hosts o computadoras separados por redes y se ocupa de cuestiones que surgen de la distribución de un programa de simulación de eventos discretos en varias computadoras \citep{discretSimulation}. La simulación paralela de eventos discretos se refiere a la ejecución en plataformas multi-procesador que contienen múltiples unidades de procesamiento  que interaccionan entre sí con frecuencia, por ejemplo, miles de veces por segundo.
 
 \section{Simulación de Eventos Discretos}
 
@@ -338,31 +350,39 @@ La simulación de eventos discretos es la "imitacion" de un proceso de operación 
 
 \section{GALATEA}
 
-Galatea es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto paterno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}.
+Galatea es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto materno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}.
 
-Podemos explicar de forma  breve y concisa en que consiste la misma, segun \citep{Galatea}:
+Podemos explicar de forma  breve y concisa en que consiste la misma, según \citep{Galatea}:
 
 \begin{quote}
-	Galatea es una plataforma libre de código abierto para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar esas estrategias en problemas de simulación de sistemas complejos. La historia de Galatea comienza mucho antes que se planteara formalmente el proyecto con ese nombre. En 1993, nuestro muy joven Centro de Simulación y Modelos, CeSiMo, propone un proyecto para explorar la re-implementación de la plataforma de simulación Glider sobre una plataforma orientada a objetos dando origen a un prototipo experimental. El problema del cambio estructural, inspirado por investigaciones en economía, se había convertido entonces en uno de los objetivos de investigación fundamentales del CeSiMo y vendría a dictar también la pauta para Galatea. La noción de agente hizo su aparición en algunos reportes internos en los que se enfatizaba su importancia para modelar sistemas complejos como una economía nacional. En 1998 se planteó la posibilidad de integrar Glider con herramientas de inteligencia artificial para modelar agentes. En el 2000, un proyecto vendría a combinar aquel prototipo de 1993, con una teoría de agentes basada en lógica computacional que se planeaba integrar en una nueva teoría de simulación de sistemas multi-agentes. Allí nació Galatea. El logro fundamental para el proyecto, sin embargo, llegaría con las aplicaciones. En 2004, Galatea fue incorporada al banco de pruebas de un proyecto en biocomplejidad.
+	Galatea es una plataforma libre para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar esas estrategias en problemas de simulación de sistemas complejos. La historia de Galatea comienza mucho antes que se planteara formalmente el proyecto con ese nombre. En 1993, nuestro muy joven Centro de Simulación y Modelos, CeSiMo, propone un proyecto para explorar la re-implementación de la plataforma de simulación Glider sobre una plataforma orientada a objetos dando origen a un prototipo experimental. El problema del cambio estructural, inspirado por investigaciones en economía, se había convertido entonces en uno de los objetivos de investigación fundamentales del CeSiMo y vendría a dictar también la pauta para Galatea. La noción de agente hizo su aparición en algunos reportes internos en los que se enfatizaba su importancia para modelar sistemas complejos como una economía nacional. En 1998 se planteó la posibilidad de integrar Glider con herramientas de inteligencia artificial para modelar agentes. En el 2000, un proyecto vendría a combinar aquel prototipo de 1993, con una teoría de agentes basada en lógica computacional que se planeaba integrar en una nueva teoría de simulación de sistemas multi-agentes. Allí nació Galatea. El logro fundamental para el proyecto, sin embargo, llegaría con las aplicaciones. En 2004, Galatea fue incorporada al banco de pruebas de un proyecto en biocomplejidad. Y en 2009-2011 fue usada como cama de pruebas de una sistema de agentes que aprenden \citep{jacintoLibro}.
 \end{quote}
 
 \subsection{La arquitectura de la plataforma Galatea}
 
-La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture). El lenguaje base usado para su desarrollo es el Java, bien especificado en \citep{Galatea}. Usando como lenguaje base Java, se especifico un nuevo lenguaje de simulación al que denominan lenguaje Galatea. La sintaxis del lenguaje Galatea es, de hecho una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog. La compleja semántica de Galatea establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
+La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture) \citep{highLevelArchitecture}. El lenguaje base usado para su desarrollo es el Java \citep{Galatea}. Usando como lenguaje base Java, se especificó un nuevo lenguaje de simulación al que denominan lenguaje Galatea. La sintaxis del lenguaje Galatea es, de hecho, una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog \citep{actilog} y Openlog \citep{openlog}. La compleja semántica de Galatea establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
+
+En la figura \ref{ejecucionGalatea} podemos observar la ejecución del modelo "SimpleTeller", que se encuentra entre los ejemplos básicos de GALATEA. En este modelo define un taquilla de un banco, la cual posee una entrada "Gate (I)" y una salida "Exit (E)". Las personas que entran llegan a un cajero de banco a intervalos de tiempo tomadas al azar de una distribución exponencial con la media "InArrTime". Se sirven uno a la vez. Los tiempos de servicio se toman de una distribución gaussiana con media "MeSerTime" y desviación estándar "DeSerTime".
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/codigoTaquillaGalatea.png}
+	\caption{Estructura del modelo SimpleTeller.}
+	\label{codigoTaquillaGalatea}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/ejecucionGalatea1.png}
+	\caption{Ejecución del ejemplo SimpleTeller.}
+	\label{ejecucionGalatea}
+\end{figure}
+
 
 \section{Servicio Web}
 
-Un servicio web (Web Service) es una tecnología que utiliza un conjunto de protocolos y estándares que sirven para intercambiar datos entre aplicaciones. Distintas aplicaciones de software desarrolladas en lenguajes de programación diferentes, y ejecutadas sobre cualquier plataforma, pueden utilizar los servicios web para intercambiar datos en redes de ordenadores como Internet. La World Wide Web Consortium lo define como “...un sistema de software diseñado para soportar interacción interoperable máquina a máquina sobre una red. Este tiene una interface descrita en un formato procesable por una máquina (específicamente WSDL). Otros sistemas interactúan con el servicios web en una manera prescrita por su descripción usando mensajes SOAP, típicamente enviados usando HTTP con una serialización XML en relación con otros estándares relacionados con la web” \citep{servicioWeb}. Se puede definir de manera más sencilla como un conjunto de tecnologías estándares de software para el intercambio de datos entre aplicaciones tales como SOAP, WDSL y UDDI. Estos pueden ser desarrollados en una gran variedad de lenguajes para ser implementados sobre muchos tipos de redes de computadores. El éxito de la interoperabilidad se consigue gracias es la adopción de protocolos y estándares abiertos.
+Un servicio web (Web Service) es una tecnología que utiliza un conjunto de protocolos y estándares que sirven para intercambiar datos entre aplicaciones. Distintas aplicaciones de software desarrolladas en lenguajes de programación diferentes, y ejecutadas sobre cualquier plataforma, pueden utilizar los servicios web para intercambiar datos en redes de ordenadores como Internet. La World Wide Web Consortium lo define como “...un sistema de software diseñado para soportar interacción interoperable máquina a máquina sobre una red. Este tiene una interface descrita en un formato procesable por una máquina (específicamente WSDL). Otros sistemas interactúan con el servicios web en una manera prescrita por su descripción usando mensajes SOAP, típicamente enviados usando HTTP con una serialización XML en relación con otros estándares relacionados con la web” \citep{servicioWeb}. 
 
-\section{Arquitectura Orientada a Servicios}
-
-Una arquitectura orientada a servicios (SOA, Service Oriented Architecture), es una arquitectura de estilo técnico que proporciona los medios para integrar sistemas dispares y descubrir las funciones de negocio reutilizables. Es un paradigma de arquitectura para diseñar y desarrollar sistemas distribuidos. Las soluciones  SOA  han sido creadas para satisfacer los objetivos de negocio las cuales incluyen facilidad y flexibilidad de integración con sistemas legados, alineación directa a los procesos de negocio reduciendo costos de implementación, innovación de servicios a clientes y una adaptación ágil ante cambios incluyendo reacción temprana ante la competitividad \citep{orientadaServicios}.
-
-La definición de SOA por el W3C es: “Conjunto de componentes, los cuales pueden ser invocados y cuyas descripciones de interfaces pueden ser invocadas y descubiertas”. 
-
-Gartner: “SOA es una arquitectura de software que comienza con una definición de interfaz y construye toda la topología de la aplicación como una topología de interfaces, implementaciones y llamadas a interfaces. Sería más adecuado llamarla “arquitectura orientada a interfaces”. SOA es una relación de servicios y consumidores de servicios, ambos suficientemente amplios para representar una función de negocios completa”.
-
-SOA no es sólo una arquitectura de servicios visto desde una perspectiva de la tecnología, si no las políticas, prácticas y frameworks con los que se garantiza la forma correcta de que los servicios sean provistos y consumidos. Es importante que si un servicio no va a ser usado por múltiples consumidores, la especificación sea generalizada; los servicios necesitan ser extraídos de la implementación y los desarrolladores de las aplicaciones del consumidor no deberían necesitar saber nada sobre los modelos de bajo nivel y sus reglas \citep{orientadaServicios}.
 
 \section{Herramientas usadas para el desarrollo del sistema}
 
@@ -379,13 +399,117 @@ Los modelos son los componentes de la aplicación del sistema que realmente hacen
 
 El modelo es un conjunto de clases que representan la información del mundo real que el sistema debe procesar, así por ejemplo un sistema de administración de datos climatológicos tendrá un modelo que representará la temperatura, la humedad ambiental, el estado del tiempo esperado, etc. sin tomar en cuenta ni la forma en la que esa información va a ser mostrada ni los mecanismos que hacen que esos datos estén dentro del modelo, es decir, sin tener relación con ninguna otra entidad dentro de la aplicación \citep{modeloVistaControladorBascon}.
 
+\begin{lstlisting}
+"""folder model"""
+class Folder(models.Model):
+	"""Atributes"""
+	user =  models.ForeignKey(User, on_delete=models.CASCADE)
+	name = models.CharField(max_length=500)
+	path = models.CharField(max_length=1000)
+	father = models.IntegerField(default=0)
+	active = models.BooleanField(default=True)
+	permission = models.IntegerField(default=0, choices=STATUS_PERMISSION)
+"""file model"""
+class File(models.Model):
+	"""Atributes"""
+	folder =  models.ForeignKey(Folder, on_delete=models.CASCADE)
+	name = models.CharField(max_length=500)
+	active = models.BooleanField(default=True)
+	permission = models.IntegerField(default=0, choices=STATUS_PERMISSION)
+\end{lstlisting}
+
+Los modelos dentro de nuestro sistema son representados en clases, las cuales a su vez representan los objetos a ser almacenados dentro de nuestra base de datos. Los modelos de datos "Folder" y "File", se representan junto con sus atributos, tipos de datos y relaciones.
+
 \subsubsection{Vista}
 
 Las vistas son el conjunto de clases que se encargan de mostrar al usuario la información contenida en el modelo. Una vista está asociada a un modelo, pudiendo existir varias vistas asociadas al mismo modelo; así por ejemplo, se puede tener una vista mostrando la hora del sistema como un reloj analógico y otra vista mostrando la misma información como un reloj digital \citep{modeloVistaControladorBascon}.
 
+\begin{lstlisting}
+{% extends 'website/base.html' %}
+{% load staticfiles %}
+
+{% block title_page %}Tesis| Dashboard{% endblock %}
+
+{% block title_content %}
+	Dashboard
+	<small>Index</small>
+{% endblock %}
+
+{% block level %}
+	<li><a href="{% url 'website:admin_index' %}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+	{% if root_folder.father != 0 %}
+		<li><a href="{% url 'website:admin_show_folder' root_folder.father %}"><i class="fa fa-folder"></i> Folder UP</a></li>
+	{% endif %}
+	<li class="active">Index</li>
+{% endblock %}
+
+{% block content %}
+	<div class="row">
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-block btn-warning">New Folder</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModalEdit" class="btn btn-block btn-primary">Edit Folder</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModalDelete" class="btn btn-block btn-danger">Delete Folder</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModalNewFile" class="btn btn-block btn-success">New File</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModalUploadFile" class="btn btn-block btn-primary">Upload File</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myModalMove" class="btn btn-block btn-warning">Move Folder</a>
+			</div>
+			<div class="col-xs-6">
+				<a href="#" data-toggle="modal" data-target="#myNewProject" class="btn btn-block btn-warning">New Project</a>
+			</div>
+	</div>
+	<div class="box">
+		<div class="box-header">
+			<h3 class="box-title">Admin Dashboard</h3>
+		</div>
+		<div class="box-body">
+		{% for folder in folders %}
+			<a class="btn btn-app" href="{% url 'website:admin_show_folder' folder.id %}">
+			<i class="fa fa-folder"></i> {{folder.name}}
+			</a>
+			{% endfor %}
+			{% for file in files %}
+			<a class="btn btn-app" href="{% url 'website:admin_show_file' file.id %}">
+			<i class="fa fa-file"></i> {{file.name}}
+			</a>
+		{% endfor %}
+		</div><!-- /.box-body -->
+	</div><!-- /.box -->
+{% endblock %}
+
+\end{lstlisting}
+
+Esta vista es un archivo html, la cual define la forma en que los datos van a ser mostrados al usuario. La vista "show folder" muestra la información almacenada dentro de la carpeta.
+
 \subsubsection{Controlador}
 
 El controlador es un objeto que se encarga de dirigir el flujo del control de la aplicación debido a mensajes externos, como datos introducidos por el usuario u opciones del menú seleccionadas por él. A partir de estos mensajes, el controlador se encarga de modificar el modelo o de abrir y cerrar vistas. El controlador tiene acceso al modelo y a las vistas, pero las vistas y el modelo no conocen de la existencia del controlador \citep{modeloVistaControladorBascon}.
+
+\begin{lstlisting}
+@login_required(login_url="/login/")
+@has_role_decorator('system_admin')
+def admin_folder_show(request,folder_id):
+	user = User.objects.get(id = request.user.id)
+	root_folder = Folder.objects.get(id=folder_id)
+	folders = Folder.objects.filter(father=root_folder.id)
+	files = File.objects.filter(folder = root_folder.id)
+	all_folders = Folder.objects.filter(user = user.id)
+	if root_folder.father == 0:
+		return redirect("/admin/")
+	return render(request,'admin/show_folder.html',{'root_folder':root_folder,'folders':folders,'files':files, 'all_folders':all_folders})
+
+\end{lstlisting}
+
+Este controlador es el encargado de enlazar la petición realizada por el usuario sobre un modelo de datos, y ser relacionada con su vista correspondiente, para su posterior visualización por parte del usuario. En la fracción de código mostrada vemos el controlador asociado a "show folder", el cual busca el modelo "folder" y lo asocia a su vista correspondiente "show\_folder.html".
 
 \begin{figure}[H]
 	\centering
@@ -394,20 +518,25 @@ El controlador es un objeto que se encarga de dirigir el flujo del control de la
 	\label{mvc}
 \end{figure}
 
-
 \subsection{Django}
 
-Django es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, Don't Repeat Yourself). Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones , autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
+Django \citep{django} es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, Don't Repeat Yourself) \citep{django}. Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones , autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
+
+\subsubsection{Funcionamiento de Django}
 
 Cuando Django recibe una petición ésta pasa por un despachador de URLs (URL Dispatcher), cuya tarea es emparejar el URL con una vista y delegar a la vista el manejo de la petición. La vista contiene la lógica necesaria pa atender la petición entrante. Generalmente esto consiste en retirar o actualizar algunos datos del modelo, que a su vez se comunica con el manejador de base de datos, finalmente la vista combina los datos retirados de la base de datos, la petición y la sesión activa con una plantilla (template) para generar la respuesta de será devuelta.
 
-Django ha demostrado ser escalable y flexible, se sabe de instancias de Django atendiendo ráfagas de cincuenta mil peticiones por segundo, además es de código abierto, gratuito y cuenta con una extensa comunidad de colaboradores y amplia documentación.
+Django ha demostrado ser escalable y flexible \citep{tesisJesus}, se sabe de instancias de Django atendiendo ráfagas de cincuenta mil peticiones por segundo \citep{tesisJesus}, además cuenta con una extensa comunidad de colaboradores y amplia documentación.
 
 \subsection{Bases de Datos}
 
 Una base de datos o banco de datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso. En este sentido; una biblioteca puede considerarse una base de datos compuesta en su mayoría por documentos y textos impresos en papel e indexados para su consulta. Actualmente, y debido al desarrollo tecnológico de campos como la informática y la electrónica, la mayoría de las bases de datos están en formato digital, siendo este un componente electrónico, por tanto se ha desarrollado y se ofrece un amplio rango de soluciones al problema del almacenamiento de datos. 
 
 Según \citep{baseDato}, una base de datos es una colección de datos estructurados. Puede ser cualquier cosa desde una simple lista de compras. una galería de fotos o las bastas cantidades de información en una red corporativa. Para agregar, acceder y procesar los datos almacenados en una base de datos, se necesita un sistema manejador de base de datos. Ya que los computadores hacen un muy buen trabajo manejando grandes cantidades de datos, los sistemas manejadores de bases datos juegan un papel central en la computación como utilidades independientes o partes de otras aplicaciones.
+
+El sistema web de simulación permite la administración de usuarios, archivos y carpetas. De los cuales debemos guardar y consultar toda la información necesaria continuamente, para ello usamos una base de datos la cual definimos en la sección \ref{BaseDatos}.
+
+Debido a su alta confiabilidad y estabilidad, se utilizaron sistemas manejadores de bases de datos relacionales como: MySQL y PostgreSQL. Ambos manejadores fueron usados durante el desarrollo del sistema, para probar la portabilidad y funcionalidad del mismo. Debido a que Django utilizada MVC, permite variar el manejador de base de datos, sin modificar ningún elemento entre los modelos de nuestros datos.
 
 \subsubsection{MySQL}
 
@@ -427,10 +556,82 @@ El uso de un ORM simplifica enormemente el manejo de la estructura de datos suby
 
 JSON (JavaScript Object Notation) es un formato textual de intercambio y almacenamiento de datos no estructurados, JSON posee un formato que es fácil de leer para humanos y fácil de interpretar para máquinas y más ligero que XML por lo que se ha popularizado para el desarrollo de APIs. JSON es un formato de texto que es completamente independiente del lenguaje, pero utiliza las convenciones que son familiares para los programadores de la familia de lenguajes C, incluyendo C, C++, C\#, Java, JavaScript, Perl, Python, y muchos otros. Estas propiedades hacen JSON un lenguaje ideal de intercambio de datos.
 
+\begin{lstlisting}
+@login_required(login_url="/login/")
+@has_role_decorator('system_admin')
+def admin_compile_file(request, file_id):
+	file = File.objects.get(id=file_id)
+	com_java = compile_java(file.id)
+	return JsonResponse({"data":com_java})
+
+@login_required(login_url="/login/")
+@has_role_decorator('system_admin')
+def admin_execute_file(request, file_id):
+	#get arguments for compilation
+	arguments =  request.GET['arguments']
+	file = File.objects.get(id=file_id)
+	com_java = execute_java(file.id, arguments)
+	return JsonResponse({"data":com_java})
+\end{lstlisting}
+
+Las llamadas de compilación y ejecución de los modelos de simulación, haces uso del formato JSON para el retorno de la información a la vista del usuario.
+
 \subsection{AJAX}
 
 AJAX (Asynchronous JavaScript And XML), es una técnica de desarrollo web para crear aplicaciones interactivas o RIA (Rich Internet Applications). Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano. De esta forma es posible realizar cambios sobre las páginas sin necesidad de recargarlas, mejorando la interactividad, velocidad y usabilidad en las aplicaciones. Ajax es una tecnología asíncrona, en el sentido de que los datos adicionales se solicitan al servidor y se cargan en segundo plano sin interferir con la visualización ni el comportamiento de la página, aunque existe la posibilidad de configurar las peticiones como síncronas de tal forma que la interactividad de la página se detiene hasta la espera de la respuesta por parte del servidor \citep{ajaxManual}.
 
+\begin{lstlisting}
+<script type="text/javascript">
+var editor = CodeMirror.fromTextArea(document.getElementById("info_file"), { lineNumbers: true, matchBrackets: true, mode:  "text/x-java" });
+$( "#compile_file" ).click(function() {
+	$("#code_file").text("Compiling file");
+	$.ajax({
+		url : "{% url 'website:admin_compile_file' file.id %}", // the endpoint
+		type : "GET", // http method
+		data : {  }, // data sent with the post request
+		
+		// handle a successful response
+		success : function(json) {
+			console.log(json); // log the returned json to the console
+			console.log("success"); // another sanity check
+			$("#code_file").text(json.data);
+			$("#code_file").text("Compiled file");
+		},
+		
+		// handle a non-successful response
+		error : function(xhr,errmsg,err) {
+			console.log("Error"); // provide a bit more info about the error to the console
+		}
+	});
+});
+
+$( "#execute_file" ).click(function() {
+	$("#code_file").text("Compiling file");
+	$.ajax({
+		url : "{% url 'website:admin_execute_file' file.id %}", // the endpoint
+		type : "GET", // http method
+		data : { arguments: $('#arguments').val() }, // data sent with the post request
+		
+		// handle a successful response
+		success : function(json) {
+			console.log($('#arguments').val());
+			console.log(json); // log the returned json to the console
+			console.log("success"); // another sanity check
+			$("#code_file").text(json.data);
+			$("#data_execution").val(json.data);
+			$("#export_data").removeAttr("disabled");
+		},
+		
+		// handle a non-successful response
+		error : function(xhr,errmsg,err) {
+			console.log("Error"); // provide a bit more info about the error to the console
+		}
+	});
+});
+</script>
+\end{lstlisting}
+
+Para crear la comunicación asíncrona con el servidor, nuestras llamadas de compilación y ejecución de modelos de simulación se realiza mediante una llamada AJAX. Esto nos permite continuar realizando tareas sobre nuestros modelos de simulación, mediante el servidor ejecuta esos procesos de compilación y ejecución.
 
 \chapter{Desarrollo del Sistema WEB}
 
@@ -443,9 +644,9 @@ El sistema de simulación de eventos discretos mediante la web esta conformado po
 	\label{estructuraSistema}
 \end{figure}
 
-En la figura \ref{estructuraSistema} se observa la relación que existe entre los componentes principales que conforman el sistema. El punto de entrada principal es la aplicación Web, que es la encargada de manejar el acceso de los usuarios a las distintas funcionalidades, esto lo realiza mediante la implementación de roles de usuarios y manejo de permisologías. La aplicación web controla la visualización, acceso y modificación de los distintos archivos y carpetas, mediante peticiones sobre el módulo de administración de archivos. Otro aspecto fundamental de la aplicación web es el control y visualización de las simulación, mediante el acceso al sistema de Integración con GALATEA.
+En la figura \ref{estructuraSistema} se observa la relación que existe entre los componentes principales que conforman el sistema. El punto de entrada principal es la aplicación Web, que es la encargada de manejar el acceso de los usuarios a las distintas funcionalidades. Esto lo realiza mediante la implementación de roles de usuarios y manejo de permisologías. La aplicación web controla la visualización, acceso y modificación de los distintos archivos y carpetas, mediante peticiones sobre el módulo de administración de archivos. Otro aspecto fundamental de la aplicación web es el control y visualización de las simulaciones, mediante el acceso al sistema de Integración con GALATEA.
 
- Para el módulo de Administración de Archivos se desarrolló una pequeña API, la cual permite llevar el control de creación, modificación y eliminación de archivos y carpetas dentro del sistema. Esta API está escrita en python y maneja el control de excepciones u errores que pueden aparecer durante su ejecución, al igual permite verificar el espacio en disco usado por cada usuario. En secciones posteriores se especificará con mas detalles la funcionalidad de este módulo.
+ Para el módulo de Administración de Archivos se desarrolló una API, la cual permite llevar el control de creación, modificación y eliminación de archivos y carpetas dentro del sistema. Esta API está escrita en python y maneja el control de excepciones u errores que pueden aparecer durante su ejecución, al igual permite verificar el espacio en disco usado por cada usuario. En la sección \ref{administracionArchivos} se especifica con mas detalles la funcionalidad de este módulo.
 
 El sistema de Integración con GALATEA es una API de interconexión entre nuestra aplicación web y el simulador GALATEA. Como ambos sistemas están desarrollados en ambientes distintos, con códigos distintos, se buscó desarrollar un mecanismo de comunicación entre ambos sistemas. La API permite crear una instancia del Simulador GALATEA y ejecutarlo, controlar la compilación y los parámetros de ejecución de la simulación, esto lo desarrollamos en python mediante la implementación de control de procesos y socket. En el capítulo siguiente especificaremos a detalle en funcionamiento de este sistema de integración.
 
@@ -714,7 +915,7 @@ Ya que la aplicación web consiste en un largo conjunto de vistas, debemos diseña
 
 \end{itemize}
 
-\section{Administrador de Archivos}
+\section{Administrador de Archivos} \label{administracionArchivos}
 
 Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realizan mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite  crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web coomo PHP, Ajax, Perl, ASP u otro lenguaje de servidor. 
 
