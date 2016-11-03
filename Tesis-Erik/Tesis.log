@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  2 NOV 2016 18:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  3 NOV 2016 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,7 +740,7 @@ Cap\'{\i }tulo 6.
 ] [48] [49] (./Tesis.bbl [50
 
 ]
-Overfull \hbox (235.25578pt too wide) in paragraph at lines 92--96
+Overfull \hbox (235.25578pt too wide) in paragraph at lines 93--97
 []\OT1/cmr/m/n/10 Oracle (2016b).  Java thread prim-i-tive dep-re-ca-tion.  htt
 ps://docs.oracle.com/javase/7/docs/technotes/guides/concurrency/threadPrimitive
 Deprecation.html. 
@@ -904,11 +904,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1658.
 Here is how much of TeX's memory you used:
  9734 strings out of 495063
  138170 string characters out of 3182201
- 277847 words of memory out of 3000000
+ 277849 words of memory out of 3000000
  12755 multiletter control sequences out of 15000+200000
  13748 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 34i,13n,45p,1641b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -926,7 +926,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (67 pages, 1355546 bytes).
+Output written on Tesis.pdf (67 pages, 1356113 bytes).
 PDF statistics:
  331 PDF objects out of 1000 (max. 8388607)
  205 compressed objects within 3 object streams

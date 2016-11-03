@@ -13,6 +13,12 @@ Banks, J., Carson, J.~S., Nelson, B.~L., y Nicol, D.~M. (2010).
 Boehm, B.~W. (1988).
 \newblock A spiral model of software development and enhancement.
 
+\bibitem[\protect\astroncite{D{\'a}vila}{2011}]{jacintoLibro}
+D{\'a}vila, J. (2011).
+\newblock {\em L{\'o}gica Pr{\'a}ctica y Aprendizaje Computacional}.
+\newblock Editorial Acad{\'e}mica Espa{\~n}ola.
+\newblock ISBN-13: 978-3-8465-6233-8 ISBN-10: 3846562335 EAN: 9783846562338.
+
 \bibitem[\protect\astroncite{Dávila}{1999}]{openlog}
 Dávila, J. (1999).
 \newblock Openlog: A logic programming language based on abduction, en ppdp'99.
@@ -23,11 +29,6 @@ Dávila, J. (1999).
 Dávila, J. (2003).
 \newblock Actilog: An agent activation language.
 \newblock {\em Lecture Notes in Computer Science}, (2562/2003):194--207.
-
-\bibitem[\protect\astroncite{Dávila}{2010}]{jacintoLibro}
-Dávila, J. (2010).
-\newblock {\em Libro Jacinto}.
-\newblock Pearson, 5 edition.
 
 \bibitem[\protect\astroncite{Fuentes}{2009}]{ajaxManual}
 Fuentes, J.~M. (2009).

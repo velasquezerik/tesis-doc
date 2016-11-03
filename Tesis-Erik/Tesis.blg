@@ -10,18 +10,18 @@ Warning--empty publisher in django
 Warning--there's a number but no volume in Galatea
 You've used 26 entries,
             1940 wiz_defined-function locations,
-            613 strings with 6821 characters,
-and the built_in function-call counts, 7401 in all, are:
+            616 strings with 6974 characters,
+and the built_in function-call counts, 7402 in all, are:
 = -- 726
 > -- 232
 < -- 23
 + -- 79
 - -- 70
-* -- 574
-:= -- 1402
-add.period$ -- 70
+* -- 572
+:= -- 1403
+add.period$ -- 71
 call.type$ -- 26
-change.case$ -- 172
+change.case$ -- 171
 chr.to.int$ -- 25
 cite$ -- 31
 duplicate$ -- 303
@@ -31,7 +31,7 @@ if$ -- 1380
 int.to.chr$ -- 2
 int.to.str$ -- 0
 missing$ -- 15
-newline$ -- 125
+newline$ -- 126
 num.names$ -- 78
 pop$ -- 129
 preamble$ -- 1
@@ -48,5 +48,5 @@ type$ -- 144
 warning$ -- 5
 while$ -- 55
 width$ -- 0
-write$ -- 317
+write$ -- 318
 (There were 5 warnings)
