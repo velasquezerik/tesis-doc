@@ -107,7 +107,6 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 % \primerjurado{Dr. Primer Profesor}
  %\segundojurado{Prof. Segundo Profesor}
 
-
 % NO TOCAR si es Ingenieria de Sistemas
 % \grado{Ingeniero Químico} % por defecto Ingeniero de Sistemas
 
@@ -903,14 +902,14 @@ Ya que la aplicación web consiste en un conjunto grande de vistas, debemos diseñ
 \begin{itemize}
 	\item Operaciones básicas de acceso:
 	\begin{itemize}
-		\item \textbf{GET /admin/} accedemos al dashboard de un usuario administrador. Todas las rutas para acceso de un usuario administrador se definen con esta ruta inicial.
-		\item \textbf{GET /user/} accedemos al dashboard de un usuario registrado. Todas las rutas para acceso de un usuario registrado se definen con esta ruta inicial.
+		\item \textbf{GET /admin/} accedemos al dashboard de un usuario administrador. Todas las rutas para acceso de un usuario administrador se definen con esta ruta inicial. Ejemplo "http://localhost:8000/admin/users", retorna la lista de usuarios registrados en el sistema.
+		\item \textbf{GET /user/} accedemos al dashboard de un usuario registrado. Todas las rutas para acceso de un usuario registrado se definen con esta ruta inicial. Ejemplo "http://localhost:8000/user/" accede al dashboard del usuario.
 		\item \textbf{POST /user/create\_file/} Ruta para la creación de un nuevo archivo.
 		\item \textbf{POST /user/create\_folder/} Ruta para la creación de una nueva carpeta.
-		\item \textbf{GET /user/file/-id-} acceder a la información del archivo cuyo id dentro del sistema es -id-.
-		\item \textbf{GET /user/folder/-id-} acceder a la información de una carpeta cuyo id dentro del sistema es -id-.
-		\item \textbf{GET /user/compile/-id-} compila el archivo cuyo id es -id- y retorna la información de compilación.
-		\item \textbf{GET /user/execute/-id-} ejecuta la simulación definida en el archivo cuyo id es -id- y retorna el resultado de dicha simulación.
+		\item \textbf{GET /user/file/-id-} acceder a la información del archivo cuyo id dentro del sistema es -id-. Ejemplo "http://localhost:8000/user/file/2/", accedemos a la información del archivo cuyo id dentro del sistema es 2.
+		\item \textbf{GET /user/folder/-id-} acceder a la información de una carpeta cuyo id dentro del sistema es -id-. Ejemplo "http://localhost:8000/user/folder/15/", accedemos a la carpeta cuyo id en el sistema es 15, y pertenece a el usuario.
+		\item \textbf{GET /user/compile/-id-} compila el archivo cuyo id es -id- y retorna la información de compilación. Ejemplo "GET /user/compile/file/2/ HTTP/1.1" 200 12, compilamos el archivo cuyo id es 2, mediante una petición Ajax.
+		\item \textbf{GET /user/execute/-id-} ejecuta la simulación definida en el archivo cuyo id es -id- y retorna el resultado de dicha simulación. Ejemplo "GET /user/execute/file/2/?arguments= HTTP/1.1" 200 634, ejecutamos el modelo de simulación, mediante una petición Ajax.
 	\end{itemize}
 
 \end{itemize}
@@ -1174,7 +1173,7 @@ Durante el desarrollo de este trabajo, se construyó un sistema web de simulación
 
 El objetivo principal de este proyecto era desarrollar una integración entre GALATEA como software de simulación y el sistema web. Se desarrollaron y presentaron dos enfoques de integración que permitieron al sistema web comunicarse con el motor de simulación GALATEA, simular y mostrar los resultados al usuario. Se planteó el desarrollo de una plataforma web para que, los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) pudieran ejecutar los modelos de simulación en el simulador GALATEA de manera fácil y rápida, sin tener que pasar dificultades al momento de configurar y activar todas sus funcionalidades de simulador y así enfocarse únicamente en sus modelos de simulación y en los resultados obtenidos de los mismos.
 
-El código completo de sistema web de simulación se encuentra en el siguiente repositorio publico de Github https://github.com/velasquezerik/django-roles-test. Al igual se utilizó este repositorio https://github.com/velasquezerik/tesis-doc, para almacenar todo éste documento. 
+El código completo de sistema web de simulación se encuentra en el siguiente repositorio publico de Github https://github.com/velasquezerik/django-roles-test. Al igual se utilizó este repositorio https://github.com/velasquezerik/tesis-doc, para almacenar todo éste documento. Para permitir que la comunidad de usuarios y usuarias aporten y desarrollen nuevas mejoras en el sistema web, se optó por utilizar la licencia de software GNU AFFERO GENERAL PUBLIC LICENSE\footnote{Affero https://www.gnu.org/licenses/agpl-3.0.en.html}. La Licencia Pública General Affero esta basada en la GPL de GNU, pero contiene una cláusula adicional que permite a los usuarios interactuar con el programa licenciado a través de una red para recibir el código fuente de ese programa. 
 
 Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca, ya no solo a personas con conocimientos avanzados en el tema de simulación, conocimientos de programación y de sistemas operativos, sino a la comunidad en general. Permitiéndole a estudiantes de cursos iniciales, y estudiantes de otras universidades, al igual cualquier persona que quiera colaborar el los procesos y modelos de simulación, trabajar, analizar y compartir los resultados obtenidos desde cualquier parte del mundo.
 
