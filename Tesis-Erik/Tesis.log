@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  8 NOV 2016 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  8 NOV 2016 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -564,20 +564,20 @@ Cap\'{\i }tulo 2.
 File: img/codigoTaquillaGalatea.png Graphic file (type png)
 
 <use img/codigoTaquillaGalatea.png>
-Package pdftex.def Info: img/codigoTaquillaGalatea.png used on input line 368.
+Package pdftex.def Info: img/codigoTaquillaGalatea.png used on input line 370.
 (pdftex.def)             Requested size: 321.70108pt x 201.25137pt.
  [9]
 <img/ejecucionGalatea1.png, id=67, 729.72626pt x 272.01625pt>
 File: img/ejecucionGalatea1.png Graphic file (type png)
 
 <use img/ejecucionGalatea1.png>
-Package pdftex.def Info: img/ejecucionGalatea1.png used on input line 375.
+Package pdftex.def Info: img/ejecucionGalatea1.png used on input line 377.
 (pdftex.def)             Requested size: 364.86224pt x 136.00778pt.
  [10 <./img/codigoTaquillaGalatea.png> <./img/ejecucionGalatea1.png>]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <9> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 403.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 405.
  [11] [12] [13]
-Overfull \hbox (64.23402pt too wide) in paragraph at lines 507--509
+Overfull \hbox (64.23402pt too wide) in paragraph at lines 509--511
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
@@ -585,185 +585,185 @@ Overfull \hbox (64.23402pt too wide) in paragraph at lines 507--509
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
-Package pdftex.def Info: img/RelacionesMVC.png used on input line 515.
+Package pdftex.def Info: img/RelacionesMVC.png used on input line 517.
 (pdftex.def)             Requested size: 339.26149pt x 214.79869pt.
  [14] [15 <./img/RelacionesMVC.png>] [16] [17]
-[18] [19]
+[18] [19] [20]
 Cap\'{\i }tulo 3.
-<img/estructuraSistema.png, id=107, 794.97pt x 614.295pt>
+<img/estructuraSistema.png, id=110, 794.97pt x 614.295pt>
 File: img/estructuraSistema.png Graphic file (type png)
 
 <use img/estructuraSistema.png>
-Package pdftex.def Info: img/estructuraSistema.png used on input line 641.
+Package pdftex.def Info: img/estructuraSistema.png used on input line 662.
 (pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
- [20
+ [21
 
  <./img/estructuraSistema.png>]
-<img/arquitecturaAplicacion.png, id=112, 794.97pt x 614.295pt>
+<img/arquitecturaAplicacion.png, id=115, 794.97pt x 614.295pt>
 File: img/arquitecturaAplicacion.png Graphic file (type png)
 
 <use img/arquitecturaAplicacion.png>
-Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 660.
+Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 681.
 
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [21 <./img/arquitecturaAplicacion.png>]
-[22] [23] <img/entidadRelacionDB.png, id=127, 903.375pt x 1692.3225pt>
+ [22 <./img/arquitecturaAplicacion.png>]
+[23] [24] <img/entidadRelacionDB.png, id=130, 903.375pt x 1692.3225pt>
 File: img/entidadRelacionDB.png Graphic file (type png)
 
 <use img/entidadRelacionDB.png>
-Package pdftex.def Info: img/entidadRelacionDB.png used on input line 745.
+Package pdftex.def Info: img/entidadRelacionDB.png used on input line 766.
 (pdftex.def)             Requested size: 343.28607pt x 643.08923pt.
- [24]
+ [25]
 Overfull \vbox (46.76361pt too high) has occurred while \output is active []
 
 
-[25 <./img/entidadRelacionDB.png>]
-<img/usuariosDB.png, id=135, 779.91376pt x 981.6675pt>
+[26 <./img/entidadRelacionDB.png>]
+<img/usuariosDB.png, id=138, 779.91376pt x 981.6675pt>
 File: img/usuariosDB.png Graphic file (type png)
 
 <use img/usuariosDB.png>
-Package pdftex.def Info: img/usuariosDB.png used on input line 754.
+Package pdftex.def Info: img/usuariosDB.png used on input line 775.
 (pdftex.def)             Requested size: 350.95795pt x 441.74629pt.
 
-<img/archivosDB.png, id=136, 647.41875pt x 655.44875pt>
+<img/archivosDB.png, id=139, 647.41875pt x 655.44875pt>
 File: img/archivosDB.png Graphic file (type png)
 
 <use img/archivosDB.png>
-Package pdftex.def Info: img/archivosDB.png used on input line 764.
+Package pdftex.def Info: img/archivosDB.png used on input line 785.
 (pdftex.def)             Requested size: 356.0814pt x 360.49792pt.
- [26 <./img/usuariosDB.png>]
-<img/compartidoDB.png, id=140, 675.52374pt x 668.4975pt>
+ [27 <./img/usuariosDB.png>]
+<img/compartidoDB.png, id=143, 675.52374pt x 668.4975pt>
 File: img/compartidoDB.png Graphic file (type png)
 
 <use img/compartidoDB.png>
-Package pdftex.def Info: img/compartidoDB.png used on input line 773.
+Package pdftex.def Info: img/compartidoDB.png used on input line 794.
 (pdftex.def)             Requested size: 371.5392pt x 367.67476pt.
- [27 <./img/archivosDB.png>]
-Overfull \hbox (3.81635pt too wide) in paragraph at lines 786--795
+ [28 <./img/archivosDB.png>]
+Overfull \hbox (3.81635pt too wide) in paragraph at lines 807--816
  [][] 
  []
 
-[28 <./img/compartidoDB.png>] [29]
-<img/pantallaInicio.png, id=151, 1914.15125pt x 951.555pt>
+[29 <./img/compartidoDB.png>] [30]
+<img/pantallaInicio.png, id=154, 1914.15125pt x 951.555pt>
 File: img/pantallaInicio.png Graphic file (type png)
 
 <use img/pantallaInicio.png>
-Package pdftex.def Info: img/pantallaInicio.png used on input line 859.
+Package pdftex.def Info: img/pantallaInicio.png used on input line 880.
 (pdftex.def)             Requested size: 382.82347pt x 190.30762pt.
 
-<img/observacionCarpeta.png, id=152, 1923.185pt x 946.53625pt>
+<img/observacionCarpeta.png, id=155, 1923.185pt x 946.53625pt>
 File: img/observacionCarpeta.png Graphic file (type png)
 
 <use img/observacionCarpeta.png>
-Package pdftex.def Info: img/observacionCarpeta.png used on input line 867.
+Package pdftex.def Info: img/observacionCarpeta.png used on input line 888.
 (pdftex.def)             Requested size: 384.63019pt x 189.3039pt.
- [30 <./img/pantallaInicio.png>]
-<img/observacionArchivo.png, id=157, 1910.13625pt x 806.01125pt>
+ [31 <./img/pantallaInicio.png>]
+<img/observacionArchivo.png, id=160, 1910.13625pt x 806.01125pt>
 File: img/observacionArchivo.png Graphic file (type png)
 
 <use img/observacionArchivo.png>
-Package pdftex.def Info: img/observacionArchivo.png used on input line 875.
+Package pdftex.def Info: img/observacionArchivo.png used on input line 896.
 (pdftex.def)             Requested size: 382.02048pt x 161.19939pt.
 
-<img/compilacionEjecucion.png, id=158, 1671.24374pt x 941.5175pt>
+<img/compilacionEjecucion.png, id=161, 1671.24374pt x 941.5175pt>
 File: img/compilacionEjecucion.png Graphic file (type png)
 
 <use img/compilacionEjecucion.png>
-Package pdftex.def Info: img/compilacionEjecucion.png used on input line 883.
+Package pdftex.def Info: img/compilacionEjecucion.png used on input line 904.
 (pdftex.def)             Requested size: 334.24283pt x 188.30016pt.
- [31 <./img/observacionCarpeta.png> <./img/observacionArchivo.png>]
-<img/controlUsuarios.png, id=164, 1922.18124pt x 944.52875pt>
+ [32 <./img/observacionCarpeta.png> <./img/observacionArchivo.png>]
+<img/controlUsuarios.png, id=167, 1922.18124pt x 944.52875pt>
 File: img/controlUsuarios.png Graphic file (type png)
 
 <use img/controlUsuarios.png>
-Package pdftex.def Info: img/controlUsuarios.png used on input line 891.
+Package pdftex.def Info: img/controlUsuarios.png used on input line 912.
 (pdftex.def)             Requested size: 384.42944pt x 188.9024pt.
- [32 <./img/compilacionEjecucion.png> <./img/controlUsuarios.png>]
-Underfull \hbox (badness 1297) in paragraph at lines 906--907
+ [33 <./img/compilacionEjecucion.png> <./img/controlUsuarios.png>]
+Underfull \hbox (badness 1297) in paragraph at lines 927--928
 \OT1/cmr/m/n/10 para ac-ceso de un usuario reg-istrado se de-finen con esta rut
 a ini-cial. Ejem-plo
  []
 
 
-Underfull \hbox (badness 5504) in paragraph at lines 912--913
+Underfull \hbox (badness 5504) in paragraph at lines 933--934
 []\OT1/cmr/bx/n/10 GET /user/execute/-id- \OT1/cmr/m/n/10 eje-cuta la sim-u-lac
 i^^Son definida en el archivo cuyo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 912--913
+Underfull \hbox (badness 10000) in paragraph at lines 933--934
 \OT1/cmr/m/n/10 id es -id- y re-torna el re-sul-tado de dicha sim-u-laci^^Son. 
 Ejem-plo "GET
  []
 
 
-Underfull \hbox (badness 3271) in paragraph at lines 912--913
+Underfull \hbox (badness 3271) in paragraph at lines 933--934
 \OT1/cmr/m/n/10 /user/ex-e-cute/-file/2/?arguments= HTTP/1.1" 200 634, eje-cu-t
 a-mos el mod-elo de
  []
 
-[33] <img/estructuraArchivosCarpetas.png, id=173, 794.97pt x 614.295pt>
+[34] <img/estructuraArchivosCarpetas.png, id=176, 794.97pt x 614.295pt>
 File: img/estructuraArchivosCarpetas.png Graphic file (type png)
 
 <use img/estructuraArchivosCarpetas.png>
 Package pdftex.def Info: img/estructuraArchivosCarpetas.png used on input line 
-925.
+946.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [34 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, id=178
+ [35 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, id=182
 , 794.97pt x 614.295pt>
 File: img/jerarquiaCarpetas.png Graphic file (type png)
 
 <use img/jerarquiaCarpetas.png>
-Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 973.
+Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 994.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [35] [36 <./img/jerarquiaCarpetas.png>]
-[37]
+ [36] [37 <./img/jerarquiaCarpetas.png>]
+[38]
 Cap\'{\i }tulo 4.
-<img/estructuraSubproceso.png, id=190, 794.97pt x 614.295pt>
+<img/estructuraSubproceso.png, id=193, 794.97pt x 614.295pt>
 File: img/estructuraSubproceso.png Graphic file (type png)
 
 <use img/estructuraSubproceso.png>
-Package pdftex.def Info: img/estructuraSubproceso.png used on input line 1024.
+Package pdftex.def Info: img/estructuraSubproceso.png used on input line 1045.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [38
+ [39
 
 ]
-Underfull \hbox (badness 1072) in paragraph at lines 1041--1042
+Underfull \hbox (badness 1072) in paragraph at lines 1062--1063
 \OT1/cmr/m/n/10 Socket des-igna un con-cepto ab-stracto por el cual dos pro-gra
 -mas (posi-ble-mente situ-a-dos en
  []
 
-<img/socketWork.png, id=194, 281.05pt x 355.3275pt>
+<img/socketWork.png, id=197, 281.05pt x 355.3275pt>
 File: img/socketWork.png Graphic file (type png)
  <use img/socketWork.png>
-Package pdftex.def Info: img/socketWork.png used on input line 1045.
+Package pdftex.def Info: img/socketWork.png used on input line 1066.
 (pdftex.def)             Requested size: 224.84029pt x 284.26237pt.
 
-[39 <./img/estructuraSubproceso.png>] [40 <./img/socketWork.png>]
-<img/estructuraSockets.png, id=203, 794.97pt x 614.295pt>
+[40 <./img/estructuraSubproceso.png>] [41 <./img/socketWork.png>]
+<img/estructuraSockets.png, id=207, 794.97pt x 614.295pt>
 File: img/estructuraSockets.png Graphic file (type png)
 
 <use img/estructuraSockets.png>
-Package pdftex.def Info: img/estructuraSockets.png used on input line 1062.
+Package pdftex.def Info: img/estructuraSockets.png used on input line 1083.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [41 <./img/estructuraSockets.png>]
-Underfull \hbox (badness 1354) in paragraph at lines 1083--1084
+ [42 <./img/estructuraSockets.png>]
+Underfull \hbox (badness 1354) in paragraph at lines 1104--1105
 []\OT1/cmr/m/n/10 A es-tas fun-cional-i-dades de con-trol de he-bras se agre-ga
 r^^S^^Pan, en ca-sos par-tic-u-lares, otras
  []
 
-[42] [43]
+[43] [44]
 Cap\'{\i }tulo 5.
-[44
+[45
 
-] [45] [46]
+] [46] [47]
 Cap\'{\i }tulo 6.
-[47
+[48
 
-] [48] [49] (./Tesis.bbl [50
+] [49] [50] (./Tesis.bbl [51
 
 ]
-Overfull \hbox (235.25578pt too wide) in paragraph at lines 93--97
+Overfull \hbox (235.25578pt too wide) in paragraph at lines 97--101
 []\OT1/cmr/m/n/10 Oracle (2016b).  Java thread prim-i-tive dep-re-ca-tion.  htt
 ps://docs.oracle.com/javase/7/docs/technotes/guides/concurrency/threadPrimitive
 Deprecation.html. 
@@ -776,46 +776,41 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[51]
+[52]
 Ap\'endice A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1232--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1253--1253
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1247--1248
+Underfull \hbox (badness 1194) in paragraph at lines 1268--1269
 \OT1/cmr/m/n/10 con-tro-lar los archivos y car-petas que se en-cuen-tren den-tr
 o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1249
+Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 1249--1250
+Underfull \hbox (badness 1127) in paragraph at lines 1270--1271
 \OT1/cmr/m/n/10 us-ando el sis-tema de sim-u-laci^^Son web, el ad-min-istrador 
 del
  []
 
-[52
+[53
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1266--1266
+Underfull \hbox (badness 10000) in paragraph at lines 1287--1287
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
-[53]
+[54]
 Ap\'endice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1285--1285
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1307--1307
+Underfull \hbox (badness 10000) in paragraph at lines 1306--1306
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
@@ -829,14 +824,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[54
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
+[55
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
 []\OT1/cmr/bx/n/10 Secuencia
  []
@@ -851,26 +846,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1433--1433
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[55]
+
 Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
 
-Underfull \hbox (badness 1436) in paragraph at lines 1454--1455
+
+Underfull \hbox (badness 1436) in paragraph at lines 1475--1476
 []\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
 tir.
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 1454--1455
+Underfull \hbox (badness 1902) in paragraph at lines 1475--1476
 \OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
  en
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1477--1477
-[]\OT1/cmr/bx/n/10 Secuencia
  []
 
 
@@ -883,28 +878,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[56] [57]
-Ap\'endice C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1543--1543
+Underfull \hbox (badness 10000) in paragraph at lines 1540--1540
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-
-Underfull \hbox (badness 1400) in paragraph at lines 1543--1544
-[]\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
-
- []
-
+[57] [58]
+Ap\'endice C.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1564--1564
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 1581--1582
-[]\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
--u-laci^^Son
+Underfull \hbox (badness 1400) in paragraph at lines 1564--1565
+[]\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
+
  []
 
 
@@ -912,20 +901,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1585--1585
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[58
 
-]
+Underfull \hbox (badness 1668) in paragraph at lines 1602--1603
+[]\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
+-u-laci^^Son
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1606--1606
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[59]
-Ap\'endice D.
+[59
 
-Underfull \hbox (badness 10000) in paragraph at lines 1631--1631
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1627--1627
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
+[60]
+Ap\'endice D.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
 []\OT1/cmr/bx/n/10 Secuencia
@@ -936,21 +931,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[60
 
-] [61]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1691.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1691.
+Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[61
+
+] [62]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1712.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1712.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1691.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1691.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1691.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1712.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1712.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1712.
  ) 
 Here is how much of TeX's memory you used:
- 9736 strings out of 495063
- 138198 string characters out of 3182201
- 278039 words of memory out of 3000000
- 12757 multiletter control sequences out of 15000+200000
+ 9747 strings out of 495063
+ 138366 string characters out of 3182201
+ 286070 words of memory out of 3000000
+ 12768 multiletter control sequences out of 15000+200000
  13748 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -971,10 +971,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (69 pages, 1361841 bytes).
+Output written on Tesis.pdf (70 pages, 1365505 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 209 compressed objects within 3 object streams
+ 340 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 

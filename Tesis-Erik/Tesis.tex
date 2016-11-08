@@ -343,6 +343,8 @@ Las simulaciones distribuidas pueden hacerse de forma que se acelere una simulac
 
 La Simulación Distribuida permite conducir modelos de simulación a través de múltiples hosts o computadoras separados por redes y se ocupa de cuestiones que surgen de la distribución de un programa de simulación de eventos discretos en varias computadoras \citep{discretSimulation}. La simulación paralela de eventos discretos se refiere a la ejecución en plataformas multi-procesador que contienen múltiples unidades de procesamiento  que interaccionan entre sí con frecuencia, por ejemplo, miles de veces por segundo.
 
+La arquitectura cliente-servidor es un modelo de aplicación distribuida en el que las tareas se reparten entre los proveedores de recursos o servicios, llamados servidores, y los demandantes, llamados clientes. Un cliente realiza peticiones a otro programa, el servidor, quien le da respuesta \citep{clienteServidor}. La separación entre cliente y servidor es una separación de tipo lógico, donde el servidor no se ejecuta necesariamente sobre una sola máquina ni es necesariamente un sólo programa. Los tipos específicos de servidores incluyen los servidores web, los servidores de archivo, los servidores del correo, etc. Mientras que sus propósitos varían de unos servicios a otros, la arquitectura básica seguirá siendo la misma.
+
 \section{Simulación de Eventos Discretos}
 
 La simulación de eventos discretos es la "imitacion" de un proceso de operación o de un sistema del mundo real construido sobre la base del tiempo \citep{discretSimulation}. Esta codifica el comportamiento de sistemas complejos como una secuencia de eventos ordenados y bien definidos. En simulación de eventos discretos (DEVS por sus siglas en ingles),  el funcionamiento de un sistema se representa como una secuencia cronológica de los acontecimientos. Cada evento tiene lugar en un instante de tiempo y marca un cambio de estado en el sistema. Frente a su homóloga, la simulación de tiempo continuo, esta se caracteriza por un control en la variable del tiempo que permite avanzar a éste a intervalos variables, en función de la planificación de ocurrencia de tales eventos a un tiempo futuro. Estos sistemas se caracterizan por mantener un estado interno global del sistema, que puede no obstante estar física o lógicamente distribuido, y que cambia parcialmente debido a la ocurrencia de un evento. La ejecución de un evento puede desencadenar la generación de nuevos eventos futuros. Cada uno está marcado por su tiempo, por lo que el orden de generación puede no coincidir con el orden de ejecución.
@@ -548,6 +550,25 @@ PostgreSQL es un sistema de base de datos de gran alcance, de código abierto obj
 \subsubsection{Mapeo Objeto-Relacional}
 
 El Mapeo Objeto-Relacional (ORM por sus siglas en ingles) es un método para interacturar con bases de datos relacionales desde el paradigma de la programación orientada a objetos, de esta manera es posible aprovechar conceptos como herencia y polimorfismo. Es una técnica de programación para convertir datos entre el sistema de tipos utilizado en un lenguaje de programación orientado a objetos y la utilización de una base de datos relacional como motor de persistencia. En la práctica esto crea una base de datos orientada a objetos virtual, sobre la base de datos relacional. Esto posibilita el uso de las características propias de la orientación a objetos (básicamente herencia y polimorfismo).
+\begin{lstlisting}
+users = User.objects.all()    #obtener todos los usuarios registrados en la DB
+user = User.objects.get(id=user_id)	#obtener la información de un usuario específico
+folders_count = Folder.objects.filter(user_id = user_id).count() #contar las carpetas que pertenecen al usuario
+folders = Folder.objects.filter(user_id = user_id) #obtener todas las carpetas asociadas al usuario
+files = File.objects.filter(folder__user_id = user_id) #obtener todos los archivos asociados al usuario
+
+\end{lstlisting}
+
+Todas estas llamadas están escritas en Python y usando la definición de ORM, este manejador encapsula las llamadas a la base de datos y genera automáticamente los SQLs específicos de cada llamada.
+
+\begin{lstlisting}
+select * from users     #users = User.objects.all()
+select * from users where id = "user_id" #user = User.objects.get(id=user_id)
+select count(*) from folders where user_id = "user_id" #folders_count = Folder.objects.filter(user_id = user_id).count()
+select * from folders where user_id = "user_id" #folders = Folder.objects.filter(user_id = user_id)
+select * from files where  #files = File.objects.filter(folder__user_id = user_id)
+
+\end{lstlisting}
 
 El uso de un ORM simplifica enormemente el manejo de la estructura de datos subyacente ya que permite al programador manejar los datos a un mayor nivel de abstracción como si fueran objetos, sin necesidad de general manualmente las consultas SQL, además ésta capa de abstracción permite desacoplar el código de la aplicación de los detalles específicos de cada RDBMS \citep{tesisJesus}.
 

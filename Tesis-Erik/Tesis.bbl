@@ -75,6 +75,10 @@ Marcano, G. (2015).
   galatea.
 \newblock Technical report, Universidad de Los Andes, Merida, Venezuela.
 
+\bibitem[\protect\astroncite{Microsystem}{2009}]{clienteServidor}
+Microsystem, S. (2009).
+\newblock Distributed application architecture.
+
 \bibitem[\protect\astroncite{Nielsen}{1994}]{nielsen}
 Nielsen, J. (1994).
 \newblock {\em Usability Engineering}.
