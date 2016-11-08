@@ -1,5 +1,5 @@
 \contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
-\contentsline {chapter}{Agradecimientos}{vii}{chapter*.3}
+\contentsline {chapter}{Agradecimientos}{viii}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{3}{section.1.2}
@@ -63,7 +63,7 @@
 \contentsline {section}{\numberline {6.1}Recomendaciones}{48}{section.6.1}
 \contentsline {chapter}{Bibliograf\'{\i }a}{50}{section.6.1}
 \contentsline {chapter}{\numberline {A}Historias de usuario de la aplicaci\'on web}{52}{appendix.A}
-\contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{53}{appendix.B}
-\contentsline {section}{\numberline {B.1}Usuario Administrador}{55}{section.B.1}
-\contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{57}{appendix.C}
-\contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{59}{appendix.D}
+\contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{54}{appendix.B}
+\contentsline {section}{\numberline {B.1}Usuario Administrador}{56}{section.B.1}
+\contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{58}{appendix.C}
+\contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{60}{appendix.D}

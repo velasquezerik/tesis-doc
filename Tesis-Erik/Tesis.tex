@@ -1224,17 +1224,51 @@ La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y me
 	\centering
 	\begin{tabular}{p{2.5cm} p{10cm}}
 		\hline
-		\textbf{Historia} & Nombre de la Historia \\
+		\textbf{Historia} & Control de Usuarios en el sistema \\
 		\hline \hline
-		\textbf{Id} & Id \\
+		\textbf{Id} & UH-001 \\
 		\hline
-		\textbf{Descripción} & Descripción. \\
+		\textbf{Descripción} & Los usuarios y usuarias del sistema web de simulación deben hacer correcto uso del mismo, por lo que se les debe permitir ingresar al sistema con sus credenciales, salirse del sistema, al igual editar su perfil con los datos de su preferencia (Imagen, contraseña, entre otros). Solo el administrador del sistema tiene la permisología para crear usuarios, editar la información de manejo de espacio de archivos y permitirles el acceso. \\
 		\hline
-		\textbf{Cómo probarlo} & Explicación \\
+		\textbf{Cómo probarlo} & El administrador del sistema crea un usuario o usuaria, le envía un correo con la notificación. EL usuario visita el sistema, ingresa sus datos y accede al mismo. EL usuario o usuaria modifica la información de su perfil y se observan los cambios de manera permanente en el sistema. El administrador modifica el espacio asignado en disco para un usuario o usuaria en particular, ese usuario o usuaria llena su espacio con información y una vez esto ocurra se observa que no pueda agregar mas archivos en su cuenta. \\
 		\hline
 	\end{tabular}
-	\caption{Historia de Usuario - Nombre.}
-	\label{husuario:000}
+	\caption{Historia de Usuario - Control de Usuarios en el sistema.}
+	\label{husuario:001}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{Historia} & Control de Archivos y carpetas en el sistema \\
+		\hline \hline
+		\textbf{Id} & UH-002 \\
+		\hline
+		\textbf{Descripción} & Los usuarios y usuarias del sistema web de simulación deben controlar los archivos y carpetas que se encuentren dentro del sistema, para desarrollar un mejor modelo de simulación. Para ello, el sistema debe permitir la creación, modificación y eliminación de archivos y carpetas en la sesión de cada usuario o usuaria. Los archivos y carpetas deben ser compartidos entre los usuarios y usuarias. \\
+		\hline
+		\textbf{Cómo probarlo} & El usuario o usuario crea, modifica y elimina archivos y carpetas usando el sistema de simulación web, el administrador del sistema verifica la creación dentro del sistema web y verifica su correcta creación, modificación o eliminación dentro del sistema de almacenamiento usado por el servidor donde se encuentra funcionando el sistema. \\
+		\hline
+	\end{tabular}
+	\caption{Historia de Usuario - Control de Archivos y carpetas en el sistema.}
+	\label{husuario:002}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{Historia} & Integración con GALATEA \\
+		\hline \hline
+		\textbf{Id} & UH-003 \\
+		\hline
+		\textbf{Descripción} & Los usuarios y usuarias del sistema web de simulación deben poder ejecutar los modelos de simulación mediante el sistema web. La ejecución de la simulación debe permitir definir los parámetros iniciales, mostrar las opciones de ayuda, al igual permitirle al usuario o usuaria la visualización de la salida luego de que el modelo de simulación finalice su ejecución. \\
+		\hline
+		\textbf{Cómo probarlo} & Ejecutar un modelo de prueba existente en GALATEA (Por ejemplo SimpleTeller), tanto en el sistema web de simulación, como en la ejecución normal de GALATEA. Variar los parámetros de entrada de la simulación y comparar ambas salidas para verificar que sean iguales. \\
+		\hline
+	\end{tabular}
+	\caption{Historia de Usuario - Integración con GALATEA.}
+	\label{husuario:003}
 \end{table}
 
 \chapter{Casos de uso de la aplicación web}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  3 NOV 2016 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  8 NOV 2016 10:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -507,13 +507,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `Tesis.toc'.
 
  [5]
-(./Tesis.lot)
+(./Tesis.lot [6
+
+])
 \tf@lot=\write4
 \openout4 = `Tesis.lot'.
 
- [6
-
-]
+ [7]
 Underfull \hbox (badness 10000) in paragraph at lines 170--178
 
  []
@@ -548,7 +548,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--178
 
  []
 
-[7
+[8
 
 ]
 Proyecto ULA preface pages completed.
@@ -560,14 +560,14 @@ Cap\'{\i }tulo 1.
 Cap\'{\i }tulo 2.
 [7
 
-] [8] <img/codigoTaquillaGalatea.png, id=59, 643.40375pt x 402.50375pt>
+] [8] <img/codigoTaquillaGalatea.png, id=62, 643.40375pt x 402.50375pt>
 File: img/codigoTaquillaGalatea.png Graphic file (type png)
 
 <use img/codigoTaquillaGalatea.png>
 Package pdftex.def Info: img/codigoTaquillaGalatea.png used on input line 369.
 (pdftex.def)             Requested size: 321.70108pt x 201.25137pt.
  [9]
-<img/ejecucionGalatea1.png, id=64, 729.72626pt x 272.01625pt>
+<img/ejecucionGalatea1.png, id=67, 729.72626pt x 272.01625pt>
 File: img/ejecucionGalatea1.png Graphic file (type png)
 
 <use img/ejecucionGalatea1.png>
@@ -581,7 +581,7 @@ Overfull \hbox (64.23402pt too wide) in paragraph at lines 508--510
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/RelacionesMVC.png, id=83, 848.16875pt x 537.00626pt>
+<img/RelacionesMVC.png, id=86, 848.16875pt x 537.00626pt>
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
@@ -590,7 +590,7 @@ Package pdftex.def Info: img/RelacionesMVC.png used on input line 516.
  [14] [15 <./img/RelacionesMVC.png>] [16] [17]
 [18] [19]
 Cap\'{\i }tulo 3.
-<img/estructuraSistema.png, id=104, 794.97pt x 614.295pt>
+<img/estructuraSistema.png, id=107, 794.97pt x 614.295pt>
 File: img/estructuraSistema.png Graphic file (type png)
 
 <use img/estructuraSistema.png>
@@ -599,7 +599,7 @@ Package pdftex.def Info: img/estructuraSistema.png used on input line 642.
  [20
 
  <./img/estructuraSistema.png>]
-<img/arquitecturaAplicacion.png, id=109, 794.97pt x 614.295pt>
+<img/arquitecturaAplicacion.png, id=112, 794.97pt x 614.295pt>
 File: img/arquitecturaAplicacion.png Graphic file (type png)
 
 <use img/arquitecturaAplicacion.png>
@@ -607,7 +607,7 @@ Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 661.
 
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [21 <./img/arquitecturaAplicacion.png>]
-[22] [23] <img/entidadRelacionDB.png, id=123, 903.375pt x 1692.3225pt>
+[22] [23] <img/entidadRelacionDB.png, id=127, 903.375pt x 1692.3225pt>
 File: img/entidadRelacionDB.png Graphic file (type png)
 
 <use img/entidadRelacionDB.png>
@@ -618,21 +618,21 @@ Overfull \vbox (46.76361pt too high) has occurred while \output is active []
 
 
 [25 <./img/entidadRelacionDB.png>]
-<img/usuariosDB.png, id=132, 779.91376pt x 981.6675pt>
+<img/usuariosDB.png, id=135, 779.91376pt x 981.6675pt>
 File: img/usuariosDB.png Graphic file (type png)
 
 <use img/usuariosDB.png>
 Package pdftex.def Info: img/usuariosDB.png used on input line 755.
 (pdftex.def)             Requested size: 350.95795pt x 441.74629pt.
 
-<img/archivosDB.png, id=133, 647.41875pt x 655.44875pt>
+<img/archivosDB.png, id=136, 647.41875pt x 655.44875pt>
 File: img/archivosDB.png Graphic file (type png)
 
 <use img/archivosDB.png>
 Package pdftex.def Info: img/archivosDB.png used on input line 765.
 (pdftex.def)             Requested size: 356.0814pt x 360.49792pt.
  [26 <./img/usuariosDB.png>]
-<img/compartidoDB.png, id=137, 675.52374pt x 668.4975pt>
+<img/compartidoDB.png, id=140, 675.52374pt x 668.4975pt>
 File: img/compartidoDB.png Graphic file (type png)
 
 <use img/compartidoDB.png>
@@ -644,42 +644,42 @@ Overfull \hbox (3.81635pt too wide) in paragraph at lines 787--796
  []
 
 [28 <./img/compartidoDB.png>] [29]
-<img/pantallaInicio.png, id=147, 1914.15125pt x 951.555pt>
+<img/pantallaInicio.png, id=151, 1914.15125pt x 951.555pt>
 File: img/pantallaInicio.png Graphic file (type png)
 
 <use img/pantallaInicio.png>
 Package pdftex.def Info: img/pantallaInicio.png used on input line 860.
 (pdftex.def)             Requested size: 382.82347pt x 190.30762pt.
 
-<img/observacionCarpeta.png, id=148, 1923.185pt x 946.53625pt>
+<img/observacionCarpeta.png, id=152, 1923.185pt x 946.53625pt>
 File: img/observacionCarpeta.png Graphic file (type png)
 
 <use img/observacionCarpeta.png>
 Package pdftex.def Info: img/observacionCarpeta.png used on input line 868.
 (pdftex.def)             Requested size: 384.63019pt x 189.3039pt.
  [30 <./img/pantallaInicio.png>]
-<img/observacionArchivo.png, id=154, 1910.13625pt x 806.01125pt>
+<img/observacionArchivo.png, id=157, 1910.13625pt x 806.01125pt>
 File: img/observacionArchivo.png Graphic file (type png)
 
 <use img/observacionArchivo.png>
 Package pdftex.def Info: img/observacionArchivo.png used on input line 876.
 (pdftex.def)             Requested size: 382.02048pt x 161.19939pt.
 
-<img/compilacionEjecucion.png, id=155, 1671.24374pt x 941.5175pt>
+<img/compilacionEjecucion.png, id=158, 1671.24374pt x 941.5175pt>
 File: img/compilacionEjecucion.png Graphic file (type png)
 
 <use img/compilacionEjecucion.png>
 Package pdftex.def Info: img/compilacionEjecucion.png used on input line 884.
 (pdftex.def)             Requested size: 334.24283pt x 188.30016pt.
  [31 <./img/observacionCarpeta.png> <./img/observacionArchivo.png>]
-<img/controlUsuarios.png, id=161, 1922.18124pt x 944.52875pt>
+<img/controlUsuarios.png, id=164, 1922.18124pt x 944.52875pt>
 File: img/controlUsuarios.png Graphic file (type png)
 
 <use img/controlUsuarios.png>
 Package pdftex.def Info: img/controlUsuarios.png used on input line 892.
 (pdftex.def)             Requested size: 384.42944pt x 188.9024pt.
  [32 <./img/compilacionEjecucion.png> <./img/controlUsuarios.png>]
-<img/estructuraArchivosCarpetas.png, id=167, 794.97pt x 614.295pt>
+<img/estructuraArchivosCarpetas.png, id=170, 794.97pt x 614.295pt>
 File: img/estructuraArchivosCarpetas.png Graphic file (type png)
 
 <use img/estructuraArchivosCarpetas.png>
@@ -687,7 +687,7 @@ Package pdftex.def Info: img/estructuraArchivosCarpetas.png used on input line
 926.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [33] [34 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, i
-d=175, 794.97pt x 614.295pt>
+d=178, 794.97pt x 614.295pt>
 File: img/jerarquiaCarpetas.png Graphic file (type png)
 
 <use img/jerarquiaCarpetas.png>
@@ -696,7 +696,7 @@ Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 974.
  [35] [36 <./img/jerarquiaCarpetas.png>]
 [37]
 Cap\'{\i }tulo 4.
-<img/estructuraSubproceso.png, id=187, 794.97pt x 614.295pt>
+<img/estructuraSubproceso.png, id=190, 794.97pt x 614.295pt>
 File: img/estructuraSubproceso.png Graphic file (type png)
 
 <use img/estructuraSubproceso.png>
@@ -710,14 +710,14 @@ Underfull \hbox (badness 1072) in paragraph at lines 1042--1043
 -mas (posi-ble-mente situ-a-dos en
  []
 
-<img/socketWork.png, id=191, 281.05pt x 355.3275pt>
+<img/socketWork.png, id=194, 281.05pt x 355.3275pt>
 File: img/socketWork.png Graphic file (type png)
  <use img/socketWork.png>
 Package pdftex.def Info: img/socketWork.png used on input line 1046.
 (pdftex.def)             Requested size: 224.84029pt x 284.26237pt.
 
 [39 <./img/estructuraSubproceso.png>] [40 <./img/socketWork.png>]
-<img/estructuraSockets.png, id=200, 794.97pt x 614.295pt>
+<img/estructuraSockets.png, id=203, 794.97pt x 614.295pt>
 File: img/estructuraSockets.png Graphic file (type png)
 
 <use img/estructuraSockets.png>
@@ -760,152 +760,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 1233--1233
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
+
+Underfull \hbox (badness 1194) in paragraph at lines 1248--1249
+\OT1/cmr/m/n/10 con-tro-lar los archivos y car-petas que se en-cuen-tren den-tr
+o
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1250--1250
+[]\OT1/cmr/bx/n/10 C^^Somo
+ []
+
+
+Underfull \hbox (badness 1127) in paragraph at lines 1250--1251
+\OT1/cmr/m/n/10 us-ando el sis-tema de sim-u-laci^^Son web, el ad-min-istrador 
+del
+ []
+
 [52
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1267--1267
+[]\OT1/cmr/bx/n/10 C^^Somo
+ []
+
+[53]
 Ap\'endice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1252--1252
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1286
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1274--1274
+Underfull \hbox (badness 10000) in paragraph at lines 1308--1308
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1295--1295
+Underfull \hbox (badness 10000) in paragraph at lines 1329--1329
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1316--1316
+Underfull \hbox (badness 10000) in paragraph at lines 1350--1350
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[53
+[54
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1337--1337
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1371
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1358
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1392
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1379
+Underfull \hbox (badness 10000) in paragraph at lines 1413--1413
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1400--1400
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1434
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[54]
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1421
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1455
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 1421--1422
+Underfull \hbox (badness 1436) in paragraph at lines 1455--1456
 []\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
 tir.
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 1421--1422
+Underfull \hbox (badness 1902) in paragraph at lines 1455--1456
 \OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
  en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1444--1444
+Underfull \hbox (badness 10000) in paragraph at lines 1478--1478
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1465--1465
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1486--1486
+Underfull \hbox (badness 10000) in paragraph at lines 1520--1520
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[55] [56]
+[56] [57]
 Ap\'endice C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1510--1510
+Underfull \hbox (badness 10000) in paragraph at lines 1544--1544
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1510--1511
+Underfull \hbox (badness 1400) in paragraph at lines 1544--1545
 []\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1531--1531
+Underfull \hbox (badness 10000) in paragraph at lines 1565--1565
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 1548--1549
+Underfull \hbox (badness 1668) in paragraph at lines 1582--1583
 []\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
 -u-laci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1552--1552
+Underfull \hbox (badness 10000) in paragraph at lines 1586--1586
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[57
+[58
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1573--1573
+Underfull \hbox (badness 10000) in paragraph at lines 1607--1607
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[58]
+[59]
 Ap\'endice D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1598--1598
+Underfull \hbox (badness 10000) in paragraph at lines 1632--1632
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1619--1619
+Underfull \hbox (badness 10000) in paragraph at lines 1653--1653
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1640--1640
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1674
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[59
+[60
 
-] [60]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1658.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1658.
+] [61]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1692.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1692.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1658.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1658.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1658.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1692.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1692.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1692.
  ) 
 Here is how much of TeX's memory you used:
- 9734 strings out of 495063
- 138170 string characters out of 3182201
- 277849 words of memory out of 3000000
- 12755 multiletter control sequences out of 15000+200000
+ 9736 strings out of 495063
+ 138198 string characters out of 3182201
+ 278039 words of memory out of 3000000
+ 12757 multiletter control sequences out of 15000+200000
  13748 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -926,10 +948,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (67 pages, 1356113 bytes).
+Output written on Tesis.pdf (69 pages, 1359347 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
+ 337 PDF objects out of 1000 (max. 8388607)
+ 209 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
