@@ -1057,6 +1057,21 @@ El proceso de GALATEA para ejecutar simular definido en tres pasos:
 
 Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de los pasos es obtenido como valor de retorno de la misma y es mostrado al usuario.
 
+\begin{lstlisting}
+#run the program
+#java -cp .:../../galatea.jar SimpleTeller
+def execute_java(file_id, arguments):
+	#get file
+	file = File.objects.get(id=file_id)
+	#first compile
+	compile_java(file_id)
+	folder = file.folder
+	galatea_code = GALATEA + "galatea.jar "
+	code = "cd "+file.folder.path+" && java -cp .:"+ galatea_code + os.path.splitext(file.name)[0] + " " + arguments
+	value = subprocess.check_output([code], shell=True)
+	return value
+\end{lstlisting}
+
 \section{Sockets} \label{sockets}
 
 Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada \citep{ibmSockets}. Los sockets de Internet constituyen el mecanismo para la entrega de paquetes de datos provenientes de la tarjeta de red a los procesos o hilos apropiados. Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y un par de números de puerto local y remoto \citep{sockets}.
@@ -1091,11 +1106,177 @@ Toda nuestra implementación de sockets se hizo utilizando el protocolo de comuni
 
 El programa cliente está escrito en Python y es llamado por nuestra aplicación web. Su principal función es servir de mecanismo de comunicación entre el proceso de simulación y el usuario. Este programa permite recibir las distintas peticiones del usuario, identificarlas y comunicárselas al proceso de simulación, al igual recibir la comunicación del programa servidor (la simulación) y comunicárselas al usuario. Hay que notar que pueden desarrollarse muchas variantes del programa cliente, pero para uso de este trabajo se desarrolló un cliente que mantuviera una comunicación simple con el programa servidor.
 
+El programa cliente lo podemos estructurar en tres bloques principales:
+
+\begin{itemize}
+	\item Iniciar Conexión: Lo principal es crear una comunicación directa con el programa servidor, por lo que, verificamos la conexión y nos conectamos al socket específico. Garantizar la conexión es importante para poder mantener un control continuo de la simulación.
+	\item Envío de instrucciones: utilizando el protocolo de comunicación definido en la sección \ref{protocoloComunicacion}, enviamos al programa servidor una serie de instrucciones de prueba para verificar el correcto funcionamiento de la simulación.
+	\item Finalizar conexión: luego de ejecutar toda la simulación y obtener los valores deseados, finalizamos la conexión con el programa servidor.
+\end{itemize}
+
 \subsection{Programa Servidor}
 
 El programa servidor está escrito en Java y es ejecutado por nuestra aplicación web. Justo con su ejecución el programa define un puerto de comunicación especifico, que a su vez permite al programa cliente la comunicación. Su función principal es recibir las distintas peticiones del programa cliente, transmitirlas al proceso de simulación y devolver los resultados al programa cliente. Este proceso debe llevar control integral de la simulación, así como atender las posibles eventualidades que puedan ocurrir durante la simulación. Este programa mantiene comunicación continua con GALATEA, ya que encapsula en su interior a GALATEA y al modelo que está siendo ejecutado.
 
-\subsection{Protocolo de Comunicación}
+Este programa esta definido por tres hilos de ejecución como observamos en la figura \ref{estructuraProgramaServidor}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/estructuraProgramaServidor.png}
+	\caption{Estructura del Programa Servidor.}
+	\label{estructuraProgramaServidor}
+\end{figure}
+
+\subsubsection{Manejador de Eventos}
+
+Debido a, que en los nuevos desarrollos de GALATEA para cuando este trabajo se realizó, se esta desarrollando el manejo de eventos dentro de GALATEA, los cuales son disparados cuando situaciones particulares dentro de la simulación ocurren. En nuestra integración se tomó en cuenta y se implementó ese manejo de eventos.
+
+La función de el manejador de eventos es capturar todos los eventos que son creados dentro de la simulación, procesarlos y enviarlos nuevamente al programa cliente, para su posterior observación. Los eventos y su procesamiento ocurren en tiempo real, es decir, a penas el evento es creado se captura y se procesa.
+
+\begin{lstlisting}
+public class ModelEventListener implements ModelListener
+{
+	Socket _connected;
+	PrintWriter outToClient;
+	public ModelEventListener(Socket connected) 
+	{
+		try
+		{
+			_connected = connected;
+			//Buffer out for client data
+			outToClient = new PrintWriter( connected.getOutputStream(),true);
+		}
+		catch (IOException e) {
+			System.out.println(e);
+			System.exit(1);
+		}
+	}
+	public void modelReceived( ModelEvent event )
+	{
+		System.out.println ("Event " + event.type() + " description: " + event.description() );
+		String data = "Event " + event.type() + " description: " + event.description() ;
+		outToClient.println(data);
+	}
+}
+
+\end{lstlisting}
+
+\subsubsection{Thread de Simulación}
+
+Éste módulo es el modelo de simulación implementado como un Thread de Java \citep{javaThreads}. Este thread encapsula toda la información del modelo de simulación (variables y métodos), al igual todos los métodos de comunicación con GALATEA.
+
+Su función es procesar la simulación y disparar los eventos que serán capturados por el manejador de eventos.
+
+\begin{lstlisting}
+class ModelThread extends Thread
+{
+	// Atributes
+	public static String _args[];
+	public static double InArrTime;
+	public static double MeSerTime;
+	public static double DeSerTime;
+	// Nodes
+	static Gate gate = new Gate();
+	static Teller teller = new Teller();
+	static Exit exit = new Exit();
+	static ShowLength showLength = new ShowLength();
+	private ArrayList _listeners = new ArrayList();
+	public int valores;
+	public int jodedera;
+	public void setArg(String args[])
+	{
+		_args = args;
+	}
+	public void run()
+	{
+		try
+		{
+			main(_args);
+			valores = 40;
+			prueba = 100;
+			System.out.println ("Start Running Thread");
+			this._fireModelEvent(1,"Start Running Thread");
+			for(int i = 0; i < 200; ++i)
+			{
+				System.out.println ("Running Thread ---> Time " + i);
+				this._fireModelEvent(2,"Running Thread ---> Time " + i);
+				Thread.sleep(100);
+			}
+			System.out.println ("Finish Running Thread");
+			this._fireModelEvent(1,"Finish Running Thread");
+		}
+		catch(InterruptedException ex)
+		{
+			Thread.currentThread().interrupt();
+		}
+	}
+	public synchronized void addModelListener( ModelListener l )
+	{
+		_listeners.add( l );
+	}
+	public synchronized void removeModelListener( ModelListener l )
+	{
+		_listeners.remove( l );
+	}
+	private synchronized void _fireModelEvent(  int type, String description )
+	{
+		ModelEvent mood = new ModelEvent( this, type, description );
+		Iterator listeners = _listeners.iterator();
+		while( listeners.hasNext() )
+		{
+			( (ModelListener) listeners.next() ).modelReceived( mood );
+		}
+	}
+	public static void setExperiment(String[] args) 
+	{
+		Glider.setTsim(Galatea.doubleArg(args, "tSim", "10", "Tiempo de Simulacion"));
+		InArrTime = Galatea.doubleArg(args, "InArrTime", "4.0", "Mean Interarrival Time");
+		MeSerTime = Galatea.doubleArg(args, "MeSerTime", "3.50", "Mean service time");
+		DeSerTime = Galatea.doubleArg(args, "DeSerTime", "0.80", "Deviation of Mean Service Time");
+		Galatea.checkArgs(args);
+		Glider.addPath(Galatea.getExperDir());
+	}
+	public static void main(String args[])
+	{
+		//ModelThread obj = new ModelThread();
+		//obj.start();
+		Glider.setTitle("Simple Teller");
+		Glider.act(0, gate);
+		setExperiment(args);
+		Glider.process();
+	}
+}
+
+\end{lstlisting}
+
+\subsubsection{Cuerpo Principal}
+
+Es el encargado de controlar todos los aspectos principales del programa servidor. Primero inicia el programa en un puerto específico, e inicializa el thread de simulación y el manejador de eventos.
+
+\begin{lstlisting}
+//init de the server on port number
+ServerSocket Server = new ServerSocket (portNumber);
+System.out.println ("TCPServer Waiting for client on port " + portNumber);
+//wait for client connected
+Socket connected = Server.accept();
+System.out.println( " THE CLIENT " + " " + connected.getInetAddress() +" : "+connected.getPort()+" IS CONNECTED ");
+//Buffer get info to send
+BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));
+//Buffer in for client data
+BufferedReader inFromClient = new BufferedReader(new InputStreamReader (connected.getInputStream()));
+//Buffer out for client data
+PrintWriter outToClient = new PrintWriter( connected.getOutputStream(),true);
+//create thread
+ModelThread obj = new ModelThread();
+//create ModelListener
+ModelListener modListener = new ModelEventListener(connected);
+//ModelThread assing listeners
+obj.addModelListener(modListener);
+\end{lstlisting}
+
+Se encarga de recibir todas las solicitudes del programa cliente, mediante el protocolo de comunicación definido en la sección \ref{protocoloComunicacion}, y ejecutar esas peticiones sobre el thread de simulación, al igual controlar todo el manejo de excepciones que puedan ocurrir.
+
+\subsection{Protocolo de Comunicación} \label{protocoloComunicacion}
 
 La comunicación es la herramienta mas importante de esta implementación, por ende definir un buen protocolo que permita controlar las distintas opciones y acciones a ser ejecutadas en nuestra simulación nos garantiza una buena integración.
 

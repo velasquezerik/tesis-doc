@@ -1,16 +1,15 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  8 NOV 2016 12:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  12 NOV 2016 14:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Tesis.tex
 (./Tesis.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
-aded.
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -41,10 +40,10 @@ Package: ulamonog 2006/03/19, v. 0.9
 \f@ncyO@orf=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -138,7 +137,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
+Package: amsthm 2009/07/02 v2.20.1
 \thm@style=\toks20
 \thm@bodyfont=\toks21
 \thm@headfont=\toks22
@@ -153,20 +152,20 @@ Package: amsthm 2004/08/06 v2.20
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ansinew.def
-File: ansinew.def 2008/03/30 v1.1d Input encoding file
+File: ansinew.def 2014/04/30 v1.2b Input encoding file
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
+Package color Info: Driver file: pdftex.def on input line 137.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -177,7 +176,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read1
@@ -263,7 +262,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen115
@@ -316,18 +315,18 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \lst@maxwidth=\dimen121
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count118
 \lst@skipnumbers=\count119
 \lst@framebox=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2007/02/22 1.4 listings configuration
+File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
-Package: listings 2007/02/22 1.4 (Carsten Heinz)
+Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
 \LTpre=\skip61
@@ -350,29 +349,29 @@ LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count125
 \calc@Bcount=\count126
 \calc@Adimen=\dimen123
 \calc@Bdimen=\dimen124
 \calc@Askip=\skip63
 \calc@Bskip=\skip64
-LaTeX Info: Redefining \setlength on input line 76.
-LaTeX Info: Redefining \addtolength on input line 77.
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count127
 \calc@Cskip=\skip65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box36
 \AM@toc@title=\toks34
@@ -466,7 +465,7 @@ LaTeX Info: Redefining \nameref on input line 45.
 \c@lstlisting=\count137
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2004/09/05 1.3 listings language file
+File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 Most over/underfulls in first few pages are the fault of this package.
 Ignore all them. If uncorrectable errors occur, notify staff.
@@ -479,14 +478,14 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
  [1
 
 
-{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
 
 ] [3
 
@@ -581,7 +580,7 @@ Overfull \hbox (64.23402pt too wide) in paragraph at lines 509--511
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/RelacionesMVC.png, id=86, 848.16875pt x 537.00626pt>
+<img/RelacionesMVC.png, id=85, 848.16875pt x 537.00626pt>
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
@@ -727,40 +726,48 @@ Package pdftex.def Info: img/estructuraSubproceso.png used on input line 1045.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [39
 
-]
-Underfull \hbox (badness 1072) in paragraph at lines 1062--1063
+] [40 <./img/estructuraSubproceso.png>]
+Underfull \hbox (badness 1072) in paragraph at lines 1077--1078
 \OT1/cmr/m/n/10 Socket des-igna un con-cepto ab-stracto por el cual dos pro-gra
 -mas (posi-ble-mente situ-a-dos en
  []
 
-<img/socketWork.png, id=197, 281.05pt x 355.3275pt>
+<img/socketWork.png, id=201, 281.05pt x 355.3275pt>
 File: img/socketWork.png Graphic file (type png)
  <use img/socketWork.png>
-Package pdftex.def Info: img/socketWork.png used on input line 1066.
+Package pdftex.def Info: img/socketWork.png used on input line 1081.
 (pdftex.def)             Requested size: 224.84029pt x 284.26237pt.
 
-[40 <./img/estructuraSubproceso.png>] [41 <./img/socketWork.png>]
+[41 <./img/socketWork.png>]
 <img/estructuraSockets.png, id=207, 794.97pt x 614.295pt>
 File: img/estructuraSockets.png Graphic file (type png)
 
 <use img/estructuraSockets.png>
-Package pdftex.def Info: img/estructuraSockets.png used on input line 1083.
+Package pdftex.def Info: img/estructuraSockets.png used on input line 1098.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [42 <./img/estructuraSockets.png>]
-Underfull \hbox (badness 1354) in paragraph at lines 1104--1105
+<img/estructuraProgramaServidor.png, id=213, 794.97pt x 614.295pt>
+File: img/estructuraProgramaServidor.png Graphic file (type png)
+
+<use img/estructuraProgramaServidor.png>
+Package pdftex.def Info: img/estructuraProgramaServidor.png used on input line 
+1125.
+(pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
+ [43] [44 <./img/estructuraProgramaServidor.png>] [45] [46] [47]
+Underfull \hbox (badness 1354) in paragraph at lines 1285--1286
 []\OT1/cmr/m/n/10 A es-tas fun-cional-i-dades de con-trol de he-bras se agre-ga
 r^^S^^Pan, en ca-sos par-tic-u-lares, otras
  []
 
-[43] [44]
+[48] [49]
 Cap\'{\i }tulo 5.
-[45
+[50
 
-] [46] [47]
+] [51] [52]
 Cap\'{\i }tulo 6.
-[48
+[53
 
-] [49] [50] (./Tesis.bbl [51
+] [54] [55] (./Tesis.bbl [56
 
 ]
 Overfull \hbox (235.25578pt too wide) in paragraph at lines 97--101
@@ -776,184 +783,184 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[52]
+[57]
 Ap\'endice A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1253--1253
+Underfull \hbox (badness 10000) in paragraph at lines 1434--1434
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1268--1269
+Underfull \hbox (badness 1194) in paragraph at lines 1449--1450
 \OT1/cmr/m/n/10 con-tro-lar los archivos y car-petas que se en-cuen-tren den-tr
 o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1270--1270
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1451
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 1270--1271
+Underfull \hbox (badness 1127) in paragraph at lines 1451--1452
 \OT1/cmr/m/n/10 us-ando el sis-tema de sim-u-laci^^Son web, el ad-min-istrador 
 del
  []
 
-[53
+[58
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1287
+Underfull \hbox (badness 10000) in paragraph at lines 1468--1468
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
-[54]
+[59]
 Ap\'endice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1306--1306
+Underfull \hbox (badness 10000) in paragraph at lines 1487--1487
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1328
+Underfull \hbox (badness 10000) in paragraph at lines 1509--1509
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1349
+Underfull \hbox (badness 10000) in paragraph at lines 1530--1530
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1370
+Underfull \hbox (badness 10000) in paragraph at lines 1551--1551
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[55
+[60
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1391--1391
+Underfull \hbox (badness 10000) in paragraph at lines 1572--1572
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1412--1412
+Underfull \hbox (badness 10000) in paragraph at lines 1593--1593
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1433--1433
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1614
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1454--1454
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1635
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 1475--1475
+[61]
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1656
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1436) in paragraph at lines 1475--1476
+Underfull \hbox (badness 1436) in paragraph at lines 1656--1657
 []\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
 tir.
  []
 
 
-Underfull \hbox (badness 1902) in paragraph at lines 1475--1476
+Underfull \hbox (badness 1902) in paragraph at lines 1656--1657
 \OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
  en
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1498--1498
+Underfull \hbox (badness 10000) in paragraph at lines 1679--1679
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1519
+Underfull \hbox (badness 10000) in paragraph at lines 1700--1700
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1540--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1721--1721
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[57] [58]
+[62] [63]
 Ap\'endice C.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1564--1564
+Underfull \hbox (badness 10000) in paragraph at lines 1745--1745
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1564--1565
+Underfull \hbox (badness 1400) in paragraph at lines 1745--1746
 []\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1585--1585
+Underfull \hbox (badness 10000) in paragraph at lines 1766--1766
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 1602--1603
+Underfull \hbox (badness 1668) in paragraph at lines 1783--1784
 []\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
 -u-laci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1606
+Underfull \hbox (badness 10000) in paragraph at lines 1787--1787
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[59
+[64
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1627--1627
+Underfull \hbox (badness 10000) in paragraph at lines 1808--1808
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[60]
+[65]
 Ap\'endice D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1652--1652
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1833
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1673--1673
+Underfull \hbox (badness 10000) in paragraph at lines 1854--1854
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1694--1694
+Underfull \hbox (badness 10000) in paragraph at lines 1875--1875
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[61
+[66
 
-] [62]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1712.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1712.
+] [67]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1893.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1893.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1712.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1712.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1712.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1893.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1893.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1893.
  ) 
 Here is how much of TeX's memory you used:
- 9747 strings out of 495063
- 138366 string characters out of 3182201
- 286070 words of memory out of 3000000
- 12768 multiletter control sequences out of 15000+200000
- 13748 words of font info for 52 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 9967 strings out of 493105
+ 141135 string characters out of 6137072
+ 292069 words of memory out of 5000000
+ 13269 multiletter control sequences out of 15000+600000
+ 13748 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,13n,45p,1640b,1980s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -971,10 +978,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (70 pages, 1365505 bytes).
+Output written on Tesis.pdf (75 pages, 1429321 bytes).
 PDF statistics:
- 340 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
+ 359 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
