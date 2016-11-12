@@ -1010,6 +1010,8 @@ Para el correcto manejo de carpetas se definieron una serie de métodos:
 
 Debido a que el espacio en disco físico es lilimitado, cada usuario tiene una porción de espacio asociado para su manejo de archivos y carpetas. Este espacio es constantemente monitoreado por el administrador de archivos y es una de las restricciones principales para el correcto funcionamiento del servicio. Esta porción de espacio en disco es fácilmente administrable por el usuario administrador de nuestro sistema web.
 
+El sistema manejador de archivos y carpetas se desarrolló usando llamadas a los métodos de manejo de archivos y carpetas que proporciona el sistema operativo donde el sistema se encuentre instalado. Esto permite que dependiendo el sistema operativo usado y los recursos de hardware disponibles podemos hacer uso de las nuevas tecnologías disponibles como: "hot swap", modificar tamaños de las particiones en tiempo real y otras tecnologias que los nuevos servidores nos permiten para el manejo de archivos y carpetas.
+
 \subsection{Control de Permisos}
 
 Mediante el sistema web de simulación GALATEA se busca que los usuarios tengan interacción entre ellos y puedan trabajar en conjunto, para así fortalecer y mejorar sus proyectos de simulación. Para ellos se implementó un sistema de permisos de acceso y modificación tanto para los archivos como carpetas dentro del sistema.
