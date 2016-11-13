@@ -1,5 +1,5 @@
-\contentsline {chapter}{\'Indice de Tablas}{vi}{chapter*.1}
-\contentsline {chapter}{Agradecimientos}{viii}{chapter*.3}
+\contentsline {chapter}{\'Indice de Tablas}{vii}{chapter*.1}
+\contentsline {chapter}{Agradecimientos}{ix}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{3}{section.1.2}
@@ -70,3 +70,31 @@
 \contentsline {section}{\numberline {B.1}Usuario Administrador}{63}{section.B.1}
 \contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{65}{appendix.C}
 \contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{67}{appendix.D}
+\contentsline {chapter}{\numberline {E}Instalaci\'on y Configuraci\'on del Sistema web}{69}{appendix.E}
+\contentsline {section}{\numberline {E.1}Prerequisites}{69}{section.E.1}
+\contentsline {section}{\numberline {E.2}Install packages from Debian repositories}{69}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Install Python}{69}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}Install Apache}{69}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}Install Python-Pip}{70}{subsection.E.2.3}
+\contentsline {subsection}{\numberline {E.2.4}Install MySQL}{70}{subsection.E.2.4}
+\contentsline {subsection}{\numberline {E.2.5}Install PostgreSQL}{70}{subsection.E.2.5}
+\contentsline {subsection}{\numberline {E.2.6}Install Git}{70}{subsection.E.2.6}
+\contentsline {subsection}{\numberline {E.2.7}Install Django}{70}{subsection.E.2.7}
+\contentsline {subsection}{\numberline {E.2.8}Install Django-Roles-Permission}{70}{subsection.E.2.8}
+\contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{71}{subsection.E.2.9}
+\contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow}{71}{subsection.E.2.10}
+\contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{71}{subsection.E.2.11}
+\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{71}{subsection.E.2.12}
+\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{71}{subsection.E.2.13}
+\contentsline {section}{\numberline {E.3}Configure Project}{71}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Create Database}{71}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Configure Project}{72}{subsection.E.3.2}
+\contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{72}{subsection.E.3.3}
+\contentsline {subsection}{\numberline {E.3.4}Run Migrations}{72}{subsection.E.3.4}
+\contentsline {subsection}{\numberline {E.3.5}Create Superuser}{73}{subsection.E.3.5}
+\contentsline {subsection}{\numberline {E.3.6}Create Image for Superuser}{73}{subsection.E.3.6}
+\contentsline {subsection}{\numberline {E.3.7}Create Folder for Superuser}{73}{subsection.E.3.7}
+\contentsline {subsection}{\numberline {E.3.8}Create DiskSpace for Superuser}{73}{subsection.E.3.8}
+\contentsline {section}{\numberline {E.4}Configure Apache project}{73}{section.E.4}
+\contentsline {section}{\numberline {E.5}Links}{74}{section.E.5}
+\contentsline {chapter}{\numberline {F}Manual de usuario del Sistema web}{75}{appendix.F}

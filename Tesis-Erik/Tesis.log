@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  12 NOV 2016 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  12 NOV 2016 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -501,18 +501,18 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [4
 
-])
+] [5])
 \tf@toc=\write3
 \openout3 = `Tesis.toc'.
 
- [5]
-(./Tesis.lot [6
+ [6]
+(./Tesis.lot [7
 
 ])
 \tf@lot=\write4
 \openout4 = `Tesis.lot'.
 
- [7]
+ [8]
 Underfull \hbox (badness 10000) in paragraph at lines 169--177
 
  []
@@ -547,7 +547,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--177
 
  []
 
-[8
+[9
 
 ]
 Proyecto ULA preface pages completed.
@@ -559,14 +559,14 @@ Cap\'{\i }tulo 1.
 Cap\'{\i }tulo 2.
 [7
 
-] [8] <img/codigoTaquillaGalatea.png, id=62, 643.40375pt x 402.50375pt>
+] [8] <img/codigoTaquillaGalatea.png, id=65, 643.40375pt x 402.50375pt>
 File: img/codigoTaquillaGalatea.png Graphic file (type png)
 
 <use img/codigoTaquillaGalatea.png>
 Package pdftex.def Info: img/codigoTaquillaGalatea.png used on input line 370.
 (pdftex.def)             Requested size: 321.70108pt x 201.25137pt.
  [9]
-<img/ejecucionGalatea1.png, id=67, 729.72626pt x 272.01625pt>
+<img/ejecucionGalatea1.png, id=70, 729.72626pt x 272.01625pt>
 File: img/ejecucionGalatea1.png Graphic file (type png)
 
 <use img/ejecucionGalatea1.png>
@@ -580,7 +580,7 @@ Overfull \hbox (64.23402pt too wide) in paragraph at lines 509--511
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/RelacionesMVC.png, id=85, 848.16875pt x 537.00626pt>
+<img/RelacionesMVC.png, id=88, 848.16875pt x 537.00626pt>
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
@@ -589,7 +589,7 @@ Package pdftex.def Info: img/RelacionesMVC.png used on input line 517.
  [14] [15 <./img/RelacionesMVC.png>] [16] [17]
 [18] [19] [20]
 Cap\'{\i }tulo 3.
-<img/estructuraSistema.png, id=110, 794.97pt x 614.295pt>
+<img/estructuraSistema.png, id=113, 794.97pt x 614.295pt>
 File: img/estructuraSistema.png Graphic file (type png)
 
 <use img/estructuraSistema.png>
@@ -598,7 +598,7 @@ Package pdftex.def Info: img/estructuraSistema.png used on input line 662.
  [21
 
  <./img/estructuraSistema.png>]
-<img/arquitecturaAplicacion.png, id=115, 794.97pt x 614.295pt>
+<img/arquitecturaAplicacion.png, id=118, 794.97pt x 614.295pt>
 File: img/arquitecturaAplicacion.png Graphic file (type png)
 
 <use img/arquitecturaAplicacion.png>
@@ -606,7 +606,7 @@ Package pdftex.def Info: img/arquitecturaAplicacion.png used on input line 681.
 
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [22 <./img/arquitecturaAplicacion.png>]
-[23] [24] <img/entidadRelacionDB.png, id=130, 903.375pt x 1692.3225pt>
+[23] [24] <img/entidadRelacionDB.png, id=133, 903.375pt x 1692.3225pt>
 File: img/entidadRelacionDB.png Graphic file (type png)
 
 <use img/entidadRelacionDB.png>
@@ -617,21 +617,21 @@ Overfull \vbox (46.76361pt too high) has occurred while \output is active []
 
 
 [26 <./img/entidadRelacionDB.png>]
-<img/usuariosDB.png, id=138, 779.91376pt x 981.6675pt>
+<img/usuariosDB.png, id=141, 779.91376pt x 981.6675pt>
 File: img/usuariosDB.png Graphic file (type png)
 
 <use img/usuariosDB.png>
 Package pdftex.def Info: img/usuariosDB.png used on input line 775.
 (pdftex.def)             Requested size: 350.95795pt x 441.74629pt.
 
-<img/archivosDB.png, id=139, 647.41875pt x 655.44875pt>
+<img/archivosDB.png, id=142, 647.41875pt x 655.44875pt>
 File: img/archivosDB.png Graphic file (type png)
 
 <use img/archivosDB.png>
 Package pdftex.def Info: img/archivosDB.png used on input line 785.
 (pdftex.def)             Requested size: 356.0814pt x 360.49792pt.
  [27 <./img/usuariosDB.png>]
-<img/compartidoDB.png, id=143, 675.52374pt x 668.4975pt>
+<img/compartidoDB.png, id=146, 675.52374pt x 668.4975pt>
 File: img/compartidoDB.png Graphic file (type png)
 
 <use img/compartidoDB.png>
@@ -643,35 +643,35 @@ Overfull \hbox (3.81635pt too wide) in paragraph at lines 807--816
  []
 
 [29 <./img/compartidoDB.png>] [30]
-<img/pantallaInicio.png, id=154, 1914.15125pt x 951.555pt>
+<img/pantallaInicio.png, id=157, 1914.15125pt x 951.555pt>
 File: img/pantallaInicio.png Graphic file (type png)
 
 <use img/pantallaInicio.png>
 Package pdftex.def Info: img/pantallaInicio.png used on input line 880.
 (pdftex.def)             Requested size: 382.82347pt x 190.30762pt.
 
-<img/observacionCarpeta.png, id=155, 1923.185pt x 946.53625pt>
+<img/observacionCarpeta.png, id=158, 1923.185pt x 946.53625pt>
 File: img/observacionCarpeta.png Graphic file (type png)
 
 <use img/observacionCarpeta.png>
 Package pdftex.def Info: img/observacionCarpeta.png used on input line 888.
 (pdftex.def)             Requested size: 384.63019pt x 189.3039pt.
  [31 <./img/pantallaInicio.png>]
-<img/observacionArchivo.png, id=160, 1910.13625pt x 806.01125pt>
+<img/observacionArchivo.png, id=163, 1910.13625pt x 806.01125pt>
 File: img/observacionArchivo.png Graphic file (type png)
 
 <use img/observacionArchivo.png>
 Package pdftex.def Info: img/observacionArchivo.png used on input line 896.
 (pdftex.def)             Requested size: 382.02048pt x 161.19939pt.
 
-<img/compilacionEjecucion.png, id=161, 1671.24374pt x 941.5175pt>
+<img/compilacionEjecucion.png, id=164, 1671.24374pt x 941.5175pt>
 File: img/compilacionEjecucion.png Graphic file (type png)
 
 <use img/compilacionEjecucion.png>
 Package pdftex.def Info: img/compilacionEjecucion.png used on input line 904.
 (pdftex.def)             Requested size: 334.24283pt x 188.30016pt.
  [32 <./img/observacionCarpeta.png> <./img/observacionArchivo.png>]
-<img/controlUsuarios.png, id=167, 1922.18124pt x 944.52875pt>
+<img/controlUsuarios.png, id=170, 1922.18124pt x 944.52875pt>
 File: img/controlUsuarios.png Graphic file (type png)
 
 <use img/controlUsuarios.png>
@@ -701,14 +701,14 @@ Underfull \hbox (badness 3271) in paragraph at lines 933--934
 a-mos el mod-elo de
  []
 
-[34] <img/estructuraArchivosCarpetas.png, id=176, 794.97pt x 614.295pt>
+[34] <img/estructuraArchivosCarpetas.png, id=180, 794.97pt x 614.295pt>
 File: img/estructuraArchivosCarpetas.png Graphic file (type png)
 
 <use img/estructuraArchivosCarpetas.png>
 Package pdftex.def Info: img/estructuraArchivosCarpetas.png used on input line 
 946.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
- [35 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, id=182
+ [35 <./img/estructuraArchivosCarpetas.png>] <img/jerarquiaCarpetas.png, id=185
 , 794.97pt x 614.295pt>
 File: img/jerarquiaCarpetas.png Graphic file (type png)
 
@@ -718,7 +718,7 @@ Package pdftex.def Info: img/jerarquiaCarpetas.png used on input line 994.
  [36] [37 <./img/jerarquiaCarpetas.png>]
 [38] [39]
 Cap\'{\i }tulo 4.
-<img/estructuraSubproceso.png, id=196, 794.97pt x 614.295pt>
+<img/estructuraSubproceso.png, id=199, 794.97pt x 614.295pt>
 File: img/estructuraSubproceso.png Graphic file (type png)
 
 <use img/estructuraSubproceso.png>
@@ -732,21 +732,21 @@ Underfull \hbox (badness 1072) in paragraph at lines 1079--1080
 -mas (posi-ble-mente situ-a-dos en
  []
 
-<img/socketWork.png, id=205, 281.05pt x 355.3275pt>
+<img/socketWork.png, id=209, 281.05pt x 355.3275pt>
 File: img/socketWork.png Graphic file (type png)
  <use img/socketWork.png>
 Package pdftex.def Info: img/socketWork.png used on input line 1083.
 (pdftex.def)             Requested size: 224.84029pt x 284.26237pt.
 
 [42 <./img/socketWork.png>]
-<img/estructuraSockets.png, id=211, 794.97pt x 614.295pt>
+<img/estructuraSockets.png, id=214, 794.97pt x 614.295pt>
 File: img/estructuraSockets.png Graphic file (type png)
 
 <use img/estructuraSockets.png>
 Package pdftex.def Info: img/estructuraSockets.png used on input line 1100.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
  [43 <./img/estructuraSockets.png>]
-<img/estructuraProgramaServidor.png, id=216, 794.97pt x 614.295pt>
+<img/estructuraProgramaServidor.png, id=219, 794.97pt x 614.295pt>
 File: img/estructuraProgramaServidor.png Graphic file (type png)
 
 <use img/estructuraProgramaServidor.png>
@@ -946,18 +946,44 @@ Underfull \hbox (badness 10000) in paragraph at lines 1877--1877
 [67
 
 ] [68]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1895.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1895.
+Ap\'endice E.
+[69
+
+] [70] [71] [72] [73]
+Underfull \hbox (badness 10000) in paragraph at lines 2078--2079
+[]\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
+ll-and-use-postgresql-9-4-on-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2079--2080
+[]\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-serve
+-django-applications-with-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+[]\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
+ll-and-configure-django-with-
+ []
+
+[74]
+Ap\'endice F.
+[75
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2099.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2099.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1895.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1895.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1895.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2099.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2099.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2099.
  ) 
 Here is how much of TeX's memory you used:
- 9967 strings out of 493105
- 141135 string characters out of 6137072
+ 10063 strings out of 493105
+ 142371 string characters out of 6137072
  292069 words of memory out of 5000000
- 13269 multiletter control sequences out of 15000+600000
+ 13365 multiletter control sequences out of 15000+600000
  13748 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  34i,13n,45p,1640b,1980s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -978,10 +1004,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (76 pages, 1430139 bytes).
+Output written on Tesis.pdf (84 pages, 1441308 bytes).
 PDF statistics:
- 362 PDF objects out of 1000 (max. 8388607)
- 225 compressed objects within 3 object streams
+ 387 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
