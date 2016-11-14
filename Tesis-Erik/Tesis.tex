@@ -1300,6 +1300,92 @@ El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un co
 
 \chapter{Pruebas}
 
+\section{Pruebas de Integración con GALATEA}
+
+Para el manejo de las pruebas de integración se definió un modelo de simulación de prueba (\textbf{SimpleTeller}). Nuestro objetivo principal es que los modelos de simulación muestren la misma información de simulación ya sean que fueron simulados en la plataforma web, como en GALATEA directamente. Para ello todas las pruebas sobre el modelo escogido fueron ejecutadas en el sistema web y el GALATEA directamente.
+
+\subsection{Variación de argumentos de Simulación}
+
+El modelo de simulación escogido (\textbf{SimpleTeller}), cuenta con una variedad de argumentos que pueden ser modificados para la ejecución de la simulación.
+
+\begin{itemize}
+	\item \textbf{tSim}: Tiempo de Simulación. tSim=10 por omisión.
+	\item \textbf{InArrTime}: Mean Interarrival Time. InArrTime=4.0 por omisión.
+	\item \textbf{MeSerTime}: Mean service time. MeSerTime=3.50 por omisión.
+	\item \textbf{DeSerTime}: Deviation of Mean Service Time. DeSerTime=0.80 por omisión.
+	\item \textbf{stim}: "tiempo máximo de simulación".
+	\item \textbf{seedN}: "semilla del generador de números aleatorios N".
+\end{itemize}
+
+Para simplicidad de las pruebas fueron escogidos tres valores a ser modificados: 1)\textbf{tSim}: el tiempo de simulación variando desde su valor por omisión hasta diez veces ese valor (100), 2)\textbf{InArrTime}: tiempo entre llegadas variando desde su valor por omisión hasta el doble de ese valor(8.0) y 3)\textbf{MeSerTime}: tiempo de servicio variando desde su valor por omisión hasta el doble de ese valor(7.0).
+
+Cada variación de los argumentos se realizó por separado, mientras un argumento era modificado el resto de los mismos trabajaban con su valor por omisión.
+
+\subsection{Resultados de las pruebas}
+
+\subsubsection{tSim}
+
+Comenzando el tSim=10 y terminando con un tSim=100, con un incremento de 10. Se realizaron 10 pruebas, obteniendo en todas la misma información entre simulaciones.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/tSim10.png}
+	\caption{tSim=10 Consola.}
+	\label{pruebatSimA}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/tSim10S.png}
+	\caption{tSim=10 Sistema web.}
+	\label{pruebatSimB}
+\end{figure}
+
+
+\subsubsection{InArrTime}
+
+Comenzando el InArrTime=4.0 y terminando con un InArrTime=8.0, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/InArrTime8.png}
+	\caption{InArrTime=8.0 Consola.}
+	\label{pruebatSimC}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/InArrTime8S.png}
+	\caption{InArrTime=8.0 Sistema web.}
+	\label{pruebatSimD}
+\end{figure}
+
+\subsubsection{MeSerTime}
+
+Comenzando el MeSerTime=3.5 y terminando con un MeSerTimerTime=7.5, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/MeSerTime7.png}
+	\caption{MeSerTime=7.5 Consola.}
+	\label{pruebatSimE}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/MeSerTime7S.png}
+	\caption{MeSerTime=7.5 Sistema web.}
+	\label{pruebatSimF}
+\end{figure}
+
+Observamos que todas las simulaciones son análogas, obtenemos los mismos resultados en todas las simulaciones que realizamos. Por lo que concluimos que nuestra integración se realizó exitosamente.
+
+\section{Pruebas manejo de Archivo y Carpetas}
+
+Definir
+
+\section{Pruebas del Sistema WEB}
+
 Ya que la aplicación web está pensada en atender a una cantidad arbitraria de usuarios, deseamos conocer el número máximo de usuarios concurrentes a los que se le puede dar servicio con el hardware disponible. Llevamos a cabo pruebas de carga en las cuales se simulará una ráfaga  de peticiones variables para determinar la cantidad de peticiones concurrentes que el servidor puede manejar antes de que ocurra una degradación del servicio o el servidor sea incapaz de responder mas peticiones.
 
 Consideramos que ocurre una degradación del servicio cuando el tiempo de espera del usuario aumenta mas allá de un umbral máximo, según \citep{nielsen}, existen tres umbrales importantes a la hora de evaluar el tiempo de respuesta de una aplicación:
@@ -1326,7 +1412,7 @@ Consideramos una prueba como exitosa cuando el porcentaje de error sea igual a 0
 
 La herramienta elegida para ejecutar las pruebas fue \citep{jMeter}, esta herramienta permite simular casos de uso específicos de una aplicación web como ráfagas de peticiones que pueden ser configuradas para seguir cualquier patrón dado. En nuestro caso, Jmeter se usará para generar una ráfaga de peticiones con un intervalo constante entre cada petición durante un tiempo de un minuto. Jmeter provee un componente llamado \textit{Summary Report} que totaliza y promedia los resultados obtenidos de todas las peticiones enviadas, del que podemos extraer todas las métricas de interés.
 
-\section{Metodología de las pruebas}
+\subsection{Metodología de las pruebas}
 
 Para determinar la carga máxima que la aplicación web es capaz de soportar en términos de las peticiones por minuto, simularemos una ráfaga de peticiones en un intervalo de tiempo de un minuto, variando el numero de peticiones hasta obtener un valor óptimo, la metodología a seguir es la siguiente:
 
@@ -1341,7 +1427,7 @@ Para determinar la carga máxima que la aplicación web es capaz de soportar en té
 	\item El paso 3 se repite hasta no se obtenga mayor precisión con pruebas sucesivas.
 \end{enumerate}
 
-\section{Condiciones de las pruebas}
+\subsection{Condiciones de las pruebas}
 
 Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectadas en un mismo enrutador: una de ellas ejecuta el servidor web, y la otra ejecuta las pruebas simulando las peticiones y totalizando los resultados observados; la latencia de la red se considera menor a 5ms. Las características del servidor web se pueden observar en la tabla \ref{servidorWeb}:
 
@@ -1359,7 +1445,7 @@ Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectada
 	\caption {Especificaciones del servidor web.} \label{servidorWeb}
 \end{table}
 
-\section{Resultados obtenidos}
+\subsection{Resultados obtenidos}
 
 \begin{enumerate}
 	\item \textbf{Archivos estáticos con Apache}: Definir.
@@ -1367,7 +1453,7 @@ Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectada
 	\item \textbf{Páginas dinámicas con Django y archivos estáticos sobre el mismo servidor Apache}: Definir.
 \end{enumerate}
 
-\section{Análisis de los resultados}
+\subsection{Análisis de los resultados}
 
 Definir
 

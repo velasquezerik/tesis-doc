@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  14 NOV 2016 16:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  14 NOV 2016 17:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -762,13 +762,51 @@ r^^S^^Pan, en ca-sos par-tic-u-lares, otras
 
 [49] [50]
 Cap\'{\i }tulo 5.
-[51
+<img/tSim10.png, id=246, 786.94pt x 346.29375pt>
+File: img/tSim10.png Graphic file (type png)
+ <use img/tSim10.png>
+Package pdftex.def Info: img/tSim10.png used on input line 1332.
+(pdftex.def)             Requested size: 314.77042pt x 138.51503pt.
+ [51
 
-] [52] [53]
+]
+<img/tSim10S.png, id=251, 833.1125pt x 400.49625pt>
+File: img/tSim10S.png Graphic file (type png)
+ <use img/tSim10S.png>
+Package pdftex.def Info: img/tSim10S.png used on input line 1339.
+(pdftex.def)             Requested size: 333.23909pt x 160.19566pt.
+
+<img/InArrTime8.png, id=252, 859.21pt x 287.0725pt>
+File: img/InArrTime8.png Graphic file (type png)
+ <use img/InArrTime8.png>
+Package pdftex.def Info: img/InArrTime8.png used on input line 1351.
+(pdftex.def)             Requested size: 343.67792pt x 114.82695pt.
+
+[52 <./img/tSim10.png> <./img/tSim10S.png>]
+<img/InArrTime8S.png, id=258, 848.16875pt x 310.15875pt>
+File: img/InArrTime8S.png Graphic file (type png)
+
+<use img/InArrTime8S.png>
+Package pdftex.def Info: img/InArrTime8S.png used on input line 1358.
+(pdftex.def)             Requested size: 339.26149pt x 124.0613pt.
+ <img/MeSerTime7.png, id=259, 843.15pt x 337.26pt>
+File: img/MeSerTime7.png Graphic file (type png)
+
+<use img/MeSerTime7.png>
+Package pdftex.def Info: img/MeSerTime7.png used on input line 1369.
+(pdftex.def)             Requested size: 337.25401pt x 134.9016pt.
+ <img/MeSerTime7S.png, id=260, 843.15pt x 367.3725pt>
+File: img/MeSerTime7S.png Graphic file (type png)
+
+<use img/MeSerTime7S.png>
+Package pdftex.def Info: img/MeSerTime7S.png used on input line 1376.
+(pdftex.def)             Requested size: 337.25401pt x 146.94638pt.
+ [53 <./img/InArrTime8.png> <./img/InArrTime8S.png> <./img/MeSerTime7.png>] [54
+ <./img/MeSerTime7S.png>] [55] [56]
 Cap\'{\i }tulo 6.
-[54
+[57
 
-] [55] [56] (./Tesis.bbl [57
+] [58] [59] (./Tesis.bbl [60
 
 ]
 Overfull \hbox (235.25578pt too wide) in paragraph at lines 97--101
@@ -784,96 +822,64 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[58]
+[61]
 Ap\'endice A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1436--1436
+Underfull \hbox (badness 10000) in paragraph at lines 1522--1522
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 1451--1452
+Underfull \hbox (badness 1194) in paragraph at lines 1537--1538
 \OT1/cmr/m/n/10 con-tro-lar los archivos y car-petas que se en-cuen-tren den-tr
 o
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1453--1453
+Underfull \hbox (badness 10000) in paragraph at lines 1539--1539
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
 
-Underfull \hbox (badness 1127) in paragraph at lines 1453--1454
+Underfull \hbox (badness 1127) in paragraph at lines 1539--1540
 \OT1/cmr/m/n/10 us-ando el sis-tema de sim-u-laci^^Son web, el ad-min-istrador 
 del
  []
 
-[59
+[62
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1470--1470
+Underfull \hbox (badness 10000) in paragraph at lines 1556--1556
 []\OT1/cmr/bx/n/10 C^^Somo
  []
 
-[60]
+[63]
 Ap\'endice B.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1489
+Underfull \hbox (badness 10000) in paragraph at lines 1575--1575
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1511--1511
+Underfull \hbox (badness 10000) in paragraph at lines 1597--1597
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1532--1532
+Underfull \hbox (badness 10000) in paragraph at lines 1618--1618
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1553--1553
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1639
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[61
+[64
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1574--1574
+Underfull \hbox (badness 10000) in paragraph at lines 1660--1660
 []\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1595--1595
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1616--1616
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1637--1637
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 1658--1658
-[]\OT1/cmr/bx/n/10 Secuencia
- []
-
-
-Underfull \hbox (badness 1436) in paragraph at lines 1658--1659
-[]\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
-tir.
- []
-
-
-Underfull \hbox (badness 1902) in paragraph at lines 1658--1659
-\OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
- en
  []
 
 
@@ -891,315 +897,347 @@ Underfull \hbox (badness 10000) in paragraph at lines 1723--1723
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[63] [64]
-Ap\'endice C.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1747--1747
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 1744--1744
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 1747--1748
+Underfull \hbox (badness 1436) in paragraph at lines 1744--1745
+[]\OT1/cmr/m/n/10 Pantalla de vi-su-al-izaci^^Son de archivo. Click en com-par-
+tir.
+ []
+
+
+Underfull \hbox (badness 1902) in paragraph at lines 1744--1745
+\OT1/cmr/m/n/10 Se-lec-ciona un amigo. Se envi^^Sa la no-ti-fi-caci^^Son; Click
+ en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1767--1767
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1788--1788
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1809--1809
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+[66] [67]
+Ap\'endice C.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1833
+[]\OT1/cmr/bx/n/10 Secuencia
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 1833--1834
 []\OT1/cmr/m/n/10 Buscar el archivo de sim-u-laci^^Son. Eje-cuta el co-mando de
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1768--1768
+Underfull \hbox (badness 10000) in paragraph at lines 1854--1854
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 1668) in paragraph at lines 1785--1786
+Underfull \hbox (badness 1668) in paragraph at lines 1871--1872
 []\OT1/cmr/m/n/10 Archivo de sim-u-laci^^Son v^^Salido. Com-pi-laci^^Son de sim
 -u-laci^^Son
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1789--1789
+Underfull \hbox (badness 10000) in paragraph at lines 1875--1875
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[65
+[68
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1810--1810
+Underfull \hbox (badness 10000) in paragraph at lines 1896--1896
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[66]
+[69]
 Ap\'endice D.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1835--1835
+Underfull \hbox (badness 10000) in paragraph at lines 1921--1921
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1856--1856
+Underfull \hbox (badness 10000) in paragraph at lines 1942--1942
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1877--1877
+Underfull \hbox (badness 10000) in paragraph at lines 1963--1963
 []\OT1/cmr/bx/n/10 Secuencia
  []
 
-[67
+[70
 
-] [68]
+] [71]
 Ap\'endice E.
-[69
+[72
 
-] [70] [71] [72] [73]
-Underfull \hbox (badness 10000) in paragraph at lines 2078--2079
+] [73] [74] [75] [76]
+Underfull \hbox (badness 10000) in paragraph at lines 2164--2165
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
 ll-and-use-postgresql-9-4-on-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2079--2080
+Underfull \hbox (badness 10000) in paragraph at lines 2165--2166
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-serve
 -django-applications-with-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2082
+Underfull \hbox (badness 10000) in paragraph at lines 2167--2168
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
 ll-and-configure-django-with-
  []
 
-[74]
+[77]
 Ap\'endice F.
-<img/Tesis/1TesisInicio.png, id=326, 939.51pt x 605.26125pt>
+<img/Tesis/1TesisInicio.png, id=348, 939.51pt x 605.26125pt>
 File: img/Tesis/1TesisInicio.png Graphic file (type png)
 
 <use img/Tesis/1TesisInicio.png>
-Package pdftex.def Info: img/Tesis/1TesisInicio.png used on input line 2095.
+Package pdftex.def Info: img/Tesis/1TesisInicio.png used on input line 2181.
 (pdftex.def)             Requested size: 375.79733pt x 242.1002pt.
 
-<img/Tesis/2TesisLogin.png, id=327, 817.0525pt x 579.16376pt>
+<img/Tesis/2TesisLogin.png, id=349, 817.0525pt x 579.16376pt>
 File: img/Tesis/2TesisLogin.png Graphic file (type png)
 
 <use img/Tesis/2TesisLogin.png>
-Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2104.
+Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2190.
 (pdftex.def)             Requested size: 326.81522pt x 231.66139pt.
- [75
+ [78
 
  <./img/Tesis/1TesisInicio.png>]
-<img/Tesis/3TesisAdminIndex.png, id=333, 1922.18124pt x 952.55875pt>
+<img/Tesis/3TesisAdminIndex.png, id=354, 1922.18124pt x 952.55875pt>
 File: img/Tesis/3TesisAdminIndex.png Graphic file (type png)
 
 <use img/Tesis/3TesisAdminIndex.png>
-Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2116
+Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2202
 .
 (pdftex.def)             Requested size: 384.42944pt x 190.50838pt.
 
-<img/Tesis/4TesisUserIndex.png, id=334, 1923.185pt x 947.54pt>
+<img/Tesis/4TesisUserIndex.png, id=355, 1923.185pt x 947.54pt>
 File: img/Tesis/4TesisUserIndex.png Graphic file (type png)
 
 <use img/Tesis/4TesisUserIndex.png>
-Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2123.
+Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2209.
 
 (pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
- [76 <./img/Tesis/2TesisLogin.png> <./img/Tesis/3TesisAdminIndex.png>]
-<img/Tesis/5TesisAdminUsers.png, id=340, 1923.185pt x 947.54pt>
+ [79 <./img/Tesis/2TesisLogin.png> <./img/Tesis/3TesisAdminIndex.png>]
+<img/Tesis/5TesisAdminUsers.png, id=361, 1923.185pt x 947.54pt>
 File: img/Tesis/5TesisAdminUsers.png Graphic file (type png)
 
 <use img/Tesis/5TesisAdminUsers.png>
-Package pdftex.def Info: img/Tesis/5TesisAdminUsers.png used on input line 2133
+Package pdftex.def Info: img/Tesis/5TesisAdminUsers.png used on input line 2219
 .
 (pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
 
-<img/Tesis/6TesisAdminNewUser.png, id=341, 1922.18124pt x 948.54375pt>
+<img/Tesis/6TesisAdminNewUser.png, id=362, 1922.18124pt x 948.54375pt>
 File: img/Tesis/6TesisAdminNewUser.png Graphic file (type png)
 
 <use img/Tesis/6TesisAdminNewUser.png>
-Package pdftex.def Info: img/Tesis/6TesisAdminNewUser.png used on input line 21
-44.
+Package pdftex.def Info: img/Tesis/6TesisAdminNewUser.png used on input line 22
+30.
 (pdftex.def)             Requested size: 384.42944pt x 189.70538pt.
- [77 <./img/Tesis/4TesisUserIndex.png> <./img/Tesis/5TesisAdminUsers.png>]
-<img/Tesis/7TesisAdminNewAdmin.png, id=347, 1924.18875pt x 947.54pt>
+ [80 <./img/Tesis/4TesisUserIndex.png> <./img/Tesis/5TesisAdminUsers.png>]
+<img/Tesis/7TesisAdminNewAdmin.png, id=368, 1924.18875pt x 947.54pt>
 File: img/Tesis/7TesisAdminNewAdmin.png Graphic file (type png)
 
 <use img/Tesis/7TesisAdminNewAdmin.png>
 Package pdftex.def Info: img/Tesis/7TesisAdminNewAdmin.png used on input line 2
-155.
+241.
 (pdftex.def)             Requested size: 384.83093pt x 189.50464pt.
 
-<img/Tesis/8TesisAdminEditUsers.png, id=348, 1919.17pt x 950.55125pt>
+<img/Tesis/8TesisAdminEditUsers.png, id=369, 1919.17pt x 950.55125pt>
 File: img/Tesis/8TesisAdminEditUsers.png Graphic file (type png)
 
 <use img/Tesis/8TesisAdminEditUsers.png>
 Package pdftex.def Info: img/Tesis/8TesisAdminEditUsers.png used on input line 
-2166.
+2252.
 (pdftex.def)             Requested size: 383.8272pt x 190.10687pt.
- [78 <./img/Tesis/6TesisAdminNewUser.png> <./img/Tesis/7TesisAdminNewAdmin.png>
+ [81 <./img/Tesis/6TesisAdminNewUser.png> <./img/Tesis/7TesisAdminNewAdmin.png>
 ]
-<img/Tesis/9TesisAdminLogsFiles.png, id=354, 1919.17pt x 948.54375pt>
+<img/Tesis/9TesisAdminLogsFiles.png, id=376, 1919.17pt x 948.54375pt>
 File: img/Tesis/9TesisAdminLogsFiles.png Graphic file (type png)
 
 <use img/Tesis/9TesisAdminLogsFiles.png>
 Package pdftex.def Info: img/Tesis/9TesisAdminLogsFiles.png used on input line 
-2177.
+2263.
 (pdftex.def)             Requested size: 383.8272pt x 189.70538pt.
- [79 <./img/Tesis/8TesisAdminEditUsers.png> <./img/Tesis/9TesisAdminLogsFiles.p
+ [82 <./img/Tesis/8TesisAdminEditUsers.png> <./img/Tesis/9TesisAdminLogsFiles.p
 ng>]
-<img/Tesis/10TesisAdminLogsFolders.png, id=360, 1923.185pt x 948.54375pt>
+<img/Tesis/10TesisAdminLogsFolders.png, id=382, 1923.185pt x 948.54375pt>
 File: img/Tesis/10TesisAdminLogsFolders.png Graphic file (type png)
 
 <use img/Tesis/10TesisAdminLogsFolders.png>
 Package pdftex.def Info: img/Tesis/10TesisAdminLogsFolders.png used on input li
-ne 2186.
+ne 2272.
 (pdftex.def)             Requested size: 384.63019pt x 189.70538pt.
 
-<img/Tesis/11TesisAdminLogsRelations.png, id=361, 1918.16624pt x 945.5325pt>
+<img/Tesis/11TesisAdminLogsRelations.png, id=383, 1918.16624pt x 945.5325pt>
 File: img/Tesis/11TesisAdminLogsRelations.png Graphic file (type png)
 
 <use img/Tesis/11TesisAdminLogsRelations.png>
 Package pdftex.def Info: img/Tesis/11TesisAdminLogsRelations.png used on input 
-line 2195.
+line 2281.
 (pdftex.def)             Requested size: 383.62645pt x 189.10315pt.
 
-<img/Tesis/29TesisUserGetProfile.png, id=362, 340.27126pt x 298.11375pt>
+<img/Tesis/29TesisUserGetProfile.png, id=384, 340.27126pt x 298.11375pt>
 File: img/Tesis/29TesisUserGetProfile.png Graphic file (type png)
 
 <use img/Tesis/29TesisUserGetProfile.png>
 Package pdftex.def Info: img/Tesis/29TesisUserGetProfile.png used on input line
- 2206.
+ 2292.
 (pdftex.def)             Requested size: 136.10608pt x 119.24338pt.
- [80 <./img/Tesis/10TesisAdminLogsFolders.png> <./img/Tesis/11TesisAdminLogsRel
+ [83 <./img/Tesis/10TesisAdminLogsFolders.png> <./img/Tesis/11TesisAdminLogsRel
 ations.png>]
-<img/Tesis/12TesisUserProfile.png, id=368, 1926.19624pt x 950.55125pt>
+<img/Tesis/12TesisUserProfile.png, id=390, 1926.19624pt x 950.55125pt>
 File: img/Tesis/12TesisUserProfile.png Graphic file (type png)
 
 <use img/Tesis/12TesisUserProfile.png>
-Package pdftex.def Info: img/Tesis/12TesisUserProfile.png used on input line 22
-15.
+Package pdftex.def Info: img/Tesis/12TesisUserProfile.png used on input line 23
+01.
 (pdftex.def)             Requested size: 385.23242pt x 190.10687pt.
 
-<img/Tesis/13TesisUserFriends.png, id=369, 1924.18875pt x 953.5625pt>
+<img/Tesis/13TesisUserFriends.png, id=391, 1924.18875pt x 953.5625pt>
 File: img/Tesis/13TesisUserFriends.png Graphic file (type png)
 
 <use img/Tesis/13TesisUserFriends.png>
-Package pdftex.def Info: img/Tesis/13TesisUserFriends.png used on input line 22
-26.
+Package pdftex.def Info: img/Tesis/13TesisUserFriends.png used on input line 23
+12.
 (pdftex.def)             Requested size: 384.83093pt x 190.70912pt.
- [81 <./img/Tesis/29TesisUserGetProfile.png> <./img/Tesis/12TesisUserProfile.pn
+ [84 <./img/Tesis/29TesisUserGetProfile.png> <./img/Tesis/12TesisUserProfile.pn
 g>]
-<img/Tesis/14TesisUserGetFriends.png, id=376, 1921.1775pt x 948.54375pt>
+<img/Tesis/14TesisUserGetFriends.png, id=397, 1921.1775pt x 948.54375pt>
 File: img/Tesis/14TesisUserGetFriends.png Graphic file (type png)
 
 <use img/Tesis/14TesisUserGetFriends.png>
 Package pdftex.def Info: img/Tesis/14TesisUserGetFriends.png used on input line
- 2237.
+ 2323.
 (pdftex.def)             Requested size: 384.2287pt x 189.70538pt.
 
-<img/Tesis/15TesisUserFriendNotification.png, id=377, 1923.185pt x 949.5475pt>
+<img/Tesis/15TesisUserFriendNotification.png, id=398, 1923.185pt x 949.5475pt>
 File: img/Tesis/15TesisUserFriendNotification.png Graphic file (type png)
 
 <use img/Tesis/15TesisUserFriendNotification.png>
 Package pdftex.def Info: img/Tesis/15TesisUserFriendNotification.png used on in
-put line 2248.
+put line 2334.
 (pdftex.def)             Requested size: 384.63019pt x 189.90613pt.
- [82 <./img/Tesis/13TesisUserFriends.png> <./img/Tesis/14TesisUserGetFriends.pn
+ [85 <./img/Tesis/13TesisUserFriends.png> <./img/Tesis/14TesisUserGetFriends.pn
 g>]
-<img/Tesis/16TesisUserShareNotifications.png, id=383, 1918.16624pt x 944.52875p
+<img/Tesis/16TesisUserShareNotifications.png, id=404, 1918.16624pt x 944.52875p
 t>
 File: img/Tesis/16TesisUserShareNotifications.png Graphic file (type png)
  <use img/Tesis/16TesisUserShareNotifications.png>
 Package pdftex.def Info: img/Tesis/16TesisUserShareNotifications.png used on in
-put line 2265.
+put line 2351.
 (pdftex.def)             Requested size: 383.62645pt x 188.9024pt.
 
-<img/Tesis/17TesisUserShareFiles.png, id=384, 1921.1775pt x 947.54pt>
+<img/Tesis/17TesisUserShareFiles.png, id=405, 1921.1775pt x 947.54pt>
 File: img/Tesis/17TesisUserShareFiles.png Graphic file (type png)
 
 <use img/Tesis/17TesisUserShareFiles.png>
 Package pdftex.def Info: img/Tesis/17TesisUserShareFiles.png used on input line
- 2276.
+ 2362.
 (pdftex.def)             Requested size: 384.2287pt x 189.50464pt.
- [83 <./img/Tesis/15TesisUserFriendNotification.png> <./img/Tesis/16TesisUserSh
+ [86 <./img/Tesis/15TesisUserFriendNotification.png> <./img/Tesis/16TesisUserSh
 areNotifications.png>]
-<img/Tesis/18TesisUserCreateFolder.png, id=390, 628.3475pt x 324.21124pt>
+<img/Tesis/18TesisUserCreateFolder.png, id=411, 628.3475pt x 324.21124pt>
 File: img/Tesis/18TesisUserCreateFolder.png Graphic file (type png)
 
 <use img/Tesis/18TesisUserCreateFolder.png>
 Package pdftex.def Info: img/Tesis/18TesisUserCreateFolder.png used on input li
-ne 2287.
+ne 2373.
 (pdftex.def)             Requested size: 251.33455pt x 129.68219pt.
 
-<img/Tesis/19TesisUserCreateFile.png, id=391, 620.3175pt x 324.21124pt>
+<img/Tesis/19TesisUserCreateFile.png, id=412, 620.3175pt x 324.21124pt>
 File: img/Tesis/19TesisUserCreateFile.png Graphic file (type png)
 
 <use img/Tesis/19TesisUserCreateFile.png>
 Package pdftex.def Info: img/Tesis/19TesisUserCreateFile.png used on input line
- 2298.
+ 2384.
 (pdftex.def)             Requested size: 248.1226pt x 129.68219pt.
- [84 <./img/Tesis/17TesisUserShareFiles.png> <./img/Tesis/18TesisUserCreateFold
+ [87 <./img/Tesis/17TesisUserShareFiles.png> <./img/Tesis/18TesisUserCreateFold
 er.png>]
-<img/Tesis/20TesisUserUploadFile.png, id=397, 623.32875pt x 314.17375pt>
+<img/Tesis/20TesisUserUploadFile.png, id=419, 623.32875pt x 314.17375pt>
 File: img/Tesis/20TesisUserUploadFile.png Graphic file (type png)
 
 <use img/Tesis/20TesisUserUploadFile.png>
 Package pdftex.def Info: img/Tesis/20TesisUserUploadFile.png used on input line
- 2309.
+ 2395.
 (pdftex.def)             Requested size: 249.32707pt x 125.66727pt.
 
-<img/Tesis/21TesisUserCreateProject.png, id=398, 632.3625pt x 324.21124pt>
+<img/Tesis/21TesisUserCreateProject.png, id=420, 632.3625pt x 324.21124pt>
 File: img/Tesis/21TesisUserCreateProject.png Graphic file (type png)
 
 <use img/Tesis/21TesisUserCreateProject.png>
 Package pdftex.def Info: img/Tesis/21TesisUserCreateProject.png used on input l
-ine 2320.
+ine 2406.
 (pdftex.def)             Requested size: 252.94052pt x 129.68219pt.
- [85 <./img/Tesis/19TesisUserCreateFile.png> <./img/Tesis/20TesisUserUploadFile
+ [88 <./img/Tesis/19TesisUserCreateFile.png> <./img/Tesis/20TesisUserUploadFile
 .png>]
-<img/Tesis/22TesisUserShowFile.png, id=404, 1908.12875pt x 952.55875pt>
+<img/Tesis/22TesisUserShowFile.png, id=426, 1908.12875pt x 952.55875pt>
 File: img/Tesis/22TesisUserShowFile.png Graphic file (type png)
 
 <use img/Tesis/22TesisUserShowFile.png>
 Package pdftex.def Info: img/Tesis/22TesisUserShowFile.png used on input line 2
-331.
+417.
 (pdftex.def)             Requested size: 381.61899pt x 190.50838pt.
 
-<img/Tesis/28TesisUserFilePermissions.png, id=405, 1920.17375pt x 947.54pt>
+<img/Tesis/28TesisUserFilePermissions.png, id=427, 1920.17375pt x 947.54pt>
 File: img/Tesis/28TesisUserFilePermissions.png Graphic file (type png)
 
 <use img/Tesis/28TesisUserFilePermissions.png>
 Package pdftex.def Info: img/Tesis/28TesisUserFilePermissions.png used on input
- line 2342.
+ line 2428.
 (pdftex.def)             Requested size: 384.02795pt x 189.50464pt.
- [86 <./img/Tesis/21TesisUserCreateProject.png> <./img/Tesis/22TesisUserShowFil
+ [89 <./img/Tesis/21TesisUserCreateProject.png> <./img/Tesis/22TesisUserShowFil
 e.png>]
-<img/Tesis/23TesisUserShowCompileExecuteFile.png, id=411, 1902.10625pt x 944.52
+<img/Tesis/23TesisUserShowCompileExecuteFile.png, id=433, 1902.10625pt x 944.52
 875pt>
 File: img/Tesis/23TesisUserShowCompileExecuteFile.png Graphic file (type png)
  <use img/Tesis/23TesisUserShowCompileExecuteFile.png>
 Package pdftex.def Info: img/Tesis/23TesisUserShowCompileExecuteFile.png used o
-n input line 2357.
+n input line 2443.
 (pdftex.def)             Requested size: 380.4145pt x 188.9024pt.
 
-<img/Tesis/24TesisUserExecuteFile.png, id=412, 1899.095pt x 943.525pt>
+<img/Tesis/24TesisUserExecuteFile.png, id=434, 1899.095pt x 943.525pt>
 File: img/Tesis/24TesisUserExecuteFile.png Graphic file (type png)
 
 <use img/Tesis/24TesisUserExecuteFile.png>
 Package pdftex.def Info: img/Tesis/24TesisUserExecuteFile.png used on input lin
-e 2369.
+e 2455.
 (pdftex.def)             Requested size: 379.81227pt x 188.70164pt.
- [87 <./img/Tesis/28TesisUserFilePermissions.png> <./img/Tesis/23TesisUserShowC
-ompileExecuteFile.png>] [88 <./img/Tesis/24TesisUserExecuteFile.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2381.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2381.
+ [90 <./img/Tesis/28TesisUserFilePermissions.png> <./img/Tesis/23TesisUserShowC
+ompileExecuteFile.png>] [91 <./img/Tesis/24TesisUserExecuteFile.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2467.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2467.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2381.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2381.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2381.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2467.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2467.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2467.
  ) 
 Here is how much of TeX's memory you used:
- 10126 strings out of 495063
- 146664 string characters out of 3182201
- 287568 words of memory out of 3000000
- 13119 multiletter control sequences out of 15000+200000
+ 10162 strings out of 495063
+ 147347 string characters out of 3182201
+ 287856 words of memory out of 3000000
+ 13149 multiletter control sequences out of 15000+200000
  13748 words of font info for 52 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1220,10 +1258,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (98 pages, 2994885 bytes).
+Output written on Tesis.pdf (101 pages, 3199469 bytes).
 PDF statistics:
- 484 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
+ 505 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 236 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 words of extra memory for PDF output out of 10000 (max. 10000000)
 
