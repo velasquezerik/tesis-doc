@@ -100,24 +100,24 @@
 \contentsline {chapter}{\numberline {F}Manual de usuario del Sistema web}{75}{appendix.F}
 \contentsline {section}{\numberline {F.1}Manejo de Usuarios}{76}{section.F.1}
 \contentsline {subsection}{\numberline {F.1.1}Control de Usuarios}{77}{subsection.F.1.1}
-\contentsline {subsubsection}{Agregar Usuario normal}{77}{section*.20}
+\contentsline {subsubsection}{Agregar Usuario normal}{78}{section*.20}
 \contentsline {subsubsection}{Agregar Usuario Administrador}{78}{section*.21}
-\contentsline {subsubsection}{Editar Usuario}{78}{section*.22}
+\contentsline {subsubsection}{Editar Usuario}{79}{section*.22}
 \contentsline {subsection}{\numberline {F.1.2}Logs del Sistema}{79}{subsection.F.1.2}
 \contentsline {subsection}{\numberline {F.1.3}Perfil de Usuario}{80}{subsection.F.1.3}
 \contentsline {subsection}{\numberline {F.1.4}Manejo de Amigos}{81}{subsection.F.1.4}
-\contentsline {subsubsection}{Obtener nuevos amigos}{81}{section*.23}
+\contentsline {subsubsection}{Obtener nuevos amigos}{82}{section*.23}
 \contentsline {subsubsection}{Notificaciones amigos}{82}{section*.24}
-\contentsline {section}{\numberline {F.2}Manejo de Archivos y Carpetas}{82}{section.F.2}
-\contentsline {subsection}{\numberline {F.2.1}Archivos Compartidos}{82}{subsection.F.2.1}
+\contentsline {section}{\numberline {F.2}Manejo de Archivos y Carpetas}{83}{section.F.2}
+\contentsline {subsection}{\numberline {F.2.1}Archivos Compartidos}{83}{subsection.F.2.1}
 \contentsline {subsubsection}{Notificaciones de Archivos Compartidos}{83}{section*.25}
-\contentsline {subsubsection}{Acceso a los Archivos Compartidos}{83}{section*.26}
+\contentsline {subsubsection}{Acceso a los Archivos Compartidos}{84}{section*.26}
 \contentsline {subsection}{\numberline {F.2.2}Crear Carpetas}{84}{subsection.F.2.2}
 \contentsline {subsection}{\numberline {F.2.3}Crear Archivos}{84}{subsection.F.2.3}
-\contentsline {subsection}{\numberline {F.2.4}Cargar Archivos}{84}{subsection.F.2.4}
+\contentsline {subsection}{\numberline {F.2.4}Cargar Archivos}{85}{subsection.F.2.4}
 \contentsline {subsection}{\numberline {F.2.5}Crear Proyecto de Simulaci\'on}{85}{subsection.F.2.5}
-\contentsline {subsection}{\numberline {F.2.6}Mostrar Archivo}{85}{subsection.F.2.6}
+\contentsline {subsection}{\numberline {F.2.6}Mostrar Archivo}{86}{subsection.F.2.6}
 \contentsline {subsection}{\numberline {F.2.7}Permisos de Archivo}{86}{subsection.F.2.7}
-\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{86}{section.F.3}
-\contentsline {subsection}{\numberline {F.3.1}Mostrar opciones de Compilaci\'on y Ejecuci\'on}{86}{subsection.F.3.1}
+\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{87}{section.F.3}
+\contentsline {subsection}{\numberline {F.3.1}Mostrar opciones de Compilaci\'on y Ejecuci\'on}{87}{subsection.F.3.1}
 \contentsline {subsection}{\numberline {F.3.2}Ejecutar Modelo de Simulaci\'on}{87}{subsection.F.3.2}
