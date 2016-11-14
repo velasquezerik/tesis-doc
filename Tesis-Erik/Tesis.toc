@@ -1,5 +1,5 @@
-\contentsline {chapter}{\'Indice de Tablas}{vii}{chapter*.1}
-\contentsline {chapter}{Agradecimientos}{ix}{chapter*.3}
+\contentsline {chapter}{\'Indice de Tablas}{viii}{chapter*.1}
+\contentsline {chapter}{Agradecimientos}{x}{chapter*.3}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Antecedentes}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Planteamiento del problema}{3}{section.1.2}
@@ -112,4 +112,12 @@
 \contentsline {subsection}{\numberline {F.2.1}Archivos Compartidos}{82}{subsection.F.2.1}
 \contentsline {subsubsection}{Notificaciones de Archivos Compartidos}{83}{section*.25}
 \contentsline {subsubsection}{Acceso a los Archivos Compartidos}{83}{section*.26}
-\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{83}{section.F.3}
+\contentsline {subsection}{\numberline {F.2.2}Crear Carpetas}{84}{subsection.F.2.2}
+\contentsline {subsection}{\numberline {F.2.3}Crear Archivos}{84}{subsection.F.2.3}
+\contentsline {subsection}{\numberline {F.2.4}Cargar Archivos}{84}{subsection.F.2.4}
+\contentsline {subsection}{\numberline {F.2.5}Crear Proyecto de Simulaci\'on}{85}{subsection.F.2.5}
+\contentsline {subsection}{\numberline {F.2.6}Mostrar Archivo}{85}{subsection.F.2.6}
+\contentsline {subsection}{\numberline {F.2.7}Permisos de Archivo}{86}{subsection.F.2.7}
+\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{86}{section.F.3}
+\contentsline {subsection}{\numberline {F.3.1}Mostrar opciones de Compilaci\'on y Ejecuci\'on}{86}{subsection.F.3.1}
+\contentsline {subsection}{\numberline {F.3.2}Ejecutar Modelo de Simulaci\'on}{87}{subsection.F.3.2}
