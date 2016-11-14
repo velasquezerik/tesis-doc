@@ -2088,6 +2088,189 @@ sudo service apache2 restart
 
 \chapter{Manual de usuario del Sistema web}
 
+El sistema web de simulación, cuenta con una gama de funcionalidades que explicaremos a continuación:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/Tesis/1TesisInicio.png}
+	\caption{Página de inicio del Sistema Web.}
+	\label{paginaInicio}
+\end{figure}
+
+Para ingresar al sistema debemos colocar nuestras credenciales (Username y password), como se observa en la figura \ref{paginaInicioLogin}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/Tesis/2TesisLogin.png}
+	\caption{Página de Login al Sistema Web.}
+	\label{paginaInicioLogin}
+\end{figure}
+
+
+\section{Manejo de Usuarios}
+
+El sistema permite el control de dos tipos de usuarios (Administradores y usuarios normales).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/3TesisAdminIndex.png}
+	\caption{Página de Inicio Usuario Administrador.}
+	\label{paginaInicioAdmin}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/4TesisUserIndex.png}
+	\caption{Página de Inicio Usuario Normal.}
+	\label{paginaInicioUser}
+\end{figure}
+\subsection{Control de Usuarios}
+
+Solo los administradores del sistema pueden acceder a esta página y visualizar los usuarios.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/5TesisAdminUsers.png}
+	\caption{Lista de usuarios del Sistema Web.}
+	\label{paginaListaUsuarios}
+\end{figure}
+
+\subsubsection{Agregar Usuario normal}
+
+Agregar un usuario con los privilegios de usuario normal del sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/6TesisAdminNewUser.png}
+	\caption{Agregar Usuario.}
+	\label{paginaAgregarUser}
+\end{figure}
+
+\subsubsection{Agregar Usuario Administrador}
+
+Agregar un usuario con los privilegios de administrador del sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/7TesisAdminNewAdmin.png}
+	\caption{Agregar Administrador.}
+	\label{paginaAgregarAdmin}
+\end{figure}
+
+\subsubsection{Editar Usuario}
+
+Editamos la información principal del usuario dentro del sistema, al igual la cantidad de espacio en disco asociado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/8TesisAdminEditUsers.png}
+	\caption{Editar Información de un usuario.}
+	\label{paginaEditUser}
+\end{figure}
+
+\subsection{Logs del Sistema}
+
+Observamos los logs de archivos. Los cambios principales de archivos que los usuarios han realizado en el sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/9TesisAdminLogsFiles.png}
+	\caption{Logs de Archivos.}
+	\label{paginaLogsFiles}
+\end{figure}
+
+Observamos los logs de carpetas. Los cambios principales de carpetas que los usuarios han realizado en el sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/10TesisAdminLogsFolders.png}
+	\caption{Logs de Carpetas.}
+	\label{paginaLogsFolders}
+\end{figure}
+
+Observamos los logs de relaciones. Los cambios principales de las relaciones que los usuarios han realizado en el sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/11TesisAdminLogsRelations.png}
+	\caption{Logs de Relaciones.}
+	\label{paginaLogsRelations}
+\end{figure}
+
+\subsection{Perfil de Usuario}
+
+Modificamos nuestra información de perfil, datos básicos y contraseña.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/12TesisUserProfile.png}
+	\caption{Perfil de Usuario.}
+	\label{paginaUserProfile}
+\end{figure}
+
+\subsection{Manejo de Amigos}
+
+Listado de nuestros amigos en el sistema.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/13TesisUserFriends.png}
+	\caption{Listado de Amigos.}
+	\label{paginaUserFriends}
+\end{figure}
+
+\subsubsection{Obtener nuevos amigos}
+
+Enviamos notificaciones de amistad a usuarios.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/14TesisUserGetFriends.png}
+	\caption{Agregar nuevos Amigos.}
+	\label{paginaUserGetFriends}
+\end{figure}
+
+\subsubsection{Notificaciones amigos}
+
+Verificamos las notificaciones de amistad que nos han enviado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/15TesisUserFriendNotification.png}
+	\caption{Notificaciones de Amigos.}
+	\label{paginaUserFriendNotification}
+\end{figure}
+
+\section{Manejo de Archivos y Carpetas}
+
+\subsection{Archivos Compartidos}
+
+Los usuarios en el sistema pueden compartir archivos entre ellos.
+
+\subsubsection{Notificaciones de Archivos Compartidos}
+
+Verificamos las notificaciones de archivos compartidos que nos han enviado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/16TesisUserShareNotifications.png}
+	\caption{Notificaciones de Archivos Compartidos.}
+	\label{paginaUserShareNotification}
+\end{figure}
+
+\subsubsection{Acceso a los Archivos Compartidos}
+
+Accedemos a nuestros archivos compartidos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.2]{img/Tesis/17TesisUserShareFiles.png}
+	\caption{Archivos Compartidos con el usuario.}
+	\label{paginaUserShareFiles}
+\end{figure}
+
+\section{Ejecución de GALATEA}
+
 Definir
 
 

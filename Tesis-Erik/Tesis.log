@@ -1,15 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.8.22)  12 NOV 2016 21:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  14 NOV 2016 12:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Tesis.tex
 (./Tesis.tex
-LaTeX2e <2014/05/01>
-Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, lo
+aded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -40,10 +41,10 @@ Package: ulamonog 2006/03/19, v. 0.9
 \f@ncyO@orf=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -137,7 +138,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2009/07/02 v2.20.1
+Package: amsthm 2004/08/06 v2.20
 \thm@style=\toks20
 \thm@bodyfont=\toks21
 \thm@headfont=\toks22
@@ -152,20 +153,20 @@ Package: amsthm 2009/07/02 v2.20.1
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks26
 \inpenc@posthook=\toks27
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ansinew.def
-File: ansinew.def 2014/04/30 v1.2b Input encoding file
+File: ansinew.def 2008/03/30 v1.1d Input encoding file
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 137.
+Package color Info: Driver file: pdftex.def on input line 130.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
@@ -176,7 +177,7 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks30
 \verbatim@line=\toks31
 \verbatim@in@stream=\read1
@@ -262,7 +263,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen115
@@ -315,18 +316,18 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 \lst@maxwidth=\dimen121
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 \c@lstnumber=\count118
 \lst@skipnumbers=\count119
 \lst@framebox=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/09/06 1.5e listings configuration
+File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
-Package: listings 2014/09/06 1.5e (Carsten Heinz)
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip59
 \LTright=\skip60
 \LTpre=\skip61
@@ -349,29 +350,29 @@ LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count125
 \calc@Bcount=\count126
 \calc@Adimen=\dimen123
 \calc@Bdimen=\dimen124
 \calc@Askip=\skip63
 \calc@Bskip=\skip64
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count127
 \calc@Cskip=\skip65
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box36
 \AM@toc@title=\toks34
@@ -465,7 +466,7 @@ LaTeX Info: Redefining \nameref on input line 45.
 \c@lstlisting=\count137
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2014/09/06 1.5e listings language file
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
 Most over/underfulls in first few pages are the fault of this package.
 Ignore all them. If uncorrectable errors occur, notify staff.
@@ -478,14 +479,14 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 161.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
+{/usr/share/texlive/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ula.png>] [2
 
 ] [3
 
@@ -580,7 +581,7 @@ Overfull \hbox (64.23402pt too wide) in paragraph at lines 509--511
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<img/RelacionesMVC.png, id=88, 848.16875pt x 537.00626pt>
+<img/RelacionesMVC.png, id=89, 848.16875pt x 537.00626pt>
 File: img/RelacionesMVC.png Graphic file (type png)
 
 <use img/RelacionesMVC.png>
@@ -969,24 +970,163 @@ ll-and-configure-django-with-
 
 [74]
 Ap\'endice F.
-[75
+<img/Tesis/1TesisInicio.png, id=323, 939.51pt x 605.26125pt>
+File: img/Tesis/1TesisInicio.png Graphic file (type png)
 
+<use img/Tesis/1TesisInicio.png>
+Package pdftex.def Info: img/Tesis/1TesisInicio.png used on input line 2095.
+(pdftex.def)             Requested size: 375.79733pt x 242.1002pt.
+
+<img/Tesis/2TesisLogin.png, id=324, 817.0525pt x 579.16376pt>
+File: img/Tesis/2TesisLogin.png Graphic file (type png)
+
+<use img/Tesis/2TesisLogin.png>
+Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2104.
+(pdftex.def)             Requested size: 326.81522pt x 231.66139pt.
+ [75
+
+ <./img/Tesis/1TesisInicio.png>]
+<img/Tesis/3TesisAdminIndex.png, id=329, 1922.18124pt x 952.55875pt>
+File: img/Tesis/3TesisAdminIndex.png Graphic file (type png)
+
+<use img/Tesis/3TesisAdminIndex.png>
+Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2116
+.
+(pdftex.def)             Requested size: 384.42944pt x 190.50838pt.
+
+<img/Tesis/4TesisUserIndex.png, id=330, 1923.185pt x 947.54pt>
+File: img/Tesis/4TesisUserIndex.png Graphic file (type png)
+
+<use img/Tesis/4TesisUserIndex.png>
+Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2123.
+
+(pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
+ [76 <./img/Tesis/2TesisLogin.png> <./img/Tesis/3TesisAdminIndex.png>]
+<img/Tesis/5TesisAdminUsers.png, id=337, 1923.185pt x 947.54pt>
+File: img/Tesis/5TesisAdminUsers.png Graphic file (type png)
+
+<use img/Tesis/5TesisAdminUsers.png>
+Package pdftex.def Info: img/Tesis/5TesisAdminUsers.png used on input line 2133
+.
+(pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
+
+<img/Tesis/6TesisAdminNewUser.png, id=338, 1922.18124pt x 948.54375pt>
+File: img/Tesis/6TesisAdminNewUser.png Graphic file (type png)
+
+<use img/Tesis/6TesisAdminNewUser.png>
+Package pdftex.def Info: img/Tesis/6TesisAdminNewUser.png used on input line 21
+44.
+(pdftex.def)             Requested size: 384.42944pt x 189.70538pt.
+ [77 <./img/Tesis/4TesisUserIndex.png> <./img/Tesis/5TesisAdminUsers.png>]
+<img/Tesis/7TesisAdminNewAdmin.png, id=344, 1924.18875pt x 947.54pt>
+File: img/Tesis/7TesisAdminNewAdmin.png Graphic file (type png)
+
+<use img/Tesis/7TesisAdminNewAdmin.png>
+Package pdftex.def Info: img/Tesis/7TesisAdminNewAdmin.png used on input line 2
+155.
+(pdftex.def)             Requested size: 384.83093pt x 189.50464pt.
+
+<img/Tesis/8TesisAdminEditUsers.png, id=345, 1919.17pt x 950.55125pt>
+File: img/Tesis/8TesisAdminEditUsers.png Graphic file (type png)
+
+<use img/Tesis/8TesisAdminEditUsers.png>
+Package pdftex.def Info: img/Tesis/8TesisAdminEditUsers.png used on input line 
+2166.
+(pdftex.def)             Requested size: 383.8272pt x 190.10687pt.
+ [78 <./img/Tesis/6TesisAdminNewUser.png> <./img/Tesis/7TesisAdminNewAdmin.png>
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2099.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2099.
+<img/Tesis/9TesisAdminLogsFiles.png, id=351, 1919.17pt x 948.54375pt>
+File: img/Tesis/9TesisAdminLogsFiles.png Graphic file (type png)
+
+<use img/Tesis/9TesisAdminLogsFiles.png>
+Package pdftex.def Info: img/Tesis/9TesisAdminLogsFiles.png used on input line 
+2177.
+(pdftex.def)             Requested size: 383.8272pt x 189.70538pt.
+
+<img/Tesis/10TesisAdminLogsFolders.png, id=352, 1923.185pt x 948.54375pt>
+File: img/Tesis/10TesisAdminLogsFolders.png Graphic file (type png)
+
+<use img/Tesis/10TesisAdminLogsFolders.png>
+Package pdftex.def Info: img/Tesis/10TesisAdminLogsFolders.png used on input li
+ne 2186.
+(pdftex.def)             Requested size: 384.63019pt x 189.70538pt.
+ [79 <./img/Tesis/8TesisAdminEditUsers.png> <./img/Tesis/9TesisAdminLogsFiles.p
+ng>]
+<img/Tesis/11TesisAdminLogsRelations.png, id=358, 1918.16624pt x 945.5325pt>
+File: img/Tesis/11TesisAdminLogsRelations.png Graphic file (type png)
+
+<use img/Tesis/11TesisAdminLogsRelations.png>
+Package pdftex.def Info: img/Tesis/11TesisAdminLogsRelations.png used on input 
+line 2195.
+(pdftex.def)             Requested size: 383.62645pt x 189.10315pt.
+
+<img/Tesis/12TesisUserProfile.png, id=359, 1926.19624pt x 950.55125pt>
+File: img/Tesis/12TesisUserProfile.png Graphic file (type png)
+
+<use img/Tesis/12TesisUserProfile.png>
+Package pdftex.def Info: img/Tesis/12TesisUserProfile.png used on input line 22
+06.
+(pdftex.def)             Requested size: 385.23242pt x 190.10687pt.
+ [80 <./img/Tesis/10TesisAdminLogsFolders.png> <./img/Tesis/11TesisAdminLogsRel
+ations.png>]
+<img/Tesis/13TesisUserFriends.png, id=365, 1924.18875pt x 953.5625pt>
+File: img/Tesis/13TesisUserFriends.png Graphic file (type png)
+
+<use img/Tesis/13TesisUserFriends.png>
+Package pdftex.def Info: img/Tesis/13TesisUserFriends.png used on input line 22
+17.
+(pdftex.def)             Requested size: 384.83093pt x 190.70912pt.
+
+<img/Tesis/14TesisUserGetFriends.png, id=366, 1921.1775pt x 948.54375pt>
+File: img/Tesis/14TesisUserGetFriends.png Graphic file (type png)
+
+<use img/Tesis/14TesisUserGetFriends.png>
+Package pdftex.def Info: img/Tesis/14TesisUserGetFriends.png used on input line
+ 2228.
+(pdftex.def)             Requested size: 384.2287pt x 189.70538pt.
+ [81 <./img/Tesis/12TesisUserProfile.png> <./img/Tesis/13TesisUserFriends.png>]
+
+<img/Tesis/15TesisUserFriendNotification.png, id=372, 1923.185pt x 949.5475pt>
+File: img/Tesis/15TesisUserFriendNotification.png Graphic file (type png)
+
+<use img/Tesis/15TesisUserFriendNotification.png>
+Package pdftex.def Info: img/Tesis/15TesisUserFriendNotification.png used on in
+put line 2239.
+(pdftex.def)             Requested size: 384.63019pt x 189.90613pt.
+
+<img/Tesis/16TesisUserShareNotifications.png, id=373, 1918.16624pt x 944.52875p
+t>
+File: img/Tesis/16TesisUserShareNotifications.png Graphic file (type png)
+ <use img/Tesis/16TesisUserShareNotifications.png>
+Package pdftex.def Info: img/Tesis/16TesisUserShareNotifications.png used on in
+put line 2256.
+(pdftex.def)             Requested size: 383.62645pt x 188.9024pt.
+ [82 <./img/Tesis/14TesisUserGetFriends.png> <./img/Tesis/15TesisUserFriendNoti
+fication.png>]
+<img/Tesis/17TesisUserShareFiles.png, id=380, 1921.1775pt x 947.54pt>
+File: img/Tesis/17TesisUserShareFiles.png Graphic file (type png)
+
+<use img/Tesis/17TesisUserShareFiles.png>
+Package pdftex.def Info: img/Tesis/17TesisUserShareFiles.png used on input line
+ 2267.
+(pdftex.def)             Requested size: 384.2287pt x 189.50464pt.
+ [83 <./img/Tesis/16TesisUserShareNotifications.png> <./img/Tesis/17TesisUserSh
+areFiles.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2282.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2282.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2099.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2099.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2099.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2282.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2282.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2282.
  ) 
 Here is how much of TeX's memory you used:
- 10063 strings out of 493105
- 142371 string characters out of 6137072
- 292069 words of memory out of 5000000
- 13365 multiletter control sequences out of 15000+600000
- 13748 words of font info for 52 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 34i,13n,45p,1640b,1980s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 10072 strings out of 495063
+ 144692 string characters out of 3182201
+ 287098 words of memory out of 3000000
+ 13074 multiletter control sequences out of 15000+200000
+ 13748 words of font info for 52 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 34i,13n,45p,1640b,1883s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
@@ -1004,10 +1144,10 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (84 pages, 1441308 bytes).
+Output written on Tesis.pdf (92 pages, 2583402 bytes).
 PDF statistics:
- 387 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 447 PDF objects out of 1000 (max. 8388607)
+ 260 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 
