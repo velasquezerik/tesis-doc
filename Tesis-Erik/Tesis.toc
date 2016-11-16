@@ -65,67 +65,69 @@
 \contentsline {subsubsection}{InArrTime}{52}{section*.20}
 \contentsline {subsubsection}{MeSerTime}{53}{section*.21}
 \contentsline {section}{\numberline {5.2}Pruebas manejo de Archivo y Carpetas}{54}{section.5.2}
-\contentsline {section}{\numberline {5.3}Pruebas del Sistema WEB}{54}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Metodolog\IeC {\'\i }a de las pruebas}{55}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Condiciones de las pruebas}{56}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Resultados obtenidos}{56}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}An\'alisis de los resultados}{56}{subsection.5.3.4}
-\contentsline {chapter}{\numberline {6}Conclusiones}{57}{chapter.6}
-\contentsline {section}{\numberline {6.1}Recomendaciones}{58}{section.6.1}
-\contentsline {chapter}{Bibliograf\'{\i }a}{60}{section.6.1}
-\contentsline {chapter}{\numberline {A}Historias de usuario de la aplicaci\'on web}{62}{appendix.A}
-\contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{64}{appendix.B}
-\contentsline {section}{\numberline {B.1}Usuario Administrador}{66}{section.B.1}
-\contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{68}{appendix.C}
-\contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{70}{appendix.D}
-\contentsline {chapter}{\numberline {E}Instalaci\'on y Configuraci\'on del Sistema web}{72}{appendix.E}
-\contentsline {section}{\numberline {E.1}Prerequisites}{72}{section.E.1}
-\contentsline {section}{\numberline {E.2}Install packages from Debian repositories}{72}{section.E.2}
-\contentsline {subsection}{\numberline {E.2.1}Install Python}{72}{subsection.E.2.1}
-\contentsline {subsection}{\numberline {E.2.2}Install Apache}{72}{subsection.E.2.2}
-\contentsline {subsection}{\numberline {E.2.3}Install Python-Pip}{73}{subsection.E.2.3}
-\contentsline {subsection}{\numberline {E.2.4}Install MySQL}{73}{subsection.E.2.4}
-\contentsline {subsection}{\numberline {E.2.5}Install PostgreSQL}{73}{subsection.E.2.5}
-\contentsline {subsection}{\numberline {E.2.6}Install Git}{73}{subsection.E.2.6}
-\contentsline {subsection}{\numberline {E.2.7}Install Django}{73}{subsection.E.2.7}
-\contentsline {subsection}{\numberline {E.2.8}Install Django-Roles-Permission}{73}{subsection.E.2.8}
-\contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{74}{subsection.E.2.9}
-\contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow}{74}{subsection.E.2.10}
-\contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{74}{subsection.E.2.11}
-\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{74}{subsection.E.2.12}
-\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{74}{subsection.E.2.13}
-\contentsline {section}{\numberline {E.3}Configure Project}{74}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Create Database}{74}{subsection.E.3.1}
-\contentsline {subsection}{\numberline {E.3.2}Configure Project}{75}{subsection.E.3.2}
-\contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{75}{subsection.E.3.3}
-\contentsline {subsection}{\numberline {E.3.4}Run Migrations}{75}{subsection.E.3.4}
-\contentsline {subsection}{\numberline {E.3.5}Create Superuser}{76}{subsection.E.3.5}
-\contentsline {subsection}{\numberline {E.3.6}Create Image for Superuser}{76}{subsection.E.3.6}
-\contentsline {subsection}{\numberline {E.3.7}Create Folder for Superuser}{76}{subsection.E.3.7}
-\contentsline {subsection}{\numberline {E.3.8}Create DiskSpace for Superuser}{76}{subsection.E.3.8}
-\contentsline {section}{\numberline {E.4}Configure Apache project}{76}{section.E.4}
-\contentsline {section}{\numberline {E.5}Links}{77}{section.E.5}
-\contentsline {chapter}{\numberline {F}Manual de usuario del Sistema web}{78}{appendix.F}
-\contentsline {section}{\numberline {F.1}Manejo de Usuarios}{79}{section.F.1}
-\contentsline {subsection}{\numberline {F.1.1}Control de Usuarios}{80}{subsection.F.1.1}
-\contentsline {subsubsection}{Agregar Usuario normal}{81}{section*.23}
-\contentsline {subsubsection}{Agregar Usuario Administrador}{81}{section*.24}
-\contentsline {subsubsection}{Editar Usuario}{82}{section*.25}
-\contentsline {subsection}{\numberline {F.1.2}Logs del Sistema}{82}{subsection.F.1.2}
-\contentsline {subsection}{\numberline {F.1.3}Perfil de Usuario}{83}{subsection.F.1.3}
-\contentsline {subsection}{\numberline {F.1.4}Manejo de Amigos}{84}{subsection.F.1.4}
-\contentsline {subsubsection}{Obtener nuevos amigos}{85}{section*.26}
-\contentsline {subsubsection}{Notificaciones amigos}{85}{section*.27}
-\contentsline {section}{\numberline {F.2}Manejo de Archivos y Carpetas}{86}{section.F.2}
-\contentsline {subsection}{\numberline {F.2.1}Archivos Compartidos}{86}{subsection.F.2.1}
-\contentsline {subsubsection}{Notificaciones de Archivos Compartidos}{86}{section*.28}
-\contentsline {subsubsection}{Acceso a los Archivos Compartidos}{87}{section*.29}
-\contentsline {subsection}{\numberline {F.2.2}Crear Carpetas}{87}{subsection.F.2.2}
-\contentsline {subsection}{\numberline {F.2.3}Crear Archivos}{87}{subsection.F.2.3}
-\contentsline {subsection}{\numberline {F.2.4}Cargar Archivos}{88}{subsection.F.2.4}
-\contentsline {subsection}{\numberline {F.2.5}Crear Proyecto de Simulaci\'on}{88}{subsection.F.2.5}
-\contentsline {subsection}{\numberline {F.2.6}Mostrar Archivo}{89}{subsection.F.2.6}
-\contentsline {subsection}{\numberline {F.2.7}Permisos de Archivo}{89}{subsection.F.2.7}
-\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{90}{section.F.3}
-\contentsline {subsection}{\numberline {F.3.1}Mostrar opciones de Compilaci\'on y Ejecuci\'on}{90}{subsection.F.3.1}
-\contentsline {subsection}{\numberline {F.3.2}Ejecutar Modelo de Simulaci\'on}{90}{subsection.F.3.2}
+\contentsline {subsection}{\numberline {5.2.1}Manejo de Archivos}{54}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Manejo de Carpetas}{55}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Pruebas del Sistema WEB}{56}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Metodolog\IeC {\'\i }a de las pruebas}{57}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Condiciones de las pruebas}{58}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Resultados obtenidos}{58}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}An\'alisis de los resultados}{58}{subsection.5.3.4}
+\contentsline {chapter}{\numberline {6}Conclusiones}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}Recomendaciones}{60}{section.6.1}
+\contentsline {chapter}{Bibliograf\'{\i }a}{62}{section.6.1}
+\contentsline {chapter}{\numberline {A}Historias de usuario de la aplicaci\'on web}{64}{appendix.A}
+\contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{66}{appendix.B}
+\contentsline {section}{\numberline {B.1}Usuario Administrador}{68}{section.B.1}
+\contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{70}{appendix.C}
+\contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{72}{appendix.D}
+\contentsline {chapter}{\numberline {E}Instalaci\'on y Configuraci\'on del Sistema web}{74}{appendix.E}
+\contentsline {section}{\numberline {E.1}Prerequisites}{74}{section.E.1}
+\contentsline {section}{\numberline {E.2}Install packages from Debian repositories}{74}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Install Python}{74}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}Install Apache}{74}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}Install Python-Pip}{75}{subsection.E.2.3}
+\contentsline {subsection}{\numberline {E.2.4}Install MySQL}{75}{subsection.E.2.4}
+\contentsline {subsection}{\numberline {E.2.5}Install PostgreSQL}{75}{subsection.E.2.5}
+\contentsline {subsection}{\numberline {E.2.6}Install Git}{75}{subsection.E.2.6}
+\contentsline {subsection}{\numberline {E.2.7}Install Django}{75}{subsection.E.2.7}
+\contentsline {subsection}{\numberline {E.2.8}Install Django-Roles-Permission}{75}{subsection.E.2.8}
+\contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{76}{subsection.E.2.9}
+\contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow}{76}{subsection.E.2.10}
+\contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{76}{subsection.E.2.11}
+\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{76}{subsection.E.2.12}
+\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{76}{subsection.E.2.13}
+\contentsline {section}{\numberline {E.3}Configure Project}{76}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Create Database}{76}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Configure Project}{77}{subsection.E.3.2}
+\contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{77}{subsection.E.3.3}
+\contentsline {subsection}{\numberline {E.3.4}Run Migrations}{77}{subsection.E.3.4}
+\contentsline {subsection}{\numberline {E.3.5}Create Superuser}{78}{subsection.E.3.5}
+\contentsline {subsection}{\numberline {E.3.6}Create Image for Superuser}{78}{subsection.E.3.6}
+\contentsline {subsection}{\numberline {E.3.7}Create Folder for Superuser}{78}{subsection.E.3.7}
+\contentsline {subsection}{\numberline {E.3.8}Create DiskSpace for Superuser}{78}{subsection.E.3.8}
+\contentsline {section}{\numberline {E.4}Configure Apache project}{78}{section.E.4}
+\contentsline {section}{\numberline {E.5}Links}{79}{section.E.5}
+\contentsline {chapter}{\numberline {F}Manual de usuario del Sistema web}{80}{appendix.F}
+\contentsline {section}{\numberline {F.1}Manejo de Usuarios}{81}{section.F.1}
+\contentsline {subsection}{\numberline {F.1.1}Control de Usuarios}{82}{subsection.F.1.1}
+\contentsline {subsubsection}{Agregar Usuario normal}{83}{section*.23}
+\contentsline {subsubsection}{Agregar Usuario Administrador}{83}{section*.24}
+\contentsline {subsubsection}{Editar Usuario}{84}{section*.25}
+\contentsline {subsection}{\numberline {F.1.2}Logs del Sistema}{84}{subsection.F.1.2}
+\contentsline {subsection}{\numberline {F.1.3}Perfil de Usuario}{85}{subsection.F.1.3}
+\contentsline {subsection}{\numberline {F.1.4}Manejo de Amigos}{86}{subsection.F.1.4}
+\contentsline {subsubsection}{Obtener nuevos amigos}{87}{section*.26}
+\contentsline {subsubsection}{Notificaciones amigos}{87}{section*.27}
+\contentsline {section}{\numberline {F.2}Manejo de Archivos y Carpetas}{88}{section.F.2}
+\contentsline {subsection}{\numberline {F.2.1}Archivos Compartidos}{88}{subsection.F.2.1}
+\contentsline {subsubsection}{Notificaciones de Archivos Compartidos}{88}{section*.28}
+\contentsline {subsubsection}{Acceso a los Archivos Compartidos}{89}{section*.29}
+\contentsline {subsection}{\numberline {F.2.2}Crear Carpetas}{89}{subsection.F.2.2}
+\contentsline {subsection}{\numberline {F.2.3}Crear Archivos}{89}{subsection.F.2.3}
+\contentsline {subsection}{\numberline {F.2.4}Cargar Archivos}{90}{subsection.F.2.4}
+\contentsline {subsection}{\numberline {F.2.5}Crear Proyecto de Simulaci\'on}{90}{subsection.F.2.5}
+\contentsline {subsection}{\numberline {F.2.6}Mostrar Archivo}{91}{subsection.F.2.6}
+\contentsline {subsection}{\numberline {F.2.7}Permisos de Archivo}{91}{subsection.F.2.7}
+\contentsline {section}{\numberline {F.3}Ejecuci\'on de GALATEA}{92}{section.F.3}
+\contentsline {subsection}{\numberline {F.3.1}Mostrar opciones de Compilaci\'on y Ejecuci\'on}{92}{subsection.F.3.1}
+\contentsline {subsection}{\numberline {F.3.2}Ejecutar Modelo de Simulaci\'on}{92}{subsection.F.3.2}
