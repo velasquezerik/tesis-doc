@@ -917,6 +917,14 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\caption{Pantalla Control de Usuarios.}
 		\label{pantalla5}
 	\end{figure}
+	
+	\item \textbf{Pantalla Integración por Sockets}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de la integración realizada con GALATEA mediante sockets. Tenemos una interfaz que cuenta con la implementación del protocolo de comunicación definido para esta integración, podemos revisar toda la información en el capítulo \ref{integracionGALATEA}.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{img/socketsIntegration.png}
+		\caption{Pantalla Integración por Sockets.}
+		\label{pantalla6}
+	\end{figure}
 \end{itemize}
 
 
@@ -1304,7 +1312,11 @@ El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un co
 	\item get var: es un comando para recuperar el valor del parámetro \textit{var} que será impreso por la misma vía de comunicación y leído por el cliente como una línea de texto.
 \end{itemize}
 
-\chapter{Pruebas}
+Esta integración de GALATEA mediante sockets se desarrolló como una propuesta experimental, con el objetivo de permitir una interacción en tiempo real con el proceso de simulación y el usuario simulista. Teniendo en mente este principio se definió el protocolo de comunicación explicado anteriormente, el cual englobamos las operaciones básicas de control sobre la simulación y el acceso a las variables que se manejan en la misma. Para desarrollar esta integración se utilizó como base el modelo de simulación \textbf{SimpleTeller}. El cual fue adaptado para que cumpliera con las funcionalidades explicadas anteriormente.
+
+Las pruebas de ejecución de todas estas formas de integración de el portal Web con Galatea se describirán a continuación en el capítulo \ref{pruebas}.
+
+\chapter{Pruebas} \label{pruebas}
 
 \section{Pruebas de Integración con GALATEA caso integración asíncrona}
 
@@ -1385,6 +1397,54 @@ Comenzando el MeSerTime=3.5 y terminando con un MeSerTimerTime=7.5, con un incre
 \end{figure}
 
 Observamos que todas las simulaciones son análogas, obtenemos los mismos resultados en todas las simulaciones que realizamos. Por lo que concluimos que nuestra integración se realizó exitosamente.
+
+\section{Pruebas de Integración con GALATEA (Sockets)}
+
+La integración con GALATEA mediante sockets toma como base el modelo \textbf{SimpleTeller} para su funcionamiento. El objetivo principal de la integración es verificar la interacción entre el proceso de simulación y el cliente en tiempo real. Mediante el protocolo de comunicación desarrollado, enviar instrucciones a la simulación y que sean ejecutadas sin problemas, al igual obtener las respuestas enviadas por el proceso de simulación.
+
+Para verificar el correcto funcionamiento de esta integración usando sockets, se definieron tres clientes o casos de pruebas distintos: Un cliente en lenguaje ``Python", un cliente en lenguaje ``C" y un lenguaje integrado en el sistema web de simulación.
+
+\subsection{Cliente Python}
+
+El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulaci´on, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/TestIntegrationPythonA.png}
+	\caption{Cliente Python.}
+	\label{pythonClient}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/TestIntegrationPythonB.png}
+	\caption{Respuesta Simulación GALATEA.}
+	\label{integracionGalateaRespuestaA}
+\end{figure}
+
+\subsection{Cliente C}
+
+El cliente C se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación al igual que el cliente Python: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{img/TestIntegrationCA.png}
+	\caption{Cliente en C.}
+	\label{cClient}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/TestIntegrationCB.png}
+	\caption{Respuesta Simulación GALATEA.}
+	\label{integracionGalateaRespuestaB}
+\end{figure}
+
+Observamos que ambos clientes se comunican con el proceso de simulación. Y el protocolo de comunicación funciona como se espera al igual el proceso de simulación envía las respuestas esperadas y ejecuta la simulación del modelo utilizado.
+
+\subsection{Cliente Web}
+
+Definir
 
 \section{Pruebas manejo de Archivo y Carpetas}
 
