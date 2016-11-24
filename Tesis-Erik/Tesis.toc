@@ -52,13 +52,13 @@
 \contentsline {section}{\numberline {4.1}Subprocesos}{40}{section.4.1}
 \contentsline {section}{\numberline {4.2}Sockets}{42}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Programa Cliente}{44}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{44}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Programa Servidor}{45}{subsection.4.2.2}
 \contentsline {subsubsection}{Manejador de Eventos}{45}{section*.16}
-\contentsline {subsubsection}{Thread de Simulaci\'on}{46}{section*.17}
+\contentsline {subsubsection}{Hilo de Simulaci\'on}{46}{section*.17}
 \contentsline {subsubsection}{Cuerpo Principal}{48}{section*.18}
 \contentsline {subsection}{\numberline {4.2.3}Protocolo de Comunicaci\'on}{49}{subsection.4.2.3}
 \contentsline {chapter}{\numberline {5}Pruebas}{51}{chapter.5}
-\contentsline {section}{\numberline {5.1}Pruebas de Integraci\'on con GALATEA}{51}{section.5.1}
+\contentsline {section}{\numberline {5.1}Pruebas de Integraci\'on con GALATEA caso integraci\'on as\IeC {\'\i }ncrona}{51}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Variaci\'on de argumentos de Simulaci\'on}{51}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Resultados de las pruebas}{52}{subsection.5.1.2}
 \contentsline {subsubsection}{tSim}{52}{section*.19}
@@ -77,36 +77,36 @@
 \contentsline {chapter}{Bibliograf\'{\i }a}{62}{section.6.1}
 \contentsline {chapter}{\numberline {A}Historias de usuario de la aplicaci\'on web}{64}{appendix.A}
 \contentsline {chapter}{\numberline {B}Casos de uso de la aplicaci\'on web}{66}{appendix.B}
-\contentsline {section}{\numberline {B.1}Usuario Administrador}{68}{section.B.1}
+\contentsline {section}{\numberline {B.1}Usuario Administrador}{69}{section.B.1}
 \contentsline {chapter}{\numberline {C}Casos de uso de la integraci\'on con GALATEA}{70}{appendix.C}
 \contentsline {chapter}{\numberline {D}Casos de uso de administraci\'on de archivos}{72}{appendix.D}
-\contentsline {chapter}{\numberline {E}Instalaci\'on y Configuraci\'on del Sistema web}{74}{appendix.E}
-\contentsline {section}{\numberline {E.1}Prerequisites}{74}{section.E.1}
-\contentsline {section}{\numberline {E.2}Install packages from Debian repositories}{74}{section.E.2}
-\contentsline {subsection}{\numberline {E.2.1}Install Python}{74}{subsection.E.2.1}
-\contentsline {subsection}{\numberline {E.2.2}Install Apache}{74}{subsection.E.2.2}
-\contentsline {subsection}{\numberline {E.2.3}Install Python-Pip}{75}{subsection.E.2.3}
-\contentsline {subsection}{\numberline {E.2.4}Install MySQL}{75}{subsection.E.2.4}
-\contentsline {subsection}{\numberline {E.2.5}Install PostgreSQL}{75}{subsection.E.2.5}
-\contentsline {subsection}{\numberline {E.2.6}Install Git}{75}{subsection.E.2.6}
-\contentsline {subsection}{\numberline {E.2.7}Install Django}{75}{subsection.E.2.7}
-\contentsline {subsection}{\numberline {E.2.8}Install Django-Roles-Permission}{75}{subsection.E.2.8}
-\contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{76}{subsection.E.2.9}
-\contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow}{76}{subsection.E.2.10}
-\contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{76}{subsection.E.2.11}
-\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{76}{subsection.E.2.12}
-\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{76}{subsection.E.2.13}
-\contentsline {section}{\numberline {E.3}Configure Project}{76}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Create Database}{76}{subsection.E.3.1}
-\contentsline {subsection}{\numberline {E.3.2}Configure Project}{77}{subsection.E.3.2}
-\contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{77}{subsection.E.3.3}
-\contentsline {subsection}{\numberline {E.3.4}Run Migrations}{77}{subsection.E.3.4}
-\contentsline {subsection}{\numberline {E.3.5}Create Superuser}{78}{subsection.E.3.5}
-\contentsline {subsection}{\numberline {E.3.6}Create Image for Superuser}{78}{subsection.E.3.6}
-\contentsline {subsection}{\numberline {E.3.7}Create Folder for Superuser}{78}{subsection.E.3.7}
-\contentsline {subsection}{\numberline {E.3.8}Create DiskSpace for Superuser}{78}{subsection.E.3.8}
-\contentsline {section}{\numberline {E.4}Configure Apache project}{78}{section.E.4}
-\contentsline {section}{\numberline {E.5}Links}{79}{section.E.5}
+\contentsline {chapter}{\numberline {E}Instalaci\'on y Configuraci\'on del Sistema web}{73}{appendix.E}
+\contentsline {section}{\numberline {E.1}Prerequisites}{73}{section.E.1}
+\contentsline {section}{\numberline {E.2}Install packages from Debian repositories}{73}{section.E.2}
+\contentsline {subsection}{\numberline {E.2.1}Install Python}{73}{subsection.E.2.1}
+\contentsline {subsection}{\numberline {E.2.2}Install Apache}{73}{subsection.E.2.2}
+\contentsline {subsection}{\numberline {E.2.3}Install Python-Pip}{74}{subsection.E.2.3}
+\contentsline {subsection}{\numberline {E.2.4}Install MySQL}{74}{subsection.E.2.4}
+\contentsline {subsection}{\numberline {E.2.5}Install PostgreSQL}{74}{subsection.E.2.5}
+\contentsline {subsection}{\numberline {E.2.6}Install Git}{74}{subsection.E.2.6}
+\contentsline {subsection}{\numberline {E.2.7}Install Django}{74}{subsection.E.2.7}
+\contentsline {subsection}{\numberline {E.2.8}Install Django-Roles-Permission for control of roles on the system}{74}{subsection.E.2.8}
+\contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{75}{subsection.E.2.9}
+\contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow, image manager}{75}{subsection.E.2.10}
+\contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{75}{subsection.E.2.11}
+\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{75}{subsection.E.2.12}
+\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{75}{subsection.E.2.13}
+\contentsline {section}{\numberline {E.3}Configure Project}{75}{section.E.3}
+\contentsline {subsection}{\numberline {E.3.1}Create Database}{75}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.2}Configure Project}{76}{subsection.E.3.2}
+\contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{76}{subsection.E.3.3}
+\contentsline {subsection}{\numberline {E.3.4}Run Migrations}{76}{subsection.E.3.4}
+\contentsline {subsection}{\numberline {E.3.5}Create Superuser}{77}{subsection.E.3.5}
+\contentsline {subsection}{\numberline {E.3.6}Create Image for Superuser}{77}{subsection.E.3.6}
+\contentsline {subsection}{\numberline {E.3.7}Create Folder for Superuser}{77}{subsection.E.3.7}
+\contentsline {subsection}{\numberline {E.3.8}Create DiskSpace for Superuser}{77}{subsection.E.3.8}
+\contentsline {section}{\numberline {E.4}Configure Apache project}{77}{section.E.4}
+\contentsline {section}{\numberline {E.5}Links}{78}{section.E.5}
 \contentsline {chapter}{\numberline {F}Manual de usuario del Sistema web}{80}{appendix.F}
 \contentsline {section}{\numberline {F.1}Manejo de Usuarios}{81}{section.F.1}
 \contentsline {subsection}{\numberline {F.1.1}Control de Usuarios}{82}{subsection.F.1.1}

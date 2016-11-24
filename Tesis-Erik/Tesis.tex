@@ -234,13 +234,13 @@ Podemos mencionar también a \citep{tesisJesus}, que en su proyecto de grado y ut
 
 \section{Planteamiento del problema}
 
-La preocupación por los sistemas distribuidos y de cómo diferentes máquinas podían comunicarse entre sí surgió en la década de los 90. Hasta ese momento, era suficiente con que las aplicaciones de un mismo ordenador pudieran establecer una comunicación. 
+La preocupación por los sistemas distribuidos y de cómo diferentes máquinas podían comunicarse entre sí surgió en la década de los 80. Hasta ese momento, era suficiente con que las aplicaciones de un mismo ordenador pudieran establecer una comunicación. 
 
 En la medida que se ha avanzado en términos tecnológicos, se percibe un crecimiento proporcional de la información que se genera en todos los ámbitos, sea científico, humanístico, económico etc. Estos fenómenos no suceden como acontecimientos aislados, sino que son posibles gracias al conocimiento adquirido y al esfuerzo de muchos, de ponerlo a disposición de quien desee acceder a ellos. Teniendo en cuenta el acceso libre y continuo de la información, surge el planteamiento del problema, el cual tiene dos vertientes, la primera, consiste en que no se dispone de una plataforma web acondicionada para que, de manera fácil y rápida se pueda hacer uso del simulador GALATEA. Los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, suelen tener muchas dificultades para ejecutar los modelos de simulación en el simulador GALATEA, especialmente al momento de configurar y activar todas sus funcionalidades. 
 
 Si bien se posee un servidor académico en CESIMO, es necesario desarrollar mecanismos que posibiliten el uso de las herramientas que éste ofrece, por ello la necesidad de servicios web que permitan que las funcionalidades que posee el simulador estén disponibles tanto a nivel local como a nivel externo. La plataforma desarrollada en éste trabajo permitirá y estimulará el trabajo colaborativo y cooperativo entre los usuarios de simulación, lo que se puede llamar "Simulación 2.0". 
 
-En cuanto al otro aspecto, consiste en verificar que la integridad de la información estén garantizados, en especial cuando el usuario desee enviar algún dato, o realizar alguna consulta, por lo cual el sistema debe validar a dicho usuario previamente.
+En cuanto al otro aspecto, consiste en verificar que la integridad de la información y la identidad del usuario estén garantizados, en especial cuando el usuario desee enviar algún dato, o realizar alguna consulta, por lo cual el sistema debe validar a dicho usuario previamente.
 
 \section{Justificación}
 
@@ -309,7 +309,7 @@ El cuarto ciclo consistió en hacer análisis del rendimiento del sistema y hacer 
 
 En esa sección se describe brevemente las características del problema abordado en el proyecto, analizando los antecedentes, delimitando los objetivos y estableciendo la metodología con que se procedió al estudió y resolución del mismo.
 
-\item Capítulo II. Marco teórico.
+\item Capítulo II. Marco teórico-funcional.
 
 En ese sección se exponen algunos conceptos relacionados con el problema planteado en el proyecto. Se da una breve introducción sobre los términos y herramientas utilizados para desarrollar el mismo.
 
@@ -329,7 +329,9 @@ En esta sección de exponen las distintas pruebas realizadas a la aplicación web,
 
 Conclusiones y Recomendaciones, contiene las conclusiones obtenidas a partir del diseño e implementación del sistema, así como recomendaciones y posibles mejoras a incluir en trabajos futuros.
 
-\item Finalmente se presentan los apéndices y las referencias bibliográficas.
+\item Apéndices. 
+
+Encontramos las historias de usuarios y casos de usos definidos en el desarrollo de este proyecto. Al igual un manual de instalación bajo un ambiente Debian y un manual de usuario del sistema.
 
 \end{description}
 
@@ -510,7 +512,7 @@ def admin_folder_show(request,folder_id):
 
 \end{lstlisting}
 
-Este controlador es el encargado de enlazar la petición realizada por el usuario sobre un modelo de datos, y ser relacionada con su vista correspondiente, para su posterior visualización por parte del usuario. En la fracción de código mostrada vemos el controlador asociado a "show folder", el cual busca el modelo "folder" y lo asocia a su vista correspondiente "show\_folder.html".
+Este controlador es el encargado de enlazar la petición realizada por el usuario sobre un modelo de datos, y enlazarla con  su vista correspondiente, para su posterior visualización por parte del usuario. En la fracción de código mostrada vemos el controlador asociado a "show folder", el cual busca el modelo "folder" y lo asocia a su vista correspondiente "show\_folder.html".
 
 \begin{figure}[H]
 	\centering
@@ -521,7 +523,7 @@ Este controlador es el encargado de enlazar la petición realizada por el usuario
 
 \subsection{Django}
 
-Django \citep{django} es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, Don't Repeat Yourself) \citep{django}. Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones , autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
+Django \citep{django} es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, Don't Repeat Yourself) \citep{django}. Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones, autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
 
 \subsubsection{Funcionamiento de Django}
 
@@ -651,9 +653,11 @@ $( "#execute_file" ).click(function() {
 </script>
 \end{lstlisting}
 
-Para crear la comunicación asíncrona con el servidor, nuestras llamadas de compilación y ejecución de modelos de simulación se realiza mediante una llamada AJAX. Esto nos permite continuar realizando tareas sobre nuestros modelos de simulación, mediante el servidor ejecuta esos procesos de compilación y ejecución.
+Para crear la comunicación asíncrona con el servidor, nuestras llamadas de compilación y ejecución de modelos de simulación se realiza mediante una llamada AJAX. Esto nos permite continuar realizando tareas sobre nuestros modelos de simulación, mientras el servidor ejecuta esos procesos de compilación y ejecución por su lado.
+\\ \\
+Estos son los elementos conceptuales y las correspondientes realizaciones funcionales que hemos empleado para desarrollar este proyecto. En el capítulo \ref{desarrolloSistemaWeb} se explica cómo se ha realizado ese trabajo. 
 
-\chapter{Desarrollo del Sistema WEB}
+\chapter{Desarrollo del Sistema WEB}\label{desarrolloSistemaWeb}
 
 El sistema de simulación de eventos discretos mediante la web esta conformado por tres elementos principales: (1) La aplicación Web que funciona como coordinador del sistema, control de usuarios y roles; (2) Administración de archivos que permite llevar el control de acceso, creación y modificación de los archivos y carpetas, (3) El Sistema de Integración con GALATEA, que ofrece las funcionalidades de simulación, conexión y control con el motor de simulación.
 
@@ -853,14 +857,14 @@ Las siguientes tablas resumen las entidades y la función de las mismas dentro de
 
 \begin{itemize}
 	\item \textbf{User - UserImage (1-1)}: Un usuario posee una imagen e información de perfil.
-	\item \textbf{User - Folder (n-1)}: Un usuario puede poseer una o mas carpetas, pero una carpeta pertenece a un solo usuario.
+	\item \textbf{User - Folder (1-n)}: Un usuario puede poseer una o mas carpetas, pero una carpeta pertenece a un solo usuario.
 	\item \textbf{User - DiskSpace (1-1)}: Un usuario tiene un solo espacio en disco asociado y configurado.
-	\item \textbf{Folder - File (n-1)}: Una carpeta puede tener muchos archivos almacenados, pero un archivo tiene una carpeta asociada.
-	\item \textbf{User - ShareFile (n-1)}: Un usuario puede poseer uno o mas archivos compartidas, pero un archivo pertenece a un solo usuario.
-	\item \textbf{File - ShareFile (n-1)}: Un archivo puede estar compartido con muchos usuarios.
-	\item \textbf{User - ShareFolder (n-1)}: Un usuario puede poseer una o mas carpetas compartidas, pero una carpeta pertenece a un solo usuario.
-	\item \textbf{Folder - ShareFolder (n-1)}: Un carpeta puede estar compartida con muchos usuarios.
-	\item \textbf{User - Relationship (n-1)}: Un usuario puede poseer una o mas relaciones de amistad con otros usuarios, pero la relación se define con un solo usuario.
+	\item \textbf{Folder - File (1-n)}: Una carpeta puede tener muchos archivos almacenados, pero un archivo tiene una carpeta asociada.
+	\item \textbf{User - ShareFile (1-n)}: Un usuario puede poseer uno o mas archivos compartidas, pero un archivo pertenece a un solo usuario.
+	\item \textbf{File - ShareFile (1-n)}: Un archivo puede estar compartido con muchos usuarios.
+	\item \textbf{User - ShareFolder (1-n)}: Un usuario puede poseer una o mas carpetas compartidas, pero una carpeta pertenece a un solo usuario.
+	\item \textbf{Folder - ShareFolder (1-n)}: Un carpeta puede estar compartida con muchos usuarios.
+	\item \textbf{User - Relationship (1-n)}: Un usuario puede poseer una o mas relaciones de amistad con otros usuarios, pero la relación se define con un solo usuario.
 \end{itemize}
 
 \subsection{Diseño de Pantallas}
@@ -869,12 +873,12 @@ Todas las pantallas del sistema fueron creadas bajo el paradigma del diseño web 
 
 Ya que una aplicación web está compuesta por decenas de vistas que comparten componentes como: barras de navegación, cabeceras y pie de páginas, Django incluye un micro-lenguaje de plantillas con funcionalidades de herencia e inclusión, estructuras de repetición y decisión. Esto hace que sea posible tener una taxonomía de plantillas, de manera que sólo es necesario escribir los elementos comunes a un conjunto de plantillas una vez y crear nuevas pantallas en sobre otras. Se le llama rendering al proceso de combinar los datos de la base de datos y la petición del usuario, junto con una plantilla predefinida en la aplicación para generar páginas web personalizadas.
 
-Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas "hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la página, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente, \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} bloque para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la página.
+Todas las plantillas heredan de una plantilla base, ésta incluye la declaración del archivo HTML, la cabecera y define bloques que pueden ser sobrescritos por las plantillas ``hijas". Los bloques principales definidos en nuestro diseño son: \textbf{(1) Bloque de título} permite definir el título de la página, \textbf{(2) Bloque de navegación} permite un acceso rápido a los sitios accedidos previamente, \textbf{(3) Bloque de contenido} bloque principal con el contenido de la página, \textbf{(4) Bloque de JavaScript} para incluir archivos y métodos JavaScript. La plantilla general hereda de la \textit{plantilla base} y esta a su vez incluye la información de la \textit{barra lateral} y el \textit{header} de la página.
 
 A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
 
 \begin{itemize}
-	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y capetas de nuestro sistema raíz.
+	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y carpetas de nuestro sistema raíz.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/pantallaInicio.png}
@@ -890,7 +894,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla2}
 	\end{figure}
 	
-	\item \textbf{Pantalla Observación de Archivo}: Observamos la información contenida en el archivo, poseemos un editor web para editarlo, al igual todas las opciones que podemos manejar sobre el mismo.
+	\item \textbf{Pantalla Observación de Archivo}: Observamos la información contenida en el archivo y  poseemos un editor web para editarlo, al igual que todas las opciones que podemos manejar sobre el mismo.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/observacionArchivo.png}
@@ -918,19 +922,19 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 
 \subsection{Diseño de URLs}
 
-Ya que la aplicación web consiste en un conjunto grande de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios anteceden a la operación real que se esta llamando; a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
+Ya que la aplicación web consiste en un conjunto grande de vistas, debemos diseñar URLs que apunten a cada una de ellas de forma ordenada y lógica. Para esto, se ha usado una convención en la que la unidad principal de operación como archivos, carpetas, usuarios anteceden a la operación real que se está llamando; a continuación se muestran ejemplos de las reglas usadas para diseñar las URLs:
 
 \begin{itemize}
 	\item Operaciones básicas de acceso:
 	\begin{itemize}
-		\item \textbf{GET /admin/} accedemos al dashboard de un usuario administrador. Todas las rutas para acceso de un usuario administrador se definen con esta ruta inicial. Ejemplo "http://localhost:8000/admin/users", retorna la lista de usuarios registrados en el sistema.
-		\item \textbf{GET /user/} accedemos al dashboard de un usuario registrado. Todas las rutas para acceso de un usuario registrado se definen con esta ruta inicial. Ejemplo "http://localhost:8000/user/" accede al dashboard del usuario.
+		\item \textbf{GET /admin/} accedemos al dashboard de un usuario administrador. Todas las rutas para acceso de un usuario administrador se definen con esta ruta inicial. Ejemplo ``http://localhost:8000/admin/users", retorna la lista de usuarios registrados en el sistema.
+		\item \textbf{GET /user/} accedemos al dashboard de un usuario registrado. Todas las rutas para acceso de un usuario registrado se definen con esta ruta inicial. Ejemplo ``http://localhost:8000/user/" accede al dashboard del usuario.
 		\item \textbf{POST /user/create\_file/} Ruta para la creación de un nuevo archivo.
 		\item \textbf{POST /user/create\_folder/} Ruta para la creación de una nueva carpeta.
-		\item \textbf{GET /user/file/-id-} acceder a la información del archivo cuyo id dentro del sistema es -id-. Ejemplo "http://localhost:8000/user/file/2/", accedemos a la información del archivo cuyo id dentro del sistema es 2.
-		\item \textbf{GET /user/folder/-id-} acceder a la información de una carpeta cuyo id dentro del sistema es -id-. Ejemplo "http://localhost:8000/user/folder/15/", accedemos a la carpeta cuyo id en el sistema es 15, y pertenece a el usuario.
-		\item \textbf{GET /user/compile/-id-} compila el archivo cuyo id es -id- y retorna la información de compilación. Ejemplo "GET /user/compile/file/2/ HTTP/1.1" 200 12, compilamos el archivo cuyo id es 2, mediante una petición Ajax.
-		\item \textbf{GET /user/execute/-id-} ejecuta la simulación definida en el archivo cuyo id es -id- y retorna el resultado de dicha simulación. Ejemplo "GET /user/execute/file/2/?arguments= HTTP/1.1" 200 634, ejecutamos el modelo de simulación, mediante una petición Ajax.
+		\item \textbf{GET /user/file/-id-} acceder a la información del archivo cuyo id dentro del sistema es -id-. Ejemplo ``http://localhost:8000/user/file/2/", accedemos a la información del archivo cuyo id dentro del sistema es 2.
+		\item \textbf{GET /user/folder/-id-} acceder a la información de una carpeta cuyo id dentro del sistema es -id-. Ejemplo ``http://localhost:8000/user/folder/15/", accedemos a la carpeta cuyo id en el sistema es 15, y pertenece a el usuario.
+		\item \textbf{GET /user/compile/-id-} compila el archivo cuyo id es -id- y retorna la información de compilación. Ejemplo ``GET /user/compile/file/2/ HTTP/1.1" 200 12, compilamos el archivo cuyo id es 2, mediante una petición Ajax.
+		\item \textbf{GET /user/execute/-id-} ejecuta la simulación definida en el archivo cuyo id es -id- y retorna el resultado de dicha simulación. Ejemplo ``GET /user/execute/file/2/?arguments= HTTP/1.1" 200 634, ejecutamos el modelo de simulación, mediante una petición Ajax.
 	\end{itemize}
 
 \end{itemize}
@@ -939,7 +943,7 @@ Ya que la aplicación web consiste en un conjunto grande de vistas, debemos diseñ
 
 Un administrador de archivos, gestor de archivos o explorador de archivos es un programa que otorga al usuario la capacidad de trabajar, gestionar o administrar archivos y carpetas. Esto lo realiza mediante una interfaz de usuario que entre muchas operaciones permiten al usuario abrir, crear, editar, reproducir, ya sean archivos o carpetas. En el sistema de simulación web GALATEA se desarrolló un administrador de archivos web que permite  crear, editar, visualizar proyectos de simulación entre algunas otras opciones. Los administradores de archivos basados en la web son típicamente scripts escritos en cualquiera de los lenguajes para desarrollo web como PHP, Ajax, Perl, JSP u otro lenguaje de servidor. 
 
-Como todo administrador de archivos existente, éste debe trabajar bajo un sistema de archivos el cual dependerá del sistema operativo en el que se encuentre instalado. Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados. Estructuran la información guardada en un dispositivo de almacenamiento de datos o unidad de almacenamiento (normalmente un disco duro de una computadora), que luego será representada ya sea textual o gráficamente utilizando un gestor de archivos.
+Como todo administrador de archivos existente, éste debe trabajar sobre un sistema de archivos el cual dependerá del sistema operativo en el que se encuentre instalado. Sus principales funciones son la asignación de espacio a los archivos, la administración del espacio libre y del acceso a los datos resguardados. Estructuran la información guardada en un dispositivo de almacenamiento de datos o unidad de almacenamiento (normalmente un disco duro de una computadora), que luego será representada ya sea textual o gráficamente utilizando un gestor de archivos.
 
 \begin{figure}[H]
 	\centering
@@ -962,9 +966,9 @@ Una configuración de nuestro sistema es la integración de permisologías a los ar
 			\hline
 			Permiso & Definición \\\hline
 			\textit{Private (0) } & Solo el dueño puede acceder a él \\\hline
-			\textit{Show (1) } & Otros usuarios pueden acceder al él solo para lectura \\\hline
-			\textit{Edit (2) } & Otros usuarios pueden acceder al él para lectura y escritura  \\\hline
-			\textit{Public (3) } & Otros usuarios pueden acceder al él y tienen control total  \\\hline
+			\textit{Show (1) } & Otros usuarios pueden acceder a él solo para lectura \\\hline
+			\textit{Edit (2) } & Otros usuarios pueden acceder a él para lectura y escritura  \\\hline
+			\textit{Public (3) } & Otros usuarios pueden acceder a él para lectura/escritura y eliminación  \\\hline
 		\end{tabular}
 	}
 	
@@ -996,7 +1000,7 @@ El control de carpetas es uno de los puntos mas importantes dentro de nuestro ad
 	\label{jerarquiaCarpetas}
 \end{figure}
 
-Cómo raíz de nuestro sistema de carpetas tenemos a la carpeta \textit{media}, la cual es el punto de partida para todo nuestro manejo de archivos y carpetas. En el segundo nivel de jerarquía tenemos las carpetas de \textit{usuari@s}, las cuales funcionan como punto de raíz para su sistema interno de archivos y carpetas. El nombre que identifica a cada carpeta de \textit{usuari@s} es propiamente dicho el "username" que identifica como único a cada usuario dentro del sistema.
+Cómo raíz de nuestro sistema de carpetas tenemos a la carpeta \textit{media}, la cual es el punto de partida para todo nuestro manejo de archivos y carpetas. En el segundo nivel de jerarquía tenemos las carpetas de \textit{usuari@s}, las cuales funcionan como punto de raíz para su sistema interno de archivos y carpetas. El nombre que identifica a cada carpeta de \textit{usuari@s} es propiamente dicho el ``username" que identifica como único a cada usuario dentro del sistema.
 
 Para el correcto manejo de carpetas se definieron una serie de métodos:
 
@@ -1035,8 +1039,8 @@ El sistema de simulación web cuenta con una gama de funcionalidades para el cont
 
 \chapter{Integración de GALATEA} \label{integracionGALATEA}
 
-Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes. Para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subrocesos y (2) Sockets. El primero de ellos lo implementamos realizando invocación a un subproceso
-o proceso externo, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una comunicación entre procesos vía sockets, el cual atiende las peticiones en un puerto de comunicación especifico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
+Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes. Para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subprocesos y (2) Sockets. El primero de ellos lo implementamos realizando invocación a un subproceso
+o proceso externo, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una comunicación entre procesos vía sockets, el cual atiende las peticiones en un puerto de comunicación específico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
 
 \section{Subprocesos} \label{llamadaProcesos}
 
@@ -1076,7 +1080,7 @@ def execute_java(file_id, arguments):
 
 \section{Sockets} \label{sockets}
 
-Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada \citep{ibmSockets}. Los sockets de Internet constituyen el mecanismo para la entrega de paquetes de datos provenientes de la tarjeta de red a los procesos o hilos apropiados. Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y un par de números de puerto local y remoto \citep{sockets}.
+Socket designa un concepto abstracto por el cual dos programas (posiblemente situados en computadoras distintas) pueden intercambiar cualquier flujo de datos, generalmente de manera fiable y ordenada \citep{ibmSockets}. Los sockets de Internet constituyen el mecanismo para la entrega de paquetes de datos provenientes de la tarjeta de red a los procesos o hilos apropiados. Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y un par de números de puerto local y remoto \citep{sockets}. 
 
 \begin{figure}[H]
 	\centering
@@ -1085,7 +1089,10 @@ Socket designa un concepto abstracto por el cual dos programas (posiblemente sit
 	\label{socketWork}
 \end{figure}
 
-Para que dos programas puedan comunicarse entre sí es necesario que se cumplan ciertos requisitos: Primero que un programa sea capaz de localizar al otro y segundo que ambos programas sean capaces de intercambiarse cualquier dato relevante entre ellos. Para ello son necesarios los dos recursos que originan el concepto de socket: un par de direcciones del protocolo de red (dirección IP, si se utiliza el protocolo TCP/IP), que identifican la computadora de origen y la remota, y un par de números de puerto, que identifican a un programa dentro de cada computadora \citep{sockets}. Los sockets permiten implementar una arquitectura cliente-servidor. La comunicación debe ser iniciada por uno de los programas que se denomina programa "cliente". El segundo programa espera a que otro inicie la comunicación, por este motivo se denomina programa "servidor" \citep{ibmSockets}.
+En la figura \ref{socketWork} observamos un flujo típico de eventos cuando se define una conexión por sockets: 1) Creamos un punto de conexión entre el cliente y el servidor mediante sockets. 2)La API listen() indica una disposición a aceptar peticiones de conexión de cliente. Cuando se emite una API listen() para un socket, ese socket no puede iniciar activamente solicitudes de conexión. La API listen() se emite después de asignar un socket con una API socket() y la API bind() vincula un nombre al socket. Se debe emitir una API listen() antes de que se emita una API accept(). 3) La aplicación cliente utiliza una API connect() en un socket de flujo para establecer una conexión con el servidor. 4) La aplicación de servidor utiliza la API accept() para aceptar una solicitud de conexión de cliente. El servidor debe emitir las APIs bind() y listen() con éxito antes de poder emitir una API accept(). 5) Cuando se establece una conexión entre sockets de flujo (entre cliente y servidor), puede utilizar cualquiera de las API de transferencia de datos API de socket. Los clientes y los servidores tienen muchas API de transferencia de datos de las que elegir, como send(), recv(), read(), write() y otros. 6) Cuando un servidor o cliente desea detener las operaciones, emite una API close() para liberar los recursos del sistema adquiridos por el socket.
+
+
+Para que dos programas puedan comunicarse entre sí es necesario que se cumplan ciertos requisitos: Primero que un programa sea capaz de localizar al otro y segundo que ambos programas sean capaces de intercambiarse cualquier dato relevante entre ellos. Para ello son necesarios los dos recursos que originan el concepto de socket: un par de direcciones del protocolo de red (dirección IP, si se utiliza el protocolo TCP/IP), que identifican la computadora de origen y la remota, y un par de números de puerto, que identifican a un programa dentro de cada computadora \citep{sockets}. Los sockets permiten implementar una arquitectura cliente-servidor. La comunicación debe ser iniciada por uno de los programas que se denomina programa ``cliente". El segundo programa espera a que otro inicie la comunicación, por este motivo se denomina programa ``servidor" \citep{ibmSockets}.
 
 La implementación de la integración con GALATEA mediante sockets como se observa en la figura \ref{estructuraSokets}, consiste en lo siguiente:
 
@@ -1163,9 +1170,9 @@ public class ModelEventListener implements ModelListener
 
 \end{lstlisting}
 
-\subsubsection{Thread de Simulación}
+\subsubsection{Hilo de Simulación}
 
-Éste módulo es el modelo de simulación implementado como un Thread de Java \citep{javaThreads}. Este thread encapsula toda la información del modelo de simulación (variables y métodos), al igual todos los métodos de comunicación con GALATEA.
+Éste módulo es el modelo de simulación implementado como un Thread de Java \citep{javaThreads}. Este hilo encapsula toda la información del modelo de simulación (variables y métodos), al igual todos los métodos de comunicación con GALATEA.
 
 Su función es procesar la simulación y disparar los eventos que serán capturados por el manejador de eventos.
 
@@ -1184,7 +1191,6 @@ class ModelThread extends Thread
 	static ShowLength showLength = new ShowLength();
 	private ArrayList _listeners = new ArrayList();
 	public int valores;
-	public int jodedera;
 	public void setArg(String args[])
 	{
 		_args = args;
@@ -1253,7 +1259,7 @@ class ModelThread extends Thread
 
 \subsubsection{Cuerpo Principal}
 
-Es el encargado de controlar todos los aspectos principales del programa servidor. Primero inicia el programa en un puerto específico, e inicializa el thread de simulación y el manejador de eventos.
+Es el encargado de controlar todos los aspectos principales del programa servidor. Primero inicia el programa en un puerto específico, e inicializa el hilo de simulación y el manejador de eventos.
 
 \begin{lstlisting}
 //init de the server on port number
@@ -1291,7 +1297,7 @@ El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un co
 \begin{itemize}
 	\item start: inicia la simulación(el simulador debe estar en estado de espera).
 	\item sleep(ms): suspende la simulación (por una cantidad de ms).
-	\item stop: detiene definitivamente la simulación (si el simulador esta programado para detección temprana dela orden esto puede ocurrir en cualquier momento).
+	\item stop: detiene definitivamente la simulación (si el simulador esta programado para detección temprana de la orden esto puede ocurrir en cualquier momento).
 	\item yield: le indica al procesador que debe bajar su prioridad de uso de procesador (corresponde al yield() en Java).
 	\item pause: suspende la ejecución del simulador temporalmente. El simulador queda a la espera de otras órdenes que no impliquen terminar la simulación.
 	\item set var = value: es un comando para cambiar el valor de parámetro de simulación llamado \textit{var} asignándole el valor \textit{value} que será usado cuando la simulación se reinicie.
@@ -1300,9 +1306,9 @@ El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un co
 
 \chapter{Pruebas}
 
-\section{Pruebas de Integración con GALATEA}
+\section{Pruebas de Integración con GALATEA caso integración asíncrona}
 
-Para el manejo de las pruebas de integración se definió un modelo de simulación de prueba (\textbf{SimpleTeller}). Nuestro objetivo principal es que los modelos de simulación muestren la misma información de simulación ya sean que fueron simulados en la plataforma web, como en GALATEA directamente. Para ello todas las pruebas sobre el modelo escogido fueron ejecutadas en el sistema web y el GALATEA directamente.
+Para el manejo de las pruebas de integración se definió un modelo de simulación de prueba (\textbf{SimpleTeller}). Nuestro objetivo principal es que los modelos de simulación muestren la misma información de la simulación que muestran cuando son ejecutados en  GALATEA en la consola de una maquina aislada. Para ello todas las pruebas sobre el modelo escogido fueron ejecutadas en el sistema web y en GALATEA directamente.
 
 \subsection{Variación de argumentos de Simulación}
 
@@ -1501,7 +1507,7 @@ Durante el desarrollo de este trabajo, se construyó un sistema web de simulación
 
 El objetivo principal de este proyecto era desarrollar una integración entre GALATEA como software de simulación y el sistema web. Se desarrollaron y presentaron dos enfoques de integración que permitieron al sistema web comunicarse con el motor de simulación GALATEA, simular y mostrar los resultados al usuario. Se planteó el desarrollo de una plataforma web para que, los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) pudieran ejecutar los modelos de simulación en el simulador GALATEA de manera fácil y rápida, sin tener que pasar dificultades al momento de configurar y activar todas sus funcionalidades de simulador y así enfocarse únicamente en sus modelos de simulación y en los resultados obtenidos de los mismos.
 
-El código completo de sistema web de simulación se encuentra en el siguiente repositorio publico de Github https://github.com/velasquezerik/django-roles-test. Al igual se utilizó este repositorio https://github.com/velasquezerik/tesis-doc, para almacenar todo éste documento. Para permitir que la comunidad de usuarios y usuarias aporten y desarrollen nuevas mejoras en el sistema web, se optó por utilizar la licencia de software GNU AFFERO GENERAL PUBLIC LICENSE\footnote{Affero https://www.gnu.org/licenses/agpl-3.0.en.html}. La Licencia Pública General Affero esta basada en la GPL de GNU, pero contiene una cláusula adicional que permite a los usuarios interactuar con el programa licenciado a través de una red para recibir el código fuente de ese programa. 
+El código completo de sistema web de simulación se encuentra en el siguiente repositorio publico de Github https://github.com/velasquezerik/django-roles-test. Al igual se utilizó este repositorio https://github.com/velasquezerik/tesis-doc, para almacenar todo éste documento. Para permitir que la comunidad de usuarios y usuarias aporten y desarrollen nuevas mejoras en el sistema web, se optó por utilizar la licencia de software GNU AFFERO GENERAL PUBLIC LICENSE\footnote{Affero https://www.gnu.org/licenses/agpl-3.0.en.html}. La Licencia Pública General Affero esta basada en la GPL de GNU, pero contiene una cláusula adicional que permite a los usuarios interactuar con el programa licenciado a través de una red para recibir el código fuente de ese programa. Al igual demanda la liberación del código incluso si no se distribuye, sino solo se usa como servicio web. 
 
 Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca, ya no solo a personas con conocimientos avanzados en el tema de simulación, conocimientos de programación y de sistemas operativos, sino a la comunidad en general. Permitiéndole a estudiantes de cursos iniciales, y estudiantes de otras universidades, al igual cualquier persona que quiera colaborar el los procesos y modelos de simulación, trabajar, analizar y compartir los resultados obtenidos desde cualquier parte del mundo.
 
@@ -1731,7 +1737,7 @@ La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y me
 	\centering
 	\begin{tabular}{p{2.5cm} p{10cm}}
 		\hline
-		\textbf{U-07} & \textbf{Control de Simulación} \\
+		\textbf{U-07} & \textbf{Control de Simulación asíncrono} \\
 		\hline \hline
 		\textbf{Precondición} & Usuario autentificado. Archivo de simulación válido. \\
 		\hline
@@ -1746,6 +1752,27 @@ La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y me
 	\end{tabular}
 	\caption{Caso de uso - Control de Simulación.}
 	\label{tabla:casouso07}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{p{2.5cm} p{10cm}}
+		\hline
+		\textbf{U-07} & \textbf{Control de Simulación Síncrono} \\
+		\hline \hline
+		\textbf{Precondición} & Usuario autentificado. Archivo de simulación válido. \\
+		\hline
+		\textbf{Descripción} & Se compila y ejecuta un archivo de simulación. La información resultante se observa en el sistema. \\
+		\hline
+		\textbf{Secuencia Normal} & Se visualiza un archivo de simulación válido. Click en ejecutar. Archivo compilado y ejecutado. Se muestra las opciones de ejecución: Start, Stop, Pause, Yield, Set y Get. Se procede a controlar la simulación enviándole esas instrucciones y obteniendo los resultados en tiempo real. \\
+		\hline
+		\textbf{Excepciones} & Archivo no válido. Error en compilación. Error en Archivo. \\
+		\hline
+		\textbf{Postcondición} & Resultado de la compilación y ejecución por pantalla. \\
+		\hline
+	\end{tabular}
+	\caption{Caso de uso - Control de Simulación Síncrono.}
+	\label{tabla:casouso021}
 \end{table}
 
 \begin{table}[H]
@@ -1950,27 +1977,6 @@ La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y me
 	\centering
 	\begin{tabular}{p{2.5cm} p{10cm}}
 		\hline
-		\textbf{Código} & \textbf{Nombre} \\
-		\hline \hline
-		\textbf{Precondición} & Con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela un velero bergantín... \\
-		\hline
-		\textbf{Descripción} & Con diez cañones por banda, viento en popa, a toda vela, no corta el mar, sino vuela un velero bergantín... \\
-		\hline
-		\textbf{Secuencia Normal} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
-		\hline
-		\textbf{Excepciones} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
-		\hline
-		\textbf{Postcondición} & Volverán las oscuras golondrinas, en tu balcón sus nidos a colgar, y otra vez con el ala, a sus cristales jugando llamarán... \\
-		\hline
-	\end{tabular}
-	\caption{Caso de uso - NOMBRE.}
-	\label{tabla:casouso0}
-\end{table}
-
-\begin{table}[H]
-	\centering
-	\begin{tabular}{p{2.5cm} p{10cm}}
-		\hline
 		\textbf{C-01} & \textbf{Control de Archivos} \\
 		\hline \hline
 		\textbf{Precondición} & Espacio en disco suficiente. Permisología de escritura en disco. \\
@@ -2014,7 +2020,7 @@ La colaboración de una comunidad de desarrolladores siempre ayuda a depurar y me
 
 \section{Prerequisites}
 
-The first thing is to get a Debian 8 Stable system going. This tutorial assumes you have aø Debian 8 Stable Droplet ready. Except otherwise noted, all of the commands in this tutorial should be run as a non-root user with sudo privileges.
+The first thing is to get a Debian 8 Stable system going. This tutorial assumes you have a Debian 8 Stable Droplet ready. Except otherwise noted, all of the commands in this tutorial should be run as a non-root user with sudo privileges.
 
 \section{Install packages from Debian repositories}
 
@@ -2063,7 +2069,7 @@ git config --global user.email name@example.com
 \begin{lstlisting}
 sudo pip install django
 \end{lstlisting}
-\subsection{Install Django-Roles-Permission}
+\subsection{Install Django-Roles-Permission for control of roles on the system}
 \begin{lstlisting}
 sudo pip install django-role-permissions
 \end{lstlisting}
@@ -2075,7 +2081,7 @@ Or
 \begin{lstlisting}
 sudo pip install MySQL-python
 \end{lstlisting}
-\subsection{Install drivers for pillow}
+\subsection{Install drivers for pillow, image manager}
 \begin{lstlisting}
 sudo pip install pillow
 \end{lstlisting}
@@ -2090,7 +2096,7 @@ Use this link http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-deb
 Use this link http://galatea.sourceforge.net/Home.htm
 
 \section{Configure Project}
-Clone de project from Github: i use \textbf{/var/www/html/} like root folder.
+Clone de project from Github: I use \textbf{/var/www/html/} like root folder.
 \begin{lstlisting}
 git clone https://github.com/velasquezerik/django-roles-test.git
 \end{lstlisting}
@@ -2105,7 +2111,7 @@ Copy secrets\_example to secrets and configure:
 \begin{lstlisting}
 cd /path/to/project/
 cd django-roles-test/tesis/
-cp secrets_exaple.py secrets.py
+cp secrets_example.py secrets.py
 \end{lstlisting}
 Fill secrets.py
 \begin{lstlisting}
@@ -2203,6 +2209,10 @@ sudo service apache2 restart
 	\item https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-apache-and-mod\_wsgi-on-ubuntu-14-04
 	\item https://www.digitalocean.com/community/tutorials/how-to-install-git-on-debian-8
 	\item https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-django-with-postgres-nginx-and-gunicorn
+	\item http://www.pdxpixel.com/blog/2014/02/04/setting-up-django-site-ssl-apache-mod\_wsgi-mod\_ssl/
+	\item https://github.com/teddziuba/django-sslserver
+	\item https://docs.djangoproject.com/en/1.10/topics/security/
+	\item http://stackoverflow.com/questions/21728951/django-and-ssl-server
 \end{itemize}
 
 
