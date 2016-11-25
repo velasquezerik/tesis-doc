@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  24 NOV 2016 18:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2016.9.30)  25 NOV 2016 13:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,43 +1070,43 @@ Ap\'endice E.
 [77
 
 ] [78] [79] [80] [81]
-Underfull \hbox (badness 10000) in paragraph at lines 2268--2269
+Underfull \hbox (badness 10000) in paragraph at lines 2272--2273
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
 ll-and-use-postgresql-9-4-on-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2269--2270
+Underfull \hbox (badness 10000) in paragraph at lines 2273--2274
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-serve
 -django-applications-with-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2271--2272
+Underfull \hbox (badness 10000) in paragraph at lines 2275--2276
 []\OT1/cmr/m/n/10 https://www.digitalocean.com/community/tutorials/how-to-insta
 ll-and-configure-django-with-
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 2272--2273
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 2276--2277
 []\OT1/cmr/m/n/10 http://www.pdxpixel.com/blog/2014/02/04/setting-up-django-sit
 e-ssl-apache-mod[]wsgi-
  []
 
-[82] [83]
+[83]
 Ap\'endice F.
 <img/Tesis/1TesisInicio.png, id=381, 635.37375pt x 480.79625pt>
 File: img/Tesis/1TesisInicio.png Graphic file (type png)
 
 <use img/Tesis/1TesisInicio.png>
-Package pdftex.def Info: img/Tesis/1TesisInicio.png used on input line 2289.
+Package pdftex.def Info: img/Tesis/1TesisInicio.png used on input line 2293.
 (pdftex.def)             Requested size: 254.14499pt x 192.31508pt.
 
 <img/Tesis/2TesisLogin.png, id=382, 602.25pt x 509.905pt>
 File: img/Tesis/2TesisLogin.png Graphic file (type png)
 
 <use img/Tesis/2TesisLogin.png>
-Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2298.
+Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2302.
 (pdftex.def)             Requested size: 240.89572pt x 203.95837pt.
  [84
 
@@ -1115,7 +1115,7 @@ Package pdftex.def Info: img/Tesis/2TesisLogin.png used on input line 2298.
 File: img/Tesis/3TesisAdminIndex.png Graphic file (type png)
 
 <use img/Tesis/3TesisAdminIndex.png>
-Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2310
+Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2314
 .
 (pdftex.def)             Requested size: 384.42944pt x 190.50838pt.
 
@@ -1123,7 +1123,7 @@ Package pdftex.def Info: img/Tesis/3TesisAdminIndex.png used on input line 2310
 File: img/Tesis/4TesisUserIndex.png Graphic file (type png)
 
 <use img/Tesis/4TesisUserIndex.png>
-Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2317.
+Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2321.
 
 (pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
  [85 <./img/Tesis/2TesisLogin.png> <./img/Tesis/3TesisAdminIndex.png>]
@@ -1131,7 +1131,7 @@ Package pdftex.def Info: img/Tesis/4TesisUserIndex.png used on input line 2317.
 File: img/Tesis/5TesisAdminUsers.png Graphic file (type png)
 
 <use img/Tesis/5TesisAdminUsers.png>
-Package pdftex.def Info: img/Tesis/5TesisAdminUsers.png used on input line 2327
+Package pdftex.def Info: img/Tesis/5TesisAdminUsers.png used on input line 2331
 .
 (pdftex.def)             Requested size: 384.63019pt x 189.50464pt.
 
@@ -1140,7 +1140,7 @@ File: img/Tesis/6TesisAdminNewUser.png Graphic file (type png)
 
 <use img/Tesis/6TesisAdminNewUser.png>
 Package pdftex.def Info: img/Tesis/6TesisAdminNewUser.png used on input line 23
-38.
+42.
 (pdftex.def)             Requested size: 384.42944pt x 189.70538pt.
  [86 <./img/Tesis/4TesisUserIndex.png> <./img/Tesis/5TesisAdminUsers.png>]
 <img/Tesis/7TesisAdminNewAdmin.png, id=401, 1924.18875pt x 947.54pt>
@@ -1148,7 +1148,7 @@ File: img/Tesis/7TesisAdminNewAdmin.png Graphic file (type png)
 
 <use img/Tesis/7TesisAdminNewAdmin.png>
 Package pdftex.def Info: img/Tesis/7TesisAdminNewAdmin.png used on input line 2
-349.
+353.
 (pdftex.def)             Requested size: 384.83093pt x 189.50464pt.
 
 <img/Tesis/8TesisAdminEditUsers.png, id=402, 1919.17pt x 950.55125pt>
@@ -1156,7 +1156,7 @@ File: img/Tesis/8TesisAdminEditUsers.png Graphic file (type png)
 
 <use img/Tesis/8TesisAdminEditUsers.png>
 Package pdftex.def Info: img/Tesis/8TesisAdminEditUsers.png used on input line 
-2360.
+2364.
 (pdftex.def)             Requested size: 383.8272pt x 190.10687pt.
  [87 <./img/Tesis/6TesisAdminNewUser.png> <./img/Tesis/7TesisAdminNewAdmin.png>
 ]
@@ -1165,7 +1165,7 @@ File: img/Tesis/9TesisAdminLogsFiles.png Graphic file (type png)
 
 <use img/Tesis/9TesisAdminLogsFiles.png>
 Package pdftex.def Info: img/Tesis/9TesisAdminLogsFiles.png used on input line 
-2371.
+2375.
 (pdftex.def)             Requested size: 383.8272pt x 189.70538pt.
  [88 <./img/Tesis/8TesisAdminEditUsers.png> <./img/Tesis/9TesisAdminLogsFiles.p
 ng>]
@@ -1174,7 +1174,7 @@ File: img/Tesis/10TesisAdminLogsFolders.png Graphic file (type png)
 
 <use img/Tesis/10TesisAdminLogsFolders.png>
 Package pdftex.def Info: img/Tesis/10TesisAdminLogsFolders.png used on input li
-ne 2380.
+ne 2384.
 (pdftex.def)             Requested size: 384.63019pt x 189.70538pt.
 
 <img/Tesis/11TesisAdminLogsRelations.png, id=416, 1918.16624pt x 945.5325pt>
@@ -1182,7 +1182,7 @@ File: img/Tesis/11TesisAdminLogsRelations.png Graphic file (type png)
 
 <use img/Tesis/11TesisAdminLogsRelations.png>
 Package pdftex.def Info: img/Tesis/11TesisAdminLogsRelations.png used on input 
-line 2389.
+line 2393.
 (pdftex.def)             Requested size: 383.62645pt x 189.10315pt.
 
 <img/Tesis/29TesisUserGetProfile.png, id=417, 340.27126pt x 298.11375pt>
@@ -1190,7 +1190,7 @@ File: img/Tesis/29TesisUserGetProfile.png Graphic file (type png)
 
 <use img/Tesis/29TesisUserGetProfile.png>
 Package pdftex.def Info: img/Tesis/29TesisUserGetProfile.png used on input line
- 2400.
+ 2404.
 (pdftex.def)             Requested size: 136.10608pt x 119.24338pt.
  [89 <./img/Tesis/10TesisAdminLogsFolders.png> <./img/Tesis/11TesisAdminLogsRel
 ations.png>]
@@ -1199,7 +1199,7 @@ File: img/Tesis/12TesisUserProfile.png Graphic file (type png)
 
 <use img/Tesis/12TesisUserProfile.png>
 Package pdftex.def Info: img/Tesis/12TesisUserProfile.png used on input line 24
-09.
+13.
 (pdftex.def)             Requested size: 385.23242pt x 190.10687pt.
 
 <img/Tesis/13TesisUserFriends.png, id=424, 1924.18875pt x 953.5625pt>
@@ -1207,7 +1207,7 @@ File: img/Tesis/13TesisUserFriends.png Graphic file (type png)
 
 <use img/Tesis/13TesisUserFriends.png>
 Package pdftex.def Info: img/Tesis/13TesisUserFriends.png used on input line 24
-20.
+24.
 (pdftex.def)             Requested size: 384.83093pt x 190.70912pt.
  [90 <./img/Tesis/29TesisUserGetProfile.png> <./img/Tesis/12TesisUserProfile.pn
 g>]
@@ -1216,7 +1216,7 @@ File: img/Tesis/14TesisUserGetFriends.png Graphic file (type png)
 
 <use img/Tesis/14TesisUserGetFriends.png>
 Package pdftex.def Info: img/Tesis/14TesisUserGetFriends.png used on input line
- 2431.
+ 2435.
 (pdftex.def)             Requested size: 384.2287pt x 189.70538pt.
 
 <img/Tesis/15TesisUserFriendNotification.png, id=432, 1923.185pt x 949.5475pt>
@@ -1224,7 +1224,7 @@ File: img/Tesis/15TesisUserFriendNotification.png Graphic file (type png)
 
 <use img/Tesis/15TesisUserFriendNotification.png>
 Package pdftex.def Info: img/Tesis/15TesisUserFriendNotification.png used on in
-put line 2442.
+put line 2446.
 (pdftex.def)             Requested size: 384.63019pt x 189.90613pt.
  [91 <./img/Tesis/13TesisUserFriends.png> <./img/Tesis/14TesisUserGetFriends.pn
 g>]
@@ -1233,7 +1233,7 @@ t>
 File: img/Tesis/16TesisUserShareNotifications.png Graphic file (type png)
  <use img/Tesis/16TesisUserShareNotifications.png>
 Package pdftex.def Info: img/Tesis/16TesisUserShareNotifications.png used on in
-put line 2459.
+put line 2463.
 (pdftex.def)             Requested size: 383.62645pt x 188.9024pt.
 
 <img/Tesis/17TesisUserShareFiles.png, id=439, 1921.1775pt x 947.54pt>
@@ -1241,7 +1241,7 @@ File: img/Tesis/17TesisUserShareFiles.png Graphic file (type png)
 
 <use img/Tesis/17TesisUserShareFiles.png>
 Package pdftex.def Info: img/Tesis/17TesisUserShareFiles.png used on input line
- 2470.
+ 2474.
 (pdftex.def)             Requested size: 384.2287pt x 189.50464pt.
  [92 <./img/Tesis/15TesisUserFriendNotification.png> <./img/Tesis/16TesisUserSh
 areNotifications.png>]
@@ -1250,7 +1250,7 @@ File: img/Tesis/18TesisUserCreateFolder.png Graphic file (type png)
 
 <use img/Tesis/18TesisUserCreateFolder.png>
 Package pdftex.def Info: img/Tesis/18TesisUserCreateFolder.png used on input li
-ne 2481.
+ne 2485.
 (pdftex.def)             Requested size: 251.33455pt x 129.68219pt.
 
 <img/Tesis/19TesisUserCreateFile.png, id=446, 620.3175pt x 324.21124pt>
@@ -1258,7 +1258,7 @@ File: img/Tesis/19TesisUserCreateFile.png Graphic file (type png)
 
 <use img/Tesis/19TesisUserCreateFile.png>
 Package pdftex.def Info: img/Tesis/19TesisUserCreateFile.png used on input line
- 2492.
+ 2496.
 (pdftex.def)             Requested size: 248.1226pt x 129.68219pt.
  [93 <./img/Tesis/17TesisUserShareFiles.png> <./img/Tesis/18TesisUserCreateFold
 er.png>]
@@ -1267,7 +1267,7 @@ File: img/Tesis/20TesisUserUploadFile.png Graphic file (type png)
 
 <use img/Tesis/20TesisUserUploadFile.png>
 Package pdftex.def Info: img/Tesis/20TesisUserUploadFile.png used on input line
- 2503.
+ 2507.
 (pdftex.def)             Requested size: 249.32707pt x 125.66727pt.
 
 <img/Tesis/21TesisUserCreateProject.png, id=454, 632.3625pt x 324.21124pt>
@@ -1275,7 +1275,7 @@ File: img/Tesis/21TesisUserCreateProject.png Graphic file (type png)
 
 <use img/Tesis/21TesisUserCreateProject.png>
 Package pdftex.def Info: img/Tesis/21TesisUserCreateProject.png used on input l
-ine 2514.
+ine 2518.
 (pdftex.def)             Requested size: 252.94052pt x 129.68219pt.
  [94 <./img/Tesis/19TesisUserCreateFile.png> <./img/Tesis/20TesisUserUploadFile
 .png>]
@@ -1284,7 +1284,7 @@ File: img/Tesis/22TesisUserShowFile.png Graphic file (type png)
 
 <use img/Tesis/22TesisUserShowFile.png>
 Package pdftex.def Info: img/Tesis/22TesisUserShowFile.png used on input line 2
-525.
+529.
 (pdftex.def)             Requested size: 381.61899pt x 190.50838pt.
 
 <img/Tesis/28TesisUserFilePermissions.png, id=461, 1920.17375pt x 947.54pt>
@@ -1292,7 +1292,7 @@ File: img/Tesis/28TesisUserFilePermissions.png Graphic file (type png)
 
 <use img/Tesis/28TesisUserFilePermissions.png>
 Package pdftex.def Info: img/Tesis/28TesisUserFilePermissions.png used on input
- line 2536.
+ line 2540.
 (pdftex.def)             Requested size: 384.02795pt x 189.50464pt.
  [95 <./img/Tesis/21TesisUserCreateProject.png> <./img/Tesis/22TesisUserShowFil
 e.png>]
@@ -1301,7 +1301,7 @@ e.png>]
 File: img/Tesis/23TesisUserShowCompileExecuteFile.png Graphic file (type png)
  <use img/Tesis/23TesisUserShowCompileExecuteFile.png>
 Package pdftex.def Info: img/Tesis/23TesisUserShowCompileExecuteFile.png used o
-n input line 2551.
+n input line 2555.
 (pdftex.def)             Requested size: 380.4145pt x 188.9024pt.
 
 <img/Tesis/24TesisUserExecuteFile.png, id=468, 1899.095pt x 943.525pt>
@@ -1309,20 +1309,20 @@ File: img/Tesis/24TesisUserExecuteFile.png Graphic file (type png)
 
 <use img/Tesis/24TesisUserExecuteFile.png>
 Package pdftex.def Info: img/Tesis/24TesisUserExecuteFile.png used on input lin
-e 2563.
+e 2567.
 (pdftex.def)             Requested size: 379.81227pt x 188.70164pt.
  [96 <./img/Tesis/28TesisUserFilePermissions.png> <./img/Tesis/23TesisUserShowC
 ompileExecuteFile.png>] [97 <./img/Tesis/24TesisUserExecuteFile.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2575.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2575.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2579.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2579.
  (./Tesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2575.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2575.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2575.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2579.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2579.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2579.
  ) 
 Here is how much of TeX's memory you used:
  10218 strings out of 495063
- 148885 string characters out of 3182201
+ 148882 string characters out of 3182201
  288521 words of memory out of 3000000
  13196 multiletter control sequences out of 15000+200000
  13748 words of font info for 52 fonts, out of 3000000 for 9000
@@ -1345,7 +1345,7 @@ texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Tesis.pdf (107 pages, 3677345 bytes).
+Output written on Tesis.pdf (107 pages, 3677448 bytes).
 PDF statistics:
  538 PDF objects out of 1000 (max. 8388607)
  292 compressed objects within 3 object streams

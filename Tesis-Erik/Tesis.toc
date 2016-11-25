@@ -98,10 +98,11 @@
 \contentsline {subsection}{\numberline {E.2.9}Install Drivers for MySQL}{79}{subsection.E.2.9}
 \contentsline {subsection}{\numberline {E.2.10}Install drivers for pillow, image manager}{79}{subsection.E.2.10}
 \contentsline {subsection}{\numberline {E.2.11}Install html2text for html manage}{79}{subsection.E.2.11}
-\contentsline {subsection}{\numberline {E.2.12}Install and Configure java 8}{79}{subsection.E.2.12}
-\contentsline {subsection}{\numberline {E.2.13}Install and Configure GALATEA}{79}{subsection.E.2.13}
+\contentsline {subsection}{\numberline {E.2.12}Install Pusher for realtime notifications}{79}{subsection.E.2.12}
+\contentsline {subsection}{\numberline {E.2.13}Install and Configure java 8}{79}{subsection.E.2.13}
+\contentsline {subsection}{\numberline {E.2.14}Install and Configure GALATEA}{79}{subsection.E.2.14}
 \contentsline {section}{\numberline {E.3}Configure Project}{79}{section.E.3}
-\contentsline {subsection}{\numberline {E.3.1}Create Database}{79}{subsection.E.3.1}
+\contentsline {subsection}{\numberline {E.3.1}Create Database}{80}{subsection.E.3.1}
 \contentsline {subsection}{\numberline {E.3.2}Configure Project}{80}{subsection.E.3.2}
 \contentsline {subsection}{\numberline {E.3.3}Configure Media Folder}{80}{subsection.E.3.3}
 \contentsline {subsection}{\numberline {E.3.4}Run Migrations}{80}{subsection.E.3.4}

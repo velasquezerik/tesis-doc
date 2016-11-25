@@ -1402,11 +1402,11 @@ Observamos que todas las simulaciones son análogas, obtenemos los mismos resulta
 
 La integración con GALATEA mediante sockets toma como base el modelo \textbf{SimpleTeller} para su funcionamiento. El objetivo principal de la integración es verificar la interacción entre el proceso de simulación y el cliente en tiempo real. Mediante el protocolo de comunicación desarrollado, enviar instrucciones a la simulación y que sean ejecutadas sin problemas, al igual obtener las respuestas enviadas por el proceso de simulación.
 
-Para verificar el correcto funcionamiento de esta integración usando sockets, se definieron tres clientes o casos de pruebas distintos: Un cliente en lenguaje ``Python", un cliente en lenguaje ``C" y un lenguaje integrado en el sistema web de simulación.
+Para verificar el correcto funcionamiento de esta integración usando sockets, se definieron tres clientes o casos de pruebas distintos: Un cliente en lenguaje ``Python", un cliente en lenguaje ``C" y un cliente integrado en el sistema web de simulación.
 
 \subsection{Cliente Python}
 
-El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulaci´on, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
+El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
 
 \begin{figure}[H]
 	\centering
@@ -2148,6 +2148,10 @@ sudo pip install pillow
 \subsection{Install html2text for html manage}
 \begin{lstlisting}
 sudo pip install html2text
+\end{lstlisting}
+\subsection{Install Pusher for realtime notifications}
+\begin{lstlisting}
+sudo pip install pusher
 \end{lstlisting}
 \subsection{Install and Configure java 8}
 Use this link http://www.webupd8.org/2014/03/how-to-install-oracle-java-8-in-debian.html
