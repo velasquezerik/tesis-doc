@@ -1444,7 +1444,24 @@ Observamos que ambos clientes se comunican con el proceso de simulación. Y el pr
 
 \subsection{Cliente Web}
 
-Definir
+El cliente web, es una interfaz web que permite le ejecución de la simulación y el envío de las instrucciones de comunicación para en control de la simulación. Estas instrucciones se realizan mediante peticiones AJAX a métodos Python, los cuales a su vez se conectan al socket específico de la simulación y envían las instrucciones dadas.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{img/TestIntegrationWebA.png}
+	\caption{Cliente Web.}
+	\label{webClient}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/TestIntegrationWebB.png}
+	\caption{Respuesta Simulación GALATEA.}
+	\label{integracionGalateaRespuestaC}
+\end{figure}
+
+El protocolo de comunicación funciona como se espera al igual el proceso de simulación envía las respuestas esperadas y ejecuta la simulación del modelo utilizado.
+
 
 \section{Pruebas manejo de Archivo y Carpetas}
 
@@ -1552,14 +1569,11 @@ Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectada
 \subsection{Resultados obtenidos}
 
 \begin{enumerate}
-	\item \textbf{Archivos estáticos con Apache}: Definir.
-	\item \textbf{Páginas dinámicas con Django sobre Apache}: Definir.	
-	\item \textbf{Páginas dinámicas con Django y archivos estáticos sobre el mismo servidor Apache}: Definir.
+	\item \textbf{Archivos estáticos con Apache}: En esta prueba se configuró un servidor Apache para servir sólo páginas web y archivos estáticos. Se encontró un valor de 640 peticiones por minuto como valor óptimo.
+	\item \textbf{Páginas dinámicas con Django sobre Apache}: En esta prueba se configuro Apache para ejecutar sólo la aplicación web Django a través del módulo \textit{mod\_wsgi}, obteniendo un promedio de 768 peticiones por minuto como valor óptimo.	
+	\item \textbf{Páginas dinámicas con Django y archivos estáticos sobre el mismo servidor Apache}: Se observó un valor óptimo de 128 peticiones por minuto.
 \end{enumerate}
 
-\subsection{Análisis de los resultados}
-
-Definir
 
 \chapter{Conclusiones}
 
