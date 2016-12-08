@@ -233,15 +233,294 @@
     	\end{itemize}
     	
     \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de la base de datos}
+    	
+    	\begin{itemize}
+    		\item Control de usuarios: Registro, ingresos, perfiles y relaciones.
+    		\item Control de archivos y carpetas: Creación, actualización, ubicación, espacio ocupado.
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de la base de datos (USUARIOS)}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.25]{img/usuariosDB.png}
+    		\caption{Entidades manejo de usuarios.}
+    		\label{entidadRelacionUsuarios}
+    	\end{figure}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de la base de datos (ARCHIVOS)}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.3]{img/archivosDB.png}
+    		\caption{Entidades manejo archivos y carpetas.}
+    		\label{entidadRelacionArchivosCarpetas}
+    	\end{figure}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de Pantallas}
+    	
+    	\begin{itemize}
+    		\item Micro-lenguaje de plantillas.
+    		\item Paradigma del diseño web adaptable.
+    		\item Estructura de plantilla:
+    		\begin{itemize}
+    			\item (1) Bloque de título.
+    			\item (2) Bloque de navegación.
+    			\item (3) Bloque de contenido.
+    			\item (4) Bloque de JavaScript.
+    		\end{itemize}
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de Pantallas}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.17]{img/pantallaInicio.png}
+    		\caption{Pantalla del Dashboard (Inicio).}
+    		\label{pantalla1}
+    	\end{figure}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Administrador de Archivos}
+    	\framesubtitle{Diseño y Estructura}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.27]{img/estructuraArchivosCarpetas.png}
+    		\caption{Estructura del Administrador de Archivos y Carpetas.}
+    		\label{estructuraAdministradorArchivosCarpetas}
+    	\end{figure}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Administrador de Archivos}
+    	\framesubtitle{Control de Archivos y Carpetas}
+    	
+    	\begin{columns}
+    		\begin{column}{.3\linewidth}
+    			\begin{itemize}
+    				\item Archivos.
+    				\begin{itemize}
+    					\item Create File.
+    					\item Show File.
+    					\item Edit File.
+    					\item Move File.
+    					\item Delete File.
+    				\end{itemize}
+    				\item Carpetas.
+    				\begin{itemize}
+    					\item Create Folder.
+    					\item Show Folder.
+    					\item Edit Folder.
+    					\item Move Folder.
+    					\item Delete Folder.
+    				\end{itemize}
+    			\end{itemize}
+    		\end{column}
+    		\begin{column}{.7\linewidth}
+    			\begin{figure}[H]
+    				\centering
+    				\includegraphics[scale=0.25]{img/jerarquiaCarpetas.png}
+    				\caption{Jerarquía de Carpetas.}
+    				\label{jerarquiaCarpetas}
+    			\end{figure}
+    		\end{column}
+    	\end{columns}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Administrador de Archivos}
+    	\framesubtitle{Características del Control de Archivos y Carpetas}
+    	
+    	\begin{itemize}
+    		\item Espacio en disco físico es limitado.
+    		\item Cada usuario tiene una porción de espacio asociado.
+    		\item Espacio es constantemente monitoreado.
+    		\item Se desarrolló usando llamadas a Sistema Operativo.
+    		\item Uso de las nuevas tecnologías disponibles como: "hot swap", entre otros.
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Administrador de Archivos}
+    	\framesubtitle{Control de Permisos}
+    	
+    	\begin{itemize}
+    		\item Usuarios Amigos.
+    		\item Usuarios NO Amigos.
+    		\item Permisología.
+    		\begin{itemize}
+    			\item Private.
+    			\item Show.
+    			\item Edit.
+    			\item Public.
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Resumen}
+    	
+    	\begin{itemize}
+    		\item Arquitectura.
+    		\item Herramientas de Desarrollo.
+    		\item Control de Usuarios.
+    		\item Control de Archivos.
+    	\end{itemize}
+    	
+    \end{frame}
+    
     %%------------------------Fin------------------------%%
     
     %%--------------------Diapositiva--------------------%%
     \section{Integración de GALATEA}
     \begin{frame}
-    	\frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
+    	\frametitle{Integración de GALATEA}
     	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
     	
-    	Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
+    	\begin{itemize}
+    		\item Subprocesos:
+    		\begin{itemize}
+    			\item Invocación a un subproceso o proceso externo, enviándole los parámetros necesarios para su ejecución.
+    		\end{itemize}
+    		\item Sockets:
+    		\begin{itemize}
+    			\item Peticiones en un puerto de comunicación específico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java.
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración de GALATEA}
+    	\framesubtitle{Integración Subprocesos}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.3]{img/estructuraSubproceso.png}
+    		\caption{Ejecución de un Subproceso.}
+    		\label{subprocesoWork}
+    	\end{figure}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración de GALATEA}
+    	\framesubtitle{Integración Subprocesos}
+    	
+    	\begin{itemize}
+    		\item Mediante una llamada a un subproceso dentro de nuestro sistema:
+    		\begin{itemize}
+    			\item Traducir el lenguaje GALATEA.
+    			\item Compilar el modelo.
+    			\item Ejecutar la simulación.
+    			\item Retornar resultado.
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración de GALATEA}
+    	\framesubtitle{Integración Sockets}
+    	
+    	\begin{columns}
+    		\begin{column}{.4\linewidth}
+    			\begin{itemize}
+    				\item Programa cliente.
+    				\item Programa servidor.
+    				\item Protocolo de Comunicación.
+    			\end{itemize}
+    		\end{column}
+    		\begin{column}{.6\linewidth}
+    			\begin{figure}[H]
+    				\centering
+    				\includegraphics[scale=0.4]{img/socketWork.png}
+    				\caption{Típico flujo usando sockets.}
+    				\label{socketWork}
+    			\end{figure}
+    		\end{column}
+    	\end{columns}
+    \end{frame}
+    
+    \begin{frame}
+    	\frametitle{Integración Sockets}
+    	\framesubtitle{Integración Sockets}
+    	
+    	\begin{figure}[H]
+    		\centering
+    		\includegraphics[scale=0.3]{img/estructuraSockets.png}
+    		\caption{Estructura Integración mediante Sockets.}
+    		\label{estructuraSokets}
+    	\end{figure}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración Sockets}
+    	\framesubtitle{Programa Servidor}
+    	
+    	\begin{columns}
+    		\begin{column}{.3\linewidth}
+    			\begin{itemize}
+    				\item Programa servidor.
+    				\begin{itemize}
+    					\item Manejador de Eventos.
+    					\item Hilo de Simulación.
+    					\item Cuerpo Principal.
+    				\end{itemize}
+    			\end{itemize}
+    		\end{column}
+    		\begin{column}{.7\linewidth}
+    			\begin{figure}[H]
+    				\centering
+    				\includegraphics[scale=0.25]{img/estructuraProgramaServidor.png}
+    				\caption{Estructura del Programa Servidor.}
+    				\label{estructuraProgramaServidor}
+    			\end{figure}
+    		\end{column}
+    	\end{columns}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración Sockets}
+    	\framesubtitle{Protocolo de Comunicación}
+    	
+    	\begin{itemize}
+    		\item Protocolo de Comunicación.
+    		\begin{itemize}
+    			\item Start.
+    			\item Sleep.
+    			\item Stop.
+    			\item Yield.
+    			\item Pause.
+    			\item Set var.
+    			\item Get var.
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Integración de GALATEA}
+    	\framesubtitle{Resumen}
+    	
+    	\begin{itemize}
+    		\item Subprocesos.
+    		\begin{itemize}
+    			\item Llamadas.
+    			\item Control de eventos.
+    		\end{itemize}
+    		\item Sockets.
+    		\begin{itemize}
+    			\item Programa cliente.
+    			\item Programa servidor.
+    			\item Protocolo de Comunicación.
+    		\end{itemize}
+    	\end{itemize}
     	
     \end{frame}
     %%------------------------Fin------------------------%%
@@ -249,484 +528,115 @@
     %%--------------------Diapositiva--------------------%%
     \section{Pruebas}
     \begin{frame}
-        \frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
+        \frametitle{Pruebas}
         %%\framesubtitle{Subtítulo del frame (no obligatorio)}
-   
-   Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
-  
+        
+        \begin{itemize}
+        	\item Sistema Web.
+        	\item Manejo de Archivos.
+        	\item Integración de GALATEA.
+        	\begin{itemize}
+        		\item Subprocesos.
+        		\item Sockets.
+        	\end{itemize}
+        \end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Pruebas}
+    	\framesubtitle{Sistema Web}
+    	
+    	\begin{itemize}
+    		\item Sistema Web (JMeter).
+    		\begin{itemize}
+    			\item Páginas web y archivos estáticos: 640 peticiones por minuto.
+    			\item Páginas dinámicas con Django: 768 peticiones por minuto.
+    			\item Páginas estáticas dinámicas con Django: 128 peticiones por minuto
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Pruebas}
+    	\framesubtitle{Integración GALATEA}
+    	
+    	\begin{itemize}
+    		\item Integración GALATEA (Subprocesos).
+    		\begin{itemize}
+    			\item Variación de argumentos de simulación.
+    			\item tSim: el tiempo de simulación variando desde su valor por omisión hasta diez veces ese valor (100).
+    			\item InArrTime: tiempo entre llegadas variando desde su valor por omisión hasta el doble de ese valor(8.0).
+    			\item MeSerTime: tiempo de servicio variando desde su valor por omisión hasta el doble de ese valor(7.0).
+    		\end{itemize}
+    	\end{itemize}
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Pruebas}
+    	\framesubtitle{Integración GALATEA}
+    	
+    	\begin{itemize}
+    		\item Integración GALATEA (Sockets).
+    		\begin{itemize}
+    			\item Cliente Python.
+    			\item Cliente Java.
+    			\item Cliente C.
+    			\item Cliente Web.
+    		\end{itemize}
+    	\end{itemize}
     \end{frame}
     %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Uso de Sistema}
+    \begin{frame}
+    	\frametitle{Uso del Sistema}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	\begin{itemize}
+    		\item Video Inicial.
+    		\item Video Registro Usuarios.
+    		\item Video Manejo de Archivos.
+    		\item Video Compartir archivos y Amigos.
+    		\item Video Propuesta de Integración
+    	\end{itemize}
+    	
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
     
     %%--------------------Diapositiva--------------------%%
     \section{Conclusiones y Recomendaciones}
     \begin{frame}
-    	\frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
+    	\frametitle{Conclusiones}
     	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
     	
-    	Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
+    	\begin{itemize}
+    		\item Sistema web de simulación cuya base principal es GALATEA.
+    		\item Sistema de administración de archivos y carpetas.
+    		\item Interacción de usuarios dentro del sistema.
+    		\item Tecnologías y herramientas de software como: Django, GALATEA, Trello, Git, Github, Apache, Nginx, MySQL, PostgreSQL.
+    		\item Se desarrollaron y presentaron dos enfoques de integración (Subprocesos y Sockets).
+    		\item Se espera que con este trabajo el universo de usuarios y usuarias de simulación crezca.
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Recomendaciones}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	\begin{itemize}
+    		\item Integrar un sistema de educación a distancia para simulación.
+    		\item Desarrollar nuevas mejoras en la api de integración de GALATEA para no solo garantizar una comunicación con el sistema web, sino con otros sistemas.
+    		\item Red social de simulación.
+    		\item Definir e implementar un sistema de control de eventos en tiempo real para GALATEA.
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Finalización}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	{\Huge Gracias}...
     	
     \end{frame}
     %%------------------------Fin------------------------%%
 
- %%--------------------Diapositiva--------------------%%
-    \section{Target Detection}
-  
-    \begin{frame}
-    	\frametitle{Target Detection}
-    	\framesubtitle{Sparsity Model}
-    
-    Sea ${\bf y} \in \mathbb{R}^{n}$  un pixel de observacion multiespectral (pixel de una imagen multiespectral). Entonces\\
-
-	\begin{itemize}
-    		\item[\color {black}\bf $\bullet$] ${\bf y}$ se representa como un vector $n-dimensional$ cuyos elementos corresponden a la respuesta a varias bandas espectrales\\
-	\end{itemize}
-
-    	\begin{equation}
-		\nonumber {\bf y}= {\left[ \begin{array}{cccc} {y}_1 & {y}_2 & \ldots & {y}_n \end{array}  \right]}^T 
-	\end{equation}
-    	
-	\begin{itemize}
-    		\item[\color {black}\bf $\bullet$] En nuestro caso, se tienen $4$ bandas espectrales $(n=4)$ 
-	\end{itemize}
-  
-    \end{frame}
-    
-    %%------------------------Fin------------------------%%
-
- %%--------------------Diapositiva--------------------%%
-    %%\section{Dictionary learning for classification}
-    \begin{frame}
-   	\frametitle{Sparsity Model}
-    	\framesubtitle{Background pixel}
-
- Si ${\bf y}$ es un \textcolor{black} {\bf pixel de fondo}, éste puede ser representado aproximadamente como una combinacion lineal de átomos de fondo ${\{{\bf d}_i\}}_{i=1,2,...,K_b}$  
-
-	\begin{equation}
-	\nonumber  {\bf y} \approx {\alpha}_1{\bf d}_1^b+{\alpha}_2{\bf d}_2^b+...+{\alpha}_{ K_b} {\bf d}_{K_b}^b
-	\end{equation}
-
-	\begin{equation}
-	\nonumber  {\bf y} \approx \underbrace{ \left[ \begin {array}{cccc} 
-{\bf d}_1^b & {\bf d}_2^b & \ldots & {\bf d}_{K_b}^b \end {array} \right]}_{{\bf D}_b}
- {\underbrace{ \left[ \begin{array}{cccc} {\alpha}_1 & {\alpha}_2 & \ldots & {\alpha}_{K_b} \end{array} \right]} _{{\bf x}_b}}^T
-	\end{equation}
-
-	\begin{equation}
-	\nonumber  {\bf y} = {\bf D}_b  {\bf x}_b
-    	\end{equation}
-
-Donde:
-	\begin{itemize}	
-		\item[\color {black}\bf $\bullet$] ${\bf D}_b \in \mathbb{R}^{n \times {K_b}}$: Es el diccionario de fondo.\\
-		\item[\color {black}\bf $\bullet$] ${\bf x}_b \in \mathbb{R}^{K_b \times 1}$: Es el vector de coeficientes de fondo.\\
-	\end{itemize}
- 
-    \end{frame}
-    %%------------------------Fin------------------------%%
-
-
-%%--------------------Diapositiva--------------------%%
-   %% \section{Dictionary learning for classification}
-    \begin{frame}
-    	\frametitle{Sparsity Model}
-    	\framesubtitle{Target pixel}
-
- Si ${\bf y}$ es un \textcolor{black} {\bf pixel objetivo}, éste puede ser representado aproximadamente como una combinacion lineal de átomos de objetivo ${\{{\bf d}_i\}}_{i=1,2,...,K_t}$  
-
-	\begin{equation}
-		\nonumber  {\bf y} \approx {\beta}_1{\bf d}_1^t+{\beta}_2{\bf d}_2^t+...+{\beta}_{K_t}{\bf d}_{K_t}^t
-	\end{equation}
-
-	\begin{equation}
-		\nonumber  {\bf y} \approx \underbrace{ \left[ \begin{array}{cccc}
- {\bf d}_1^t & {\bf d}_2^t & \ldots & {\bf d}_{K_t}^t \end{array} \right]}_{{\bf D}_t} 
-{\underbrace{ \left[ \begin{array}{cccc} {\beta}_1 & {\beta}_2 & \ldots & {\beta}_{K_t} \end{array} \right]}_{{\bf x}_t}}^T
-	\end{equation}
-
-	\begin{equation}
-		\nonumber  {\bf y} = {\bf D}_t {\bf x}_t
-    	\end{equation}
-
-Donde:
-	\begin{itemize}	
-		\item[\color {black}\bf $\bullet$] ${\bf D}_t \in \mathbb{R}^{n \times {K_t}}$: Es el diccionario de objetivo.\\
-		\item[\color {black}\bf $\bullet$] ${\bf x}_t \in \mathbb{R}^{K_t \times 1}$: Es el vector de coeficientes de objetivo.\\
-	\end{itemize}
-
-\end{frame}
-%%--------------------Fin Diapositiva--------------------%%
-
-%%--------------------Diapositiva--------------------%%
-%%\section{Label consistent K-SVD}
-
-\begin{frame}
-	\frametitle{Sparsity Model}
-	\framesubtitle{Global Pixel}
-
-Para modelar cualquier pixel de observación ({\bf pixel global}), se combinan los diccionarios ${\bf D}_b$ y ${\bf D}_t$ formando así un {\bf diccionario global} ${\bf D}$. Por tanto, un {\bf pixel global} de prueba se puede escribir como una combinación lineal de unos pocos {\bf átomos globales} ${\{{\bf d}_i\}}_{i=1,2,...,K}$. Así
-
-	\begin {equation}
-		\nonumber	{\bf y}=
-		\underbrace{\left[
-		\begin {array}{cc}
-		{\bf D}_b & {\bf D}_t
-		\end {array} 
-		\right]}_{\bf D}
-		\underbrace{\left[
-		\begin {array}{c}
-		{\bf x}_b \\ {\bf x}_t
-		\end {array} 
-		\right]}_{\bf x}
-	\end{equation}	
-
-	\begin {equation}
-		\nonumber {\bf y}={\bf D}{\bf x}
-	\end {equation}
-
-Donde:
-	\begin{itemize}	
-		\item[\color {black}\bf $\bullet$] ${\bf D} \in \mathbb{R}^{n \times {K}}$: Es el diccionario global (con $K=K_b+K_t$).\\
-		\item[\color {black}\bf $\bullet$] ${{\bf x}} \in \mathbb{R}^{K \times 1}$: Es el vector de coeficientes global.\\
-	\end{itemize}
-
-\end{frame}
-%%--------------------FIN Diapositiva--------------------%%
-
-%%--------------------Diapositiva--------------------%%
-%%\subsection{LC-KSVD1}
-\begin{frame}
-	\frametitle{Reconstruction Task}
-%%\framesubtitle{LC-KSVD1}
-
-Asumiendo que se conoce el diccionario global ${\bf D}$, ${\bf x}$ se puede hallar resolviendo el problema de minimización (ampliamente conocido)
-
-	\begin {equation}
-		\nonumber {\bf x}=\argmin_{\bf x}\|{\bf y}-{\bf Dx}\|_2^2 \; s.t. \; \|{\bf x}\|_0 \leq T
-	\end {equation}
-
-Una vez conocido (reconstruido) el vector de coeficientes ${\bf x}$, se pueden determinar los respectivos ${\bf x}_b$ y ${\bf x}_t$
-
-	\begin {equation}
-		\nonumber	{\bf x}=
-		\left[
-		\begin {array}{c}
-		{\bf x}_b \\ {\bf x}_t
-		\end {array} 
-		\right]
-	\end {equation}
-
-\end{frame}	
-
-%%--------------------Fin Diapositiva--------------------%%
-
-%%--------------------Diapositiva--------------------%%
-
-\begin{frame}
-	\frametitle{Detection Task}
-	%%\framesubtitle{LC-KSVD1}
-
-Con los correspondientes vectores de coeficientes ${\bf x}_b$ y ${\bf x}_t$, se pueden calcular los respectivos errores de reconstruccón
-
-	\begin {equation}
-		\nonumber {\bf r}_b ( {\bf y} )=\| {\bf y} - {\bf D}_b  {\bf x}_b \|_2
-	\end{equation}
-	\begin {equation}
-		\nonumber {\bf r}_t ( {\bf y} )=\| {\bf y} - {\bf D}_t  {\bf x}_t \|_2
-	\end{equation}
-
-Luego, el detector podría plantearse de la sig. manera
-
-	\begin {equation}
-		\nonumber {\bf TD} ( {\bf y} )={\bf r}_b ( {\bf y} ) - {\bf r}_t ( {\bf y} )
-	\end{equation}
-
-Donde:
-	\begin{itemize}	
-		\item[\color {black}\bf $\bullet$] Si ${\bf TD} ( {\bf y} ) > \delta$: Entonces ${\bf x}$ es determinado como un pixel objetivo.\\
-		\item[\color {black}\bf $\bullet$] Si ${\bf TD} ( {\bf y} ) < \delta$: Entonces ${\bf x}$ es determinado como un pixel de fondo.\\
-	\end{itemize}	
-	
-\end{frame}
-%%--------------------Fin Diapositiva--------------------%%
-
-%%--------------------Diapositiva--------------------%%
-
-\begin{frame}
-	\frametitle{Observations}
-	\framesubtitle{First}
-
-Para {\bf D} se trabajó inicialmente con átomos tomados directamente de muestras sobre la imagen.	
-
-	\begin {itemize}
-		\item [\color {black} \bf $\bullet$] ${\bf D}_b:$ átomos conformados de pixeles de fondo, directamente.
-		\item [\color {black} \bf $\bullet$] ${\bf D}_t:$ átomos conformados de pixeles de objetivo, directamente.
-	\end {itemize}
-
-Lo cual, probablemente, conduce a una reconstrucción relativamente pobre (menos discriminativa).
-
-	\begin {itemize}
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Por esta razón, se pensó en el entrenamiento de un diccionario. Apareciendo el estudio del algoritmo K-SVD como mejor opción.}
-	\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Con lo que se espera una reconstrucción más discriminativa, que potencie el rendimiento del detector.}
-	\end {itemize}
-
-\end{frame}	
-
-%%--------------------Fin Diapositiva--------------------%%
-
-
-
- %%--------------------Diapositiva--------------------%%
- 
- \begin{frame}
- 	\frametitle{Observations}
- 	\framesubtitle{Second}
- 
-Con sólo entrenar un diccionario ${\bf D}$ que se adapte a la data (mediante K-SVD) se procedería con las tareas de reconstrucción y luego detección. Con ello:
-
-	\begin {itemize}
-		\item [\color {black} \bf $\bullet$] Se espera un mejor rendimiento en la detección debido a una reconstrucción de más fiable.
-		\item [\color {black} \bf $\bullet$] No obstante, los procesos de {\bf entrenamiento} y {\bf reconstrucción} se trabajan aisladamente.
-	\end {itemize}
-
-	Lo anterior, conduce a pensar en algo más ambisioso.
-
-	\begin {itemize}
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor {red} {Durante el mismo entrenamiento, se trabajen ambas operaciones (entrenamiento/detección) de manera simultánea.}
-	\end {itemize}
- 	
- \end{frame}
- 
- %%------------------------Fin------------------------%%
-
-
-%%--------------------Diapositiva--------------------%%
-\section {Classification}
-\begin {frame}
-	\frametitle {Classification}
-
-Suponiendo que se presentan \textit {\textbf{m}} posibles clases.
-El diccionario global estaría determinado por la combinación de \textit {\textbf{m}} subdicionarios. 
-(uno para clada clase)
-
-	\begin{equation}
-		\nonumber {\bf D}=\left[ \begin{array}{cccc} {\bf D}_1 & {\bf D}_2 & \ldots & {\bf D}_m \end{array} \right]
-	\end{equation}
-
-Para lo cual, resolviendo la tarea de reconstrucción, se obtendría un vector de coeficientes global ${\bf x}$ formado por la combinación de \textit {\textbf{m}} subvectores de coeficientes (uno por clase).
-
-	\begin{equation}
-		\nonumber {\bf x}=\left[ \begin{array}{c} {\bf x}_1 \\ {\bf x}_2 \\  \vdots \\ {\bf x}_m \end{array} \right]
-	\end{equation}
-
-\end{frame}
- %%--------------------Fin--------------------%%
-
-
-   %%--------------------Diapositiva--------------------%%
-\begin {frame}
-	\frametitle{Classification}
-
-Con los \textit {\textbf{m}} subdicionrios y vectores de coeficientes, se pueden calcular \textit {\textbf{m}} errores de reconstrucción (uno para cada clase).
-
-	\begin{equation}
-		\nonumber {\bf r}_i ({\bf y}) = \| {\bf y} - {\bf D}_i{\bf x}_i \|_2 \  \; \; \; \; \; \; {}_{i=1,2,\ldots, m}
-	\end {equation}
-
-Obteniéndose
-	\begin{equation}
-		\nonumber {\bf r} (i) = \left[ \begin{array}{c} {\bf r}_1 ({\bf y}) \\ {\bf r}_2 ({\bf y}) \\ \vdots \\ {\bf r}_m ({\bf y}) \end{array} \right] 
-	\end {equation}
-
-Luego, la clase queda determinada por
-
-	\begin{equation}
-		\nonumber {\bf C} \textnormal{lass} ({\bf y}) = i = \argmin_i \ {{\bf r} (i)}  \; \; \; \; \; \;  {}_{i=1,2,\ldots, m}
-	\end{equation}
-		
-\end {frame}
-
-%% ----------------------New Frame--------------------%%
-\section {SVD}
-\begin{frame}
-	\frametitle{Singular Value Descomposition}
-	\framesubtitle{Definition}
-		
-Cualquier matriz rectangular ${\bf A} \in \mathbb{R}^{m \times n}$ se puede factorizar de la forma
-
-	\begin{equation}
-		\nonumber {\bf A}={\bf U} {\bf \Sigma} {\bf V}^T
-	\end{equation}
-
-Donde:
-
-	\begin{itemize}
-		\item[\color{black}  \bf $\bullet$] ${\bf U} \in \mathbb{R}^{m \times m}:$ Matriz cuyas columnas son los autovectores de ${\bf A}{\bf A}^T$ 
-		\item[\color{black}  \bf $\bullet$] ${\bf V} \in \mathbb{R}^{n \times n}:$ Matriz cuyas columnas son los autovectores de ${\bf A}^T{\bf A}$
-		\item[\color{black}  \bf $\bullet$] ${\bf \Sigma} \in \mathbb{R}^{m \times n}:$ Matriz diagonal (pero rectangular) que contiene la raiz cuadrada de los autovalores no-negativos de ${\bf V}$. \newline Ellos son los valores singulares de ${\bf A}$
-	\end{itemize}
-\end{frame}	
-%%-----------------------End Frame--------------------%%
-
-%%----------------------New Frame--------------------%%
-\begin{frame}
-	\frametitle{SVD}
-	\framesubtitle{Particularity}
-	
-Segun su definición, SVD es una multiplicación de matrices.
-
-	\begin{itemize}
-		\item [\color {black} \bf $\bullet$] Se puede manejar esta multiplicacion como $columns \ times \ rows$
-	\end{itemize}
-
-	\begin{equation}
-		\nonumber {\bf A}={\bf U} {\bf \Sigma} {\bf V}^T={\bf u}_1{\bf \sigma}_1{\bf v}_1^T+{\bf u}_2{\bf \sigma}_2{\bf v}_2^T+ \ldots + {\bf u}_r{\bf \sigma}_r{\bf v}_r^T
-	\end{equation}
-
-	\begin{itemize}
-		\item [\color{red} \bf $\blacktriangleright$] \textcolor{red} {Cualquier matriz ${\bf A}$ (rectangular) se puede \textbf{descomponer} como la suma de $r$ submatrices de $rango$$-$$1$}.
-		\item [\color{red} \bf $\blacktriangleright$] \textcolor{red} {Cada matriz está formada por la multiplicacion entre la $i$$-$$th$ columna de ${\bf U}$ y la $i$$-$$th$ fila de ${\bf V}^T$, además de estar ponderadas/escaladas/pesadas por el correspondiente autovalor (\textbf{valor singular})}.
-	\end{itemize}
-
-\end{frame}
-%%------------------------End Frame-----------------%%
- 
-%%------------------------New Frame----------------%%
-\section{K-SVD}
-\begin{frame}
-	\frametitle{Algorithm K-SVD}
-	\framesubtitle{Definition And Operability}
-Dadas un conjunto de $N$ señales de entrenamineto ${\bf Y}$, el algoritmo busca el diccionario ${\bf D}$ que conduce a la mejor representacion ${\bf X}$ de cada uno de los $N$ miembros en ese conjunto, bajo una estricta $sparsity \ constraint$.
-
-	\begin{equation} \label{eq:main problem}
-		<{\bf D},{\bf X}>=\argmin_{\bf D,\bf X}\{\|{\bf Y}-{\bf DX}\|\}_F^2\  s.t.\ \forall i, \|{\bf x}_i\|_0\leq T    	\end{equation}
-
-Para tal fin, trabaja en base a dos etapas
-
-	\begin{enumerate}
-		\item $Sparse \ Coding \ Stage$.
-		\item $Process \ of \ Updating \ the \ dictionary$.
-	\end{enumerate}
-
-\end{frame}
-%%--------------------------End Frame----------------------------%%
-
-%%--------------------------New Frame----------------------------%%
-\begin {frame}
-	\frametitle{First Stage: Sparse Coding Stage}
-
-	\begin{itemize}
-		\item[\color {black} \bf $\bullet$] Se asume un ${\bf D}$ fijo y se considera el problema de optimización (\ref{eq:main problem}).
-		\item[\color {black} \bf $\bullet$] Se halla la matriz de de representación poco densa ${\bf X}$ ($Sparse$  $Coding$)  %\newline
-	\end{itemize}
-Esto se logra, resolviendo $N$ problemas
-
-	\begin{equation}
-		\nonumber {\bf x}_i=\argmin_{{\bf x}_i}\|{\bf y}-{\bf Dx}_i\|_2^2 \; \; s.t. \; \|{\bf x}\|_0 \leq T
-	\end{equation}
-		
-Donde la $i$$-$$th$ columna en ${\bf X}$, corresponde al vector de codificación ${\bf x}_i$ de la $i$$-$$th$ señal de entrenamineto ${\bf y}_i$ en ${\bf Y}$ para el ${\bf D}$ fijo. \newline 
-
-\end {frame} 
-%%--------------------------End Frame----------------------------%%
-
-%%--------------------------New Frame----------------------------%%
-\begin {frame}
-	\frametitle{Second Stage: Process of Updating the dictionary}
-
-	\begin{itemize}
-		\item[\color {black} \bf $\bullet$] Se asume que tanto ${\bf D}$ como ${\bf X}$ están fijos y se considera el problema de optimización (\ref{eq:main problem}).
-	\end{itemize} 
-
- Recordando la multiplicación matricial vista como $columns \ times \  rows$. Entonces
-
-	\begin{equation}
-		\nonumber {\bf DX} = \sum_{j=1}^K {\bf d}_j {\bf x}_T^j
-	\end{equation}
-	
- Con lo cual, el término $\| {\bf Y} - {\bf DX} \|_F^2$ en (\ref{eq:main problem}) se puede reescribir como
-	
-	\begin{equation} \label{eq:auxiliar}
-		\| {\bf Y} - {\bf DX} \|_F^2 = \left\| {\bf Y} - \sum_{j=1}^K {\bf d}_j {\bf x}_T^j  \right\|_F^2
-	\end{equation}
-	
-\end {frame}
-
-%%--------------------------End Frame----------------------------%%
-
-%%--------------------------New Frame----------------------------%%
-\begin {frame}
-	\frametitle{Second Stage: Process of Updating the dictionary}
-
-	\begin{itemize}
-		\item[\color {black} \bf $\bullet$] Para proponer la actualización de ${\bf D}$, se pone en cuestion un sólo átomo ${\bf d}_k$ y la fila de coeficientes ${\bf x}_T^k$ correspondientes
-	\end{itemize} 
-
-Ello se logra reescribiendo (\ref{eq:auxiliar}) de la sig. manera
-
-	\begin{equation} 
-		\nonumber \left \| {\bf Y} - {\bf DX} \right \|_F^2 = \left\| \left( {\bf Y} - \sum_{j \ne k} {\bf d}_j {\bf x}_T^j \right) - {\bf d}_k {\bf x}_T^k \right\|_F^2  \end{equation}
-	\begin{equation} \label{eq:dif}
- 		= \left \| {\bf E}_k - {\bf d}_k {\bf x}_T^k \right \|_F^2.
-	\end{equation}
-
-	\begin {itemize}
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Se desea minimizar la diferencia en (\ref{eq:dif}) sabiendo que ${\bf d}_k{\bf x}_T^k$ es una matriz de $rango$$-$$1$. ¿Qué se sugiere?}
-	\end{itemize}
-\end{frame}
-%%--------------------------End Frame----------------------------%%
-
-%%--------------------------New Frame----------------------------%%
-\begin{frame}
-	\frametitle{Second Stage: Process of Updating the dictionary}
-	
-	\begin {itemize}
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Aplicar SVD a ${\bf E}_k$ para determinar la matriz de $rango$$-$$1$ más semejante a ella.}
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Esto se realiza $K$ veces, a favor de actualizar cada uno de los $K$ átomos en ${\bf D}$.} 
-		\item [\color {red} \bf $\blacktriangleright$] \textcolor{red} {Lo anterior justifica el nombre del algoritmo, pues se aplica "SVD" $K$ veces (K-SVD)}
-	\end{itemize}
-
-
-\end{frame}
-%%--------------------------End Frame----------------------------%%
-
-
-%%--------------------------New Frame----------------------------%%
-\begin{frame}
-	\frametitle{Second Stage: Process of Updating the dictionary}
-	
-Muy importante, realmente (\ref{eq:dif}) se redefine antes de aplicar SVD a favor de mantener una representación poco densa. Así 
-
-	\begin{equation}
-		\nonumber \left \| {\bf E}_k {\bf \Omega}_k - {\bf d}_k {\bf x}_T^k {\bf \Omega}_k \right \|_F^2
-		= \left \| {\bf E}_k^R - {\bf d}_k {\bf x}_R^k \right \|_F^2.		
-	\end{equation} 
-
-Donde:
-	\begin {itemize}
-		\item [\color {black} \bf $\bullet$]  ${\bf \Omega}_k$ es la matriz que permite preservar el soporte del vector fila ${\bf x}_T^k$
-		\item [\color {black} \bf $\bullet$]  ${\bf x}_R^k$ son los coeficientes no nulos de ${\bf x}_T^k$
-		\item [\color {black} \bf $\bullet$] $ {\bf E}_k^R$ son las columnas de errores que corresponden a los ejemplos que usan el átomo ${\bf d}_k$
-	\end{itemize}
-
-Luego, Se aplica SVD a ${\bf E}_k^R$, con lo cual	
-	\begin{equation}
-		\nonumber {\bf d}_k {\bf x}_R^k =  {\bf u}_i {\sigma}_i {\bf v}_i^T  
-	\end {equation}
-
-\end{frame}
-%%--------------------------End Frame----------------------------%%
-
-    %%--------------------Diapositiva--------------------%%
-    \section{Bibliography}
-    \begin{frame}
-        \frametitle{Bibliography}
-        \begin{thebibliography}{9}\small
-            \setbeamertemplate{bibliography item}[text]
-            \bibitem{A}Y. Chen, N. M. Nasrabadi, and T. D. Tran, “Sparse representation for target detection in hyperspectral imagery,” IEEE J. Sel. Topics Signal Process, vol. 5, no. 3, pp. 629-640, June 2011.
-            \bibitem{B}Y. Chen, N. M. Nasrabadi, y T. D. Tran, “Hyperspectral Image Classifications using Dictionary-based sparse representation,” IEEE Trans. Geosci. Remote Sens., vol. 49, no. 10, pp. 3973-3985., Oct. 2011.
-            \bibitem{C} G. Strang, \textit{Linear Algebra and Its Aplications.} Fourth Edition. 
-	 \bibitem{D} M. Aharon, M. Elad, y A. Bruckstein, “K-SVD: An algorithm for designing overcomplete dictionaries for sparse representation,” IEEE Transactions on Signal Processing, vol. 54, no. 11, pp. 4311-4322, Nov. 2006.
-        \end{thebibliography}
-    \end{frame}
-    %%------------------------Fin------------------------%%
 \end{document}

@@ -1,5 +1,11 @@
 \beamer@slide {estructuraSistema}{8}
 \beamer@slide {arquitecturaAplicacion}{9}
-\beamer@slide {eq:main problem}{26}
-\beamer@slide {eq:auxiliar}{28}
-\beamer@slide {eq:dif}{29}
+\beamer@slide {entidadRelacionUsuarios}{12}
+\beamer@slide {entidadRelacionArchivosCarpetas}{13}
+\beamer@slide {pantalla1}{15}
+\beamer@slide {estructuraAdministradorArchivosCarpetas}{16}
+\beamer@slide {jerarquiaCarpetas}{17}
+\beamer@slide {subprocesoWork}{22}
+\beamer@slide {socketWork}{24}
+\beamer@slide {estructuraSokets}{25}
+\beamer@slide {estructuraProgramaServidor}{26}
