@@ -1,0 +1,179 @@
+\documentclass[spanish,xcolor=dvipsnames]{beamer}
+    \usefonttheme{professionalfonts}
+    \usetheme{Copenhagen}
+    \usecolortheme[named=NavyBlue]{structure}
+    \setbeamersize{text margin left=1em,text margin right=1.5em}
+    \setbeamercovered{transparent}
+    \setbeamertemplate{sections/subsections in toc}[circle]
+    %\setbeamertemplate{itemize items}[bullet]
+    %\setbeamertemplate{itemize subitem}[square]
+    %\setbeamertemplate{enumerate items}[square]
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{headline}{}
+	
+    \usepackage[spanish]{babel}
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    
+	%Estos paquetes pueden ser útiles,
+	%si no están instalados puede quitarlos,
+	%si los necesita instálelos
+    \usepackage{ragged2e}
+    \usepackage{lmodern}
+    \usepackage[font=scriptsize,labelfont=bf,center]{caption}
+    \usepackage{float}
+    \usepackage{graphicx}
+    \usepackage{subfig}
+    \usepackage{multicol}
+    \usepackage{amsmath}
+    \usepackage{tikz}
+    \usetikzlibrary{%
+                    automata,%
+                    arrows,%
+                    shapes,%
+                    chains,%
+                    matrix,%
+                    plotmarks,%
+                    %pgfplots.units,%
+                    decorations.markings,%
+                    decorations.pathmorphing,%
+                    backgrounds,%
+                    scopes,%
+                    calc,%
+                    petri,%
+                    positioning,%
+                    fit%
+                    }%
+    \usepgflibrary{arrows}
+    \usepackage{pgfplots}
+    \renewcommand{\shorthandsspanish}{}
+    \renewcommand{\spanishtablename}{Tabla}
+%    \spanishdecimal{,}
+
+    \makeatletter
+        \defbeamertemplate*{footline}{jtheme}
+        {
+          \leavevmode%
+          \hbox{%
+          \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+            \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}
+            {(\insertshortinstitute)}
+          \end{beamercolorbox}%
+          \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+            \usebeamerfont{title in head/foot}\insertshorttitle
+          \end{beamercolorbox}%
+          \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+            \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+            \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+          \end{beamercolorbox}}%
+          \vskip0pt%
+        }
+    \makeatother
+
+
+    %%-------------------Portada-------------------------%%
+    \title{Título de la presentación}
+    \author[Nombre Corto]{Nombre Completo}
+    \institute[ULA]{
+        Facultad de Nombre\\
+        Departamento o Escuela
+    }
+    \date[Mes Año]{\footnotesize Mérida, Mes, Año}
+
+    %%-------------------Fin-Portada---------------------%%
+
+\begin{document}
+	%%--------------------Diapositiva--------------------%%
+    \begin{frame}[plain] % [plain] para que no salga el contenido en esta página
+	    \begin{center}
+	    	\includegraphics[width=1.5cm]{ULA_logo_titulo}
+	    \end{center}
+	    \titlepage
+    \end{frame}
+    %%------------------------Fin------------------------%%
+	
+	%Logo de la esquina superior derecha de cada frame, necesita tres compilaciones para actualizar.
+	\addtobeamertemplate{frametitle}{}{%
+    \begin{tikzpicture}[remember picture,overlay]
+    	\node[anchor=north east,yshift=11pt,xshift=11pt] at (current page.north east) {\includegraphics[height=1.5cm,angle=-20,keepaspectratio]{ula}};
+    \end{tikzpicture}}
+    
+	%%--------------------Diapositiva--------------------%%
+    \begin{frame}\justifying
+        \frametitle{Agenda}
+        \begin{columns}
+            \begin{column}{0.0cm}
+            \end{column}
+            \begin{column}{0.9\textwidth}
+                \tableofcontents
+            \end{column}
+        \end{columns}
+    \end{frame}
+    %%------------------------Fin------------------------%%
+
+    %%--------------------Diapositiva--------------------%%
+    \section{Primera sección}
+    \begin{frame}
+        \frametitle{Título del frame (no obligatorio)}
+        \framesubtitle{Subtítulo del frame (no obligatorio)}
+        \begin{columns}
+        	\begin{column}{.7\linewidth}
+        		Contenido del frame a dos columnas de distinto ancho.
+        	\end{column}
+        	\begin{column}{.3\linewidth}
+        		Contenido del frame a dos columnas de distinto ancho.
+        	\end{column}
+        \end{columns}
+    \end{frame}
+    %%------------------------Fin------------------------%%
+
+    %%--------------------Diapositiva--------------------%%
+    \begin{frame}
+        \frametitle{Título del frame}
+        \framesubtitle{subtítulo del frame}
+        \begin{theorem}
+        	Algún teorema
+        	
+        	\begin{equation}
+        		f(x) = posible\qquad ecuación \qquad teorema
+        	\end{equation}
+        	
+        \end{theorem}
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
+	%%--------------------Diapositiva--------------------%%
+    \begin{frame}
+        \frametitle{Título del frame (no obligatorio)}
+        \framesubtitle{Subtítulo del frame (no obligatorio)}
+        \begin{block}{Ejemplo de bloque}
+        	Contenido del bloque. \textcolor{green}{Texto de otro color}.
+        \end{block}
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
+	%%%%%%%% % % % % % % % % % % % % % % % % % % %%%%%%%%%%
+	%%%%				Use para nuevo frame		   %%%%
+	%%%%%%%% % % % % % % % % % % % % % % % % % % %%%%%%%%%%
+   	%%--------------------Diapositiva--------------------%%
+    %\begin{frame}
+    %    \frametitle{¿Mínimos cuadrados?}
+    %    \framesubtitle{Método de optimización matemática}
+        
+    %\end{frame}
+    %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Bibliografía}
+    \begin{frame}
+        \frametitle{Ejemplo de Bibliografía con item alfanumérico}
+        \begin{thebibliography}{9}\small
+            \setbeamertemplate{bibliography item}[text]
+            \bibitem{A} Proakis, John y Malonakis, Dimitris. "Least-Square Design Methods". Capítulo: \emph{Design of Digital Filters}. \emph{Digital Signal Processing. Principles, Algorithms and Applications}. Prentice Hall International. 1996. pp. 706--714.
+            \bibitem{B} "Least-Squares Fitting - MATLAB \& Simulink". \emph{Mathworks Documentation Center}. Consulta: 09/06/2014. URL: \url{http://www.mathworks.com/help/curvefit/least-squares-fitting.html}.
+            \bibitem{C} "Mínimos Cuadrados". \emph{Wikipedia, La Enciclopedia Libre}. Consulta: 09/06/2014. URL: \url{http://es.wikipedia.org/wiki/M\%C3\%ADnimos_cuadrados}.
+            \bibitem{D} "Recursive digital filters design - MATLAB yulewalk". \emph{Mathworks Documentation Center}. Consulta: 09/06/2014. URL: \url{http://www.mathworks.com/help/signal/ref/yulewalk.html}.
+        \end{thebibliography}
+    \end{frame}
+    %%------------------------Fin------------------------%%
+\end{document}

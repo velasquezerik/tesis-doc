@@ -74,7 +74,7 @@
 \DeclareMathOperator*{\argmax}{arg\ max}
 
     %%-------------------Portada-------------------------%%
-    \title[Diseño e implementación de un Sistema Web para el Simulador de Eventos Discretos GALATEA]{\sc Sistema Web GALATEA}
+    \title[Sistema Web GALATEA]{\sc Diseño e implementación de un Sistema Web para el Simulador de Eventos Discretos GALATEA}
     \author[Erik Velásquez ]{ Erik Velasquez}
     \institute[ULA]{
         Facultad de Ingeniería\\Escuela de Ingeniería de Sistemas\\Trabajo de Grado
@@ -111,15 +111,160 @@
         \end{columns}
     \end{frame}
     %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Introducción}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\framesubtitle{Planteamiento del Problema}
+    	
+    	\begin{itemize}
+    		\item No se dispone de una plataforma web acondicionada para que, de manera fácil y rápida se pueda hacer uso del simulador GALATEA.
+    		\item Los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, suelen tener muchas dificultades para ejecutar los modelos de simulación en el simulador GALATEA.
+    	\end{itemize}
+
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\framesubtitle{Justificación}
+    	
+    	\begin{itemize}
+    		\item Desarrollar un sistema web que sirva como base para la simulación de eventos discretos.
+    		\item Sistema web amplíe la base de usuarios y usuarias del simulador.
+    		\item Ponerlos en contacto con diferentes expertos que trabajan en el CESIMO.
+    		\item Hacer que el simulador sea amigable a la web, para así, aprovechar todas las ventajas que nos proporciona.
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\framesubtitle{Objetivo General}
+    	
+    	Diseñar e implementar un sistema web para los usuarios y usuarias, modelistas y simulistas  del simulador de eventos discretos GALATEA, que les permita realizar todas las tareas habituales de modelado, codificación y análisis en sus computadores y en la forma que prefieran, pero permitiéndoles realizar las tareas automáticas de compilación, gestión de archivos, simulación y gestión de salidas, en el espacio virtual y con los recursos compartidos de un servidor Web.
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\framesubtitle{Objetivos Específicos}
+    	
+    	\begin{itemize}
+    		\item Desarrollar un sistema web que permita el control de usuarios junto con los roles a ser utilizados en el sistema.
+    		\item Diseñar e implementar una arquitectura de software que permita la comunicación entre el software de simulación y el sistema web.
+    		\item Instalar y configurar en un servidor la arquitectura de software para el sistema de simulación.
+    		\item Incorporar el simulador GALATEA como servicio para el sistema web.
+    		\item Diseñar y desarrollar un cliente GUI/controlador para un modelo que se pueda gestionar archivos y simular con GALATEA a través del sistema web desarrollado.
+    		\item Sistematizar la experiencia de uso del sistema web para simulación.
+    		\item Analizar el sistema web desarrollado y establecer las conclusiones.
+    	\end{itemize}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Introducción}
+    	\framesubtitle{Resumen}
+    	
+    	\begin{itemize}
+    		\item GALATEA.
+    		\item Control de Usuarios.
+    		\item Desarrollo de un Sistema Web.
+    		\item Integración del Sistema Web y GALATEA.
+    	\end{itemize}
+    	
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Desarrollo del Sistema Web}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	\begin{columns}
+    		\begin{column}{.5\linewidth}
+    			\begin{itemize}
+    				\item La aplicación Web que funciona como coordinador del sistema, control de usuarios y roles.
+    				\item Administración de archivos.
+    				\item El Sistema de Integración con GALATEA.
+    			\end{itemize}
+    		\end{column}
+    		\begin{column}{.5\linewidth}
+    			\begin{figure}[H]
+    				\centering
+    				\includegraphics[scale=0.23]{img/estructuraSistema.png}
+    				\caption{Sistema de Simulación Web GALATEA.}
+    				\label{estructuraSistema}
+    			\end{figure}
+    		\end{column}
+    	\end{columns}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Diseño de la Aplicación}
+    	
+    	\begin{columns}
+    		\begin{column}{.7\linewidth}
+    			\begin{figure}[H]
+    				\centering
+    				\includegraphics[scale=0.29]{img/arquitecturaAplicacion.png}
+    				\caption{Arquitectura de la aplicación web.}
+    				\label{arquitecturaAplicacion}
+    			\end{figure}
+    		\end{column}
+    		\begin{column}{.3\linewidth}
+    			\begin{itemize}
+    				\item Presentación.
+    				\item Servidor Web.
+    				\item Integración de Procesos.
+    				\item Datos.
+    			\end{itemize}
+    		\end{column}
+    		
+    	\end{columns}
+    	
+    \end{frame}
+    \begin{frame}
+    	\frametitle{Desarrollo del Sistema Web}
+    	\framesubtitle{Características de la Aplicación}
+    	
+    	\begin{itemize}
+    		\item Diseño modular.
+    		\item Validación y verificación de cada módulo.
+    		\item Arquitectura por capas.
+    	\end{itemize}
+    	
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Integración de GALATEA}
+    \begin{frame}
+    	\frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
+    	
+    \end{frame}
+    %%------------------------Fin------------------------%%
 
     %%--------------------Diapositiva--------------------%%
-    \section{Antecedents}
+    \section{Pruebas}
     \begin{frame}
         \frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
         %%\framesubtitle{Subtítulo del frame (no obligatorio)}
    
    Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
   
+    \end{frame}
+    %%------------------------Fin------------------------%%
+    
+    %%--------------------Diapositiva--------------------%%
+    \section{Conclusiones y Recomendaciones}
+    \begin{frame}
+    	\frametitle{Target Detection and Classification in Multispectral Imagery via Sparse Representation}
+    	%%\framesubtitle{Subtítulo del frame (no obligatorio)}
+    	
+    	Se piensa en reportar antecedentes sobre Detección y Clasificación para recordar de donde surge la idea de entrenar un Diccionario (esto de forma muy breve). 
+    	
     \end{frame}
     %%------------------------Fin------------------------%%
 
