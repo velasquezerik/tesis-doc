@@ -30,6 +30,11 @@ Dávila, J. (2003).
 \newblock Actilog: An agent activation language.
 \newblock {\em Lecture Notes in Computer Science}, (2562/2003):194--207.
 
+\bibitem[\protect\astroncite{Foundation}{2015}]{django}
+Foundation, D.~S. (2015).
+\newblock {\em The web framework for perfectionists with deadlines}.
+\newblock 5 edition.
+
 \bibitem[\protect\astroncite{Fuentes}{2009}]{ajaxManual}
 Fuentes, J.~M. (2009).
 \newblock {\em Manual de AJAX}.
@@ -38,11 +43,6 @@ Fuentes, J.~M. (2009).
 \bibitem[\protect\astroncite{Fujimoto}{2015}]{highLevelArchitecture}
 Fujimoto, R.~M. (2015).
 \newblock The high level architecture.
-
-\bibitem[\protect\astroncite{Fundation}{2015}]{django}
-Fundation, D.~S. (2015).
-\newblock {\em The web framework for perfectionists with deadlines}.
-\newblock 5 edition.
 
 \bibitem[\protect\astroncite{Gilbert y
   Troitzsch}{2005}]{sociologiaComputacional}

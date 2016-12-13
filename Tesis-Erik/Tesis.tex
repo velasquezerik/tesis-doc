@@ -122,7 +122,7 @@ pdfstartview=FitH, bookmarks=true, citecolor=blue, draft=true}
 
 % Aquí se escribe el resumen de la monografía
 \resumen{
-Se implementó y desplegó como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. El objetivo principal de este proyecto ha sido, mediante el uso de un sistema web, solucionar un problema existente entre los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, que suelen tener muchas dificultades para ejecutar los modelos de simulación en el simulador GALATEA, especialmente al momento de configurar y activar todas sus funcionalidades. Mediante el patrón de diseño de software modelo vista controlador (MVC) y usando el framework de desarrollo web Django; se desarrolló el sistema web, que usando como motor principal a GALATEA, permite crear, controlar y simular proyectos de simulación. Al igual se creó un sistema de gestión y administración de archivos, la cual permite compartir y editar archivos entre los distintos usuarios y usuarias que hacen uso del sistema web de simulación.
+Se implementó y desplegó como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. El objetivo principal de este proyecto ha sido, mediante el uso de un sistema web, solucionar un problema existente entre los usuarios y usuarias del Centro de Simulación y Modelado (CESIMO) de la Universidad de los Andes, que suelen tener muchas dificultades para ejecutar los modelos de simulación en la plataforma de simulación GALATEA, especialmente al momento de configurar y activar todas sus funcionalidades. Mediante el patrón de diseño de software modelo vista controlador (MVC) y usando el framework de desarrollo web Django; se desarrolló el sistema web, que usando como motor principal a GALATEA, permite crear, controlar y simular proyectos de simulación. Al igual se creó un sistema de gestión y administración de archivos, la cual permite compartir y editar archivos entre los distintos usuarios y usuarias que hacen uso del sistema web de simulación.
 }
 
 % Aquí se escriben las palabras claves de la monografía
@@ -148,7 +148,7 @@ Se implementó y desplegó como servicio, una aplicación utilizada para modelar y 
 % Si tiene dedicatoria
 % con o sin comentar
 % ***************************************************************** %
-\dedicatoria{Le dedico este trabajo a mi abuela Georgina Spirutova, que aunque ya no me acompaña en este mundo, su recuerdo, su caracter y sus enseñanzas siempre me acompañaran en todos los caminos que recorra en mi vida.\\
+\dedicatoria{Le dedico este trabajo a mi abuela Georgina Spirutova, que aunque ya no me acompaña en este mundo, su recuerdo, su carácter y sus enseñanzas siempre me acompañaran en todos los caminos que recorra en mi vida.\\
 }
 
 % ***************************************************************** %
@@ -165,7 +165,7 @@ Se implementó y desplegó como servicio, una aplicación utilizada para modelar y 
 \prefacesection{Agradecimientos}
 
 Primero que nada le agradezco a mis padres por ser mi ejemplo y modelo a seguir. Por enseñarme que con trabajo duro y dedicación se puede lograr cualquier cosa. Por siempre estar allí para mi, ayudarme en todo lo que yo necesitaba y velar por que nunca me faltara nada. A mis hermanas Adriana y Arianna que siempre han estado acompañándome en cada paso importante de mi vida. \\ \\
-A mi tío Ivan y mi tía Yudith por abrirme las puertas de su casa y permitirme formar parte de su familia durante todos mis estudios universitarios. Al igual enseñarme muchos valores que siempre tendré conmigo. A mis hermanos Andy y Alan, que no serán mis hermanos de sangre, pero son mis hermanos en la vida.\\ \\
+A mi tío Ivan y mi tía Yudith por abrirme las puertas de su casa y permitirme formar parte de su familia durante todos mis estudios universitarios. Al igual enseñarme muchos valores que siempre tendré conmigo. A mis hermanos Andy y Alan, que no serán mis hermanos de sangre, pero son mis hermanos de vida.\\ \\
 Le agradezco al resto de mi familia, mi tía Maria Isabel, mi tía Mariela, mi abuelo Manuel, mi abuelo Rosauro, mi abuela Dora, por mencionar unos pocos.\\ \\
 A mis compañeros de clase, mis amigos, como lo son: Mariangely, Juan Carlos, Juan Pablo, Encel, Jorge, Vanessa, Rosa, Manuel, que siempre estaban en las buenas y las malas. Al igual a Heyzel por acompañarme y brindarme su apoyo incondicional durante el desarrollo de éste trabajo.\\ \\
 A mi tutor Jacinto y Co-tutor Kay que me permitieron trabajar con ellos, apoyarme y ayudarme en todo lo que necesite para culminar el proyecto.\\ \\
@@ -205,7 +205,7 @@ A mi tutor Jacinto y Co-tutor Kay que me permitieron trabajar con ellos, apoyarm
 
 \chapter{Introducción}
 
-Este documento es una descripción del cómo se ha desarrollado el servicio Web que prestará una aplicación basada en simulación de eventos discretos, basada en GALATEA \citep{Galatea} , el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. La simulación es un herramienta que poseen los investigadores, ingenieros y profesionales para modelar sus experimentos y probarlos en un ambiente controlado. En el campo de la ingeniería la simulación se ha convertido en una herramienta fundamental y muy útil para cualquier tipo de trabajo. El desarrollo de la computación ha permitido que el campo de la simulación crezca de manera muy apresurada y ha permitido que se cuente con herramientas muy avanzadas, de fácil acceso y manipulación para simular. 
+Este documento es una descripción del cómo se ha desarrollado el servicio Web que prestará una aplicación basada en simulación de eventos discretos, basada en GALATEA \citep{Galatea} , el cual es un software para simulación de sistemas multi-agentes producto de dos líneas de investigación: lenguajes de simulación basados en la teoría de simulación de Zeigler y agentes basados en lógica. La simulación es un herramienta que usan los investigadores, ingenieros y profesionales para modelar sus experimentos y probarlos en un ambiente controlado. En el campo de la ingeniería la simulación se ha convertido en una herramienta fundamental y muy útil para cualquier tipo de trabajo. El desarrollo de la computación ha permitido que el campo de la simulación crezca de manera muy apresurada y ha permitido que se cuente con herramientas muy avanzadas, de fácil acceso y manipulación para simular. 
 
 Con el desarrollo del internet y el acceso que la mayoría de personas tenemos a él de manera sencilla, debemos pensar que desarrollar un software de simulación ejecutado en la web seria una herramienta muy poderosa e importante, que ayudaría en el trabajo a muchísimas personas de distintos campos y áreas. El propósito de éste trabajo es que el sistema de simulación web sirva para proveer un servicio de simulación de eventos discretos al usuario desde cualquier punto de mundo con una conexión a internet. Así también, se han previsto características de seguridad mediante las cuales, ante una petición al computador (request), ésta sea procesada sólo si ha sido previamente validada la identidad y autorización de los solicitantes.
 
@@ -214,11 +214,11 @@ Actualmente existen muchas herramientas que permiten diseñar y desarrollar aplic
 
 \section{Antecedentes}
 
-Como trabajos similares a esta propuesta se pueden mencionar los descritos en \citep{Galatea} el donde se relata la fase de desarrollo, cómo surge y hacia donde se proyecta GALATEA. Implementada como una plataforma libre para simulación de sistemas multi-agente, que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar dichas estrategias en problemas de simulación de sistemas complejos. 
+Como trabajos similares a esta propuesta se pueden mencionar los descritos en \citep{Galatea} el donde se relata la fase de desarrollo, cómo surge y hacia donde se proyecta GALATEA. Implementada como una plataforma libre para simulación de sistemas multi-agentes, que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar dichas estrategias en problemas de simulación de sistemas complejos. 
 
 Otro precedente \citep{tesisBruno}, trata de una tesis de pre-grado que expone el desarrollo de un servicio web para la Modeloteca de un Sistema Nacional de Simulación. La misma consistió en buscar, mediante el uso de una aplicación web, la solución al problema existente en el Centro de Simulación y Modelado (CESIMO) de la Universidad de Los Andes, en el cual había dificultades para mantener un registro referente a los proyectos que allí se desarrollaban, lo que como resultado provocaba que a menudo se perdiera información referente a los mismos, ó que incluso se llevara a cabo proyectos de forma innecesaria, ya que trabajos parecidos habrían sido realizado antes. Resultados que, debido a la falta de un repositorio institucional compartido, resultan imposibles de reusar o integrar. El objetivo de este proyecto de pre-grado fue adaptar un CMS, pero dicha adaptación no logró integrar a GALATEA como parte de su funcionalidad.
 
-En su tesis de pre-grado \citep{tesisGustavo}, se buscó implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. Mediante el uso del paradigma de arquitectura orientada a servicios (SOA: Service Oriented Architecture. Pero ese trabajo no alcanzó a resolver la complejidad de un servicio basado en SOA y tampoco de lograr la integración con GALATEA.
+En su tesis de pre-grado \citep{tesisGustavo}, buscó implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. Mediante el uso del paradigma de arquitectura orientada a servicios (SOA: Service Oriented Architecture. Pero ese trabajo no alcanzó a resolver la complejidad de un servicio basado en SOA y tampoco de lograr la integración con GALATEA.
 
 A partir de estos antecedentes lo que se pretende es, tomando como base GALATEA, adaptarlo como un servicio web en el cual el usuario pueda interactuar con el simulador, sin tener las limitaciones tales como las que pueden suelen surgir al usar sistemas operativos o navegadores diferentes, incluso ante arquitecturas distintas. A su vez, de \citep{tesisBruno}, se buscó obtener la experiencia ganada al desarrollar un Servicio Web en sí. Al igual se toma en cuenta a \citep{tesisGustavo}, buscando implementar y desplegar como servicio, una aplicación utilizada para modelar y simular eventos discretos en sistemas distribuidos, utilizando como medio los servicios web. A pesar de que ambas experiencias desarrollaron soluciones, aún no es posible contar con la experiencia de uso remoto de GALATEA como un servicio Web configurado por expertos administradores, pero con todas las facilidades y características del simulador al alcance de cualquier usuario registrado. 
 
@@ -291,7 +291,7 @@ Para el desarrollo del proyecto, se utilizó una metodología en espiral. El model
 
 Se realizaron cuatro ciclos, el primero correspondió a la realización de un sistema web simple que permitiera el control y administración de usuarios (Registrar, logearse y editar información).
 
-El segundo ciclo se enfoco en el desarrollo de un administrador de archivos y carpetas dentro de nuestro sistema web, permitirle a los usuarios crear, modificar y eliminar archivos y carpetas.
+El segundo ciclo se enfocó en el desarrollo de un administrador de archivos y carpetas dentro de nuestro sistema web, permitirle a los usuarios crear, modificar y eliminar archivos y carpetas.
 
 El tercer ciclo estuvo definido por la integración entre el motor de simulación GALATEA y nuestro sistema web. Diseñando y desarrollando los enfoques necesarios para su correcto funcionamiento dentro del sistema, al igual su fácil manejo por parte del usuario.
 
@@ -319,7 +319,7 @@ Contiene la arquitectura, el diseño y desarrollo de los programas de integración
 
 \item Capítulo V. Pruebas.
 
-En esta sección de exponen las distintas pruebas realizadas a la aplicación web, definición, implementación y el resultado, así mismo hacemos un estudio de los resultados obtenidos.
+En esta sección se exponen las distintas pruebas realizadas a la aplicación web, definición, implementación y el resultado, así mismo hacemos un estudio de los resultados obtenidos.
 
 \item Capítulo VI. Conclusiones y Recomendaciones.
 
@@ -333,7 +333,7 @@ Encontramos las historias de usuarios y casos de usos definidos en el desarrollo
 
 \chapter{Marco teórico-funcional}
 
-La simulación por computadora se ha convertido en una parte útil del modelado de muchos sistemas naturales en física, química y biología, y sistemas humanos como la economía y las ciencias sociales (sociología computacional) \citep{sociologiaComputacional}, su comportamiento cambiará cada simulación según el conjunto de parámetros iniciales supuestos por el entorno. En éste capítulo se explican en detalle las herramientas, tecnologías y conceptos usados para la consecución del proyecto que se propone. Definimos la simulación de eventos discretos DEVS (Discrete Event Simulation) \citep{discretSimulation}, así mismo nos introducimos en GALATEA, con el fin de proporcionar una base inicial para la codificación del nuevo sistema. Explicamos las ventajas de un servicio web y las herramientas empleadas para el desarrollo del mismo, como lo serian el Patrón de diseño Modelo Vista Controlador (MVC) \citep{modeloVistaControlador} y Django \citep{django}.
+La simulación por computadora se ha convertido en una parte útil del modelado de muchos sistemas naturales en física, química y biología, y sistemas humanos como la economía y las ciencias sociales (sociología computacional) \citep{sociologiaComputacional}, su comportamiento cambiará en cada simulación según el conjunto de parámetros iniciales supuestos por el entorno. En éste capítulo se explican en detalle las herramientas, tecnologías y conceptos usados para la consecución del proyecto que se propone. Definimos la simulación de eventos discretos DEVS (Discrete Event Simulation) \citep{discretSimulation}, así mismo nos introducimos en GALATEA, con el fin de proporcionar una base inicial para la codificación del nuevo sistema. Explicamos las ventajas de un servicio web y las herramientas empleadas para el desarrollo del mismo, como lo serian el Patrón de diseño Modelo Vista Controlador (MVC) \citep{modeloVistaControlador} y Django \citep{django}.
 
 \section{Simulación Distribuida} 
 
@@ -345,35 +345,35 @@ La arquitectura cliente-servidor es un modelo de aplicación distribuida en el qu
 
 \section{Simulación de Eventos Discretos}
 
-La simulación de eventos discretos es la "imitacion" de un proceso de operación o de un sistema del mundo real construido sobre la base del tiempo \citep{discretSimulation}. Esta codifica el comportamiento de sistemas complejos como una secuencia de eventos ordenados y bien definidos. En simulación de eventos discretos (DEVS por sus siglas en ingles),  el funcionamiento de un sistema se representa como una secuencia cronológica de los acontecimientos. Cada evento tiene lugar en un instante de tiempo y marca un cambio de estado en el sistema. Frente a su homóloga, la simulación de tiempo continuo, esta se caracteriza por un control en la variable del tiempo que permite avanzar a éste a intervalos variables, en función de la planificación de ocurrencia de tales eventos a un tiempo futuro. Estos sistemas se caracterizan por mantener un estado interno global del sistema, que puede no obstante estar física o lógicamente distribuido, y que cambia parcialmente debido a la ocurrencia de un evento. La ejecución de un evento puede desencadenar la generación de nuevos eventos futuros. Cada uno está marcado por su tiempo, por lo que el orden de generación puede no coincidir con el orden de ejecución.
+La simulación de eventos discretos es la representación de un proceso de operación o de un sistema del mundo real construido sobre la base del tiempo \citep{discretSimulation}. Esta codifica el comportamiento de sistemas complejos como una secuencia de eventos ordenados y bien definidos. En simulación de eventos discretos (DEVS por sus siglas en ingles),  el funcionamiento de un sistema se representa como una secuencia cronológica de los acontecimientos. Cada evento tiene lugar en un instante de tiempo y marca un cambio de estado en el sistema. Frente a su homóloga, la simulación de tiempo continuo, esta se caracteriza por un control en la variable del tiempo que permite avanzar a éste a intervalos variables, en función de la planificación de ocurrencia de tales eventos a un tiempo futuro. Estos sistemas se caracterizan por mantener un estado interno global del sistema, que puede no obstante estar física o lógicamente distribuido, y que cambia parcialmente debido a la ocurrencia de un evento. La ejecución de un evento puede desencadenar la generación de nuevos eventos futuros. Cada uno está marcado por su tiempo, por lo que el orden de generación puede no coincidir con el orden de ejecución.
 
-\section{GALATEA}
+\section{Plataforma de Simulación GALATEA}
 
-Galatea es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto materno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}.
+GALATEA es una plataforma para simulación de eventos discretos, DEVS, con una semántica basada a una red de nodos como metáfora del sistema a simular, la misma semántica matríz del sistema Glider, el proyecto materno local, que fuera formalizada como parte del nuevo proyecto y luego generalizada para luego re-acomodar la simulación continua, la simulación de sistemas multi-agentes y la simulación distribuida, simulación con autómatas celulares y simulación con modelos explícitos de espacios urbanos o arquitectónicos \citep{Galatea}.
 
 Podemos explicar de forma  breve y concisa en que consiste la misma, según \citep{Galatea}:
 
 \begin{quote}
-	Galatea es una plataforma libre para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar esas estrategias en problemas de simulación de sistemas complejos. La historia de Galatea comienza mucho antes que se planteara formalmente el proyecto con ese nombre. En 1993, nuestro muy joven Centro de Simulación y Modelos, CeSiMo, propone un proyecto para explorar la re-implementación de la plataforma de simulación Glider sobre una plataforma orientada a objetos dando origen a un prototipo experimental. El problema del cambio estructural, inspirado por investigaciones en economía, se había convertido entonces en uno de los objetivos de investigación fundamentales del CeSiMo y vendría a dictar también la pauta para Galatea. La noción de agente hizo su aparición en algunos reportes internos en los que se enfatizaba su importancia para modelar sistemas complejos como una economía nacional. En 1998 se planteó la posibilidad de integrar Glider con herramientas de inteligencia artificial para modelar agentes. En el 2000, un proyecto vendría a combinar aquel prototipo de 1993, con una teoría de agentes basada en lógica computacional que se planeaba integrar en una nueva teoría de simulación de sistemas multi-agentes. Allí nació Galatea. El logro fundamental para el proyecto, sin embargo, llegaría con las aplicaciones. En 2004, Galatea fue incorporada al banco de pruebas de un proyecto en biocomplejidad. Y en 2009-2011 fue usada como cama de pruebas de un sistema de agentes que aprenden \citep{jacintoLibro}.
+	GALATEA es una plataforma libre para simulación de sistemas multi-agente que incorpora estrategias de simulación bien conocidas con la que cualquier modelista o simulista puede ensayar esas estrategias en problemas de simulación de sistemas complejos. La historia de GALATEA comienza mucho antes que se planteara formalmente el proyecto con ese nombre. En 1993, nuestro muy joven Centro de Simulación y Modelos, CeSiMo, propone un proyecto para explorar la re-implementación de la plataforma de simulación Glider sobre una plataforma orientada a objetos dando origen a un prototipo experimental. El problema del cambio estructural, inspirado por investigaciones en economía, se había convertido entonces en uno de los objetivos de investigación fundamentales del CeSiMo y vendría a dictar también la pauta para GALATEA. La noción de agente hizo su aparición en algunos reportes internos en los que se enfatizaba su importancia para modelar sistemas complejos como una economía nacional. En 1998 se planteó la posibilidad de integrar Glider con herramientas de inteligencia artificial para modelar agentes. En el 2000, un proyecto vendría a combinar aquel prototipo de 1993, con una teoría de agentes basada en lógica computacional que se planeaba integrar en una nueva teoría de simulación de sistemas multi-agentes. Allí nació GALATEA. El logro fundamental para el proyecto, sin embargo, llegaría con las aplicaciones. En 2004, GALATEA fue incorporada al banco de pruebas de un proyecto en biocomplejidad. Y en 2009-2011 fue usada como cama de pruebas de un sistema de agentes que aprenden \citep{jacintoLibro}.
 \end{quote}
 
-\subsection{La arquitectura de la plataforma Galatea}
+\subsection{Arquitectura}
 
-La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture) \citep{highLevelArchitecture}. El lenguaje base usado para su desarrollo es el Java \citep{Galatea}. Usando como lenguaje base Java, se especificó un nuevo lenguaje de simulación al que denominan lenguaje Galatea. La sintaxis del lenguaje Galatea es, de hecho, una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog \citep{actilog} y Openlog \citep{openlog}. La compleja semántica de Galatea establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
+La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture) \citep{highLevelArchitecture}. El lenguaje base usado para su desarrollo es el Java \citep{Galatea}. Usando como lenguaje base Java, se especificó un nuevo lenguaje de simulación al que denominan lenguaje GALATEA. La sintaxis del lenguaje GALATEA es, de hecho, una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog \citep{actilog} y Openlog \citep{openlog}. La compleja semántica de GALATEA establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
 
-En la figura \ref{ejecucionGalatea} podemos observar la ejecución del modelo "SimpleTeller", que se encuentra entre los ejemplos básicos de GALATEA. En este modelo define un taquilla de un banco, la cual posee una entrada "Gate (I)" y una salida "Exit (E)". Las personas que entran llegan a un cajero de banco a intervalos de tiempo tomadas al azar de una distribución exponencial con la media "InArrTime". Se sirven uno a la vez. Los tiempos de servicio se toman de una distribución gaussiana con media "MeSerTime" y desviación estándar "DeSerTime".
+En la figura \ref{ejecucionGalatea} podemos observar la ejecución del modelo "SimpleTeller", que se encuentra entre los ejemplos básicos de GALATEA. En este modelo define la taquilla de un banco, que posee una entrada ``Gate (I)" y una salida "Exit (E)". Las personas que entran llegan a un cajero de banco a intervalos de tiempo tomadas al azar de una distribución exponencial con la media ``InArrTime". Se sirven uno a la vez. Los tiempos de servicio se toman de una distribución gaussiana con media ``MeSerTime" y desviación estándar ``DeSerTime".
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{img/codigoTaquillaGalatea.png}
-	\caption{Estructura del modelo SimpleTeller.}
+	\caption{Código GALATEA del modelo SimpleTeller.}
 	\label{codigoTaquillaGalatea}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.5]{img/ejecucionGalatea1.png}
-	\caption{Ejecución del ejemplo SimpleTeller.}
+	\caption{Ejecución del modelo SimpleTeller.}
 	\label{ejecucionGalatea}
 \end{figure}
 
@@ -392,7 +392,7 @@ A continuación se describen las herramientas usadas para el desarrollo del siste
 El modelo vista controlador (MVC) es un patrón de diseño de software, que separa los datos y la lógica de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello MVC propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción del usuario. Este patrón de arquitectura de software se basa en las ideas de reutilización de código y la separación de conceptos, características que buscan facilitar la tarea de desarrollo de aplicaciones y su posterior mantenimiento. Este patrón de diseño es muy popular en el marco de aplicaciones web ya que su abstracción permite escribir software altamente desacoplado y fácil de mantener y escalar. La figura \ref{mvc} muestra la relación entre los módulos de MVC.
 
 
-Los modelos son los componentes de la aplicación del sistema que realmente hacen el trabajo. Se mantienen muy distintos de las vistas, que muestran aspectos de los modelos. Los controladores se utilizan para enviar mensajes a los modelos, y proporcionar la interfaz entre el modelo con sus vistas asociadas y los dispositivos de interfaz de usuario interactivas (por ejemplo, teclado, ratón). Cada vista se puede pensar que está estrechamente vinculada con un controlador, que tienen cada uno exactamente un modelo, sino un modelo puede tener muchos pares vista / controlador \citep{modeloVistaControlador}.
+Los modelos son los componentes de la aplicación del sistema que realmente hacen el trabajo. Se mantienen muy distintos de las vistas, que muestran aspectos de los modelos. Los controladores se utilizan para enviar mensajes a los modelos, y proporcionar la interfaz entre el modelo con sus vistas asociadas y los dispositivos de interfaz de usuario interactivas (por ejemplo, teclado, ratón). Cada vista se puede pensar que está estrechamente vinculada con un controlador, que tienen cada uno exactamente un modelo, sino un modelo puede tener muchos pares vista/controlador \citep{modeloVistaControlador}.
 
 \subsubsection{Modelo}
 
@@ -525,7 +525,7 @@ Django \citep{django} es un framework de desarrollo web de código abierto, escri
 
 Cuando Django recibe una petición ésta pasa por un despachador de URLs (URL Dispatcher), cuya tarea es emparejar el URL con una vista y delegar a la vista el manejo de la petición. La vista contiene la lógica necesaria pa atender la petición entrante. Generalmente esto consiste en retirar o actualizar algunos datos del modelo, que a su vez se comunica con el manejador de base de datos, finalmente la vista combina los datos retirados de la base de datos, la petición y la sesión activa con una plantilla (template) para generar la respuesta de será devuelta.
 
-Django ha demostrado ser escalable y flexible \citep{tesisJesus}, se sabe de instancias de Django atendiendo ráfagas de cincuenta mil peticiones por segundo \citep{tesisJesus}, además cuenta con una extensa comunidad de colaboradores y amplia documentación.
+Django ha demostrado ser escalable y flexible, se sabe de instancias de Django atendiendo ráfagas de cincuenta mil peticiones por segundo \citep{tesisJesus}, además cuenta con una extensa comunidad de colaboradores y amplia documentación.
 
 \subsection{Bases de Datos}
 
@@ -539,7 +539,7 @@ Debido a su alta confiabilidad y estabilidad, se utilizaron sistemas manejadores
 
 \subsubsection{MySQL}
 
-Mysql es un sistema manejador de bases de datos relacionales (RDBMS por sus siglas en ingles) de código abierto bajo la licencia GPL (GNU General Public License). Mysql se caracteriza por ser rápido, confiable escalable y fácil de usar, es posible instalar Mysql tanto en una maquina junto a otras aplicaciones como servidores web o también instalarlo en máquinas dedicadas para que use todo el poder de cómputo disponible. Mysql posee características para ejecutarse en clusters de máquinas junto con un motor de replicación para obtener una alta escalabilidad \citep{baseDato}. 
+Mysql es un sistema manejador de bases de datos relacionales (Relational Database Management System RDBMS por sus siglas en ingles) de código abierto bajo la licencia GPL (GNU General Public License). Mysql se caracteriza por ser rápido, confiable escalable y fácil de usar, es posible instalar Mysql tanto en una maquina junto a otras aplicaciones como servidores web o también instalarlo en máquinas dedicadas para que use todo el poder de cómputo disponible. Mysql posee características para ejecutarse en clusters de máquinas junto con un motor de replicación para obtener una alta escalabilidad \citep{baseDato}. 
 
 \subsubsection{PostgreSQL}
 
@@ -660,7 +660,7 @@ El sistema de simulación de eventos discretos mediante la web esta conformado po
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.3]{img/estructuraSistema.png}
-	\caption{Sistema de Simulación Web GALATEA.}
+	\caption{Componentes del Sistema de Simulación Web GALATEA.}
 	\label{estructuraSistema}
 \end{figure}
 
@@ -687,13 +687,13 @@ La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas, 
 
 \subsection{Capa 1: Presentación}
 
-La capa de presentación es la interfaz gráfica que permite la interacción del usuario con el sistema de simulación Web. Esta capa consiste en los despliegues de navegadores en cualquier dispositivo conectado a Internet y su propósito es ofrecer la usuario una interfaz gráfica para ingresar el sistema, configurar y manejar simulaciones, observar resultados, entre otros.
+La capa de presentación es la interfaz gráfica que permite la interacción del usuario con el sistema de simulación Web. Esta capa consiste en los despliegues de navegadores en cualquier dispositivo conectado a Internet y su propósito es ofrecer la usuario una interfaz gráfica para ingresar al sistema, configurar y manejar simulaciones, observar resultados, entre otros.
 
 La capa de presentación puede ser extendida para la implementación de distintos front-ends como aplicaciones nativas para sistemas operativos móviles o de escritorio a través de APIs programáticas.
 
 \subsection{Capa 2: Servidor Web}
 
-El servidor web es el punto de entrada a la aplicación, éste responde a las peticiones realizadas desde el front-end a través del protocolo HTTP, el enfoque del servidor web es manejar tareas ligeras de la forma mas rápida posible y retornar respuestas para ofrecer al usuario baja latencia en su interacción con el sistema.
+El servidor web es el punto de entrada a la aplicación, éste responde a las peticiones realizadas desde el front-end a través del protocolo HTTP, el enfoque del servidor web es manejar tareas ligeras de la forma más rápida posible y retornar respuestas para ofrecer al usuario baja latencia en su interacción con el sistema.
 
 \begin{table}[H]
 	\centering
@@ -745,11 +745,11 @@ Cada usuario registrado esta representado por el modelo \textit{user}, el cual c
 
 El manejo de roles se define en el modelo \textit{group}, en el cual manejamos dos roles principales: el de \textit{administrador} y el de \textit{usuario}.
 
-Las relaciones de usuarios se maneja mediante \textit{Relationship}, lo cual nos permite definir la relación de \textit{amistad} entre dos usuarios. Esto nos permitirá compartir archivos entre usuarios.
+Las relaciones de usuarios se maneja mediante el modelo \textit{Relationship}, lo cual nos permite definir la relación de \textit{amistad} entre dos usuarios. Esto nos permitirá compartir archivos entre usuarios.
 
-Los archivos son manejados por \textit{File}, que permite definir la información básica y permisología de acceso a los mismos.
+Los archivos son manejados usando el modelo \textit{File}, que permite definir la información básica y permisología de acceso a los mismos.
 
-Las carpetas están definidas mediante  \textit{Folder}, que contiene la información básica y jerárquica de carpetas. Otro modelo muy relacionado es \textit{DiskSpace}, que nos permite llevar el control de espacio en disco usado por el usuario.
+Las carpetas están definidas mediante el modelo  \textit{Folder}, que contiene la información básica y jerárquica de carpetas. Otro modelo muy relacionado es \textit{DiskSpace}, que nos permite llevar el control de espacio en disco usado por el usuario.
 
 Para compartir un archivo usamos el modelo \textit{ShareFile}, que contiene la información del archivo y sus permisos compartidos.
 
@@ -1041,7 +1041,7 @@ El sistema de simulación web cuenta con una gama de funcionalidades para el cont
 
 
 
-\chapter{Integración de GALATEA} \label{integracionGALATEA}
+\chapter{Integración con GALATEA} \label{integracionGALATEA}
 
 Debido a que GALATEA esta desarrollado en Java y nuestro sistema web esta escrito en Python, necesitamos un mecanismo de comunicación para ambos lenguajes. Para esto se desarrolló dos mecanismos de comunicación como lo son: (1) Subprocesos y (2) Sockets. El primero de ellos lo implementamos realizando invocación a un subproceso
 o proceso externo, enviándole los parámetros necesarios para su ejecución, este enfoque es el actualmente implementado en nuestro sistema web y esta bien especificado en la sección \ref{llamadaProcesos}. La segunda implementación es una comunicación entre procesos vía sockets, el cual atiende las peticiones en un puerto de comunicación específico, lo cual nos permite comunicar nuestro sistema Python con el motor de simulación escrito en Java, como se especifica en la sección \ref{sockets}. 
@@ -1310,7 +1310,7 @@ El API Java para el manejo de Hebras (Threads) \citep{javaThreads}, define un co
 
 Esta integración de GALATEA mediante sockets se desarrolló como una propuesta experimental, con el objetivo de permitir una interacción en tiempo real con el proceso de simulación y el usuario simulista. Teniendo en mente este principio se definió el protocolo de comunicación explicado anteriormente, el cual englobamos las operaciones básicas de control sobre la simulación y el acceso a las variables que se manejan en la misma. Para desarrollar esta integración se utilizó como base el modelo de simulación \textbf{SimpleTeller}. El cual fue adaptado para que cumpliera con las funcionalidades explicadas anteriormente.
 
-Las pruebas de ejecución de todas estas formas de integración de el portal Web con Galatea se describirán a continuación en el capítulo \ref{pruebas}.
+Las pruebas de ejecución de todas estas formas de integración de el portal Web con GALATEA se describirán a continuación en el capítulo \ref{pruebas}.
 
 \chapter{Pruebas} \label{pruebas}
 
@@ -1318,7 +1318,7 @@ Las pruebas de ejecución de todas estas formas de integración de el portal Web c
 
 Para el manejo de las pruebas de integración se definió un modelo de simulación de prueba (\textbf{SimpleTeller}). Nuestro objetivo principal es que los modelos de simulación muestren la misma información de la simulación que muestran cuando son ejecutados en  GALATEA en la consola de una maquina aislada. Para ello todas las pruebas sobre el modelo escogido fueron ejecutadas en el sistema web y en GALATEA directamente.
 
-\subsection{Variación de argumentos de Simulación}
+\subsection{Variación de los parámetros de Simulación}
 
 El modelo de simulación escogido (\textbf{SimpleTeller}), cuenta con una variedad de argumentos que pueden ser modificados para la ejecución de la simulación.
 
@@ -1335,7 +1335,7 @@ Para simplicidad de las pruebas fueron escogidos tres valores a ser modificados:
 
 Cada variación de los argumentos se realizó por separado, mientras un argumento era modificado el resto de los mismos trabajaban con su valor por omisión.
 
-\subsection{Resultados de las pruebas}
+\subsection{Resultados}
 
 \subsubsection{tSim}
 
@@ -1562,7 +1562,7 @@ Todas las pruebas se ejecutaron sobre una red local entre dos máquinas conectada
 	\caption {Especificaciones del servidor web.} \label{servidorWeb}
 \end{table}
 
-\subsection{Resultados obtenidos}
+\subsection{Resultados}
 
 \begin{enumerate}
 	\item \textbf{Archivos estáticos con Apache}: En esta prueba se configuró un servidor Apache para servir sólo páginas web y archivos estáticos. Se encontró un valor de 640 peticiones por minuto como valor óptimo.
