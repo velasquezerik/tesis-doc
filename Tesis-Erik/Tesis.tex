@@ -361,7 +361,7 @@ Podemos explicar de forma  breve y concisa en que consiste la misma, según \cite
 
 La arquitectura de GALATEA está basada en objetos. Tanto los agentes como el simulador principal están desarrollados de acuerdo a dicho diseño (orientado a objetos OOD), para apoyar la distribución, la modularidad, la escalabilidad y la interactividad como lo exige la especificación HLA (High Level Architecture) \citep{highLevelArchitecture}. El lenguaje base usado para su desarrollo es el Java \citep{Galatea}. Usando como lenguaje base Java, se especificó un nuevo lenguaje de simulación al que denominan lenguaje GALATEA. La sintaxis del lenguaje GALATEA es, de hecho, una mezcla de la sintaxis Glider, las estructuras básicas de Java y las reglas de conductas de los agentes escritas en los lenguajes de programación lógica Actilog \citep{actilog} y Openlog \citep{openlog}. La compleja semántica de GALATEA establece que el código Java sea compilado y ejecutado por el motor de simulación de eventos discretos, mientras que las reglas de los agentes son interpretadas por un motor de inferencia implementado sobre una máquina Prolog  \citep{Galatea}. Es una plataforma mixta, que corre sobre máquinas virtuales Java y Prolog.
 
-En la figura \ref{ejecucionGalatea} podemos observar la ejecución del modelo "SimpleTeller", que se encuentra entre los ejemplos básicos de GALATEA. En este modelo define la taquilla de un banco, que posee una entrada ``Gate (I)" y una salida "Exit (E)". Las personas que entran llegan a un cajero de banco a intervalos de tiempo tomadas al azar de una distribución exponencial con la media ``InArrTime". Se sirven uno a la vez. Los tiempos de servicio se toman de una distribución gaussiana con media ``MeSerTime" y desviación estándar ``DeSerTime".
+En la figura \ref{ejecucionGalatea} podemos observar la ejecución del modelo "SimpleTeller", que se encuentra entre los ejemplos básicos de GALATEA. En este modelo define la taquilla de un banco, que posee una entrada ``Gate (I)" y una salida "Exit (E)", como se observa en la figura \ref{codigoTaquillaGalatea}. Las personas que entran llegan a un cajero de banco a intervalos de tiempo tomadas al azar de una distribución exponencial con la media ``InArrTime". Se sirven uno a la vez. Los tiempos de servicio se toman de una distribución gaussiana con media ``MeSerTime" y desviación estándar ``DeSerTime".
 
 \begin{figure}[H]
 	\centering
@@ -394,6 +394,13 @@ El modelo vista controlador (MVC) es un patrón de diseño de software, que separa
 
 Los modelos son los componentes de la aplicación del sistema que realmente hacen el trabajo. Se mantienen muy distintos de las vistas, que muestran aspectos de los modelos. Los controladores se utilizan para enviar mensajes a los modelos, y proporcionar la interfaz entre el modelo con sus vistas asociadas y los dispositivos de interfaz de usuario interactivas (por ejemplo, teclado, ratón). Cada vista se puede pensar que está estrechamente vinculada con un controlador, que tienen cada uno exactamente un modelo, sino un modelo puede tener muchos pares vista/controlador \citep{modeloVistaControlador}.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
+	\caption{Relaciones entre los módulos del patrón MVC.}
+	\label{mvc}
+\end{figure}
+
 \subsubsection{Modelo}
 
 El modelo es un conjunto de clases que representan la información del mundo real que el sistema debe procesar, así por ejemplo un sistema de administración de datos climatológicos tendrá un modelo que representará la temperatura, la humedad ambiental, el estado del tiempo esperado, etc. sin tomar en cuenta ni la forma en la que esa información va a ser mostrada ni los mecanismos que hacen que esos datos estén dentro del modelo, es decir, sin tener relación con ninguna otra entidad dentro de la aplicación \citep{modeloVistaControladorBascon}.
@@ -417,7 +424,7 @@ class File(models.Model):
 	permission = models.IntegerField(default=0, choices=STATUS_PERMISSION)
 \end{lstlisting}
 
-Los modelos dentro de nuestro sistema son representados en clases, las cuales a su vez representan los objetos a ser almacenados dentro de nuestra base de datos. Los modelos de datos "Folder" y "File", se representan junto con sus atributos, tipos de datos y relaciones.
+Los modelos dentro de nuestro sistema son representados en clases, las cuales a su vez representan los objetos a ser almacenados dentro de nuestra base de datos. Los modelos de datos ``Folder" y ``File" mostrados en el segmento de código anterior, se representan junto con sus atributos, tipos de datos y relaciones.
 
 \subsubsection{Vista}
 
@@ -487,11 +494,11 @@ Las vistas son el conjunto de clases que se encargan de mostrar al usuario la in
 
 \end{lstlisting}
 
-Esta vista es un archivo html, la cual define la forma en que los datos van a ser mostrados al usuario. La vista "show folder" muestra la información almacenada dentro de la carpeta.
+El segmento de código mostrado anteriormente representa a una vista. Esta vista es un archivo html, la cual define la forma en que los datos van a ser mostrados al usuario. La vista ``show folder" muestra la información almacenada dentro de la carpeta.
 
 \subsubsection{Controlador}
 
-El controlador es un objeto que se encarga de dirigir el flujo del control de la aplicación debido a mensajes externos, como datos introducidos por el usuario u opciones del menú seleccionadas por él. A partir de estos mensajes, el controlador se encarga de modificar el modelo o de abrir y cerrar vistas. El controlador tiene acceso al modelo y a las vistas, pero las vistas y el modelo no conocen de la existencia del controlador \citep{modeloVistaControladorBascon}.
+El controlador es un objeto que se encarga de dirigir el flujo del control de la aplicación debido a mensajes externos, como datos introducidos por el usuario u opciones del menú seleccionadas por él. A partir de estos mensajes, el controlador se encarga de modificar el modelo o de abrir y cerrar vistas. El controlador tiene acceso al modelo y a las vistas, pero las vistas y el modelo no conocen de la existencia del controlador \citep{modeloVistaControladorBascon}. A continuación mostramos un segmento de código que representa a un controlador dentro de nuestro sistema Web.
 
 \begin{lstlisting}
 @login_required(login_url="/login/")
@@ -508,18 +515,13 @@ def admin_folder_show(request,folder_id):
 
 \end{lstlisting}
 
-Este controlador es el encargado de enlazar la petición realizada por el usuario sobre un modelo de datos, y enlazarla con  su vista correspondiente, para su posterior visualización por parte del usuario. En la fracción de código mostrada vemos el controlador asociado a "show folder", el cual busca el modelo "folder" y lo asocia a su vista correspondiente "show\_folder.html".
+Este controlador es el encargado de enlazar la petición realizada por el usuario sobre un modelo de datos, y enlazarla con  su vista correspondiente, para su posterior visualización por parte del usuario. En la fracción de código mostrada vemos el controlador asociado a ``show folder", el cual busca el modelo ``folder" y lo asocia a su vista correspondiente ``show\_folder.html".
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{img/RelacionesMVC.png}
-	\caption{Relaciones entre los módulos del patrón MVC.}
-	\label{mvc}
-\end{figure}
+
 
 \subsection{Django}
 
-Django \citep{django} es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio No te repitas (DRY, Don't Repeat Yourself) \citep{django}. Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones, autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
+Django \citep{django} es un framework de desarrollo web de código abierto, escrito en Python, que respeta el patrón de diseño conocido como Modelo–vista–controlador. La meta fundamental de Django es facilitar la creación de sitios web complejos. Django pone énfasis en el re-uso, la conectividad y extensibilidad de componentes, el desarrollo rápido y el principio ``\textit{No Te Repitas}" (DRY, Don't Repeat Yourself) \citep{django}. Python es usado en todas las partes del framework, incluso en configuraciones, archivos, y en los modelos de datos. Django permite construir aplicaciones web rápidamente, gracias a su filosofía de baterías incluidas, es decir, que incluye una inmensa gama de características comunes a la mayoría de las aplicaciones web como las validaciones, autentificación de usuarios, manejo de sesiones entre muchos otros \citep{django}.
 
 \subsubsection{Funcionamiento de Django}
 
@@ -547,7 +549,8 @@ PostgreSQL es un sistema de base de datos de gran alcance, de código abierto obj
 
 \subsubsection{Mapeo Objeto-Relacional}
 
-El Mapeo Objeto-Relacional (ORM por sus siglas en ingles) es un método para interacturar con bases de datos relacionales desde el paradigma de la programación orientada a objetos, de esta manera es posible aprovechar conceptos como herencia y polimorfismo. Es una técnica de programación para convertir datos entre el sistema de tipos utilizado en un lenguaje de programación orientado a objetos y la utilización de una base de datos relacional como motor de persistencia. En la práctica esto crea una base de datos orientada a objetos virtual, sobre la base de datos relacional. Esto posibilita el uso de las características propias de la orientación a objetos (básicamente herencia y polimorfismo).
+El Mapeo Objeto-Relacional (ORM por sus siglas en ingles) es un método para interacturar con bases de datos relacionales desde el paradigma de la programación orientada a objetos, de esta manera es posible aprovechar conceptos como herencia y polimorfismo. Es una técnica de programación para convertir datos entre el sistema de tipos utilizado en un lenguaje de programación orientado a objetos y la utilización de una base de datos relacional como motor de persistencia. En la práctica esto crea una base de datos orientada a objetos virtual, sobre la base de datos relacional. Esto posibilita el uso de las características propias de la orientación a objetos (básicamente herencia y polimorfismo). A continuación observamos un segmento de código que hace uso del ORM de Djando usado en nuestro sistema:
+
 \begin{lstlisting}
 users = User.objects.all()    #obtener todos los usuarios registrados en la DB
 user = User.objects.get(id=user_id)	#obtener la información de un usuario específico
@@ -557,7 +560,7 @@ files = File.objects.filter(folder__user_id = user_id) #obtener todos los archiv
 
 \end{lstlisting}
 
-Todas estas llamadas están escritas en Python y usando la definición de ORM, este manejador encapsula las llamadas a la base de datos y genera automáticamente los SQLs específicos de cada llamada.
+Todas estas llamadas están escritas en Python y usando la definición de ORM, este manejador encapsula las llamadas a la base de datos y genera automáticamente los SQLs específicos de cada llamada. Los SQLs relacionados con las llamadas mostradas anteriormente, se pueden observar en el siguiente segmento de código:
 
 \begin{lstlisting}
 select * from users     #users = User.objects.all()
@@ -572,7 +575,7 @@ El uso de un ORM simplifica enormemente el manejo de la estructura de datos suby
 
 \subsection{JSON}
 
-JSON (JavaScript Object Notation) es un formato textual de intercambio y almacenamiento de datos no estructurados, JSON posee un formato que es fácil de leer para humanos y fácil de interpretar para máquinas y más ligero que XML por lo que se ha popularizado para el desarrollo de APIs. JSON es un formato de texto que es completamente independiente del lenguaje, pero utiliza las convenciones que son familiares para los programadores de la familia de lenguajes C, incluyendo C, C++, C\#, Java, JavaScript, Perl, Python, y muchos otros. Estas propiedades hacen JSON un lenguaje ideal de intercambio de datos.
+JSON (JavaScript Object Notation) es un formato textual de intercambio y almacenamiento de datos no estructurados, JSON posee un formato que es fácil de leer para humanos y fácil de interpretar para máquinas y más ligero que XML por lo que se ha popularizado para el desarrollo de APIs. JSON es un formato de texto que es completamente independiente del lenguaje, pero utiliza las convenciones que son familiares para los programadores de la familia de lenguajes C, incluyendo C, C++, C\#, Java, JavaScript, Perl, Python, y muchos otros. Estas propiedades hacen JSON un lenguaje ideal de intercambio de datos. A continuación se encuentra un segmento de código que hace uso de respuestas y peticiones JSON en nuestro sistema:
 
 \begin{lstlisting}
 @login_required(login_url="/login/")
@@ -596,7 +599,7 @@ Las llamadas de compilación y ejecución de los modelos de simulación, haces uso 
 
 \subsection{AJAX}
 
-AJAX (Asynchronous JavaScript And XML), es una técnica de desarrollo web para crear aplicaciones interactivas o RIA (Rich Internet Applications). Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano. De esta forma es posible realizar cambios sobre las páginas sin necesidad de recargarlas, mejorando la interactividad, velocidad y usabilidad en las aplicaciones. Ajax es una tecnología asíncrona, en el sentido de que los datos adicionales se solicitan al servidor y se cargan en segundo plano sin interferir con la visualización ni el comportamiento de la página, aunque existe la posibilidad de configurar las peticiones como síncronas de tal forma que la interactividad de la página se detiene hasta la espera de la respuesta por parte del servidor \citep{ajaxManual}.
+AJAX (Asynchronous JavaScript And XML), es una técnica de desarrollo web para crear aplicaciones interactivas o RIA (Rich Internet Applications). Estas aplicaciones se ejecutan en el cliente, es decir, en el navegador de los usuarios mientras se mantiene la comunicación asíncrona con el servidor en segundo plano. De esta forma es posible realizar cambios sobre las páginas sin necesidad de recargarlas, mejorando la interactividad, velocidad y usabilidad en las aplicaciones. Ajax es una tecnología asíncrona, en el sentido de que los datos adicionales se solicitan al servidor y se cargan en segundo plano sin interferir con la visualización ni el comportamiento de la página, aunque existe la posibilidad de configurar las peticiones como síncronas de tal forma que la interactividad de la página se detiene hasta la espera de la respuesta por parte del servidor \citep{ajaxManual}. A continuación encontramos un segmento de código usado en el sistema web, escrito en  el lenguaje de programación JavaScript, que hace uso de peticiones AJAX:
 
 \begin{lstlisting}
 <script type="text/javascript">
@@ -650,7 +653,7 @@ $( "#execute_file" ).click(function() {
 \end{lstlisting}
 
 Para crear la comunicación asíncrona con el servidor, nuestras llamadas de compilación y ejecución de modelos de simulación se realiza mediante una llamada AJAX. Esto nos permite continuar realizando tareas sobre nuestros modelos de simulación, mientras el servidor ejecuta esos procesos de compilación y ejecución por su lado.
-\\ \\
+
 Estos son los elementos conceptuales y las correspondientes realizaciones funcionales que hemos empleado para desarrollar este proyecto. En el capítulo \ref{desarrolloSistemaWeb} se explica cómo se ha realizado ese trabajo. 
 
 \chapter{Desarrollo del Sistema WEB}\label{desarrolloSistemaWeb}
@@ -683,7 +686,7 @@ Para el desarrollo de esta aplicación se usó el framework de desarrollo web Djan
 	\label{arquitecturaAplicacion}
 \end{figure}
 
-La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas, la capa superior o capa de presentación se ejecuta en el navegador del cliente, para ver los resultados obtenidos de la simulación, visualización de archivos, entre otras acciones que pude realizar el usuario; esta capa se comunica con la capa dos o capa de servicio, que es ejecutada por el servidor web y es la responsable de atender las peticiones de los usuarios del sistema; la capa tres es la encargada de las peticiones a los otros módulos que conforman el sistema, comunicación con el módulo de manejo de archivos e integración con el simulador GALATEA; la capa cuatro o capa de datos aloja los datos de la aplicación como usuarios, archivos, carpetas, modelos, trazas y datos de simulaciones, entre otros.
+La arquitectura del sistema web de simulación GALATEA consiste en cuatro capas como se observa en la figura \ref{arquitecturaAplicacion}, la capa superior o capa de presentación se ejecuta en el navegador del cliente, para ver los resultados obtenidos de la simulación, visualización de archivos, entre otras acciones que pude realizar el usuario; esta capa se comunica con la capa dos o capa de servicio, que es ejecutada por el servidor web y es la responsable de atender las peticiones de los usuarios del sistema; la capa tres es la encargada de las peticiones a los otros módulos que conforman el sistema, comunicación con el módulo de manejo de archivos e integración con el simulador GALATEA; la capa cuatro o capa de datos aloja los datos de la aplicación como usuarios, archivos, carpetas, modelos, trazas y datos de simulaciones, entre otros.
 
 \subsection{Capa 1: Presentación}
 
@@ -693,7 +696,7 @@ La capa de presentación puede ser extendida para la implementación de distintos 
 
 \subsection{Capa 2: Servidor Web}
 
-El servidor web es el punto de entrada a la aplicación, éste responde a las peticiones realizadas desde el front-end a través del protocolo HTTP, el enfoque del servidor web es manejar tareas ligeras de la forma más rápida posible y retornar respuestas para ofrecer al usuario baja latencia en su interacción con el sistema.
+El servidor web es el punto de entrada a la aplicación, éste responde a las peticiones realizadas desde el front-end a través del protocolo HTTP, el enfoque del servidor web es manejar tareas ligeras de la forma más rápida posible y retornar respuestas para ofrecer al usuario baja latencia en su interacción con el sistema. El framework Django para su manejo de peticiones multimedia y archivos estáticos hace uso de rutas como se observa en la tabla \ref{tabla-enrutamineto}:
 
 \begin{table}[H]
 	\centering
@@ -798,7 +801,7 @@ La figura \ref{entidadRelacionArchivosCarpetasCompartidos} muestra la relación p
 
 \subsubsection{Entidades}
 
-Las siguientes tablas resumen las entidades y la función de las mismas dentro del sistema web:
+Las siguientes tablas resumen las entidades y la función de las mismas dentro del sistema web: La tabla \ref{tabla-manejo-usuarios} define las entidades relacionadas al manejo de usuarios, la tabla \ref{tabla-manejo-archivos-carpetas} define las entidades relacionadas al manejo de archivos y carpetas, por último la tabla \ref{tabla-manejo-archivos-carpetas-compartidos} define las entidades relacionadas al manejo de archivos y carpetas compartidos.
 
 \begin{table}[H]
 	\centering
@@ -874,7 +877,7 @@ Todas las plantillas heredan de una plantilla base, ésta incluye la declaración 
 A continuación se muestran las principales pantallas de la interfaz de usuario del servicio web:
 
 \begin{itemize}
-	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y carpetas de nuestro sistema raíz.
+	\item \textbf{Pantalla del Dashboard (Inicio)}: Esta es la pantalla de inicio de un usuario registrado, en ella encontramos la información principal y las distintas opciones de navegación. Como eje central se encuentran los archivos y carpetas de nuestro sistema raíz, la cual se observa en la figura \ref{pantalla1}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/pantallaInicio.png}
@@ -882,7 +885,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla1}
 	\end{figure}
 	
-	\item \textbf{Pantalla Observación de Carpeta}: En ella encontramos todos los archivos y carpetas que se encuentran dentro de nuestra carpeta, al igual observamos todas las opciones que podemos ejecutar dentro de ella.
+	\item \textbf{Pantalla Observación de Carpeta}: En ella encontramos todos los archivos y carpetas que se encuentran dentro de nuestra carpeta, al igual observamos todas las opciones que podemos ejecutar dentro de ella, esto se observa en la figura \ref{pantalla2}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/observacionCarpeta.png}
@@ -890,7 +893,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla2}
 	\end{figure}
 	
-	\item \textbf{Pantalla Observación de Archivo}: Observamos la información contenida en el archivo y  poseemos un editor web para editarlo, al igual que todas las opciones que podemos manejar sobre el mismo.
+	\item \textbf{Pantalla Observación de Archivo}: Observamos la información contenida en el archivo y  poseemos un editor web para editarlo, al igual que todas las opciones que podemos manejar sobre el mismo, como se observa en la figura \ref{pantalla3}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/observacionArchivo.png}
@@ -898,7 +901,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla3}
 	\end{figure}
 	
-	\item \textbf{Pantalla Compilación y Ejecución}: Aquí podemos acceder a las opciones de compilación y ejecución de nuestro archivo, junto con los resultados obtenidos de esos procesos.
+	\item \textbf{Pantalla Compilación y Ejecución}: Aquí podemos acceder a las opciones de compilación y ejecución de nuestro archivo, junto con los resultados obtenidos de esos procesos, la cual se observa en la figura \ref{pantalla4}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/compilacionEjecucion.png}
@@ -906,7 +909,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla4}
 	\end{figure}
 	
-	\item \textbf{Pantalla Control de Usuarios}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de usuarios y podemos acceder a las distintas opciones de creación y edición de usuarios.
+	\item \textbf{Pantalla Control de Usuarios}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de usuarios y podemos acceder a las distintas opciones de creación y edición de usuarios , observado en la figura \ref{pantalla5}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/controlUsuarios.png}
@@ -914,7 +917,7 @@ A continuación se muestran las principales pantallas de la interfaz de usuario d
 		\label{pantalla5}
 	\end{figure}
 	
-	\item \textbf{Pantalla Integración por Sockets}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de la integración realizada con GALATEA mediante sockets. Tenemos una interfaz que cuenta con la implementación del protocolo de comunicación definido para esta integración, podemos revisar toda la información en el capítulo \ref{integracionGALATEA}.
+	\item \textbf{Pantalla Integración por Sockets}: Esta pantalla solo es accedida por usuarios administradores del sistema, en ella tenemos la visualización de la integración realizada con GALATEA mediante sockets. Tenemos una interfaz que cuenta con la implementación del protocolo de comunicación definido para esta integración, podemos revisar toda la información en el capítulo \ref{integracionGALATEA}, dicha pantalla se observa en la figura \ref{pantalla6}.
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.2]{img/socketsIntegration.png}
@@ -1048,7 +1051,7 @@ o proceso externo, enviándole los parámetros necesarios para su ejecución, este 
 
 \section{Subprocesos} \label{llamadaProcesos}
 
-El módulo de subproceso en Python  permite ejecutar nuevos procesos, tomando en cuenta las operaciones de entrada/salida/error y así obtener la información de retorno. Lo utilizan para ejecutar un comando shell o un archivo ejecutable en Python, \citep{subproccess}.
+El módulo de subproceso en Python  permite ejecutar nuevos procesos, tomando en cuenta las operaciones de entrada/salida/error y así obtener la información de retorno. Lo utilizan para ejecutar un comando shell o un archivo ejecutable en Python, \citep{subproccess}. En la figura \ref{subprocesoWork} observamos la estructura y ejecución de un subproceso usado en nuestro sistema.
 
 \begin{figure}[H]
 	\centering
@@ -1065,7 +1068,7 @@ El proceso de GALATEA para ejecutar simular definido en tres pasos:
 	\item Ejecutar la simulación: Finalmente ejecutamos la simulación con sus diferentes parámetros de entrada. Es decir, invocamos el modelo de simulación con ciertos parámetros.
 \end{itemize}
 
-Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de los pasos es obtenido como valor de retorno de la misma y es mostrado al usuario.
+Cada uno de estos pasos es ejecutado mediante una llamada a un subproceso dentro de nuestro sistema. El resultado de cada una de los pasos es obtenido como valor de retorno de la misma y es mostrado al usuario. A continuación se encuentra un fragmento de código escrito en Python en el que se define la ejecución de un subproceso dentro del sistema:
 
 \begin{lstlisting}
 #run the program
@@ -1081,6 +1084,8 @@ def execute_java(file_id, arguments):
 	value = subprocess.check_output([code], shell=True)
 	return value
 \end{lstlisting}
+
+En el fragmento de código mostrado anteriormente se ejecuta un modelo de simulación dado y el resultado es retornado para ser mostrado al cliente.
 
 \section{Sockets} \label{sockets}
 
@@ -1144,7 +1149,7 @@ Este programa esta definido por tres hilos de ejecución como observamos en la fi
 
 Debido a, que en los nuevos desarrollos de GALATEA para cuando este trabajo se realizó, se esta desarrollando el manejo de eventos dentro de GALATEA, los cuales son disparados cuando situaciones particulares dentro de la simulación ocurren. En nuestra integración se tomó en cuenta y se implementó ese manejo de eventos.
 
-La función de el manejador de eventos es capturar todos los eventos que son creados dentro de la simulación, procesarlos y enviarlos nuevamente al programa cliente, para su posterior observación. Los eventos y su procesamiento ocurren en tiempo real, es decir, a penas el evento es creado se captura y se procesa.
+La función de el manejador de eventos es capturar todos los eventos que son creados dentro de la simulación, procesarlos y enviarlos nuevamente al programa cliente, para su posterior observación. Los eventos y su procesamiento ocurren en tiempo real, es decir, a penas el evento es creado se captura y se procesa. A continuación encontramos un fragmento de código en el que se define el manejo de eventos:
 
 \begin{lstlisting}
 public class ModelEventListener implements ModelListener
@@ -1174,11 +1179,13 @@ public class ModelEventListener implements ModelListener
 
 \end{lstlisting}
 
+Este manejador de eventos esta definido por una clase de JAVA, en la cual encontramos el método ``modelReceived" el cual es el encargado de manejar el evento dentro del proceso de simulación.
+
 \subsubsection{Hilo de Simulación}
 
 Éste módulo es el modelo de simulación implementado como un Thread de Java \citep{javaThreads}. Este hilo encapsula toda la información del modelo de simulación (variables y métodos), al igual todos los métodos de comunicación con GALATEA.
 
-Su función es procesar la simulación y disparar los eventos que serán capturados por el manejador de eventos.
+Su función es procesar la simulación y disparar los eventos que serán capturados por el manejador de eventos. A continuación encontramos el código para el manejo del hilo de simulación, definido dentro de nuestra integración:
 
 \begin{lstlisting}
 class ModelThread extends Thread
@@ -1261,9 +1268,11 @@ class ModelThread extends Thread
 
 \end{lstlisting}
 
+En el código observamos que hacemos uso de las clases principales de JAVA para el manejo de hilos de ejecución, al igual de los métodos necesarios para su control y ejecución.
+
 \subsubsection{Cuerpo Principal}
 
-Es el encargado de controlar todos los aspectos principales del programa servidor. Primero inicia el programa en un puerto específico, e inicializa el hilo de simulación y el manejador de eventos.
+Es el encargado de controlar todos los aspectos principales del programa servidor. Primero inicia el programa en un puerto específico, e inicializa el hilo de simulación y el manejador de eventos. En el siguiente fragmento de código observamos todas las definiciones de las variables necesarias y la inicialización de las mismas para su funcionamiento:
 
 \begin{lstlisting}
 //init de the server on port number
@@ -1339,7 +1348,7 @@ Cada variación de los argumentos se realizó por separado, mientras un argumento 
 
 \subsubsection{tSim}
 
-Comenzando el tSim=10 y terminando con un tSim=100, con un incremento de 10. Se realizaron 10 pruebas, obteniendo en todas la misma información entre simulaciones.
+Comenzando el tSim=10 y terminando con un tSim=100, con un incremento de 10. Se realizaron 10 pruebas, obteniendo en todas la misma información entre simulaciones. En la figura \ref{pruebatSimA} se observa la ejecución del modelo usando GALATEA en la consola y en la figura \ref{pruebatSimB} se observa el resultado de ejecutar el mismo modelo pero mediante el sistema web de GALATEA.
 
 \begin{figure}[H]
 	\centering
@@ -1358,7 +1367,7 @@ Comenzando el tSim=10 y terminando con un tSim=100, con un incremento de 10. Se 
 
 \subsubsection{InArrTime}
 
-Comenzando el InArrTime=4.0 y terminando con un InArrTime=8.0, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones.
+Comenzando el InArrTime=4.0 y terminando con un InArrTime=8.0, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones. En la figura \ref{pruebatSimC} se observa la ejecución del modelo usando GALATEA en la consola y en la figura \ref{pruebatSimD} se observa el resultado de ejecutar el mismo modelo pero mediante el sistema web de GALATEA.
 
 \begin{figure}[H]
 	\centering
@@ -1376,7 +1385,7 @@ Comenzando el InArrTime=4.0 y terminando con un InArrTime=8.0, con un incremento
 
 \subsubsection{MeSerTime}
 
-Comenzando el MeSerTime=3.5 y terminando con un MeSerTimerTime=7.5, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones.
+Comenzando el MeSerTime=3.5 y terminando con un MeSerTimerTime=7.5, con un incremento de 1.0. Se realizaron 4 pruebas, obteniendo en todas la misma información entre simulaciones. En la figura \ref{pruebatSimE} se observa la ejecución del modelo usando GALATEA en la consola y en la figura \ref{pruebatSimF} se observa el resultado de ejecutar el mismo modelo pero mediante el sistema web de GALATEA.
 
 \begin{figure}[H]
 	\centering
@@ -1402,7 +1411,7 @@ Para verificar el correcto funcionamiento de esta integración usando sockets, se
 
 \subsection{Cliente Python}
 
-El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
+El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación. En la figura \ref{pythonClient} observamos la ejecución de nuestro cliente en Python, mientras en la figura \ref{integracionGalateaRespuestaA} observamos la respuesta de la simulación en GALATEA usando ese cliente Python.
 
 \begin{figure}[H]
 	\centering
@@ -1410,6 +1419,8 @@ El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del 
 	\caption{Cliente Python.}
 	\label{pythonClient}
 \end{figure}
+
+En nuestro cliente Python observamos la ejecución de algunas de las instrucciones definidas en nuestro protocolo de comunicación como lo son: Start, Set, Get y Exit para detener la simulación.
 
 \begin{figure}[H]
 	\centering
@@ -1420,7 +1431,7 @@ El cliente Python se desarrolló, para ejecutar cuatro instrucciones básicas del 
 
 \subsection{Cliente C}
 
-El cliente C se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación al igual que el cliente Python: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación.
+El cliente C se desarrolló, para ejecutar cuatro instrucciones básicas del protocolo de comunicación al igual que el cliente Python: ``Start" comenzar la simulación, ``Set" modificar el valor de una variable dentro de la simulación, ``Get" obtener el valor de una variable dentro de la simulación y ``Exit" terminar la simulación. En la figura \ref{cClient} observamos la ejecución de nuestro cliente en C, mientras en la figura \ref{integracionGalateaRespuestaB} observamos la respuesta de la simulación en GALATEA usando ese cliente en C.
 
 \begin{figure}[H]
 	\centering
@@ -1428,6 +1439,8 @@ El cliente C se desarrolló, para ejecutar cuatro instrucciones básicas del proto
 	\caption{Cliente en C.}
 	\label{cClient}
 \end{figure}
+
+En nuestro cliente C observamos la ejecución de algunas de las instrucciones definidas en nuestro protocolo de comunicación como lo son: Start, Set, Get y Exit para detener la simulación.
 
 \begin{figure}[H]
 	\centering
@@ -1440,7 +1453,7 @@ Observamos que ambos clientes se comunican con el proceso de simulación. Y el pr
 
 \subsection{Cliente Web}
 
-El cliente web, es una interfaz web que permite le ejecución de la simulación y el envío de las instrucciones de comunicación para en control de la simulación. Estas instrucciones se realizan mediante peticiones AJAX a métodos Python, los cuales a su vez se conectan al socket específico de la simulación y envían las instrucciones dadas.
+El cliente web, es una interfaz web que permite le ejecución de la simulación y el envío de las instrucciones de comunicación para en control de la simulación. Estas instrucciones se realizan mediante peticiones AJAX a métodos Python, los cuales a su vez se conectan al socket específico de la simulación y envían las instrucciones dadas. En la figura \ref{webClient} observamos la ejecución de nuestro cliente Web, mientras en la figura \ref{integracionGalateaRespuestaC} observamos la respuesta de la simulación en GALATEA usando ese cliente Web.
 
 \begin{figure}[H]
 	\centering
@@ -1463,7 +1476,7 @@ El protocolo de comunicación funciona como se espera al igual el proceso de simu
 
 \subsection{Manejo de Archivos}
 
-La creación de archivos es un objetivo fundamental dentro del proyecto, por lo que es necesario garantizar su correcto funcionamiento. La prueba consistió en la creación de archivos usando el sistema web y verificar su correcta creación en el servidor.
+La creación de archivos es un objetivo fundamental dentro del proyecto, por lo que es necesario garantizar su correcto funcionamiento. La prueba consistió en la creación de archivos usando el sistema web y verificar su correcta creación en el servidor. En la figura \ref{pruebatCreateA} observamos la creación del archivo mediante nuestro sistema web.
 
 \begin{figure}[H]
 	\centering
@@ -1479,11 +1492,11 @@ La creación de archivos es un objetivo fundamental dentro del proyecto, por lo q
 	\label{pruebaCreateAS}
 \end{figure}
 
-Observamos que el archivo \textbf{ModeloPrueba.g} fue creado con éxito. Y se encuentra dentro del directorio principal del admin.
+Observamos que el archivo \textbf{ModeloPrueba.g} fue creado con éxito. Y se encuentra dentro del directorio principal del admin como se muestra en la figura \ref{pruebaCreateAS}.
 
 \subsection{Manejo de Carpetas}
 
-La creación de carpetas para el control de proyectos y modelos es un objetivo fundamental dentro del proyecto, por lo que es necesario garantizar su correcta creación y localización dentro del sistema. La prueba consistió en la creación de caretas usando el sistema web y verificar su correcta creación y localización en el servidor.
+La creación de carpetas para el control de proyectos y modelos es un objetivo fundamental dentro del proyecto, por lo que es necesario garantizar su correcta creación y localización dentro del sistema. La prueba consistió en la creación de caretas usando el sistema web y verificar su correcta creación y localización en el servidor. En la figura \ref{pruebatCreateF} observamos la creación de la carpeta mediante nuestro sistema web.
 
 \begin{figure}[H]
 	\centering
@@ -1499,7 +1512,7 @@ La creación de carpetas para el control de proyectos y modelos es un objetivo fu
 	\label{pruebaCreateFS}
 \end{figure}
 
-Observamos que la carpeta \textbf{FolderTest} fue creada con éxito. Y se encuentra dentro del directorio principal del admin.
+Observamos que la carpeta \textbf{FolderTest} fue creada con éxito. Y se encuentra dentro del directorio principal del admin como se muestra en la figura \ref{pruebaCreateFS}.
 
 \section{Pruebas del Sistema WEB}
 
@@ -2296,7 +2309,7 @@ sudo service apache2 restart
 
 \chapter{Manual de usuario del Sistema web}
 
-El sistema web de simulación, cuenta con una gama de funcionalidades que explicaremos a continuación:
+El sistema web de simulación (en la figura \ref{paginaInicio} observamos la pantalla de inicio del sistema web), cuenta con una gama de funcionalidades que explicaremos a continuación:
 
 \begin{figure}[H]
 	\centering
@@ -2317,7 +2330,7 @@ Para ingresar al sistema debemos colocar nuestras credenciales (Username y passw
 
 \section{Manejo de Usuarios}
 
-El sistema permite el control de dos tipos de usuarios (Administradores y usuarios normales).
+El sistema permite el control de dos tipos de usuarios (Administradores y usuarios normales. En la figura \ref{paginaInicioAdmin} se observa la pantalla de inicio de una usuario administrador y en la figura \ref{paginaInicioUser} se observa la pantalla de inicio de un usuario normal.
 
 \begin{figure}[H]
 	\centering
@@ -2334,7 +2347,7 @@ El sistema permite el control de dos tipos de usuarios (Administradores y usuari
 \end{figure}
 \subsection{Control de Usuarios}
 
-Solo los administradores del sistema pueden acceder a esta página y visualizar los usuarios. Contamos con una serie de opciones en esta página. El botón "\textbf{New Admin}" y "\textbf{New User}", te envían a la pagina respectiva para crear ese tipo de usuario. Cada uno de los usuarios listados, cuentan con la opción de "\textbf{Delete}" y "\textbf{Edit}", que desactiva al usuario del sistema y permite editar sus datos respectivamente.
+Solo los administradores del sistema pueden acceder a esta página y visualizar los usuarios. Contamos con una serie de opciones en esta página. El botón "\textbf{New Admin}" y "\textbf{New User}" como se observa en la figura \ref{paginaListaUsuarios}, te envían a la pagina respectiva para crear ese tipo de usuario. Cada uno de los usuarios listados, cuentan con la opción de "\textbf{Delete}" y "\textbf{Edit}", que desactiva al usuario del sistema y permite editar sus datos respectivamente.
 
 \begin{figure}[H]
 	\centering
@@ -2345,7 +2358,7 @@ Solo los administradores del sistema pueden acceder a esta página y visualizar l
 
 \subsubsection{Agregar Usuario normal}
 
-Agregar un usuario con los privilegios de usuario normal del sistema. Ésta página la accedemos desde el botón "\textbf{New User}" en la página \ref{paginaListaUsuarios}.
+Agregar un usuario con los privilegios de usuario normal del sistema (como se observa en la figura \ref{paginaAgregarUser}). Ésta página la accedemos desde el botón "\textbf{New User}" en la página \ref{paginaListaUsuarios}.
 
 \begin{figure}[H]
 	\centering
@@ -2356,7 +2369,7 @@ Agregar un usuario con los privilegios de usuario normal del sistema. Ésta págin
 
 \subsubsection{Agregar Usuario Administrador}
 
-Agregar un usuario con los privilegios de administrador del sistema.  Ésta página la accedemos desde el botón "\textbf{New Admin}" en la página \ref{paginaListaUsuarios}.
+Agregar un usuario con los privilegios de administrador del sistema (como se observa en la figura \ref{paginaAgregarAdmin}).  Ésta página la accedemos desde el botón "\textbf{New Admin}" en la página \ref{paginaListaUsuarios}.
 
 \begin{figure}[H]
 	\centering
@@ -2367,7 +2380,7 @@ Agregar un usuario con los privilegios de administrador del sistema.  Ésta págin
 
 \subsubsection{Editar Usuario}
 
-Editamos la información principal del usuario del sistema, al igual la cantidad de espacio en disco asociado. Ésta página la accedemos desde el botón "\textbf{Editar}" en la página \ref{paginaListaUsuarios}, asociado a cada usuario.
+Editamos la información principal del usuario del sistema (como se observa en la figura \ref{paginaEditUser}), al igual la cantidad de espacio en disco asociado. Ésta página la accedemos desde el botón "\textbf{Editar}" en la página \ref{paginaListaUsuarios}, asociado a cada usuario.
 
 \begin{figure}[H]
 	\centering
@@ -2378,7 +2391,7 @@ Editamos la información principal del usuario del sistema, al igual la cantidad 
 
 \subsection{Logs del Sistema}
 
-Observamos los logs de archivos. Los cambios principales de archivos que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Files}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
+Observamos los logs de archivos (como se observa en la figura \ref{paginaLogsFiles}). Los cambios principales de archivos que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Files}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
 
 \begin{figure}[H]
 	\centering
@@ -2387,7 +2400,7 @@ Observamos los logs de archivos. Los cambios principales de archivos que los usu
 	\label{paginaLogsFiles}
 \end{figure}
 
-Observamos los logs de carpetas. Los cambios principales de carpetas que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Folders}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
+Observamos los logs de carpetas (como se observa en la figura \ref{paginaLogsFolders}). Los cambios principales de carpetas que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Folders}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
 
 \begin{figure}[H]
 	\centering
@@ -2396,7 +2409,7 @@ Observamos los logs de carpetas. Los cambios principales de carpetas que los usu
 	\label{paginaLogsFolders}
 \end{figure}
 
-Observamos los logs de relaciones. Los cambios principales de las relaciones que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Relations}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
+Observamos los logs de relaciones (como se observa en la figura \ref{paginaLogsRelations}). Los cambios principales de las relaciones que los usuarios han realizado en el sistema. Ésta página la accedemos desde el botón "\textbf{Logs Relations}" en la página \ref{paginaInicioAdmin}. Solo Usuarios con el rol de \textbf{Administradores} pueden acceder a ella.
 
 \begin{figure}[H]
 	\centering
@@ -2416,7 +2429,7 @@ Modificamos nuestra información de perfil, datos básicos y contraseña. Accedemos
 	\label{paginaUserGetProfile}
 \end{figure}
 
-En el perfil de usuario nos encontramos con la información básica del usuario. Podemos modificar los \textbf{datos básicos} o \textbf{cambiar la contraseña}.
+En el perfil de usuario nos encontramos con la información básica del usuario. Podemos modificar los \textbf{datos básicos} o \textbf{cambiar la contraseña} como se observa en la figura \ref{paginaUserProfile}.
 
 \begin{figure}[H]
 	\centering
@@ -2427,7 +2440,7 @@ En el perfil de usuario nos encontramos con la información básica del usuario. P
 
 \subsection{Manejo de Amigos}
 
-Listado de nuestros amigos en el sistema. Ésta página la accedemos desde el botón "\textbf{Friends}" en la página \ref{paginaInicioUser}.
+Listado de nuestros amigos en el sistema (como se observa en la figura \ref{paginaUserFriends}). Ésta página la accedemos desde el botón "\textbf{Friends}" en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2438,7 +2451,7 @@ Listado de nuestros amigos en el sistema. Ésta página la accedemos desde el botó
 
 \subsubsection{Obtener nuevos amigos}
 
-Enviamos notificaciones de amistad a usuarios. Ésta página la accedemos desde el botón "\textbf{ Get Friends}" en la página \ref{paginaInicioUser}.
+Enviamos notificaciones de amistad a usuarios (como se observa en la figura \ref{paginaUserGetFriends}). Ésta página la accedemos desde el botón "\textbf{ Get Friends}" en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2449,7 +2462,7 @@ Enviamos notificaciones de amistad a usuarios. Ésta página la accedemos desde el
 
 \subsubsection{Notificaciones amigos}
 
-Verificamos las notificaciones de amistad que nos han enviado. Ésta página la accedemos desde el botón "\textbf{Friends Notifications}" en la página \ref{paginaInicioUser}.
+Verificamos las notificaciones de amistad que nos han enviado (como se observa en la figura \ref{paginaUserFriendNotification}). Ésta página la accedemos desde el botón "\textbf{Friends Notifications}" en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2466,7 +2479,7 @@ Los usuarios en el sistema pueden compartir archivos entre ellos.
 
 \subsubsection{Notificaciones de Archivos Compartidos}
 
-Verificamos las notificaciones de archivos compartidos que nos han enviado. Ésta página la accedemos desde el botón "\textbf{Share Files Notifications}" en la página \ref{paginaInicioUser}.
+Verificamos las notificaciones de archivos compartidos que nos han enviado (como se observa en la figura \ref{paginaUserShareNotification}). Ésta página la accedemos desde el botón "\textbf{Share Files Notifications}" en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2477,7 +2490,7 @@ Verificamos las notificaciones de archivos compartidos que nos han enviado. Ésta
 
 \subsubsection{Acceso a los Archivos Compartidos}
 
-Accedemos a nuestros archivos compartidos. Ésta página la accedemos desde el botón "\textbf{Share Files}" en la página \ref{paginaInicioUser}.
+Accedemos a nuestros archivos compartidos (como se observa en la figura \ref{paginaUserShareFiles}). Ésta página la accedemos desde el botón "\textbf{Share Files}" en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2532,7 +2545,7 @@ Creamos un nuevo proyecto de simulación. Ésta página la accedemos desde el botón
 
 \subsection{Mostrar Archivo}
 
-Accedemos a la información que contienen los archivos dentro del sistema. Nos permite \textbf{editarla} y \textbf{guardarla}. Accedemos dándole click al botón a un archivo en la página \ref{paginaInicioUser}.
+Accedemos a la información que contienen los archivos dentro del sistema (como se observa en la figura \ref{paginaUserShowFile}). Nos permite \textbf{editarla} y \textbf{guardarla}. Accedemos dándole click al botón a un archivo en la página \ref{paginaInicioUser}.
 
 \begin{figure}[H]
 	\centering
@@ -2543,7 +2556,7 @@ Accedemos a la información que contienen los archivos dentro del sistema. Nos pe
 
 \subsection{Permisos de Archivo}
 
-Modificamos la permisología de acceso del archivo. Accedemos dándole click al botón "\textbf{File Permission}" en la página \ref{paginaUserShowFile}. Nos permite manejar cuatro permisologías (\textbf{Private, show, edit y Public}).
+Modificamos la permisología de acceso del archivo (como se observa en la figura \ref{paginaUserFilePermissions}). Accedemos dándole click al botón "\textbf{File Permission}" en la página \ref{paginaUserShowFile}. Nos permite manejar cuatro permisologías (\textbf{Private, show, edit y Public}).
 
 \begin{figure}[H]
 	\centering
@@ -2558,7 +2571,7 @@ Modificamos la permisología de acceso del archivo. Accedemos dándole click al bo
 
 \subsection{Mostrar opciones de Compilación y Ejecución}
 
-Observamos las opciones de compilación que posee el archivo. Accedemos a estas opciones en la página \ref{paginaUserShowFile}. 
+Observamos las opciones de compilación que posee el archivo (como se observa en la figura \ref{paginaUserCompileExecute}). Accedemos a estas opciones en la página \ref{paginaUserShowFile}. 
 
 \begin{figure}[H]
 	\centering
@@ -2570,7 +2583,7 @@ Observamos las opciones de compilación que posee el archivo. Accedemos a estas o
 
 \subsection{Ejecutar Modelo de Simulación}
 
-Ejecutamos el modelo de simulación dándole click a la opción "\textbf{Execute File}" y pasando los argumentos que se deseen al modelo en el input "\textbf{Arguments}". Accedemos a estas opciones en la página \ref{paginaUserShowFile}. 
+Ejecutamos el modelo de simulación dándole click a la opción "\textbf{Execute File}" y pasando los argumentos que se deseen al modelo en el input "\textbf{Arguments}" (como se observa en la figura \ref{paginaUserExecuteFile}). Accedemos a estas opciones en la página \ref{paginaUserShowFile}. 
 
 \begin{figure}[H]
 	\centering
